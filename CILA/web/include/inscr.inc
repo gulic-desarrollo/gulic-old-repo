@@ -37,7 +37,7 @@ function valida_dni($dni)
 function valida_nif($dni,$letranif)
 {
 	// BORRAME-- BORRAME-- SOLO PARA PROBAR
-	return 1;
+	// return 1;
 	
 	// Para ver que haya una letra
 	if ( eregi("^([A-Za-z]{1})", $letranif) == false) return 0;
