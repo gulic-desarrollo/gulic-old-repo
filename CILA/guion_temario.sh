@@ -268,16 +268,23 @@ Edición de gráficos y documentos (duracion 8h)
 - Insertar imágenes:8:miguev
 - Documentacion:5:miguev
 :LaTeX
-- Historia de TeX y LaTeX:5:miguev
-- Autor, diseñador y cajista:5:miguev
-- Filosofía de LaTeX:5:miguev
-- Ficheros de entrada:10:miguev
-- Tipos de documentos:5:miguev
+- TeX y LaTeX:3:miguev
+- Ficheros de entrada:5:miguev
 - Formato del documento:5:miguev
-- Composición del texto:20:miguev
+- Paquetes útiles:10:miguev
+- Composición del texto:10:miguev
+- Estructura lógica:15:miguev
+#- Referencias cruzadas:3:miguev
+- Entornos:12:miguev
+- Elementos flotantes:5:miguev
+#- Comandos propios:2:miguev
+#- Entornos propios:3:miguev
 - Fórmulas matemáticas:20:miguev
-- Inclusión de gráficos:10:miguev
-- Referencias bibliográficas:5:miguev
+#- Tipos matemáticos:5:miguev
+- Tipos y tamaños:3:miguev
+#- Referencias bibliográficas:5:miguev
+#- Índice terminológico:3:miguev
+- Inclusión de gráficos:2:miguev
 
 
 #
