@@ -32,9 +32,9 @@ EXAMPLES = 	$(wilcard ejemplos/*.*)
 all: $(PSS)
 
 html: 
-	latex2html preguntas
+	latex2html -split 0 preguntas
 
 clean:
 	rm -f *.aux *.log *.dvi *.ps
 	rm -f $(EPSS) $(CEPSS)
-
+	rm -rf preguntas
