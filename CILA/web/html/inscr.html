@@ -199,22 +199,22 @@ function input_text ($name, $maxlength, $value)
 	</td>
 	<td width="33%">
 	  <select name=experiencia size=1>
-	    <? option($experiencia,"none" ,"Escoge una") ?>
-	    <? option($experiencia,"tecnofobus","No quiero saber nada de ordenadores") ?>
-	    <? option($experiencia,"compuphobic","Me dan miedo los ordenadores") ?>
-	    <? option($experiencia,"unknown","Primera vez que me pongo ante uno") ?>
-	    <? option($experiencia,"secretary","Solo uso el pc para escribir trabajos e informes") ?>
-	    <? option($experiencia,"navigator","Preferentemente para navegar por internet") ?>
-	    <? option($experiencia,"gamer","Sólo para jugar") ?>
-	    <? option($experiencia,"windoser","Me manejo en windows bastante bien") ?>
-	    <? option($experiencia,"","Utilizo GNU/Linux por obligación y lo paso mal") ?>
-	    <? option($experiencia,"","Utilizo GNU/Linux por obligación y lo paso bien") ?>
-	    <? option($experiencia,"frustrated","Intenté instalar Linux pero no lo conseguí") ?>
-	    <? option($experiencia,"","Instalé GNU/Linux una vez, pero casi no lo uso") ?>
-	    <? option($experiencia,"","Instalé GNU/Linux y lo uso de vez en cuando, por probar") ?>
-	    <? option($experiencia,"","Utilizo GNU/Linux regularmente para unas pocas cosas") ?>
-	    <? option($experiencia,"","Utilizo GNU/Linux regularmente para bastantes cosas") ?>
-	    <? option($experiencia,"","Sólo utilizo GNU/Linux") ?>
+	    <? option($experiencia,"none"           ,"-Escoge una-") ?>
+	    <? option($experiencia,"tecnofobus"     ,"No quiero saber nada de ordenadores") ?>
+	    <? option($experiencia,"compuphobic"    ,"Me dan miedo los ordenadores") ?>
+	    <? option($experiencia,"unknown"        ,"Primera vez que me pongo ante uno") ?>
+	    <? option($experiencia,"columnist"      ,"Solo uso el pc para escribir trabajos e informes") ?>
+	    <? option($experiencia,"sailboater"     ,"Preferentemente para navegar por internet") ?>
+	    <? option($experiencia,"iwannakillyou"  ,"Sólo para jugar") ?>
+	    <? option($experiencia,"ruindouser"     ,"Me manejo en windows bastante bien") ?>
+	    <? option($experiencia,"helpneeded"     ,"Utilizo GNU/Linux por obligación y lo paso mal") ?>
+	    <? option($experiencia,"ineedmore"      ,"Utilizo GNU/Linux por obligación y lo paso bien") ?>
+	    <? option($experiencia,"frustrated"     ,"Intenté instalar Linux pero no lo conseguí") ?>
+	    <? option($experiencia,"fdisker"        ,"Instalé GNU/Linux una vez, pero casi no lo uso") ?>
+	    <? option($experiencia,"aptgetinstaller","Instalé GNU/Linux y lo uso de vez en cuando, por probar") ?>
+	    <? option($experiencia,"onlyhacker"     ,"Utilizo GNU/Linux regularmente para unas pocas cosas") ?>
+	    <? option($experiencia,"activist"       ,"Utilizo GNU/Linux regularmente para bastantes cosas") ?>
+	    <? option($experiencia,"extremist"      ,"Sólo utilizo GNU/Linux") ?>
 	  </select>
 	  <?= $errores['experiencia'] ?>
 	</td>
@@ -232,10 +232,10 @@ function input_text ($name, $maxlength, $value)
 	</td>
 	<td width="33%">
 	  <select name=espera size=1>
-	    <? option($espera,"none" ,"¿te inscribiste?") ?>
-	    <? option($espera,"fue","-Asistí al curso y quiero repetir") ?>
-	    <? option($espera,"espera", "-Me quedé en la lista de espera") ?>
-	    <? option($espera,"nada", "-No, esta es mi primera vez") ?>
+	    <? option($espera,"none"  ,"-¿te inscribiste?-") ?>
+	    <? option($espera,"fue"   ,"Asistí al curso y quiero repetir") ?>
+	    <? option($espera,"espera","Me quedé en la lista de espera") ?>
+	    <? option($espera,"nada"  ,"No, esta es mi primera vez") ?>
 	  </select>
 	  <?= $errores['espera'] ?>
 	</td>
@@ -250,10 +250,10 @@ function input_text ($name, $maxlength, $value)
 	</td>
 	<td width="33%">
 	  <select name=wanna_linex size=1>
-	    <? option($wanna_linex,"none"    ,"¿que piensas?") ?>
-	    <? option($wanna_linex,"nocreo"  ,"-No creo que lo vaya a instalar") ?>
-	    <? option($wanna_linex,"nidecona","-Ya tengo cds de GNU/Linux, gracias de todas formas" ) ?>
-	    <? option($wanna_linex,"si"      ,"-No tengo ningun cd de GNU/Linux y me interesa") ?>
+	    <? option($wanna_linex,"none"     ,"-¿que piensas?-") ?>
+	    <? option($wanna_linex,"nocreo"   ,"No creo que lo vaya a instalar") ?>
+	    <? option($wanna_linex,"nideconan","Ya tengo cds de GNU/Linux, gracias de todas formas" ) ?>
+	    <? option($wanna_linex,"si"       ,"No tengo ningun cd de GNU/Linux y me interesa") ?>
 	  </select>
 	  <?= $errores['wanna_linex'] ?>
 	</td>
@@ -263,14 +263,16 @@ function input_text ($name, $maxlength, $value)
 	  </tr>
       <tr> 
 	<td width="67%" align="right">
-	  La nueva distribución debian woody 3.0 ocupa 8 CDROMs, o bien, 1 o 2 DVD, así que es una buena alternativa tener DVD en tu máquina para evitar estar con el trasiego de CDROMs. ¿Tu qué tienes?
+	  La nueva distribución Debian Woody 3.0 ocupa 8 CDROMs, o bien, 1 o 2 DVD, 
+	  así que es una buena alternativa tener un lector DVD en tu máquina para 
+	  evitar estar con el trasiego de CDROMs. ¿Tu qué tienes?
 	</td>
 	<td width="33%">
 	  <select name=wanna_dvd size=1>
-	    <? option($wanna_dvd,"none"  ,"Responde aquí") ?>
-	    <? option($wanna_dvd,"floppy","-No tengo ni DVD ni CDROM, solo disquetera") ?>
-	    <? option($wanna_dvd,"cdrom" ,"-Solo tengo lector de CDROM, no de DVD " ) ?>
-	    <? option($wanna_dvd,"dvd"   ,"-Sí tengo lector de DVD" ) ?>
+	    <? option($wanna_dvd,"none"  ,"-Responde aquí-") ?>
+	    <? option($wanna_dvd,"floppy","No tengo ni DVD ni CDROM, solo disquetera") ?>
+	    <? option($wanna_dvd,"cdrom" ,"Solo tengo lector de CDROM, no de DVD " ) ?>
+	    <? option($wanna_dvd,"dvd"   ,"Sí tengo lector de DVD" ) ?>
 	  </select>
 	  <?= $errores['wanna_dvd'] ?>
 	</td>
