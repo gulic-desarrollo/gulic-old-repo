@@ -8,7 +8,7 @@ Standards-Version: 3.5.2
 Package: cila-mod4
 Architecture: all
 Depends: ${shlibs:Depends}, octave, octave-forge, gnuplot, r-base, yacas, yacas-proteus
-Suggests: r-base-html, r-base-latex, r-doc-html, r-doc-info, r-doc-pdf, r-mathlib, r-recommended, r-gnome, yacas-doc
+Recommends: r-base-html, r-base-latex, r-doc-html, r-doc-info, r-doc-pdf, r-mathlib, r-recommended, r-gnome, yacas-doc
 Description: Metapaquete para el Módulo IV del CILA
  Curso de Introducción a Linux para Alumnos
  .
