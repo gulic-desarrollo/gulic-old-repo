@@ -36,6 +36,7 @@
 			<link>octubre2002.php</link>
 			<name>Octubre 2002</name>
 		</subsection>
+	<!--
 	<section>
 		<link>preinscripcion.php</link>
 		<name>Preinscripción</name>
@@ -48,6 +49,7 @@
 			<link>formulario.php</link>
 			<name>Formulario</name>
 		</subsection>
+	-->
 	<section>
 		<link>material.php</link>
 		<name>Material</name>
