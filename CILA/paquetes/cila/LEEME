@@ -2,9 +2,9 @@
 	Curso de Introducción a Linux para Alumnos
 	==========================================
 
-	Metapaquete para el Módulo I del curso
+	Metapaquete para el material completo
 
 	Este paquete sólo contiene las dependencias
 	necesarias para que al instalarlo se instalen
-	todos los programas necesarios para las prácticas
-	del Módulo I del CILA.
+	todos los programas necesarios para el curso
+	y el libro del mismo.
