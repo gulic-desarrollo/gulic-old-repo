@@ -92,7 +92,10 @@ function characterData($parser, $data) {
 	if (($isatsection) && ($data == $currentsubsection))
 		$opensubsection = 1;
     if ($isatsection || $opensection || $opensubsection)
-		print $data;
+    		if ($data == "Evaluación")
+			print "<big><big>$data</big></big>";
+		else
+			print $data;
 }
 
 $xml_parser = xml_parser_create();

@@ -68,10 +68,20 @@
 			<link>libro.php</link>
 			<name>Libro del CILA</name>
 		</subsection>
+	<!--
 	<section>
 		<link>evaluacion.php</link>
 		<name>Evaluación</name>
 	</section>
+		<subsection>
+			<link>eval_sep2002.php</link>
+			<name>Septiembre 2002</name>
+		</subsection>
+		<subsection>
+			<link>eval_oct2002.php</link>
+			<name>Octubre 2002</name>
+		</subsection>
+	-->
 	<section>
 		<link>colaborar.php</link>
 		<name>Colaborar</name>
