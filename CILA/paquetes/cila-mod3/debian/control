@@ -7,11 +7,11 @@ Standards-Version: 3.5.2
 
 Package: cila-mod3
 Architecture: all
-Depends: ${shlibs:Depends}, manpages-es, manpages-es-extra, mtools, navigator-base-477|mozilla-browser|konqueror, mutt|evolution, ftp, ssh
-Suggests: navigator-base-477, mozilla-browser, konqueror, mutt, evolution, gftp, gdm, gnome-intro-es, gnome-users-guide-es, gimp|gimp1.1|gimp1.2|gimp1.3, dia, qcad, lyx, openoffice.org-l10n-es, bluefish, quanta, vim-gtk, emacs21 
-Description: Metapaquete para el Módulo I del CILA
+Depends: ${shlibs:Depends}, dia, qcad, gimp1.2|gimp1.3, lyx, openoffice.org, tetex-base, tetex-bin, tetex-extra, tetex-eurosym, dvips, xdvi, ps2pdf, gv|gnome-gv|kghostview
+Suggests: openoffice.org-l10n-es, bluefish, quanta, ktexmaker2, texmacs
+Description: Metapaquete para el Módulo III del CILA
  Curso de Introducción a Linux para Alumnos
  .
  Este  metapaquete  sólo  contiene  las dependencias  a  los  paquetes
- necesarios para las prácticas del Módulo I del CILA. También contiene
- sugerencias de paquetes complementarios interesantes.
+ necesarios  para  las prácticas  del  Módulo  III del  CILA.  También
+ contiene sugerencias de paquetes complementarios interesantes.
