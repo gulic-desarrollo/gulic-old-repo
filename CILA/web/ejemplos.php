@@ -1,6 +1,6 @@
 <?php
-$currentsection = "Presentación";
+$currentsection = "Material";
 include("html/0start.html");
-include("html/historia.html");
+include("html/ejemplos.html");
 include("html/0end.html");
 ?>

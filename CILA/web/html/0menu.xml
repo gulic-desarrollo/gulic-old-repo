@@ -57,12 +57,12 @@
 			<name>Apuntes del CILA</name>
 		</subsection>
 		<subsection>
-			<link>libro.php</link>
-			<name>Libro del CILA</name>
-		</subsection>
-		<subsection>
 			<link>ejemplos.php</link>
 			<name>Ejemplos de código</name>
+		</subsection>
+		<subsection>
+			<link>libro.php</link>
+			<name>Libro del CILA</name>
 		</subsection>
 	<section>
 		<link>fotos.php</link>
