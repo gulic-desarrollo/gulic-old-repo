@@ -1,0 +1,179 @@
+
+/*----------------------------------------------------------------------------*/
+-- $Author$
+-- $Source$
+-- $Revision$
+-- $Date$
+--
+-- $Log$
+-- Revision 1.1  2002/06/24 22:25:43  miguev
+-- Initial revision
+--
+-- Revision 1.1.1.1  2001/12/14 12:52:42  miguev
+-- Subida la primera versión (ACTUAL) de los apuntes del CILA
+-- No incluyo otras cosas como las portadas de los CDs, la misma
+-- portada de los apuntes o el cartel. 
+--
+-- Revision 1.15  2001/10/31 10:14:18  miguev
+--
+--
+-- Arreglillos
+--
+-- Revision 1.14  2001/10/31 07:56:27  alberto
+-- Añadidos octave, gnuplot y scilab (muy minimo) al sgml.
+-- Añadidos ejemplos de gnuplot y octave.
+--
+-- Revision 1.13  2001/10/29 17:42:16  miguev
+--
+--
+-- Arreglilos menores.
+--
+-- Revision 1.12  2001/10/28 21:56:42  miguev
+--
+-- Añadido un capítulo preliminar de presentación del curso.
+--
+-- Añadida la sección de Java al capítulo de programación.
+--
+-- Añadida la sección de Netscape al capítulo de internet.
+--
+-- Revision 1.11  2001/10/28 17:32:10  miguev
+--
+-- Lista la sección de R, una menos.
+--
+-- Revision 1.10  2001/10/28 12:11:22  miguev
+--
+-- Al final hice yo la parte del Joe, mira que era facilona :-)
+--
+-- Revision 1.9  2001/10/27 22:14:35  miguev
+--
+-- Eliminados los apartados que no se escribirán.
+--
+-- Revision 1.8  2001/10/27 14:48:46  miguev
+-- Fortran metido.
+--
+-- Revision 1.7  2001/10/27 00:19:03  miguev
+-- Ya terminé el Pascal, mañana meto el Fortan.
+-- René y yo nos encargamos de LaTeX y LyX.
+--
+-- Revision 1.6  2001/10/26 13:19:44  jesus
+-- Me pido bash script y ssh para el fin de semana
+--
+-- Revision 1.5  2001/10/26 09:41:28  miguev
+--
+-- Eliminada la parte de editores de web (no hay tiempo) y añadida dos
+-- partes importantes para los alumnos: FTP y SSH (a ver quién las escribe)
+--
+-- Revision 1.4  2001/10/25 22:12:56  miguev
+-- Aquí me pasa algo raro con los apuntes, no me deja hacer nada el CVS.
+--
+-- Revision 1.3  2001/10/25 21:21:24  lcabrera
+-- Me asigno el tema de las distribuciones. Solo una enumeración.
+--
+-- Revision 1.2  2001/10/25 18:25:48  miguev
+--
+-- Actualizado el estado del temario
+--
+-- Revision 1.1  2001/10/25 12:35:47  miguev
+--
+--
+-- He ordenado un poco el modulo para evitar potajes rancios ;-)
+-- Luis ha creado un alias para este modulo (apuntes), el alias
+-- es "CILA2001". Dado que dentro del modulo hay una carpeta que
+-- se llama "apuntes" es recomendable utilizar el alias.
+--
+-- Revision 1.7  2001/10/24 20:14:05  miguev
+-- Modificaciones menores.
+--
+-- Revision 1.6  2001/10/24 20:03:38  miguev
+-- Actualizada la situación del temario.
+--
+-- Revision 1.5  2001/10/24 09:23:13  jesus
+-- Jesús empieza el capítulo de C/C++
+--
+-- Revision 1.4  2001/10/24 00:00:25  lcabrera
+-- Añadido comentarios automatizados.
+--
+/*----------------------------------------------------------------------------*/
+
+
+	Curso de Introducción a Linux para Alumnos. Apuntes I
+
+  ______________________________________________________________________
+
+
+
+  1. Introducción a GNU/Linux.
+     1.1 Un poco de historia.		(Felix, TERMINADO)
+        1.1.1 Orígenes de Unix y sus versiones.
+        1.1.2 El Software Libre y la licencia GPL.
+        1.1.3 Qué es Linux y GNU/Linux.
+     1.2 Distribuciones de Linux	(TERMINADO, lcabrera)
+        1.2.1 Debian GNU/Linux
+        1.2.2 Ututo GNU/Linux
+        1.2.3 RedHat Linux
+        1.2.4 Mandrake Linux
+        1.2.5 SuSE Linux
+     1.3 Las dos caras de GNU/Linux	(Empezado por Félix, añadan algo ;-)
+        1.3.1 La cara.
+        1.3.2 La cruz.
+     1.4 Recursos para GNU/Linux	(Féliz, TERMINADO)
+        1.4.1 Software
+        1.4.2 Documentación
+
+  2. El entorno de intérprete de comandos	(Félix, TERMINADO)
+     2.1 Qué es un intérprete de comandos	
+     2.2 Qué hacemos y quién somos en el sistema
+     2.3 Comandos básicos para sobrevivir	
+     2.4 El comando ``ayuda''	
+
+  3. Editores de texto
+     3.1 Joe				(Miguel Ángel, TERMINADO)
+     3.2 Emacs				(Carlos,       TERMINADO)
+     3.3 VI y VIM			(Miguel Ángel, TERMINADO)
+     3.4 Otros editores
+        3.4.1 Kwrite			(René, en marcha)
+	2.4.2 gnotepad+			(René, en marcha)
+
+  4. El entorno X-Windows		(Jesús, terminado o casi)
+     4.1 Qué es X-Windows
+     4.2 Arquitectura de las X-Windows
+     4.3 Gestores de ventanas y entornos de escritorio
+
+  5. Usando Internet con GNU/Linux
+     5.1 Navegadores web
+        5.1.1 Netscape Communicator 4	(Luis, empezado)
+     5.2 Correo electrónico
+        5.2.1 Mutt			(Miguel Ángel, TERMINADO)
+        5.2.3 Kmail			( ¿ QUIEN SE ANIMA? )
+     5.3 Tranferencia de ficheros (FTP)	(wizard-- TERMINADO)
+     5.4 Acceso remoto (SSH)		(Jesus, empezado)
+
+  6. Programando con GNU/Linux
+     6.1 C/C++ (GNU C Compiler)		(Jesús, falta revisar)
+        6.1.1 Compilando y linkando	
+        6.1.2 Introducción al Make
+        6.1.3 Depurando la aplicación
+        6.1.4 ¿Y que pasa con el C++?
+     6.2 Pascal (FreePascal)		(Miguel Ángel, TERMINADO)
+     6.3 Fortran 77 (GNU Fortran)	(Miguel Ángel, TERMINADO)
+     6.4 Java (JDK 1.3)			(Carlos, TERMINADO)
+     6.5 Bash (Unix shell)		(Jesus, empezado)
+
+  7. Matemáticas en GNU/Linux
+     7.1 Documentos y fórmulas matemáticas
+        7.1.1 LaTeX			(René/Miguel Ángel, TERMINADO)
+        7.1.2 LyX			(Miguel Ángel, TERMINADO)
+     7.2 Software de cálculo y representación.
+        7.2.1 Octave			(Alberto, +gnuplot, TERMINADO)
+        7.2.2 SciLab			(Alberto, TERMINADO)
+        7.2.3 R				(Miguel Ángel, casi terminado)
+
+  8. Edición de gráficos
+     8.1 GtkGraph			(Miguel Ángel, ¿podré con todo?)
+     8.4 DIA				(Miguel Ángel, ¿podré con todo?)
+     8.5 The GIMP			(Miguel Ángel, ¿podré con todo?)
+
+  9. Recursos en internet	(Entre todos, pongan enlaces para parar trenes)
+
+  10. Sobre este documento	(Teresa, TERMINADO)
+

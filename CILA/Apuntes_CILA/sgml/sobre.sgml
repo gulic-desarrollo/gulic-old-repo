@@ -1,0 +1,124 @@
+<!-- --------------------------------------------------------------------- -->
+<!-- $Id$ -->
+<!-- --------------------------------------------------------------------- -->
+
+  <sect>Sobre este documento
+
+<p>
+    <quote> Este documento ha sido  escrito gracias a la iniciativa de
+    algunos  de  los  miembros  del  <bf/G/rupo  de  <bf/U/suarios  de
+    <bf/Li/nux de  <bf/C/anarias. El  propósito de este  documento, ha
+    sido el servir  de ayuda e introducción a Linux  a los alumnos del
+    <bf/C/urso  de <bf/I/ntroducción  a <bf/L/inux  para <bf/A/lumnos,
+    organizado  conjuntamente con  la  Facultad de  Matemáticas de  la
+    Universidad de La Laguna, en Tenerife (España) </quote>
+
+<!-- 
+
+    <quote> Entre las personas que  han participado en su creación, se
+    encuentran los siguientes: </quote>
+
+    <itemize>
+
+      <item> Carlos Alberto Morales Díaz 
+
+      <item> Carlos de La  Cruz Pinto 
+
+      <item> Félix J. Marcelo Wirnitzer 
+
+      <item> Jesús Miguel Torres Jorge 
+
+      <item> Luis Cabrera Sauco. La verdad es que estaba aburrido y no
+      tenía nada mejor que hacer :)
+
+      <item>  Miguel Ángel  Vilela García.  Estudiante de  Matemáticas
+      en  la  Universidad  de  La  Laguna  y  administrador  de  Linux
+      autodidacta.  Amante  incondicional  del  software  libre  y  la
+      filosofía GNU.
+
+      <item> René Martín Rodríguez
+
+      <item> Teresa González de la Fé
+
+    </itemize>
+
+-->
+
+
+    <quote> Este documento  se acoje a la La  Licencia General Pública
+    (GPL) </quote>
+
+    <sect1> La Licencia General Pública (GPL)
+
+<p>
+<quote> Software libre  significa entre otras cosas  que las licencias
+de  los programas  no requieren  de un  pago para  su uso  ni para  su
+distribución. Ello es posible gracias a  la GPL. GPL son las iniciales
+de  General  Public  License,  Licencia Pública  General  cuyo  nombre
+completo es  GNU GPL.  La GPL permite  que cualquiera  pueda extender,
+adaptar o modificar  los programas cubiertos por  la licencia. También
+permite  que distribuya  los resultados  de su  trabajo y  que incluso
+cobre por ello.  La GPL obliga a  que el código fuente  de un programa
+esté disponible con la distribución de  las copias de ese programa. De
+este modo, el usuario puede modificar el programa para adaptarlo a sus
+necesidades y puede vender o  distribuir copias de sus modificaciones,
+siempre y  cuando el programa  modificado esté  también bajo la  GPL e
+incluya los códigos fuente. </quote>
+
+
+<quote> La GNU/GPL te obliga a dar a los otros lo que tú has recibido.
+El conocimiento que  a tí te ha beneficiado y  las aportaciones que tú
+has hecho  a ese  conocimiento han de  estar también  disponibles para
+otros. La  GPL te  prohibe transformar el  software libre  en software
+propietario: toda modificación de software  GPL ha de continuar siendo
+GPL. </quote>
+
+<quote> La GNU/GPL no significa que  no haya derechos de autor, que no
+se reconozcan las autorías de los programas o las modificaciones a los
+programas. Todo  lo contrario.  Todas las aportaciones  son protegidas
+por los  derechos de autor.  Pero los  autores aceptan que  su trabajo
+se  vea  modificado  y  adaptado  por otros,  siempre  y  cuando  esas
+modificaciones sigan siendo libres y estén disponibles con los códigos
+fuentes, para que puedan a su vez ser modificadas. </quote>
+
+<quote> Dado que los autores de  los programas los ponen a disposición
+de  cualquiera libres  de cargas,  los  programas bajo  la GNU/GPL  no
+tienen GARANTÍAS. Se  te ofrecen "tal cual" y lo  que suceda con ellos
+cae dentro  de los riesgos que  tú asumes. Cada uno  es responsable de
+los programas GNU/GPL que decide instalar y probar. </quote>
+
+<quote>  ESTOS  APUNTES SE  SOMETEN  A  LA  GPL.  Se pueden  copiar  y
+modificar estos apuntes  y se ofrecen cumpliendo lo  establecido en la
+GNU/GPL,  por lo  que sus  copias y  modificaciones tienen  que seguir
+estando disponibles y ser "copy left" (permitido copiar). </quote>
+
+<quote> Igualmente,  los autores admitimos y  agradeceremos toda clase
+de sugerencias  para mejorar los  apuntes, pero no damos  garantías de
+ellos... ;-) </quote>
+
+<quote> En GNU/Linux lo importante es  aprender. Y aprender es un acto
+de voluntad.  Sin él, no hay  manual ni apuntes que  sirvan para nada.
+</quote>
+
+<quote>
+<bf/Referencias:/
+</quote>
+<itemize>
+
+<item> GNU  GPL Versión 2, junio  de 1991. Versión oficial  en inglés.
+Url: http://www.gnu.org/copyleft/gpl.html
+
+<item>   Traducción   no   oficial   al  español   de   la   GPL   por
+Jesús   González  Barahona   y  Pedro   de  las   Heras  Quirós.   Muy
+recomendable  si  no   te  desenvuelves  bien  con   el  inglés.  Url:
+http://es.gnu.org/Licencias/gples.html
+
+<item>  Términos  de   la  licencia  GPL  y   GNU.  Interesante.  Url:
+http://www.marquese.net/relatos/relatos/mvarios/linux/gpl.htm
+
+</itemize>
+
+    </sect1>
+
+  </sect>
+

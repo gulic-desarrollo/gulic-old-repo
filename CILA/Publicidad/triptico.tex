@@ -1,0 +1,314 @@
+\documentclass[a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+
+% sacado de /usr/share/doc/texmf/latex/graphics/grfguide.ps.gz
+\usepackage{graphicx}
+\usepackage{fancybox}
+\usepackage[dvipsnames]{color}
+\usepackage{colortbl}
+
+% sacado de /usr/share/doc/texmf/latex/tools/multicol.dvi.gz
+\usepackage{multicol}
+\usepackage{multirow}
+
+% sacado de /usr/share/doc/texmf/help/Catalogue/entries/nopageno.html
+% para eliminar los números de página
+\usepackage{nopageno}
+
+% sacado de /usr/share/doc/texmf/latex/geometry/geometry.dvi.gz
+% para definir tipo de hoja y márgenes (90% texto, 5% margen izqdo, 5 drcho)
+\usepackage[verbose,landscape,noheadfoot,dvips,a4paper,hscale=0.9,vscale=0.9]{geometry}
+
+% sacado de /usr/share/doc/texmf/latex/tools/tabularx.dvi.gz 
+\usepackage{tabularx}
+
+% sacado de la presentación para el rector de miguev
+% quitar indentado primera linea y definir espaciado interparrafal
+% Añadidos margenes y otras longitudes (cajas y columnas)
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1.5ex plus 0.5ex minus 0.5ex}
+\setlength{\hoffset}{-3mm}
+\setlength{\voffset}{0mm}
+\setlength{\columnsep}{16mm}
+\setlength{\fboxsep}{2mm}
+\setlength{\fboxrule}{1mm}
+
+% cogidos de la presentacion
+\newcommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+\newcommand{\cila}{{\sc Curso de Introducción a Linux para Alumnos}}
+\newcommand{\pila}{{\sc Party de Instalación de Linux para Alumnos}}
+\newcommand{\tila}{{\sc Taller de Iniciación a Linux para Alumnos}}
+\newcommand{\gulic}{{\sc Grupo de Usuarios de Linux de Canarias}}
+\newcommand{\fmat}{{\sc Facultad de Matemáticas}}
+\newcommand{\ull}{{\sc Universidad de La Laguna}}
+\newcommand{\linux}{GNU/Linux}
+\newcommand{\debian}{Debian \linux}
+\newcommand{\gfdl}{GNU Free Documentation License}
+\newcommand{\myoval}[1]{\Ovalbox{\parbox{\columnwidth}{\large\sf #1}}\vspace*{1mm}}
+\newcommand{\MYOVAL}[1]{\Ovalbox{\parbox{\columnwidth}{\LARGE\bf\sf #1}}\vspace*{3mm}}
+\newcommand{\dcha}[1]{\vspace*{-7mm}\begin{flushright}#1\end{flushright}\vspace*{-4mm}}
+
+\begin{document}
+\vspace*{25mm}\hspace*{130mm}\includegraphics[height=16cm]{imagenes/supertux.eps}\vspace*{-194mm}
+
+\hspace*{0mm}\includegraphics[height=2cm]{imagenes/kde3.eps} 
+\hspace*{1mm}\includegraphics[height=2cm]{imagenes/gnome.eps} 
+\hspace*{1mm}\includegraphics[height=2cm]{imagenes/lucas.eps} 
+\hspace*{10mm}\includegraphics[height=2cm]{imagenes/debian.eps} 
+\hspace*{1mm}\includegraphics[height=2cm]{imagenes/gimp.eps} 
+\hspace*{1mm}\includegraphics[height=2cm]{imagenes/lyx.eps} 
+\hspace*{10mm}\includegraphics[height=2cm]{imagenes/openoffice.eps} 
+\hspace*{1mm}\includegraphics[height=2cm]{imagenes/r.eps} 
+\hspace*{1mm}\includegraphics[height=2cm]{imagenes/ddd.eps} 
+\sf
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multicols}{3}
+\myoval{¿Qué es \linux?}
+\linux~ es  un sistema operativo libre  y gratuito basado en  UNIX. Se
+puede ejecutar sobre más  de 10 arquitecturas diferentes: i386/itanium
+(PC), m68k/ppc (Mac), y otros (Alpha, Sun, Silicon Graphics).
+\vspace*{3mm}
+
+\myoval{¿Qué nos pide \linux?}
+Para empezar  no te pide ningun  conocimiento de informática a  la que
+puedes estar acostumbrado. Lo que te pedirá \linux~ para empezar a ser
+tu amigo lo podrás ver en  en este curso. Después, podrás sacarle todo
+el jugo que quieras según tus necesidades.
+\vspace*{3mm}
+
+\myoval{¿Qué aporta \linux?}
+\linux~ difiere  del resto en  que es  software libre: todo  el código
+fuente  es  libre,  abierto  y modificable.  Esto  tiene  innumerables
+ventajas, por ejemplo  que cualquier programador o usuario  de la gran
+comunidad existente en todo el mundo pueda corregir, mejorar o auditar
+la seguridad del software, y que los resultados reviertan en todos. El
+resultado es que  el software incluido en \linux~ tiene  una calidad y
+unas  funcionalidades que  mejoran  y aumentan  diariamente  y son  la
+prueba viva de un nuevo paradigma en la informática.
+\vspace*{3mm}
+
+\myoval{¿Por qué usarlo?}
+%Al ser  software libre no hay  costo de licencias ni  está definido el
+%pirateo.  Un sistema  completo  \linux~ y  sus actualizaciones  pueden
+%bajarse  de la  red,  instalarse  en tantas  computadoras  se desee  y
+%copiarlo en cd cuantas veces quieras y darselo a quien te parezca, sin
+%pagar  a nadie.
+%
+%Casi todo el  hardware del que dispones en tu  casa está soportado por
+%\linux. Casi  todas las  aplicaciones que ejecutas  en tu  casa tienen
+%su  equivalente  en \linux,  desde  procesadores  de texto,  hojas  de
+%cálculo  (algunas  totalmente  compatibles con  MS-Office),  lenguajes
+%de  programación, programas  científicos, aplicaciones  para Internet,
+%lectores y compresores  de audio y video. También  dispones de juegos,
+%emuladores, etc. Otras  cosas seguro no las haces  en casa: diferentes
+%usuarios  y entornos  gráficos,  exprimir tu  ordenador  al límite,  o
+%aprovechar los obsoletos, controlarlo remotamente\ldots y lo que se te
+%ocurra.
+
+Si cuentas la lista de paquetes de la distribución \debian, verás 9842
+paquetes de serie  y \mbox{14.3 GB} de software. ¿Tienes  disco duro y
+tiempo para verlo todo? Empieza a verlo con nosotros.
+
+% La cuenta sacada con (poner solo un ftp al final, si no no vale ;-))
+% awk '
+%   BEGIN {a=b=0;} 
+%   /Installed-Size/ {a+=$2; b++;} 
+%   END {print "paquetes: " b " bytes:" a;}
+% ' /var/lib/apt/lists/ftp*
+
+\vfill
+
+\columnbreak
+
+\MYOVAL{Programa}
+
+\myoval{Módulo I \hfill Entorno \linux}
+\dcha{60 plazas, 15h. 18, 19 y 20 de Septiembre de 2002}
+
+Si lo  que necesitas es  sobrevivir en un  entorno \linux~ este  es tu
+módulo. 
+
+Conocerás  los  orígenes  y  la  filosofía  de  \linux,  aprenderás  a
+desenvolverte en  los entornos de  trabajo que \linux~  te proporciona
+(intérpretes de  comandos y  escritorios GNOME  y KDE),  te defenderás
+manejando \linux~  a lo largo  y ancho  de Internet y  encontrarás que
+\linux~  dispone  de muchos  sistemas  de  ayuda  y de  una  estupenda
+documentación.
+\vspace*{3mm}
+
+\myoval{Módulo II \hfill Instalación de \linux}
+\dcha{25 plazas, 20h. 21 y 22 de Septiembre de 2002}
+
+Si quieres  llevarte \linux~  puesto, este es  tu módulo.  Tendrás que
+traer tu propio  ordenador para instalar \debian~ en  él. Aprenderás a
+instalar y  configurar \debian,  haciendo que  tu hardware  funcione y
+moldeando \debian~ para adaptarlo a tus propias necesidades.
+
+De  entre  las muchas  distribuciones  de  \linux~ existentes,  se  ha
+elegido \debian~ por ser única que  ha sido realizada sin ningún ánimo
+de  lucro, además  de  haber  demostrado en  muchas  ocasiones ser  la
+distribución  de \linux~  de mayor  calidad. No  te preocupes  por los
+rumores de su dificultad, sólo es cuestión de conocerla y tener buenos
+expertos de tu lado \verb+;-)+
+
+\vfill
+
+\columnbreak
+
+\myoval{Módulo III \hfill Edición de gráficos y documentos}
+\dcha{60 plazas, 8h. 23 y 24 de Septiembre de 2002}
+
+Si  quieres realizar  gráficos  y  documentos de  la  mejor calidad  e
+impresionar a compañeros y profesores, este es tu módulo.
+
+Aprenderás a  crear gráficos,  esquemas y diseños  vectoriales, además
+de  incluirlos   en  documentos   escritos  con  la   suite  ofimática
+\mbox{OpenOffice}, en páginas web, y en documentos de todo tipo con la
+calidad de una imprenta profesional gracias a {\rm\LaTeX}.
+\vspace*{2mm}
+
+\myoval{Módulo IV \hfill Herramientas para Matemáticas}
+\dcha{60 plazas, 4h. 25 de Septiembre de 2002}
+
+Si  necesitas herramientas  matemáticas avanzadas  en \linux~  para tu
+carrera, este es tu módulo.
+
+En este  módulo aprenderás a  realizar cálculos numéricos  con Octave,
+gráficos  con  GNUPlot,  análisis   estadísticos  con  R,  y  cálculos
+simbólicos con Yacas.
+\vspace*{2mm}
+
+\myoval{Módulo V \hfill Herramientas para programación}
+\dcha{60 plazas, 8h. 26 y 27 de Septiembre de 2002}
+
+Si quieres descubrir la increible  cantidad de recursos y libertad que
+puede  ofrecerte  \linux~  para  programar tus  propias  soluciones  o
+adaptar  las existentes  a tus  necesidades, no  puedes saltarte  este
+módulo.
+
+Sobre la base de tus posibles conocimientos de programación aprenderás
+a manejar las herramientas de programación más importantes disponibles
+en  \linux: potentes  editores para  escribir código,  compiladores de
+Pascal, Fortran, C, Java, scripts de comandos y depuradores.
+\vspace*{3mm}
+
+\end{multicols}
+
+\newpage
+
+\vspace*{15mm}\hspace*{0mm}\includegraphics[height=16cm]{imagenes/supercila.eps}\vspace*{-185mm}
+
+\begin{multicols}{3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\MYOVAL{Objetivos}
+
+Dependiendo de  los módulos a  los que  asistas, al terminar  el curso
+serás capaz de  usar y administrar un sistema \linux~  y dispondrás de
+él  en  tu ordenador.  Sabrás  buscar  soluciones  a tus  problemas  y
+necesidades de software  basándote en los sistemas  de documentación y
+ayuda de \linux, muchos de los cuales  están en la red. Te moverás con
+soltura  a lo  largo  y ancho  de Internet  con  las herramientas  que
+\linux~ te ofrece para la vida en red.
+
+También estarás  preparado para crear gráficos,  diseños vectoriales y
+esquemas,  retocar fotografías,  crear páginas  web en  lenguaje HTML,
+documentos de  calidad profesional con {\rm\LaTeX}.  La combinación de
+estas herramientas te  ofrece una libertad impresionante a  la hora de
+escribir documentos, informes, presentaciones, transparencias, páginas
+web  y  trabajos  con  los  que  podrás  impresionar  a  compañeros  y
+profesores.
+
+Encontrarás soluciones  para tus problemas matemáticos  con GNU Octave
+para  cálculos numéricos,  GNUPlot para  gráficas, R  para estudios  y
+análisis estadísticos y Yacas para cálculos simbólicos.
+
+
+Y cuando el Software Libre no te proporciona la solución exacta que tú
+quieres,  siempre  tendrás el  camino  abierto  para crearla  por  tus
+propios medios programándola en cualquiera de los muchísimos lenguajes
+de programación con herramientas disponibles en \linux. Sabrás manejar
+potentes  editores  de  texto  para  escribir  código,  el  compilador
+FreePascal, los  compiladores de GNU para  C/C++ y Fortran, el  SDK de
+Java 2  de Sun  Microsystem, los  scripts de comandos  de la  Shell de
+\linux, la  herramienta de automatización  GNU Make y el  depurador de
+código de GNU.
+
+\vfill
+
+Este tríptico  ha sido escrito  en {\rm\LaTeX}  y los gráficos  se han
+obtenido y tratado  con The GIMP. Estas y muchas  más herramientas del
+Software Libre  podrán formar parte  de tu arsenal cuando  termines el
+curso.
+
+\columnbreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\myoval{Lugar}
+El  curso  se  realizará  en  el aula  {\sc  Student},  edificio  {\em
+calabaza} de la  \fmat~ de la \ull, en la  Avda. Astrofísico Francisco
+Sánchez s/n.
+\vspace*{3mm}
+
+\myoval{Horarios}
+El módulo II se impartirá el fin de semana a jornada completa, de 8:00
+a 13:00  y de 15:00 a  20:00, en un  único grupo de hasta  25 alumnos.
+Para los demás módulos habrán dos  grupos de hasta 30 alumnos, uno por
+la mañana,  de 8:30 a 13:00;  y otro por  la tarde, de 15:30  a 20:00.
+Cada clase se impartirá dos veces al  día, una para el grupo de por la
+mañana y  otra para  el de  por la tarde.  En el  módulo I  las clases
+empiezan media hora antes.
+\vspace*{3mm}
+
+\myoval{Evaluación}
+Todos los módulos son opcionales. La  asistencia al 85\% de las clases
+es necesaria para superar el curso. Para obtener los créditos de Libre
+Elección los alumnos deberán realizar algunas prácticas y presentar un
+resumen de no  más de 10 páginas,  que deben entregar antes  del 15 de
+Octubre.
+\vspace*{3mm}
+
+\myoval{Matrícula}
+El  curso  está  abierto  a  alumnos de  primer  y  segundo  ciclo  de
+Matemáticas,  Ciencias y  Técnicas Estadísticas,  Ingeniería en  Obras
+Públicas  (especialidades Hidrología  y Mecánica),  Física, Ingeniería
+Electrónica e Ingeniería Técnica Industrial.
+
+Es posible matricularse de cada módulo separadamente, por cada 5 horas
+de curso se obtendrá medio crédito de Libre Elección.
+
+Todo  el  proceso  de  matrícula  se  organizará  a  través  del  {\sc
+Vicerrectorado de Extensión Universitaria}, C/ Viana nº 50. El período
+de matrícula se abre el día 1 de Julio.
+
+\vfill
+
+\columnbreak
+
+\MYOVAL{\begin{center}\Huge\sf CILA 2002\end{center}}
+
+\vspace*{10mm}
+\includegraphics[width=\columnwidth]{imagenes/logocila.eps}
+\vspace*{10mm}
+
+\MYOVAL{\begin{center}\Large\sf Del 18 al 27 de Septiembre de 2002\end{center}}
+
+\vfill
+
+\begin{tabular}{crl}
+{\large Organizan} & 
+\multirow{3}{20mm}{\includegraphics[width=20mm]{imagenes/fmat.eps}} &
+\multirow{3}{2mm}{\hspace*{-4mm}\rotatebox{90}{\scalebox{0.8}{\scriptsize\sc Facultad de Matemáticas}}} \\
+~ \\
+\includegraphics[width=55mm]{imagenes/gulic.eps} &
+\end{tabular}
+
+\end{multicols}
+
+\end{document}

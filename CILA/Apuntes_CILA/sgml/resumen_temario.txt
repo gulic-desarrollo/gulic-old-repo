@@ -1,0 +1,42 @@
+
+
+	Curso de Introducción a Linux para Alumnos. Apuntes I
+
+  ______________________________________________________________________
+
+
+
+  * Introducción a GNU/Linux.
+    Un poco de historia: Orígenes de Unix y sus versiones, El Software Libre y la licencia GPL, Qué es Linux y GNU/Linux.
+    Distribuciones de Linux: Debian GNU/Linux, Ututo GNU/Linux, RedHat Linux, Mandrake Linux, SuSE Linux
+    Recursos para GNU/Linux: Software, Documentación, Ayudas
+
+  * El entorno de intérprete de comandos
+     Qué es un intérprete de comandos. Qué hacemos y quién somos en el sistema. Comandos básicos para sobrevivir.
+
+  * Editores de texto
+     Joe, Emacs, VI y VIM, otros editores.
+
+  * El entorno X-Windows
+     Qué es X-Window, Arquitectura de las X-Window, Gestores de ventanas y entornos de escritorio
+
+  * Usando Internet con GNU/Linux
+     Navegadores web: Netscape Communicator 4. 
+     Correo electrónico: Mutt, Kmail. 
+     Editores de páginas web: Bluefish.
+
+  * Programando con GNU/Linux
+     C/C++ (GNU C Compiler). 
+     Pascal (FreePascal). 
+     Fortran 77 (GNU Fortran)
+     Java (JDK 1.3)
+     Bash (Unix shell)
+
+  * Matemáticas en GNU/Linux
+     Documentos y fórmulas matemáticas: LaTeX y LyX
+     Software de cálculo y representación: Octave, SciLab, R
+
+  * Edición de gráficos
+     GtkGraph, DIA, The GIMP
+
+
