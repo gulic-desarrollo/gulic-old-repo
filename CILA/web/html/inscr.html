@@ -205,25 +205,32 @@ function input_text ($name, $maxlength, $value)
 	    <? option($experiencia,"unknown","Primera vez que me pongo ante uno") ?>
 	    <? option($experiencia,"secretary","Solo uso el pc para escribir trabajos e informes") ?>
 	    <? option($experiencia,"navigator","Preferentemente para navegar por internet") ?>
+	    <? option($experiencia,"gamer","Sólo para jugar") ?>
 	    <? option($experiencia,"windoser","Me manejo en windows bastante bien") ?>
+	    <? option($experiencia,"","Utilizo GNU/Linux por obligación y lo paso mal") ?>
+	    <? option($experiencia,"","Utilizo GNU/Linux por obligación y lo paso bien") ?>
+	    <? option($experiencia,"frustrated","Intenté instalar Linux pero no lo conseguí") ?>
+	    <? option($experiencia,"","Instalé GNU/Linux una vez, pero casi no lo uso") ?>
+	    <? option($experiencia,"","Instalé GNU/Linux y lo uso de vez en cuando, por probar") ?>
+	    <? option($experiencia,"","Utilizo GNU/Linux regularmente para unas pocas cosas") ?>
+	    <? option($experiencia,"","Utilizo GNU/Linux regularmente para bastantes cosas") ?>
+	    <? option($experiencia,"","Sólo utilizo GNU/Linux") ?>
 	  </select>
 	  <?= $errores['experiencia'] ?>
 	</td>
       </tr>
       <tr>
-	<td width="33%" align="right">
-	  Describe lo que te interesaría profundizar en el curso o lo que te motiva a asistir
-	</td>
-	<td width="67%">
-	  <textarea name="intereses" cols="35" rows="5"><?= $intereses ?></textarea>
+	<td width="33%" align="right" colspan="2">
+	  Describe lo que te interesaría profundizar en el curso o lo que te motiva a asistir <br>
+	  <textarea name="intereses" cols="50" rows="10"><?= $intereses ?></textarea>
 	  <?= $errores['intereses'] ?>
 	</td>
       </tr>
       <tr> 
-	<td width="33%" align="right">
+	<td width="67%" align="right">
 	  Con respecto al cila del año pasado (2001)
 	</td>
-	<td width="67%">
+	<td width="33%">
 	  <select name=espera size=1>
 	    <? option($espera,"none" ,"¿te inscribiste?") ?>
 	    <? option($espera,"fue","-Asistí al curso y quiero repetir") ?>
@@ -234,12 +241,12 @@ function input_text ($name, $maxlength, $value)
 	</td>
       </tr>
       <tr> 
-	<td width="33%" align="right">
+	<td width="67%" align="right">
 	  <b>Para la gente que NO ha escogido el módulo 2:</b><br>
 	  ¿Estarías dispuesto a aceptar el cd de la distribución Linex de regalo?
 	  Te comento que al ser un solo cd, el contenido es básico y algo limitado.
 	</td>
-	<td width="67%">
+	<td width="33%">
 	  <select name=wanna_linex size=1>
 	    <? option($wanna_linex,"none"    ,"¿que piensas?") ?>
 	    <? option($wanna_linex,"nocreo"  ,"-No creo que lo vaya a instalar") ?>
@@ -249,17 +256,19 @@ function input_text ($name, $maxlength, $value)
 	  <?= $errores['wanna_linex'] ?>
 	</td>
       </tr>
+	  <tr>
+	  <th>Para la gente que SÍ ha escogido el módulo 2:</tr>
+	  </tr>
       <tr> 
-	<td width="33%" align="right">
-	  <b>Para la gente que SÍ ha escogido el módulo 2:</b><br>
+	<td width="67%" align="right">
 	  La nueva distribución debian woody 3.0 ocupa 8 CDROMs, o bien, 1 o 2 DVD, así que es una buena alternativa tener DVD en tu máquina para evitar estar con el trasiego de CDROMs. ¿Tu qué tienes?
 	</td>
-	<td width="67%">
+	<td width="33%">
 	  <select name=wanna_dvd size=1>
 	    <? option($wanna_dvd,"none"  ,"Responde aquí") ?>
-	    <? option($wanna_dvd,"floppy","-No tengo ni dvd ni cdrom, solo floppy") ?>
-	    <? option($wanna_dvd,"cdrom" ,"-Solo tengo lectora cdrom, no de dvd " ) ?>
-	    <? option($wanna_dvd,"dvd"   ,"-Sí tengo dvd" ) ?>
+	    <? option($wanna_dvd,"floppy","-No tengo ni dvd ni cdrom, solo disquetera") ?>
+	    <? option($wanna_dvd,"cdrom" ,"-Solo tengo lector de cdrom, no de dvd " ) ?>
+	    <? option($wanna_dvd,"dvd"   ,"-Sí tengo lector de dvd" ) ?>
 	  </select>
 	  <?= $errores['wanna_dvd'] ?>
 	</td>
