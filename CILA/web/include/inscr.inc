@@ -37,7 +37,7 @@ function valida_dni($dni)
 function valida_nif($dni,$letranif)
 {
 	// BORRAME-- BORRAME-- SOLO PARA PROBAR
-	// return 1;
+	return 1;
 	
 	// Para ver que haya una letra
 	if ( eregi("^([A-Za-z]{1})", $letranif) == false) return 0;
@@ -47,7 +47,8 @@ function valida_nif($dni,$letranif)
 		'D','X','B','N','J','Z','S','Q','V',
   		'H','L','C','K','E');
 	$letrabuena = $letras[intval($dni % 23)];
-	if ($strtoupper(letranif) != $letrabuena) return 0;
+	if ($strtoupper(letranif) != $letrabuena) 
+		return 0;
 		
 	// Si la letra es correcta, devolver 1
 	return 1;
