@@ -299,17 +299,42 @@ Matemáticas (duracion 4h)
 
 Herramientas de programación (duracion 8h)
 
-:VI/VIM/GVIM (de Editores)
-- subdivideme:60:miguev
-
 :GNU Emacs (de Editores)
 - subdivideme:60:alberto
 
+:VI/VIM/GVIM (de Editores)
+- historia:2:miguev
+- modos:2:miguev
+- pasar al modo edición:2:miguev
+- restaltado de sintaxis:2:miguev
+- moverse por el texto:5:miguev
+- borrar texto:5:miguev
+- cortar, copiar y pegar:5:miguev
+- deshacer y rehacer:1:miguev
+- bufferes:2:miguev
+- búsqueda de texto:2:miguev
+- búsqueda y substitución:2:miguev
+- expresiones regulares:25:miguev
+- ejecutar comandos del sistema:1:miguev
+- shell:1:miguev
+- make:1:miguev
+- mapeado de teclas:1:miguev
+- configuración .vimrc:1:miguev
+- sobra de freepascal:15:miguev
+- sobra de gnufortran:15:miguev
+
 :FreePascal
-- subdivideme:30:miguev
+- compilar:5:miguev
+- ejecutar:3:miguev
+- separar el código:5:miguev
+- depurar:2:miguev
 
 :GNU Fortran
-- subdivideme:30:miguev
+- compilar:3:miguev
+- ejecutar:1:miguev
+- separar el código:3:miguev
+- depurar:1:miguev
+- mezclar con C:7:miguev
 
 :GNU C/C++
 - subdivideme:60:jesus
