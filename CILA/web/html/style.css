@@ -7,3 +7,12 @@ A:visited { text-decoration:none; color:#609060; }
 A:active { text-decoration:none; color:#609060; }
 A:hover { text-decoration:bold; color:#006090; }
 
+P {
+    margin-left: 28pt;
+    margin-right: 28pt;
+    font-family: Helvetica, Arial;
+    font-size: small;
+    font-weight: normal;
+    font-style: normal;
+}
+
