@@ -31,6 +31,9 @@ EXAMPLES = 	$(wilcard ejemplos/*.*)
 
 all: $(PSS)
 
+html: 
+	latex2html preguntas
+
 clean:
 	rm -f *.aux *.log *.dvi *.ps
 	rm -f $(EPSS) $(CEPSS)
