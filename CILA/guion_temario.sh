@@ -140,22 +140,19 @@ Entorno GNU/Linux (duracion 15h)
 
 :Aplicaciones para Internet
 # jesus: repártelo como te guste
-- Netscape:60:jesus
-- Mozilla:40:jesus
+- Mozilla:60:jesus
 - Galeon:20:jesus
-- Konqueror:60:jesus
+- Konqueror:20:jesus
+- Netscape:10:jesus
+- links?:10:jesus
 - Mutt:45:jesus
-- Evolution:15:jesus
+- Evolution:20:jesus
+- Mozilla Mail?:10:jesus
 - FTP, gFTP:30:jesus
 - ssh:30:jesus
-- links?:1:jesus
-- pan (news?):1:jesus
-- wget?:1:jesus
-- gnupg?:1:jesus
-- Netscape Mail?:1:jesus
-- Mozilla Mail?:1:jesus
-- Applets de nuevos mensajes en kde y gnome:1:jesus
-- fetchmail?:1:jesus
+- gnupg:25:jesus
+- wget:10:jesus
+- Applets de nuevos mensajes en kde y gnome:10:jesus
 
 :Aplicaciones diversas
 # me falta ordenar un poco entre estas aplicaciones cuales son para
