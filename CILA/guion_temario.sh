@@ -291,9 +291,36 @@ Matemáticas (duracion 4h)
 :Gnuplot
 - subdivideme:45:alberto
 :R
-- subdivideme:75:miguev
+- quees:2:miguev
+- entorno:3:miguev
+- sesiones:2:miguev
+- ayuda:3:miguev
+- demos:5:miguev
+- lenguaje:5:miguev
+- scripts, source, load, sink:4:miguev
+- vectores:6:miguev
+- matrices:6:miguev
+- facores:6:miguev
+- listas:6:miguev
+- hojas de datos:3:miguev
+- funciones:3:miguev
+- distribuciones de probabilidad:3:miguev
+- estadística descriptiva:3:miguev
+- inferencia estadística:8:miguev
+- gráficos:7:miguev
 :Yacas
-- subdivideme:45:miguev
+- cálculo simbólico:2:miguev
+- entorno:3:miguev
+- lenguaje:5:miguev
+- documentación:3:miguev
+- variables:2:miguev
+- funciones:5:miguev
+- listas:5:miguev
+- álgebra lineal:3:miguev
+- control de flujo:5:miguev
+- gráficas:2:miguev
+- programación:5:miguev
+- ejemplo:5:miguev
 
 
 #
