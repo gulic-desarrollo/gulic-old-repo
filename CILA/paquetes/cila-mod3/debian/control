@@ -7,7 +7,7 @@ Standards-Version: 3.5.2
 
 Package: cila-mod3
 Architecture: all
-Depends: ${shlibs:Depends}, dia, qcad, gimp1.2|gimp1.3, lyx, openoffice.org, tetex-base, tetex-bin, tetex-extra, tetex-eurosym, dvips, xdvi, ps2pdf, gv|gnome-gv|kghostview
+Depends: ${shlibs:Depends}, dia, qcad, gimp1.2|gimp1.3, lyx, openoffice.org, tetex-base, tetex-bin, tetex-extra, tetex-eurosym, dvips, xdvi, gs-common, gv|gnome-gv|kghostview
 Suggests: openoffice.org-l10n-es, bluefish, quanta, ktexmaker2, texmacs
 Description: Metapaquete para el Módulo III del CILA
  Curso de Introducción a Linux para Alumnos
