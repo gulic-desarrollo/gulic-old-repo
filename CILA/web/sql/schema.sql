@@ -1,5 +1,5 @@
 
-CREATE TABLE datos_princ (
+CREATE TABLE preins_sep2002 (
 	id_individuo integer NOT NULL,
 	nombre       character (50)  NOT NULL,
 	apellido1    character (50)  NOT NULL,
