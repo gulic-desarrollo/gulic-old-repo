@@ -8,7 +8,7 @@ Standards-Version: 3.5.2
 Package: cila-mod1
 Architecture: all
 Depends: ${shlibs:Depends}, manpages-es, manpages-es-extra, mtools, navigator-base-477|mozilla-browser|konqueror, mutt|evolution, ftp, ssh
-Suggests: navigator-base-477, mozilla-browser, konqueror, mutt, evolution, gftp, gdm, gnome-intro-es, gnome-users-guide-es, gimp|gimp1.1|gimp1.2|gimp1.3, dia, qcad, lyx, openoffice.org-l10n-es, bluefish, quanta, vim-gtk, emacs21 
+Suggests: navigator-base-477, mozilla-browser, konqueror, mutt, evolution, gftp, gdm, gnome-intro-es, gnome-users-guide-es, gimp|gimp1.1|gimp1.2|gimp1.3, dia, qcad, lyx, openoffice.org-l10n-es, bluefish, quanta, vim-gtk, emacs21
 Description: Metapaquete para el Módulo I del CILA
  Curso de Introducción a Linux para Alumnos
  .
