@@ -64,8 +64,10 @@
 			<link>libro.php</link>
 			<name>Libro del CILA</name>
 		</subsection>
+	<!--
 	<section>
 		<link>fotos.php</link>
 		<name>Fotos</name>
 	</section>
+	-->
 </menu>
