@@ -1,0 +1,22 @@
+
+ Tareas pendientes:
+ ==================
+
+ Formulario de preinscripción para el CILA de Septiembre.
+ Los datos del alumno que debe recoger formulario son:
+ - Nombre y apellidos
+ - DNI con letra (pedir código de verificación a Carlos)
+ - Correo electrónico
+ - Facultad de procedencia
+ - Módulos
+ - Experiencia previa con Linux
+ - Intereses linuxeros
+
+ Packs de CDs para los alumnos del Módulo II
+ - Distribución: Debian GNU/Linux 3.0 + CD instalación en varios idiomas.
+ - Diseñar carátulas de los CD (con GIMP) sin el número de CD
+ - Diseñar caja de cartulina para el pack
+ - Escribir script Python que inserte en las carátulas (png) de 
+   cada CD: el números del CD y los datos del Alumno (nombre y apellidos)
+   y en la caja los datos del Alumno. También debe ser capaz de etiquetar
+   los CDs para la Biblioteca de la FMAT y para el GULIC.
