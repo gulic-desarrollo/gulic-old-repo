@@ -162,7 +162,6 @@ Entorno GNU/Linux (duracion 15h)
 # 'alumnos' e interesantes para sus prácticas al principio, tambien
 # segun simplicidad y precedencia (obtener un ps antes de verlo,
 # generar una imagen antes de verla). Tambien los tiempos.
-
 - vim/emacs:10:alberto
 - gedit/gnotepad/bluefish:10:alberto
 - abiword:10:alberto
@@ -229,9 +228,13 @@ Edición de gráficos y documentos (duracion 8h)
 
 :OpenOffice
 # quizás openoffice necesita subdividirse en text, calc, ...
-- subdivideme:150:felix/jesus
+#- subdivideme:150:felix/jesus
+- Procesador de Textos:45:felix/jesus
+- Hoja de Cálculo:45:felix/jesus
+- Presentation:30:felix/jesus
+- Drawing:30:felix/jesus
 :HTML
-- subdivideme:90:felix/jesus
+- HTML:90:felix/jesus
 :DIA
 - Elementos básicos:7:miguev
 - Elementos de librería:8:miguev
