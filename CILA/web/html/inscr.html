@@ -63,9 +63,9 @@ function input_text ($name, $maxlength, $value)
 	</td>
 	<td width="67%">
 	  <select name=sexo size=1>
-	    <? option($sexo,"none","¿Te apuntas?") ?>
-	    <? option($sexo,"pive","-Hombre") ?>
-	    <? option($sexo,"piva","-Mujer") ?>
+	    <? option($sexo,"none","--elige--") ?>
+	    <? option($sexo,"pive","Hombre") ?>
+	    <? option($sexo,"piva","Mujer") ?>
 	  </select>
 	  <?= $errores['sexo'] ?>
 	</td>
@@ -93,13 +93,13 @@ function input_text ($name, $maxlength, $value)
     </table>
     
     <p><b>Datos de la inscripción</b></p>
-    <p><b>¿A cuantos módulos pretendes apuntarte?</b></p>
+    <p><b>¿En qué módulos quieres preinscribirte?</b></p>
     <table border="0" width="100%">
       <tr>
-	<td width="33%" align="right">
+	<td width="67%" align="right">
 	  Módulo 1: Entorno GNU/Linux (60 plazas, 15 horas)
 	</td>
-	<td width="67%">
+	<td width="33%">
 	  <select name=mod1 size=1>
 	    <? option($mod1,"none" ,"¿Te apuntas?") ?>
 	    <? option($mod1,"FALSE","-No") ?>
