@@ -1,4 +1,6 @@
 
+CREATE SEQUENCE preins_sep2002_id_individuo_seq start 1 increment 1 maxvalue 9223372036854775807 minvalue 1 cache 1;
+
 CREATE TABLE preins_sep2002 (
 	id_individuo integer NOT NULL,
 	nombre       character (50)  NOT NULL,
@@ -20,4 +22,4 @@ CREATE TABLE preins_sep2002 (
 	mod5         boolean NOT NULL,
 	wanna_linex  boolean NOT NULL,
 	wanna_dvd    boolean NOT NULL
-)
+);

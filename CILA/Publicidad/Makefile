@@ -4,12 +4,15 @@ EPSS=$(JPGS:.jpg=.eps)
 
 all: $(EPSS) $(PROJECT).ps
 
-presen: presentacion.ps
-tripti: triptico.ps
+presentacion: presentacion.ps
+triptico: triptico.ps
 cartel: cartel.ps
 
 %.eps: %.jpg
 	jpeg2ps -o $@ $<
+
+%.pdf: %.ps
+	ps2pdf $< $@
 
 %.ps: %.dvi $(EPSS)
 	dvips -o $@ $<
