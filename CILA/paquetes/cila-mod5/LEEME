@@ -1,0 +1,10 @@
+
+	Curso de Introducción a Linux para Alumnos
+	==========================================
+
+	Metapaquete pare el Módulo V del curso
+
+	Este paquete sólo contiene las dependencias
+	necesarias para que al instalarlo se instalen
+	todos los programas necesarios para las prácticas
+	del Módulo V del CILA.
