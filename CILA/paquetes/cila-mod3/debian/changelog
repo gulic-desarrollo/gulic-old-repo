@@ -1,3 +1,8 @@
+cila-mod3 (1.2-2) unstable; urgency=low
+
+  * Separados los Recommends hacia cila-mod2-extra
+
+ -- Miguel Ángel Vilela García (miguev) <miguev@gulic.org>  Sat, 14 Sep 2002 13:22:33 +0100
 cila-mod3 (1.2-1) unstable; urgency=low
 
   * Cambiado openoffice.org a sugerencias

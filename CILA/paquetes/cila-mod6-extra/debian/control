@@ -1,0 +1,17 @@
+Source: cila-mod6
+Section: misc
+Priority: optional
+Maintainer: Miguel Ángel Vilela García (miguev) <miguev@gulic.org>
+Build-Depends: debhelper (>> 3.0.0)
+Standards-Version: 3.5.2
+
+Package: cila-mod6
+Architecture: all
+Depends: ${shlibs:Depends}, php4, php4-mysql|php4-pgsql, python, python-numeric
+Recommends: glade, anjuta, kdevelop
+Description: Metapaquete para el Módulo VI del CILA
+ Curso de Introducción a Linux para Alumnos
+ .
+ Este  metapaquete  sólo  contiene  las dependencias  a  los  paquetes
+ necesarios  para  las  prácticas  del Módulo  VI  del  CILA.  También
+ contiene sugerencias de paquetes complementarios interesantes.

@@ -1,3 +1,8 @@
+cila-mod5 (1.2-2) unstable; urgency=low
+
+  * Separadas los Recommends hacia cila-mod1-extra
+
+ -- Miguel Ángel Vilela García (miguev) <miguev@gulic.org>  Sat, 14 Sep 2002 13:36:22 +0100
 cila-mod5 (1.2-1) unstable; urgency=low
 
   * Ningún cambio.

@@ -1,3 +1,8 @@
+cila-mod4 (1.2-2) unstable; urgency=low
+
+  * Separadas los Recommends hacia cila-mod1-extra
+
+ -- Miguel Ángel Vilela García (miguev) <miguev@gulic.org>  Sat, 14 Sep 2002 13:28:19 +0100
 cila-mod4 (1.2-1) unstable; urgency=low
 
   * Añadido octave-forge como dependencia

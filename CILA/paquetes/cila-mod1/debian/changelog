@@ -1,4 +1,9 @@
-cila-mod1 (1.2-1) unstable; urgency=low
+cila-mod1 (1.2-3) unstable; urgency=low
+
+  * Separadas los Recommends hacia cila-mod1-extra
+
+ -- Miguel Ángel Vilela García (miguev) <miguev@gulic.org>  Sat, 14 Sep 2002 13:07:23 +0100
+cila-mod1 (1.2-2) unstable; urgency=low
 
   * Cambiado manpages-es-extra a sugerencia
   * Añadidos gftp y kbear como sugerencias

@@ -1,0 +1,15 @@
+Source: cila-mod4-extra
+Section: misc
+Priority: optional
+Maintainer: Miguel Ángel Vilela García (miguev) <miguev@gulic.org>
+Build-Depends: debhelper (>> 3.0.0)
+Standards-Version: 3.5.2
+
+Package: cila-mod4-extra
+Architecture: all
+Depends: ${shlibs:Depends}, r-base-html, r-base-latex, r-doc-html, r-doc-info, r-doc-pdf, r-mathlib, r-recommended, r-gnome, yacas-doc
+Description: Software recomendado para el Módulo IV del CILA
+ Curso de Introducción a Linux para Alumnos
+ .
+ Este  metapaquete  sólo  contiene  las dependencias  a  los  paquetes
+ recomendados para  las  prácticas  del Módulo  IV  del  CILA.
