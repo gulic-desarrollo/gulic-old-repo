@@ -17,8 +17,8 @@
 			<name>Próximas ediciones</name>
 		</subsection>
 	<section>
-		<link>fechas.php</link>
-		<name>Fechas</name>
+		<link>ediciones.php</link>
+		<name>Ediciones</name>
 	</section>
 		<subsection>
 			<link>noviembre2001.php</link>
