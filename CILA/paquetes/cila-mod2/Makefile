@@ -1,5 +1,5 @@
 DESTDIR=
-PACKAGE=cila-mod1
+PACKAGE=cila-mod2
 VERSION=1.1
 
 all: LEEME
