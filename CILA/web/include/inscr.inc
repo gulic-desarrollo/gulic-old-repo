@@ -47,7 +47,7 @@ function valida_nif($dni,$letranif)
 		'D','X','B','N','J','Z','S','Q','V',
   		'H','L','C','K','E');
 	$letrabuena = $letras[intval($dni % 23)];
-	if ($strtoupper(letranif) != $letrabuena) 
+	if (strtoupper($letranif) != $letrabuena) 
 		return 0;
 		
 	// Si la letra es correcta, devolver 1
@@ -164,10 +164,8 @@ function Registra()
 	if ($mod4 == "TRUE") $cuantas_horas += 4; else if ($mod4 != "FALSE") die("error 4");
 	if ($mod5 == "TRUE") $cuantas_horas += 8; else if ($mod5 != "FALSE") die("error 5");
 	
-	include("html/inscr_ok.html"); 
-	
 	/* Todo Ok. Mostramos info de pagos, plazos, etc */
-	die;
+	include("html/inscr_ok.html"); 
 } /* function */
 
 ?>
