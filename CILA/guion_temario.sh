@@ -79,10 +79,10 @@ END {
 
 ' << EOF | less 
 
+# Aqui empieza el listado. Por lo que llevamos hecho, el nivel de 
+# detalle aconsejable va siendo describir lo que haces cada 5-10 minutos.
 #
-# aqui empieza el listado
-#
-# como este script solo implementa tres niveles (modulo, tema e item),
+# Como este script solo implementa tres niveles (modulo, tema e item),
 # si para planificar necesitas que  un 'item' tenga 'subitems', cambia
 # por el momento el 'item' a 'tema' y pon los 'subitems' como 'items',
 # ya se  arreglará en alguna  futura version. Vaya, ¿otro  proyecto de
@@ -91,8 +91,10 @@ END {
 #
 # Ah, y recuerda que en este  script los ':' son delimitadores y estan
 # prohibidos en los textos.
+
+
 #
-# ¡Vamos allá!
+# módulo 1 ¡Vamos allá!
 #
 
 Entorno GNU/Linux (duracion 15h)
@@ -145,6 +147,10 @@ Entorno GNU/Linux (duracion 15h)
 - pan (news?):1:jesus
 - wget?:1:jesus
 - gnupg?:1:jesus
+- Netscape Mail?:1:jesus
+- Mozilla Mail?:1:jesus
+- Applets de nuevos mensajes en kde y gnome:1:jesus
+- fetchmail?:1:jesus
 
 :Aplicaciones diversas
 # me falta ordenar un poco entre estas aplicaciones cuales son para
@@ -187,12 +193,16 @@ Entorno GNU/Linux (duracion 15h)
 #- talk:10:alberto
 
 
+#
+# modulo 2
+#
+
+
 Instalación (duracion 20h)
-#
-# ¿algún valiente se dedica a estimar tiempos?
-# El describir lo que vamos a hacer nos puede dar pistas sobre
-# lo que nos puede hacer falta.
-#
+
+# ¿algún valiente? El describir lo que vamos a hacer nos puede dar
+# pistas sobre lo que nos puede hacer falta.
+
 :Sistema base (particiones y Lilo)
 - subdivideme:200:instalador
 :Hardware y kernel (kernel-package)
@@ -206,10 +216,14 @@ Instalación (duracion 20h)
 :Software adicional (a gusto del consumidor)
 - subdivideme:200:instalador
 
+#
+# modulo 3
+#
 
 Edición de gráficos y documentos (duracion 8h)
 
 :OpenOffice
+# quizás openoffice necesita subdividirse en text, calc, ...
 - subdivideme:150:felix/jesus
 :HTML
 - subdivideme:90:felix/jesus
@@ -237,6 +251,10 @@ Edición de gráficos y documentos (duracion 8h)
 - subdivideme:120:miguev
 
 
+#
+# módulo 4
+#
+
 Matemáticas (duracion 4h)
 
 :Octave
@@ -248,6 +266,10 @@ Matemáticas (duracion 4h)
 :Yacas
 - subdivideme:45:miguev
 
+
+#
+# módulo 5
+#
 
 Herramientas de programación (duracion 8h)
 
