@@ -37,7 +37,7 @@ function valida_dni($dni)
 function valida_nif($dni,$letranif)
 {
 	// BORRAME-- BORRAME-- SOLO PARA PROBAR
-	return 1;
+	// return 1;
 	
 	// Para ver que haya una letra
 	if ( eregi("^([A-Za-z]{1})", $letranif) == false) return 0;
@@ -89,7 +89,7 @@ function CompruebaVerbose()
 	if ( $mod3=="none"       ) $errores['mod3' ] = "¿Vas a elegir este modulo?";
 	if ( $mod4=="none"       ) $errores['mod4' ] = "¿Vas a elegir este modulo?";
 	if ( $mod5=="none"       ) $errores['mod5' ] = "¿Vas a elegir este modulo?";
-	if ( strlen($tel_movil) != 9) $errores['tel_movil'] = "Escribe tu teléfono móvil";
+	if ( strlen($tel_movil) != 9) $errores['tel_movil'] = "Escribe tu teléfono";
 	if ( !strlen($email    ) ) $errores['email'    ] = "Escribe tu correo electrónico (E-Mail)";
 
 	// Ya sabes: >=1 si hubo error, 0 si no lo hubo.
