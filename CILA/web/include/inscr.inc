@@ -94,8 +94,10 @@ function CompruebaVerbose()
 	if ( !strlen($email    ) ) $errores['email'    ] = "Escribe tu correo electrónico (E-Mail)";
 	if ( $experiencia == "none" ) $errores['experiencia'] = "Dinos qué experiencia tienes con GNU/Linux";
 	if ( $espera == "none" ) $errores['espera'] = "Dinos si fuiste al CILA 2001 o lo intentaste";
-	if ( $wanna_linex == "none" ) $errores['wanna_linex'] = "Dinos si te interesa el CD de LinEx";
-	if ( $wanna_dvd == "none" ) $errores['wanna_dvd'] = "Dinos en qué formato quieres la Woody";
+
+	if ( ($mod1 == "Sí") && ($wanna_linex == "none") ) $errores['wanna_linex'] = "Dinos si te interesa el CD de LinEx";
+
+	if ( ($mod1 == "No") && ($wanna_dvd == "none") ) $errores['wanna_dvd'] = "Dinos en qué formato quieres la Woody";
 
 	// Ya sabes: >=1 si hubo error, 0 si no lo hubo.
 	return count($errores);
