@@ -225,9 +225,9 @@ Edición de gráficos y documentos (duracion 8h)
 
 :OpenOffice
 # quizás openoffice necesita subdividirse en text, calc, ...
-#- subdivideme:150:felix/jesus
-- Procesador de Textos:45:felix/jesus
-- Hoja de Cálculo:45:felix/jesus
+#- subdivideme:120:felix/jesus
+- Procesador de Textos:30:felix/jesus
+- Hoja de Cálculo:30:felix/jesus
 - Presentation:30:felix/jesus
 - Drawing:30:felix/jesus
 :HTML
@@ -265,23 +265,24 @@ Edición de gráficos y documentos (duracion 8h)
 - Insertar imágenes:8:miguev
 - Documentacion:5:miguev
 :LaTeX
-- TeX y LaTeX:3:miguev
+- TeX y LaTeX:5:miguev
 - Ficheros de entrada:5:miguev
 - Formato del documento:5:miguev
-- Paquetes útiles:10:miguev
+- Paquetes útiles:12:miguev
 - Composición del texto:10:miguev
-- Estructura lógica:15:miguev
-#- Referencias cruzadas:3:miguev
-- Entornos:12:miguev
+- Estructura lógica:10:miguev
+- Referencias cruzadas:3:miguev
+- Entornos:15:miguev
 - Elementos flotantes:5:miguev
-#- Comandos propios:2:miguev
-#- Entornos propios:3:miguev
+- Comandos propios:2:miguev
+- Entornos propios:3:miguev
 - Fórmulas matemáticas:20:miguev
-#- Tipos matemáticos:5:miguev
+- Tipos matemáticos:2:miguev
 - Tipos y tamaños:3:miguev
-#- Referencias bibliográficas:5:miguev
-#- Índice terminológico:3:miguev
+- Referencias bibliográficas:5:miguev
+- Índice terminológico:3:miguev
 - Inclusión de gráficos:2:miguev
+- Herramientas en Linux:10:miguev
 
 
 #
@@ -348,7 +349,7 @@ Herramientas de programación (duracion 8h)
 - bufferes:2:miguev
 - búsqueda de texto:2:miguev
 - búsqueda y substitución:3:miguev
-- expresiones regulares:30:miguev
+- expresiones regulares:20:miguev
 - ejecutar comandos del sistema:1:miguev
 - shell:1:miguev
 - make:1:miguev
