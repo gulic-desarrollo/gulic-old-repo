@@ -77,7 +77,7 @@ END {
 	presenta_resumen(); 
 }
 
-' << EOF | less 
+' << EOF | less -S
 
 # Aqui empieza el listado. Por lo que llevamos hecho, el nivel de 
 # detalle aconsejable va siendo describir lo que haces cada 5-10 minutos.
@@ -107,10 +107,19 @@ Entorno GNU/Linux (duracion 15h)
 - Las mtools:15:felix/miguev
 
 :X-Window (de X-Window/Gnome/KDE)
-- subdivideme:30:alberto
+- La arquitectura de las X:10:alberto
+- Gestores de ventanas:10:alberto
+- Entornos de escritorio:10:alberto
 
 :Gnome (de X-Window/Gnome/KDE)
-- subdivideme:60:alberto
+- Los menus del sistema y los menus de usuario:10:alberto
+- Propiedades del panel de gnome:4:alberto
+- Meter iconos/menus en el panel de gnome:7:alberto
+- Applets (buzones, montador, screenshot, clima, notes):10:alberto
+- Centro de control de gnome:3:alberto
+- GMC?:1:alberto
+# gnome es algo pequeño, no se como carlos se estira tanto con kde
+- para 60 faltan:27:alberto
 
 :KDE (de X-Window/Gnome/KDE)
 - El panel de kde:7:carlos
@@ -163,7 +172,7 @@ Entorno GNU/Linux (duracion 15h)
 - gedit/gnotepad/bluefish:10:alberto
 - abiword:10:alberto
 - gnumeric:10:alberto
-- latex(demo con diploma):10:alberto
+- latex(demo con diploma)/lyx:10:alberto
 - dia/sketch:10:alberto
 - qcad:10:alberto
 - gs/gv/ggv/kghostview:20:alberto
@@ -186,6 +195,7 @@ Entorno GNU/Linux (duracion 15h)
 - geda/oregano:10:alberto
 - a2ps/enscript:10:alberto
 - scite/anjuta/glimmer?/qt-designer:10:alberto
+- cvs? (estaría chulo ver como resuelve conflictos de 20 tios):1:alberto
 # hay ya tantos que me parece que estos...
 #- gkrellm:10:alberto
 #- diploma:10:alberto
@@ -291,10 +301,28 @@ Edición de gráficos y documentos (duracion 8h)
 
 Matemáticas (duracion 4h)
 
-:Octave
-- subdivideme:75:alberto
-:Gnuplot
-- subdivideme:45:alberto
+:Octave (de 75' me quedo en 88', hay que aligerar)
+- Entorno (operac basicas, con/sin echo, ayuda):5:alberto
+- Tipos de  datos (numéricos, cadenas, structs):4:alberto
+- Variables y expresiones (variables en memoria y operaciones):4:alberto
+- Control de flujo (if, switch, while, do-until, for, ...):10:alberto
+- Funciones (definición, vida de una funcion, llamada en c++):10:alberto
+- Representación gráfica 2D (plot, histograma, polares, titulos):10:alberto
+- Representación grafica 3D (mesh y contour):8:alberto
+- Matrices (operaciones, funciones sobre ellas):8:alberto
+- Ecuaciones diferenciales (ver ejemplo y poco mas):4:alberto
+- Polinomios (se puede derivar, integrar y hacer algo):3:alberto
+- Teoría de control (un ejemplo y listo, es un rollo):5:alberto
+- Procesamiento de señales (ejemplo, creo que no va a haber filtrito):5:alberto
+- Tratamiento de imágenes (la parte mas vistosa, para que jueguen):12:alberto
+
+:Gnuplot (de 45' me quedo en 37')
+- plot de expresiones analíticas 2d y 3d:8:alberto
+- plot de expresiones en polares 2d y 3d:5:alberto
+- plot de archivos de datos (añadir barras error):10:alberto
+- ajuste por mínimos cuadrados (ver ejemplo solamente):4:alberto
+- como salvar una gráfica (no esta en los apuntes, a mano):10:alberto
+
 :R
 - quees:2:miguev
 - entorno:3:miguev
