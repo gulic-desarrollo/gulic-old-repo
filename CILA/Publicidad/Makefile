@@ -2,7 +2,7 @@
 JPGS=$(wildcard imagenes/*.jpg)
 EPSS=$(JPGS:.jpg=.eps)
 
-all: $(EPSS) $(PROJECT).ps
+all: $(EPSS) 
 
 presentacion: presentacion.ps
 triptico: triptico.ps
