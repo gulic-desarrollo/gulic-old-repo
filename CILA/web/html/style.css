@@ -1,7 +1,7 @@
 table { vertical-align: top; }
 body {font-family: helvetica; background-color: #FFFFFF; margin: 0;}
 td.foot { height: 10; vertical-align: bottom; margin: 0; font-size: 10; color: black; background-color: black; background-repeat: repeat; background_attachment: fixed; background-position: top left;}
-td { vertical-align: top; margin: 0; font-size: 10; color: black; background-color: #FFFFFF; background-repeat: repeat; background_attachment: fixed; background-position: top left;}
+td { vertical-align: top; margin: 0; font-size: 12; color: black; background-color: #FFFFFF; background-repeat: repeat; background_attachment: fixed; background-position: top left;}
 A:link { text-decoration:none; color:#609060; }
 A:visited { text-decoration:none; color:#609060; }
 A:active { text-decoration:none; color:#609060; }
