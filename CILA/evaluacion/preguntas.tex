@@ -28,33 +28,55 @@ La evaluación de  los módulos requerirá que efectues lo  que se indica
 en  los apartados  de los  que  te hayas  matriculado. Los  resultados
 deberán entregarse  antes del día  15 de  Octubre. Hasta esa  fecha se
 podra  disponer  de  las  cuentas  en las  aulas  de  la  Facultad  de
-Matemáticas (planta 5).
+Matemáticas (planta 5)  para que hagas las prácticas allí  mismo si no
+tienes otro sitio. El horario de apertura depende de la disponibilidad
+de becarios y estará pegado en la puerta.
 
-Ten cuidado  de no  restrasarte, pues  la cuenta  de usuarios  que has
+Ten  cuidado de  no restrasarte,  pues la  cuenta de  usuario que  has
 recibido para el curso caduca justo el  día 15 de Octubre, y puede que
 necesites que tu cuenta funcione para enviarnos el material.
 
-La entrega se realizará mediante un  correo electrónico que
-debes  enviarnos a  {\tt cila@fmat.ull.es}  con las  respuestas a  las
-preguntas  que  encontrarás  a  continuación,  en  ficheros  de  texto
-adjuntos. También tendrás que enviarnos algunos ficheros adjuntos, que
-diremos luego.
+La  entrega se  realizará  mediante un  correo  electrónico que  debes
+enviarnos  a {\tt  cila@fmat.ull.es}.  Organiza las  respuestas de  la
+siguiente forma:
 
-El  correo   puedes  enviarlo  utilizando  el   cliente  Evolution,  u
-opcionalmente  (subirá  nota)  {\tt   mutt}  desde  el  servidor  {\tt
-galois.fmat.ull.es} (al cual accederás vía SSH).
+\begin{enumerate}
+
+\item Crea un directorio nuevo con tu nombre y apellidos (sin utilizar
+espacios, tildes ni  eñes). Por ejemplo, si te  llamas ``Iván García''
+la carpeta debe llamarse {\tt IvanGarcia}
+
+\item Entra en  este directorio y crea un directorio  para cada módulo
+en  que  te hayas  matriculado:  {\tt  Modulo1}, {\tt  Modulo2},  {\tt
+Modulo3}, etc.
+
+\item  En   cada  uno   de  estos   directorios  copia   los  ficheros
+correspondientes a las preguntas de cada módulo.
+
+\item Comprime  el directorio base  (el que se  llama con tu  nombre y
+apellidos)  mediante el  comando  {\tt  tar}. El  uso  básico de  este
+comando es:
+
+\begin{verbatim}
+$ tar cfz IvanGarcia.tar.gz IvanGarcia/
+\end{verbatim}
+
+\item Una vez hayas hecho  esto, nos envías el mensaje correspondiente
+a la dirección {\tt cila@fmat.ull.es} adjuntando ese fichero.
+
+\end{enumerate}
+
+Si  no has  hecho  el  módulo I,  puedes  enviarlo  usando el  webmail
+de  la  facultad  situado en  {\tt  http://www.fmat.ull.es/correo/}  o
+bien  cualquier cliente  de correo  de código  abierto (mozilla  mail,
+evolution, mutt, pine, mahogany, etc). Si  has hecho el módulo I, pues
+revisa la sección correspondiente a ese módulo pues tienes que hacerlo
+de la  forma que vimos en  clase, utilizando mutt o  evolution. Subirá
+nota utilizar mutt.
 
 Es imprescindible  entregar todos  los ficheros  en formatos  libres y
-abiertos, utilizar mutt o evolution  para enviar el correo electrónico
-y escribir los ficheros de texto en  Linux. En caso de que no lo hagas
-así nos daremos cuenta y tus respuestas no serán válidas.
-
-Si no  te has  matriculado en el  módulo I damos  por hecho  que sabes
-hacer lo que hemos enseñado en ese módulo, al menos lo básico, de modo
-que  para  enviarnos tus  respuestas  debes  realizar el  ejecicio  de
-intérprete de comandos.
-
-
+abiertos y escribir los ficheros de texto  en Linux. En caso de que no
+lo hagas así nos daremos cuenta y tus respuestas no serán válidas.
 
 \section*{Módulo I -- Entorno GNU/Linux}
 
@@ -62,14 +84,14 @@ intérprete de comandos.
 
 \begin{itemize}
 
-\item ¿Quién, cuándo, dónde, cómo y por qué creo Linux?
+\item ¿Quién, cuándo, dónde, cómo y por qué creó Linux?
 
-\item ¿Quién, cuándo, dónde, cómo y por qué creo el movimiento GNU?
+\item ¿Quién, cuándo, dónde, cómo y por qué creó el movimiento GNU?
 
 \item  ¿Qué diferencia  hay entre  los términos  ``Linux'', ``GNU''  y
 ``GNU/Linux''?
 
-\item Lista al menos 10 distribuciones de GNU/Linux, explicando en qué
+\item Lista al menos 6  distribuciones de GNU/Linux, explicando en qué
 consiste  cada una.  Subirá  nota buscar  distribuciones inusuales  en
 lugar de listar las distribuciones más conocidas .
 
@@ -77,55 +99,40 @@ lugar de listar las distribuciones más conocidas .
 
 \subsection*{Intérprete de comandos}
 
-Cuando hayas terminado con los demás ejercicios (de todos los módulos)
-y  tengas  preparados  todos  los  ficheros  para  enviarlos,  haz  lo
-siguiente:
-
-\begin{enumerate}
-
-\item Crea un nuevo directorio con  tu nombre y apellidos sin utilizar
-tildes y substituyendo los espacios por subrayados. Por ejemplo, si te
-llamas ``Iván García'' la carpeta debe llamarse {\tt Ivan\_Garcia}
-
-\item Entra en  este directorio y crea un directorio  para cada módulo
-en que  te hayas matriculado:  {\tt Modulo\_1}, {\tt  Modulo\_2}, {\tt
-Modulo\_3}, etc.
-
-\item  En   cada  uno   de  estos   directorios  copia   los  ficheros
-correspondientes a las preguntas de cada módulo.
-
-\item  Comprime  el primer  directorio  (con  tu nombre  y  apellidos)
-mediante el comando {\tt tar}. El uso básico de este comando es:
-
-\begin{verbatim}
-$ tar cfz Nombre_Apellidos.tar.gz Nombre_Apellidos/
-\end{verbatim}
+Damos  por sentado  que  si  eres capaz  de  crear  los directorios  y
+empaquetarlos  como  te  decimos  al principio,  entonces  posees  los
+conocimientos mínimos para pasar este tema.
 
 Subirá nota si en lugar de comprimir  el paquete tar con {\tt gzip} lo
-comprimes con  {\tt bzip2}, consultando  cómo hacerlo en la  página de
-manual de {\tt tar}. Esto lo miras con el comando {\tt man}
-
-\end{enumerate}
+comprimes  con  {\tt  bzip2},  tal  como  dijimos  en  clase,  o  bien
+consultando cómo hacerlo en la página de manual de {\tt tar}.
 
 \subsection*{Internet}
 
-Navegar   con    un   navegador    (galeon,   mozilla,    netscape   o
-konqueror)  y   crear  una  colección   de  al  menos   15  marcadores
+Navega    con   un    navegador   (galeon,    mozilla,   netscape    o
+konqueror)  y   crea  una   colección  de   al  menos   10  marcadores
 (bookmarks)  organizados  en  carpetas.  Para  darnos  tus  marcadores
 envíanos    el    fichero   {\tt    .netscape/bookmarks.html},    {\tt
 .mozilla/*/*.slt/bookmarks.html}, {\tt  .galeon/bookmarks.xbel} o {\tt
 .kde/share/apps/konqueror/bookmarks.xml}  según utilices  el navegador
-netscape, mozilla, galeon o konqueror respectivamente.
+netscape, mozilla, galeon o  konqueror respectivamente. Valoraremos la
+organización de los marcadores y las especificidades (p.ej: marcadores
+inteligentes de galeon).
 
-
+Aparte  de eso,  recordarte que  el  correo debes  enviarlo usando  un
+cliente  libre de  correo de  los  vistos en  clase (o  el que  tengas
+configurado).  No deberías  tener  dificultad  en enviarlo  utilizando
+Evolution. Se valorará el cliente utilizado para enviar el correo. Por
+ejemplo,  si quieres  subir  nota,  podrás usar  {\tt  mutt} desde  el
+servidor {\tt  galois.fmat.ull.es} (al  cual accederás vía  SSH). Todo
+eso lo comprobaremos en el correo que nos envíes.
 
 \section*{Módulo II}
 
-Resume la instalación de Debian GNU/Linux que hiciste en tu ordenador:
-qué  software  instalaste  y  cómo configuraste  el  kernel  para  que
-soportara tu hardware.
-
-
+Resume (sin entrar en detalles) la instalación de Debian GNU/Linux que
+hiciste  en  tu  ordenador:  cómo  preparaste  el  ordenador  para  la
+instalación, qué software instalaste, cómo configuraste el kernel para
+que soportara tu hardware, problemas que tuviste, etc.
 
 \section*{Módulo III}
 
@@ -146,7 +153,8 @@ estar en formato DXF.
 
 \item Crear una  imagen o retocar una fotografía  con GIMP, utilizando
 un más de  una capa y algún  filtro. El fichero debe  estar en formato
-XCF (nativo de GIMP), así que no debe ser muy grande.
+XCF (nativo de GIMP), así que si es mayor de 50 KB comprímelo con gzip
+o bzip2. Subirá nota el uso de caminos y canales.
 
 \end{itemize}
 
@@ -156,17 +164,18 @@ utilizando técnicas gráficas que no hayas aprendido en el curso.
 \subsection*{HTML}
 
 Escribe un  fichero HTML que contenga  un resumen de los  ficheros que
-nos entregas. En el fichero HTML el nombre de cada fichero debe ser un
-enlace  a  donde  se  encuentre  este fichero.  Por  ejemplo,  si  los
-directorios de los  módulos se llaman {\tt mod1}, {\tt  mod2}, etc. en
-el fichero el enlace debe ser algo como
+nos  entregas. En  el  fichero HTML  el nombre  de  cada fichero  debe
+ser  un  enlace  a  donde  se encuentre  este  fichero.  Por  ejemplo,
+si  los  directorios  de  los  módulos  se  llaman  {\tt  mod1},  {\tt
+mod2},  etc. en  el  fichero el  enlace debe  ser  algo como
 \verb|<a href="../mod4/fichero.txt">fichero.txt</a>|
 
 \subsection*{OpenOffice}
 
-Escribe un  fichero de cada  tipo de los  que aprendas en  este módulo
-(uno con  Writer, otro con Impress,  etc.) de una página  cada uno. Se
-valorará que tengan un contenido interesante y/o un diseño cuidado.
+Escribe,  con el  Writer de  OpenOffice, un  resumen de  al menos  una
+página con  tus impresiones personales  sobre los distintos  módulos y
+temas. Dinos qué te  gustó y qué no, que te parece que  sobró y qué te
+parece que faltó.
 
 \subsection*{\LyX}
 
@@ -184,7 +193,17 @@ algo muy descarado y fácil de detectar).
 
 \subsection*{GNU Octave}
 
-\subsection*{GNUplot}
+Haz un script  que dibuje, con un plot, un  círculo de radio unitario.
+Para  ello  presenta  $y(x)  =  \pm\sqrt{1-x^2}$  (la  positiva  y  la
+negativa), en  el intervalo $\left[-1,+1\right]$ y  superpuestas en la
+misma gráfica.
+
+Si  quieres  subir  nota,  presenta   en  otro  script  las  funciones
+$z(x,y)=x^2-y^2$ y  $z(x,y)=10-\|x-y\|-\|x+y\|$, en este caso,  en dos
+gráficas una junto a la otra en la misma ventana ({\tt subplot}).
+
+Recuerda utilizar  la versión 2.1  de octave para seguir  los ejemplos
+del libro ejecutando {\tt octave2.1}.
 
 \subsection*{R}
 
@@ -207,18 +226,12 @@ script.
 
 \subsection*{Yacas}
 
-Escribe un script en Yacas ({\tt script.ys}) que genera una serie de 4
+Escribe un script en Yacas ({\tt script.ys}) que genera una serie de 6
 puntos  aleatorios  en  $\mathbb{R}^2$,  calcule  el  interpolante  de
 Lagrange para esa nube de puntos  y la represente mediante GNUplot. No
 adjuntes el gráfico, ya que el script debe generarlo.
 
-Si quieres subir nota, escribe un script que represente la función 
-
-$$f(x) = \int_{0}^{x} sin(x)$$
-
 \section*{Módulo V}
-
-%\subsection*{Editores}
 
 \subsection*{Compiladores y Makefile}
 
