@@ -1,0 +1,275 @@
+<?php
+// funciones para aligerar la escritura. quitarlas de aqui?
+function option($var, $value, $descr) 
+{ 
+if ($var==$value) $selected="selected"; else $selected="";
+echo "<option value=\"$value\" $selected>$descr</option>\n";
+}
+
+function input_text ($name, $maxlength, $value)
+{
+  $size = $maxlength+2;
+  echo "<input type=\"text\" name=\"$name\" size=\"$size\" maxlength=\"$maxlength\" value=\"$value\">";
+}
+
+?>
+
+<div align="center"> 
+  <form name="form1" method="post" action="inscr.php">
+    <p><b>Datos Personales</b></p>
+    <table width="100%" border="0">
+      <tr>
+	<td width="33%" align="right">
+	  Nombre
+	</td>
+	<td width="67%">
+	  <? input_text ("nombre", 30, $nombre) ?>
+	  <?= $errores['nombre'] ?>
+	</td>
+      </tr>
+      <tr> 
+	<td width="33%" align="right">
+	  Primer Apellido
+	</td>
+	<td width="67%"> 
+	  <? input_text ("apellido1",30,$apellido1) ?>
+	  <?= $errores['apellido1'] ?>
+	</td>
+      </tr>
+      <tr> 
+	<td width="33%" align="right">
+	  Segundo Apellido
+	</td>
+	<td width="67%"> 
+	  <? input_text ("apellido2",30,$apellido2) ?>
+	  <?= $errores['apellido2'] ?>
+	</td>
+      </tr>
+      <tr>
+	<td width="33%" height="29" align="right">
+	  NIF (con letra)
+	</td>
+	<td width="67%" height="29"> 
+	  <? input_text ("dni",8,$dni ) ?>
+	  - 
+	  <? input_text ("letranif",1,$letranif) ?>
+	  <?= $errores['dni'] ?>
+	  <?= $errores['letranif'] ?>
+	</td>
+      </tr>
+      <tr>
+	<td width="33%" align="right">
+	  Sexo
+	</td>
+	<td width="67%">
+	  <select name=sexo size=1>
+	    <? option($sexo,"none","¿Te apuntas?") ?>
+	    <? option($sexo,"pive","-Hombre") ?>
+	    <? option($sexo,"piva","-Mujer") ?>
+	  </select>
+	  <?= $errores['sexo'] ?>
+	</td>
+      </tr>
+      <tr>
+	<td width="33%" align="right">
+	  Facultad de procedencia
+	</td>
+	<td width="67%">
+	  <select name="procedencia">
+	    <? option ($procedencia,"none", "-Selecciona una procedencia-") ?>
+	    <? option ($procedencia,"1mat", "Primer ciclo de Matemáticas") ?>
+	    <? option ($procedencia,"1fis", "Primer ciclo de Física") ?>
+	    <? option ($procedencia,"itoph", "Ing. Téc. de Obras Públicas especialidad Hidrología") ?>
+	    <? option ($procedencia,"itie", "Ing. Téc. Industrial (especialidad Electrónica Industrial)") ?>
+	    <? option ($procedencia,"itim", "Ing. Téc. Industrial (especialidad Mecánica)") ?>
+	    <? option ($procedencia,"2mat", "Segundo ciclo de Matemáticas") ?>
+	    <? option ($procedencia,"2cte", "Segundo ciclo de Ciencias y Téc.s Estadísticas") ?>
+	    <? option ($procedencia,"2fis", "Segundo ciclo de Física") ?>
+	    <? option ($procedencia,"2ie" , "Segundo ciclo de Ing. Electrónica") ?>
+	  </select>	  
+	  <?= $errores['procedencia'] ?>
+	</td>
+      </tr>
+    </table>
+    
+    <p><b>Datos de la inscripción</b></p>
+    <p><b>¿A cuantos módulos pretendes apuntarte?</b></p>
+    <table border="0" width="100%">
+      <tr>
+	<td width="33%" align="right">
+	  Módulo 1: Entorno GNU/Linux (60 plazas, 15 horas)
+	</td>
+	<td width="67%">
+	  <select name=mod1 size=1>
+	    <? option($mod1,"none" ,"¿Te apuntas?") ?>
+	    <? option($mod1,"FALSE","-No") ?>
+	    <? option($mod1,"TRUE" ,"-Sí") ?>
+	  </select>
+	  <?= $errores['mod1'] ?>
+	</td>
+      </tr>
+      <tr>
+	<td width="33%" align="right">
+	  Módulo 2: Instalación de GNU/Linux (25 plazas, 20 horas)
+	</td>
+	<td width="67%">
+	  <select name=mod2 size=1>
+	    <? option($mod2,"none" ,"¿Te apuntas?") ?>
+	    <? option($mod2,"FALSE","No") ?>
+	    <? option($mod2,"TRUE" ,"Sí") ?>
+	  </select>
+	  <?= $errores['mod2'] ?>
+	</td>
+      </tr>
+      <tr>
+	<td width="33%" align="right">
+	  Módulo 3: Edición de gráficos y documentos (60 plazas, 8 horas)
+	</td>
+	<td width="67%">
+	  <select name=mod3 size=1>
+	    <? option($mod3,"none" ,"¿Te apuntas?") ?>
+	    <? option($mod3,"FALSE","No") ?>
+	    <? option($mod3,"TRUE" ,"Sí") ?>
+	  </select>
+	  <?= $errores['mod3'] ?>
+	</td>
+      </tr>
+      <tr>
+	<td width="33%" align="right">
+	  Módulo 4: Herramientas para Matemáticas (60 plazas, 4 horas)
+	</td>
+	<td width="67%">
+	  <select name=mod4 size=1>
+	    <? option($mod4,"none" ,"¿Te apuntas?") ?>
+	    <? option($mod4,"FALSE","No") ?>
+	    <? option($mod4,"TRUE" ,"Sí") ?>
+	  </select>
+	  <?= $errores['mod4'] ?>
+	</td>
+      </tr>
+      <tr>
+	<td width="33%" align="right">
+	  Módulo 5: Herramientas para programación (60 plazas, 8 horas)
+	</td>
+	<td width="67%">
+	  <select name=mod5 size=1>
+	    <? option($mod5,"none" ,"¿Te apuntas?") ?>
+	    <? option($mod5,"FALSE","No") ?>
+	    <? option($mod5,"TRUE" ,"Sí") ?>
+	  </select>
+	  <?= $errores['mod5'] ?>
+	</td>
+      </tr>
+    </table>
+    
+    <p><b>Datos Contacto</b></p>
+    <p><b>(Utilizados sólo para enviarte información  
+    en caso necesario o para notificarte cambios de ultima hora)</b></p>
+    <table width="100%" border="0">
+      <tr> 
+	<td width="33%" align="right">
+	  Correo-electrónico
+	</td>
+	<td width="67%">
+	  <? input_text ("email",40,$email) ?>
+	  <?= $errores['email'] ?>
+	</td>
+      </tr>
+      <tr>
+	<td width="33%" align="right">
+	  Teléfono Móvil
+	</td>
+	<td width="67%">
+	  <? input_text ("tel_movil",9,$tel_movil) ?>
+	  <?= $errores['tel_movil'] ?>
+	</td>
+      </tr>
+    </table>
+    
+    <p><b>Pequeño sondeo</b></p>
+    <p>Estamos interesados en saber algo sobre tus conocimientos e
+    impresiones previas sobre GNU/Linux y los temas del curso para
+    adaptarnos un poco a las preferencias de los alumnos. Para ello,
+    te formulamos estas preguntas:</p>
+
+    <table width="100%" border="0">
+      <tr>
+	<td width="33%" align="right">
+	  Experiencia previa con GNU/Linux
+	</td>
+	<td width="67%">
+	  <select name=experiencia size=1>
+	    <? option($experiencia,"none" ,"Escoge una") ?>
+	    <? option($experiencia,"tecnofobus","No quiero saber nada de ordenadores") ?>
+	    <? option($experiencia,"compuphobic","Me dan miedo los ordenadores") ?>
+	    <? option($experiencia,"unknown","Primera vez que me pongo ante uno") ?>
+	    <? option($experiencia,"secretary","Solo uso el pc para escribir trabajos e informes") ?>
+	    <? option($experiencia,"navigator","Preferentemente para navegar por internet") ?>
+	    <? option($experiencia,"windoser","Me manejo en windows bastante bien") ?>
+	  </select>
+	  <?= $errores['experiencia'] ?>
+	</td>
+      </tr>
+      <tr>
+	<td width="33%" align="right">
+	  Describe lo que te interesaría profundizar en el curso o lo que te motiva a asistir
+	</td>
+	<td width="67%">
+	  <textarea name="intereses" cols="35" rows="5"><?= $intereses ?></textarea>
+	  <?= $errores['intereses'] ?>
+	</td>
+      </tr>
+      <tr> 
+	<td width="33%" align="right">
+	  Con respecto al cila del año pasado (2001)
+	</td>
+	<td width="67%">
+	  <select name=espera size=1>
+	    <? option($espera,"none" ,"¿te inscribiste?") ?>
+	    <? option($espera,"fue","-Asistí al curso y quiero repetir") ?>
+	    <? option($espera,"espera", "-Me quedé en la lista de espera") ?>
+	    <? option($espera,"nada", "-No, esta es mi primera vez") ?>
+	  </select>
+	  <?= $errores['espera'] ?>
+	</td>
+      </tr>
+      <tr> 
+	<td width="33%" align="right">
+	  <b>Para la gente que no ha escogido el módulo 2:</b>
+	  ¿Estarías dispuesto a aceptar el cd de la distribución Linex de regalo?
+	  Te comento que al ser un solo cd, el contenido es básico y algo limitado.
+	</td>
+	<td width="67%">
+	  <select name=wanna_linex size=1>
+	    <? option($wanna_linex,"none"    ,"¿que piensas?") ?>
+	    <? option($wanna_linex,"nocreo"  ,"-No creo que lo vaya a instalar") ?>
+	    <? option($wanna_linex,"nidecona","-Ya tengo cds de GNU/Linux, gracias de todas formas" ) ?>
+	    <? option($wanna_linex,"si"      ,"-No tengo ningun cd de GNU/Linux y me interesa") ?>
+	  </select>
+	  <?= $errores['wanna_linex'] ?>
+	</td>
+      </tr>
+      <tr> 
+	<td width="33%" align="right">
+	  <b>Para la gente que sí ha escogido el módulo 2:</b>
+	  La nueva distribución debian woody 3.0 ocupa 8 CDROMs, o bien, 1 o 2 DVD, así que es una buena alternativa tener DVD en tu máquina para evitar estar con el trasiego de CDROMs. ¿Tu qué tienes?
+	</td>
+	<td width="67%">
+	  <select name=wanna_dvd size=1>
+	    <? option($wanna_dvd,"none"  ,"Responde aquí") ?>
+	    <? option($wanna_dvd,"floppy","-No tengo ni dvd ni cdrom, solo floppy") ?>
+	    <? option($wanna_dvd,"cdrom" ,"-Solo tengo lectora cdrom, no de dvd " ) ?>
+	    <? option($wanna_dvd,"dvd"   ,"-Sí tengo dvd" ) ?>
+	  </select>
+	  <?= $errores['wanna_dvd'] ?>
+	</td>
+      </tr>
+    </table>
+    
+    <p align="center">&nbsp;</p>
+    <p align="center">
+    <input type="submit" name="Submit" value="Continuar &gt;&gt;" >
+    </p>
+  </form>
+  
+</div>
