@@ -113,7 +113,12 @@ Entorno GNU/Linux (duracion 15h)
 - subdivideme:60:alberto
 
 :KDE (de X-Window/Gnome/KDE)
-- subdivideme:60:carlos
+- El panel de kde:7:carlos
+- Los menús y menús contextuales:7:carlos
+- El panel de control:10:carlos
+- Keystrokes salvadores:5:carlos
+- Konqueror como administrador de archivos:15:carlos
+- Konqueror como navegador web:15:carlos
 
 :Sistemas de ayuda y documentación
 # aquí debo esmerame y mirarlos todos, el orden y los tiempos
