@@ -7,7 +7,7 @@ Standards-Version: 3.5.2
 
 Package: cila
 Architecture: all
-Depends: ${shlibs:Depends}, cila-libro, cila-mod1, cila-mod2, cila-mod3, cila-mod4, cila-mod5, cila-mod6
+Depends: ${shlibs:Depends}, cila-libro, cila-mod1, cila-mod2, cila-mod3, cila-mod4, cila-mod5
 Suggests: 
 Description: Metapaquete para el material completo del CILA
  Curso de Introducción a Linux para Alumnos

@@ -8,7 +8,7 @@ Standards-Version: 3.5.2
 Package: cila-mod2
 Architecture: all
 Depends: ${shlibs:Depends}
-Suggests: ldp-es-garl, ldp-es-glup, ldp-es-gulp, ldp-es-lipp, lucas-novato, apt-howto, debian-guide-es
+Suggests: ldp-es-garl, ldp-es-glup, ldp-es-gulp, ldp-es-lipp, lucas-novato, apt-howto, debian-guide-es, cupsys
 Description: Metapaquete para el Módulo II del CILA
  Curso de Introducción a Linux para Alumnos
  .

@@ -1,6 +1,10 @@
+cila-mod2 (1.2-1) unstable; urgency=low
+
+  * Añadido CUPS (cupsys) en las sugerencias
+
+ -- Miguel Ángel Vilela García (miguev) <miguev@gulic.org>  Sat, 07 Sep 2002 12:48:28 +0100
 cila-mod2 (1.1-1) unstable; urgency=low
 
   * Initial Release.
 
  -- Miguel Ángel Vilela García (miguev) <miguev@gulic.org>  Wed, 24 Jul 2002 22:34:55 +0100
-
