@@ -23,5 +23,5 @@ CREATE TABLE preins_sep2002 (
 	mod5         boolean NOT NULL,
 	wanna_linex  character (16)  NOT NULL,
 	wanna_dvd    character (16)  NOT NULL,
-	timestamp    timestamp,
+	timestamp    timestamp
 );
