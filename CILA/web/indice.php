@@ -1,6 +1,5 @@
 <?php
 
-#$currentsection = "Presentación";
 $currentsection = "Presentación";
 include "html/0start.html";
 include "html/presentacion.html";
