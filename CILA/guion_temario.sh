@@ -82,6 +82,18 @@ END {
 #
 # aqui empieza el listado
 #
+# como este script solo implementa tres niveles (modulo, tema e item),
+# si para planificar necesitas que  un 'item' tenga 'subitems', cambia
+# por el momento el 'item' a 'tema' y pon los 'subitems' como 'items',
+# ya se  arreglará en alguna  futura version. Vaya, ¿otro  proyecto de
+# programación de  gulic? ;-)) En  xml no  debe ser dificil  pues todo
+# este fichero se podría ver como solo un tag con y sin atributos.
+#
+# Ah, y recuerda que en este  script los ':' son delimitadores y estan
+# prohibidos en los textos.
+#
+# ¡Vamos allá!
+#
 
 Entorno GNU/Linux (duracion 15h)
 
@@ -92,62 +104,115 @@ Entorno GNU/Linux (duracion 15h)
 - El entorno:45:felix/miguev
 - Las mtools:15:felix/miguev
 
-:El entorno X-Window, Gnome, KDE.
-- xwindow:30:alberto
-- gnome:60:alberto
-- kde:60:carlos
+:X-Window (de X-Window/Gnome/KDE)
+- subdivideme:30:alberto
+
+:Gnome (de X-Window/Gnome/KDE)
+- subdivideme:60:alberto
+
+:KDE (de X-Window/Gnome/KDE)
+- subdivideme:60:carlos
 
 :Sistemas de ayuda y documentación
-- El info:15:alberto
-- El man, apropos:15:alberto
-- El /usr/share/doc:15:alberto
-- Google:15:alberto
+# aquí debo esmerame y mirarlos todos, el orden y los tiempos
+- El info:10:alberto
+- El man, apropos:10:alberto
+- El /usr/share/doc:10:alberto
+- apt-cache search/show:1:alberto
+- dpkg -l/-L:1:alberto
+- Google, listas de correo, news, etc:10:alberto
+- Devhelp:10:alberto
+- ayuda:2:alberto
+- lucas-novato:2:alberto
+- debrecipes-es:2:alberto
+- ldp-es*:2:alberto
+- linux-tutorial-es:2:alberto
+- debian-guide-es:2:alberto
+- manpages-es:2:alberto
+- manpages-es-extra:1:alberto
 
 :Aplicaciones para Internet
+# jesus: repártelo como te guste
 - Netscape:60:jesus
-- Mozilla/Galeon:60:jesus
+- Mozilla:40:jesus
+- Galeon:20:jesus
 - Konqueror:60:jesus
 - Mutt:45:jesus
 - Evolution:15:jesus
 - FTP, gFTP:30:jesus
 - ssh:30:jesus
+- links?:1:jesus
+- pan (news?):1:jesus
+- wget?:1:jesus
+- gnupg?:1:jesus
 
 :Aplicaciones diversas
-- gnotepad:60:alberto
-- gnumeric:60:alberto
-- devhelp:60:alberto
-- dia:5:alberto
-- gv/ggv:30:alberto
-- acroread/xpdf:30:alberto
-- mc:30:alberto
+# me falta ordenar un poco entre estas aplicaciones cuales son para
+# 'alumnos' e interesantes para sus prácticas al principio, tambien
+# segun simplicidad y precedencia (obtener un ps antes de verlo,
+# generar una imagen antes de verla). Tambien los tiempos.
+
+- vim/emacs:10:alberto
+- gedit/gnotepad/bluefish:10:alberto
+- abiword:10:alberto
+- gnumeric:10:alberto
+- latex(demo con diploma):10:alberto
+- dia/sketch:10:alberto
+- qcad:10:alberto
+- gs/gv/ggv/kghostview:20:alberto
+- acroread/xpdf:10:alberto
+- mc/xftree/gmc:10:alberto
+- blender/vertex:10:alberto
+- dosemu/wine:10:alberto
+- eeyes/eog/gqview/imagemagick/kview/xli:10:alberto
+- ghex:10:alberto
+- gimp/gpaint:10:alberto
+- gperiodic:10:alberto
+- gphoto:10:alberto
+- i2e/kdict/ispell:10:alberto
+- indent:10:alberto
+- bc/xcalc/kcalc/rcalc/grpn:10:alberto
+- ploticus/plplot/gnuplot/scigraphica:10:alberto
+- rdesktop/xvncviewer/vlc:10:alberto
+- tar/gzip/bzip2/unrar/zip/unzip/unzip-crypt:10:alberto
+- gtkdiff*:10:alberto
+- geda/oregano:10:alberto
+- a2ps/enscript:10:alberto
+- scite/anjuta/glimmer?/qt-designer:10:alberto
+# hay ya tantos que me parece que estos...
+#- gkrellm:10:alberto
+#- diploma:10:alberto
+#- xine:10:alberto
+# no hay nada de mensajería instantanea ni de irc en clones salvo
+#- talk:10:alberto
 
 
 Instalación (duracion 20h)
-
+#
+# ¿algún valiente se dedica a estimar tiempos?
+# El describir lo que vamos a hacer nos puede dar pistas sobre
+# lo que nos puede hacer falta.
+#
 :Sistema base (particiones y Lilo)
-- yyoquese:120:instalador
+- subdivideme:200:instalador
 :Hardware y kernel (kernel-package)
-- yyoquese:120:instalador
-- yyoquese:120:instalador
+- subdivideme:200:instalador
 :Administración básica (adduser, floppy, cdrom, APT)
-- yyoquese:120:instalador
-- yyoquese:120:instalador
+- subdivideme:200:instalador
 :Software para los módulos del TILA.
-- yyoquese:120:instalador
+- subdivideme:200:instalador
 :Paquetes en fuentes (bajar, compilar e instalar videolan y xine con aa)
-- yyoquese:120:instalador
-- yyoquese:120:instalador
+- subdivideme:200:instalador
 :Software adicional (a gusto del consumidor)
-- yyoquese:120:instalador
-- yyoquese:120:instalador
+- subdivideme:200:instalador
 
 
 Edición de gráficos y documentos (duracion 8h)
 
 :OpenOffice
-- nosequevaaexplicar:150:felix/jesus
+- subdivideme:150:felix/jesus
 :HTML
-- subdividemeplis:90:felix/jesus
+- subdivideme:90:felix/jesus
 :DIA
 - Elementos básicos:10:miguev
 - Elementos de librería:15:miguev
@@ -186,9 +251,11 @@ Matemáticas (duracion 4h)
 
 Herramientas de programación (duracion 8h)
 
-:Editores
-- VI, VIM, GVIM:60:miguev
-- GNU Emacs:60:alberto
+:VI/VIM/GVIM (de Editores)
+- subdivideme:60:miguev
+
+:GNU Emacs (de Editores)
+- subdivideme:60:alberto
 
 :FreePascal
 - subdivideme:30:miguev
