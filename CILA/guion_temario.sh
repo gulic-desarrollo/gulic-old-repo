@@ -228,27 +228,39 @@ Edición de gráficos y documentos (duracion 8h)
 :HTML
 - subdivideme:90:felix/jesus
 :DIA
-- Elementos básicos:10:miguev
-- Elementos de librería:15:miguev
+- Elementos básicos:7:miguev
+- Elementos de librería:8:miguev
 - Formatos de ficheros:5:miguev
 :QCad
-- Finalidad del CAD:5:miguev
-- Puntos y líneas:5:miguev
-- Textos:5:miguev
-- Acotaciones:5:miguev
-- Capas:5:miguev
-- Formatos:5:miguev
-:The GIMP
-- subdivideme:60:miguev
+- Finalidad del CAD:1:miguev
+- Puntos y líneas:2:miguev
+- Textos:2:miguev
+- Acotaciones:2:miguev
+- Capas:2:miguev
+- Formatos:1:miguev
+:The GIMP 90
+- Origen:2:miguev
+- Instalación de usuario:2:miguev
+- Consejos de GIMP:2:miguev
+- Brochas:2:miguev
+- Opciones de herramienta:2:miguev
+- Capas:10:miguev
+- Canales:5:miguev
+- Caminos:5:miguev
+- La ventana Toolbox:25:miguev
+- Selección y modelos de color:5:miguev
+- Menú "Imagen":5:miguev
+- Script-fu:10:miguev
+- Filtros:10:miguev
+- Formatos de ficheros:5:miguev
 :LyX
 - Filosofía WYSIWYM:5:miguev
 - Tipos de documentos:5:miguev
-- Partes del documento:10:miguev
-- Insertar imágenes:15:miguev
+- Partes del documento:7:miguev
+- Insertar imágenes:8:miguev
 - Documentacion:5:miguev
-- Ejemplos:5:miguev
 :LaTeX
-- subdivideme:120:miguev
+- subdivideme:90:miguev
 
 
 #
