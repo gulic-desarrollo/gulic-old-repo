@@ -14,8 +14,11 @@ function input_text ($name, $maxlength, $value)
 
 ?>
 
+<center><h1>No lo intentes, ya no funciona ;-)</h1></center>
+
 <div align="center"> 
-  <form name="form1" method="post" action="formulario.php">
+  <!-- <form name="form1" method="post" action="formulario.php"> -->
+  <form name="form1" method="post" action="">
     <p><b>Datos personales</b></p>
     <table width="100%" border="0">
       <tr>
@@ -86,6 +89,8 @@ function input_text ($name, $maxlength, $value)
 	    <? option ($procedencia,"2cte", "Segundo ciclo de Ciencias y Téc.s Estadísticas") ?>
 	    <? option ($procedencia,"2fis", "Segundo ciclo de Física") ?>
 	    <? option ($procedencia,"2ie" , "Segundo ciclo de Ing. Electrónica") ?>
+	    <? option ($procedencia,"csi", "Centro Superior de Informática") ?>
+	    <? option ($procedencia,"otro", "Otro centro") ?>
 	  </select>	  
 	  <?= $errores['procedencia'] ?>
 	</td>

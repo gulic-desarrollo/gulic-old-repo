@@ -27,8 +27,8 @@ function valida_dni($dni)
 	// Si el dni es incorrecto, devolver 0
 	if ( strlen($dni) != 8 ) return 0;
 	
-	// Para ver que hayan ocho dígitos
-	if ( eregi("^([0-9]{8})", $dni) == false ) return 0;
+	// Para ver que hayan ocho dígitos, o una X y siete dígitos
+	if ( eregi("^([0-9xX][0-9]{7})", $dni) == false ) return 0;
 
 	// Si el dni es correcto, devolver 1
 	return 1;
