@@ -7,8 +7,8 @@ Standards-Version: 3.5.2
 
 Package: cila-mod6
 Architecture: all
-Depends: ${shlibs:Depends}
-Suggests: 
+Depends: ${shlibs:Depends}, php4, php4-mysql|php4-pgsql, python, python-numeric
+Suggests: glade, anjuta, kdevelop
 Description: Metapaquete para el Módulo VI del CILA
  Curso de Introducción a Linux para Alumnos
  .
