@@ -86,16 +86,16 @@ END {
 Entorno GNU/Linux (duracion 15h)
 
 :Historia de GNU/Linux.
-- Explicacion de la cosa:30:felix
+- Explicacion de la cosa:30:felix/miguev
 
 :Intérprete de comandos + mtools.
-- El entorno:45:felix
-- Las mtools:15:felix
+- El entorno:45:felix/miguev
+- Las mtools:15:felix/miguev
 
 :El entorno X-Window, Gnome, KDE.
 - xwindow:30:alberto
 - gnome:60:alberto
-- kde:30:carlos
+- kde:60:carlos
 
 :Sistemas de ayuda y documentación
 - El info:15:alberto
@@ -116,7 +116,7 @@ Entorno GNU/Linux (duracion 15h)
 - gnotepad:60:alberto
 - gnumeric:60:alberto
 - devhelp:60:alberto
-- dia:30:alberto
+- dia:5:alberto
 - gv/ggv:30:alberto
 - acroread/xpdf:30:alberto
 - mc:30:alberto
@@ -148,12 +148,26 @@ Edición de gráficos y documentos (duracion 8h)
 - nosequevaaexplicar:150:felix/jesus
 :HTML
 - subdividemeplis:90:felix/jesus
-:Edición de gráficos
-- DIA:30:miguev
-- QCad:30:miguev
-- The GIMP:30:miguev
+:DIA
+- Elementos básicos:10:miguev
+- Elementos de librería:15:miguev
+- Formatos de ficheros:5:miguev
+:QCad
+- Finalidad del CAD:5:miguev
+- Puntos y líneas:5:miguev
+- Textos:5:miguev
+- Acotaciones:5:miguev
+- Capas:5:miguev
+- Formatos:5:miguev
+:The GIMP
+- subdivideme:60:miguev
 :LyX
-- subdivideme:30:miguev
+- Filosofía WYSIWYM:5:miguev
+- Tipos de documentos:5:miguev
+- Partes del documento:10:miguev
+- Insertar imágenes:15:miguev
+- Documentacion:5:miguev
+- Ejemplos:5:miguev
 :LaTeX
 - subdivideme:120:miguev
 
