@@ -220,7 +220,7 @@ function input_text ($name, $maxlength, $value)
 	</td>
       </tr>
       <tr>
-	<td width="33%" align="right" colspan="2">
+	<td width="33%" align="left" colspan="2">
 	  Describe lo que te interesaría profundizar en el curso o lo que te motiva a asistir <br>
 	  <textarea name="intereses" cols="50" rows="10"><?= $intereses ?></textarea>
 	  <?= $errores['intereses'] ?>
@@ -241,8 +241,10 @@ function input_text ($name, $maxlength, $value)
 	</td>
       </tr>
       <tr> 
+	  <th>Para la gente que NO ha escogido el módulo 2:</th>
+      </tr>
+      <tr> 
 	<td width="67%" align="right">
-	  <b>Para la gente que NO ha escogido el módulo 2:</b><br>
 	  ¿Estarías dispuesto a aceptar el cd de la distribución Linex de regalo?
 	  Te comento que al ser un solo cd, el contenido es básico y algo limitado.
 	</td>
@@ -257,7 +259,7 @@ function input_text ($name, $maxlength, $value)
 	</td>
       </tr>
 	  <tr>
-	  <th>Para la gente que SÍ ha escogido el módulo 2:</tr>
+	  <th>Para la gente que SÍ ha escogido el módulo 2:</th>
 	  </tr>
       <tr> 
 	<td width="67%" align="right">
