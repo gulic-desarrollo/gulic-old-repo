@@ -16,7 +16,7 @@ function input_text ($name, $maxlength, $value)
 
 <div align="center"> 
   <form name="form1" method="post" action="formulario.php">
-    <p><b>Datos Personales</b></p>
+    <p><b>Datos personales</b></p>
     <table width="100%" border="0">
       <tr>
 	<td width="33%" align="right">
@@ -92,7 +92,7 @@ function input_text ($name, $maxlength, $value)
       </tr>
     </table>
     
-    <p><b>Datos de la inscripción</b></p>
+    <p><b>Datos de la preinscripción</b></p>
     <p><b>¿En qué módulos quieres preinscribirte?</b></p>
     <table border="0" width="100%">
       <tr>
@@ -162,9 +162,9 @@ function input_text ($name, $maxlength, $value)
       </tr>
     </table>
     
-    <p><b>Datos Contacto</b></p>
+    <p><b>Datos de contacto</b></p>
     <p><b>(Utilizados sólo para enviarte información  
-    en caso necesario o para notificarte cambios de ultima hora)</b></p>
+    en caso necesario o para notificarte cambios de última hora)</b></p>
     <table width="100%" border="0">
       <tr> 
 	<td width="33%" align="right">
@@ -177,7 +177,7 @@ function input_text ($name, $maxlength, $value)
       </tr>
       <tr>
 	<td width="33%" align="right">
-	  Teléfono Móvil
+	  Teléfono (preferiblemente móvil)
 	</td>
 	<td width="67%">
 	  <? input_text ("tel_movil",9,$tel_movil) ?>
@@ -186,7 +186,7 @@ function input_text ($name, $maxlength, $value)
       </tr>
     </table>
     
-    <p><b>Pequeño sondeo</b></p>
+    <p><b></b></p>
     <p>Estamos interesados en saber algo sobre tus conocimientos e
     impresiones previas sobre GNU/Linux y los temas del curso para
     adaptarnos un poco a las preferencias de los alumnos. Para ello,
@@ -194,10 +194,10 @@ function input_text ($name, $maxlength, $value)
 
     <table width="100%" border="0">
       <tr>
-	<td width="33%" align="right">
+	<td width="67%" align="right">
 	  Experiencia previa con GNU/Linux
 	</td>
-	<td width="67%">
+	<td width="33%">
 	  <select name=experiencia size=1>
 	    <? option($experiencia,"none" ,"Escoge una") ?>
 	    <? option($experiencia,"tecnofobus","No quiero saber nada de ordenadores") ?>
