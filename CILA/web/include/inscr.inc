@@ -150,7 +150,7 @@ function Registra()
 		   . " '$intereses', '$espera', '$mod1', '$mod2', '$mod3', '$mod4', '$mod5'," 
 		   . " '$wanna_linex', '$wanna_dvd', NOW() ) ";
 	echo "<h3>$query</h3>";
-	$insertar_datos_princ = $db->Execute();
+	$insertar_datos_princ = $db->Execute($query);
 	
 	if ($insertar_datos_princ == 0) {
 		include ("html/inscr_error.html");
