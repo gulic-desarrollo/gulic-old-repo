@@ -244,6 +244,44 @@ objetivo {\tt all} de todos ellos.
 
 \subsection*{Bash}
 
-Escribe un script en Bash que...
+Escribe  un script  en Bash  que  muestre información  sobre un  usuario
+especificado. El script debe:
+
+\begin{itemize}
+
+\item Mostrar un mensaje que solicite el nombre de un usuario.
+
+\item Leer el nombre del usuario desde el teclado.
+
+\item Mostrar los resultados del  comando {\tt who} (listado de usuarios
+activos) referentes al usuario indicado.  Para ello basta con entubar la
+salida de un comando {\tt who} sencillo a través del comando {\tt grep}.
+(Ej: {\tt who | grep $<$usuario$>$})
+
+\item Mostrar los resultado del comando {\tt ps} (listado de procesos en
+ejecución) referentes al  usuario indicado. Para ello  basta con entubar
+la salida de un comando {\tt ps -aux} sencillo a través del comando {\tt
+grep}. (Ej: {\tt ps -aux | grep $<$usuario$>$})
+
+\end{itemize}
+
+Si quieres subir  nota escribe un script que  muestre información acerca
+de cada uno de los directorios especificados en la línea de comandos. El
+script debe:
+
+\begin{itemize}
+
+\item Mostrar el número de archivos  y subdirectorios de cada uno de los
+directorios.
+
+\item Listar todos los archivos de  cada directorio que tengan un tamaño
+de cero bytes (usar una opción del comando {\tt find} para hacerlo).
+
+\item  Usar el  comando {\tt  du} para  mostrar la  cantidad de  espacio
+utilizado por cada directorio.
+
+\begin{itemize}
+
 
 \end{document}
+
