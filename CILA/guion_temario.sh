@@ -114,7 +114,7 @@ Entorno GNU/Linux (duracion 15h)
 
 :KDE (de X-Window/Gnome/KDE)
 - El panel de kde:7:carlos
-- Los menús y menús contextuales:7:carlos
+- Los menús y menús contextuales:8:carlos
 - El panel de control:10:carlos
 - Keystrokes salvadores:5:carlos
 - Konqueror como administrador de archivos:15:carlos
@@ -304,7 +304,7 @@ Herramientas de programación (duracion 8h)
 
 :VI/VIM/GVIM (de Editores)
 - historia:2:miguev
-- modos:2:miguev
+- modos:3:miguev
 - pasar al modo edición:2:miguev
 - restaltado de sintaxis:2:miguev
 - moverse por el texto:5:miguev
@@ -313,15 +313,13 @@ Herramientas de programación (duracion 8h)
 - deshacer y rehacer:1:miguev
 - bufferes:2:miguev
 - búsqueda de texto:2:miguev
-- búsqueda y substitución:2:miguev
-- expresiones regulares:25:miguev
+- búsqueda y substitución:3:miguev
+- expresiones regulares:30:miguev
 - ejecutar comandos del sistema:1:miguev
 - shell:1:miguev
 - make:1:miguev
-- mapeado de teclas:1:miguev
-- configuración .vimrc:1:miguev
-- sobra de freepascal:15:miguev
-- sobra de gnufortran:15:miguev
+- mapeado de teclas:2:miguev
+- configuración .vimrc:3:miguev
 
 :FreePascal
 - compilar:5:miguev
