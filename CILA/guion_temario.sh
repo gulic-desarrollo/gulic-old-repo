@@ -264,14 +264,17 @@ Edición de gráficos y documentos (duracion 8h)
 - Partes del documento:7:miguev
 - Insertar imágenes:8:miguev
 - Documentacion:5:miguev
-:LaTeX (90 min)
+:LaTeX
 - Historia de TeX y LaTeX:5:miguev
-- Filosofía de LaTeX:5:miguev
 - Autor, diseñador y cajista:5:miguev
+- Filosofía de LaTeX:5:miguev
 - Ficheros de entrada:10:miguev
 - Tipos de documentos:5:miguev
 - Formato del documento:5:miguev
-- Composición del texto::miguev
+- Composición del texto:20:miguev
+- Fórmulas matemáticas:20:miguev
+- Inclusión de gráficos:10:miguev
+- Referencias bibliográficas:5:miguev
 
 
 #
