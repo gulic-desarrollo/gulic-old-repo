@@ -49,8 +49,8 @@
 			<name>Formulario</name>
 		</subsection>
 	<section>
-		<link>documentos.php</link>
-		<name>Documentos</name>
+		<link>material.php</link>
+		<name>Material</name>
 	</section>
 		<subsection>
 			<link>apuntes.php</link>
