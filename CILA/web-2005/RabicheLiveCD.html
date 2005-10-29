@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>CILA - Rabiche live cd</title>
+</head>
+<body>
+
+    <h2>Rabiche LIVE</h2>
+    <p>Con la colaboración del secretariado del software libre de la ULL, este año también hemos regalado una distribución de Linux a los asistentes.</p>
+    <p>Se trata de una modificación de una knoppix 4 en español, añadiendo los programas que se han visto en el curso que no estaban en el cd. La knoppix es una distribución LIVE que se ejecuta desde cdrom sin necesidad de instalarla en el ordenador, ni de realizar particiones. Próximamente pondremos URL de descarga para los que no asistieron al curso.</p>
+    <p>La página oficial de KNOPPIX en español es <a href="http://www.knoppix-es.org/">http://www.knoppix-es.org/</a>. Hay secciones de foros donde poder leer mucho.</p>
+
+    <p>Tenemos tres formas de proceder con este live-cd, que pasamos a detallar, en orden creciente de dificultad:</p>
+
+    <ol>
+        <li>Ejecución como live-cd directamente desde el cdrom: <u>nivel de dificultad nulo</u>
+            <p>Solamente tenemos que configurar nuestro ordenador para que arranque desde cdrom y meter el cdrom y encender el ordenador. Es la forma más sencilla y rápida de probar Linux y 2GB de aplicaciones en tu ordenador. Eso sí, al ser ejecutada desde cdrom, la velocidad no es excesivamente rápida.</p>
+            <p>Si metes el cdrom, enciendes el ordenador y arranca windows como siempre, es que tu bios no está configurada correctamente. Para hacer más suave el trance de entrar y configurar la bios, hemos creado unas <a href="https://wiki.gulic.org/bios:indice">instrucciones de configuración de bios</a> con capturas de pantalla e instrucciones detalladas para bios de diferentes ordenadores. Hemos publicado varias, pero hay muchas bios diferentes. Si alguna es parecida a la tuya, no deberías tener problema. Si no encuentras ninguna parecida, leyéndote el resto de bios verás que no tiene mucha ciencia.</p>
+            <p>Hay una desventaja de este método y es que cada vez que iniciamos del cdrom perdemos nuestras configuraciones personales que hagamos desde linux, pues al no usar ningun disco duro no se almacenan. Esto se soluciona creando una <b>imagen de home persistente</b>.</p>
+        </li>
+
+        <li>Instalación en windows:
+            <p>Hay un método intermedio que, sin instalarla, conseguimos un linux como el del cd-live, pero sin estar teniendo que meter el cd y tal. Tiene el mismo problema que el cd-live de que perdemos las cosas que hagamos, y se soluciona de la misma forma, creando el home persistente.</p>
+            <p>Básicamente el método es copiar el cdrom de linux a unas carpetas concretas en windows. Luego, para arrancar, hay dos alternativas:</p>
+            <ul>
+                <li>Usando un diskette: <u>nivel de dificultad bajo</u>
+                    <p>Si metemos el diskette, arrancamos linux... si lo quitamos, arrancamos windows. Esto no está documentado aún, lo estará en los próximos días.</p>
+                </li>
+                <li>Modificando el arranque de windows para generar un menú nuevo: <u>nivel de dificultad medio-bajo</u>
+                    <p>Las instrucciones están en el siguiente enlace: <a href="https://drupal.gulic.org/node/528">Instalación PMI de Knoppix sin reparticionar</a></p>
+                </li>
+            </ul>
+
+        </li>
+
+        <li>Instalación tradicional: <u>nivel de dificultad medio-alto</u>
+
+            <p>En esta página en inglés [<a href="http://www.knoppix.net/wiki/Hd_Install_HowTo">Hd install howto</a>] aparece el método de instalación tradicional, que es el que aporta todas las ventajas de Linux, pero requiere cierta "habilidad". Consta (resumiendo) de los siguientes fases:</p>
+            <ul>
+                <li>Redimensionamiento de la partición actual de Windows con algún software al efecto (p.ej: partition magic), para dejar espacio libre al final del disco duro</li>
+                <li>Arrancar la knoppix</li>
+                <li>Ejecutar el instalador</li>
+                <ul>
+                    <li>Crear las particiones de linux: asignar particiones para linux en el espacio libre con QTParted</li>
+                    <li>Configurar las opciones del instalador: estilo de instalación, particion de destino, contraseña de root, usuario normal, etc</li>
+                    <li>Ejecutar la instalación</li>
+                </ul>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Hay distribuciones como la <a href="http://www.ubuntulinux.org">Ubuntu</a>, <a href="http://www.kubuntu.org/">KUbuntu</a>, o la <a href="http://www.opensuse.org/">Opensuse</a> cuyos live-cd no son tan optimizados como el de knoppix, pero que sí son más sencillas de instalar que la knoppix, ya que traen incluso el reparticionador incorporado (lo que evita usar partition magic). Dejamos a tu elección que te los descargues e instales. Aquí estamos para ayudarte.</p>
+
+</body>
+</html>
+

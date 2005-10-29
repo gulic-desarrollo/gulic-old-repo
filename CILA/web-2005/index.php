@@ -27,20 +27,13 @@ $BEGIN_BODY = '<body>
             <li><a href="index.php?q=MatematicasCalificaciones">Calificaciones</a></li>
         </ul>
 
-        <p>Edición Sociología</p>
-        <ul>
-            <li><a href="index.php?q=SociologiaContenido">Contenido</a></li>
-            <li><a href="index.php?q=SociologiaMatricula">Matrícula</a></li>
-            <li><a href="index.php?q=SociologiaEvaluacion">Evaluación</a></li>
-            <li><a href="index.php?q=SociologiaCalificaciones">Calificaciones</a></li>
-        </ul>
-
         <p>Apuntes</p>
         
         <ul>
             <li><a href="index.php?q=ApuntesMatematicas">Matematicas</a></li>
-            <li><a href="index.php?q=ApuntesSociologia">Sociologia</a></li>
-            <li><a href="index.php?q=ApuntesViejos">viejos</a></li>
+            <!--<li><a href="index.php?q=ApuntesSociologia">Sociologia</a></li>-->
+            <li><a href="index.php?q=RabicheLiveCD">Rabiche Live CD</a></li>
+            <!--<li><a href="index.php?q=ApuntesViejos">viejos</a></li>-->
             <li><a href="index.php?q=Colaborar">Colaborar</a></li>
             <!--
             <li><a href="index.php?q=ApuntesCILA">Apuntes del CILA</a></li>
@@ -49,6 +42,14 @@ $BEGIN_BODY = '<body>
             -->
         </ul>
         
+        <p>Edición Sociología</p>
+        <ul>
+            <li><a href="index.php?q=SociologiaContenido">Contenido</a></li>
+            <li><a href="index.php?q=SociologiaMatricula">Matrícula</a></li>
+            <li><a href="index.php?q=SociologiaEvaluacion">Evaluación</a></li>
+            <li><a href="index.php?q=SociologiaCalificaciones">Calificaciones</a></li>
+        </ul>
+
         <p>Ediciones Anteriores</p>
         <ul>
             <li><a href="index.php?q=Noviembre2001">Noviembre 2001</a></li>
