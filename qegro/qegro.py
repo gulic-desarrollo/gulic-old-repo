@@ -1,13 +1,24 @@
 #!/usr/bin/env python
 
+#######################################################################
+# File: $Id$
+# $Author$
+# $Source$
+# $Revision$
+# $Date$
+#######################################################################
+
 #############################################################################
-# qegro - PyQT application template for KDevelop
+# qegro project
 #
-# Translated from C++ qmakeapp.cpp
-# (qmakeapp.cpp - Copyright (C) 1992-2002 Trolltech AS.  All rights reserved.)
+# Author:
+#         Luis Cabrera Sauco <lcabrera at gulic org>
+#         Alberto Morales Diaz <amd77 at gulic org>
 #
-# This file is part of an example program for Qt.  This example
-# program may be used, distributed and modified without limitation.
+#         Copyleft (C) 2005-2005
+#
+# This file is part of qegro project.  
+# This file program may be used, distributed and modified without limitation.
 #
 #############################################################################
 
@@ -269,3 +280,4 @@ def main(args):
 
 if __name__ == "__main__":
     main(sys.argv)
+

@@ -1,8 +1,8 @@
 <?xml version = '1.0'?>
 <kdevelop>
   <general>
-    <author>Luis Cabrera Sauco &amp;&amp; Alberto Morales Diaz</author>
-    <email>amd77@gulic.org, lcabrera@gulic.org</email>
+    <author>Luis Cabrera Sauco &amp;&amp; Alberto Moralez Diaz</author>
+    <email>lcabrera at gulic org &amp;&amp; amd77 at gulic org</email>
     <version>0.1</version>
     <projectmanagement>KDevAutoProject</projectmanagement>
     <primarylanguage>Python</primarylanguage>
@@ -12,14 +12,42 @@
     </keywords>
     <ignoreparts/>
     <versioncontrol>kdevcvsservice</versioncontrol>
+    <projectdirectory>.</projectdirectory>
+    <absoluteprojectpath>false</absoluteprojectpath>
+    <description>Gestión de altas, bajas y modificaciones de uso general. Tanto puede ser empleada para construir la gestión de una asociación (caso de gulic.org), como para llevar el control de projectos o similares.
+
+Está constituida por un core principal, que deberá mantener un tamaño muy reducido, varios subsistemas independientes (almacenamiento, impresión, vistas previas, etc) y un sistema de carga de plugin que pretende ser altamente configurable.</description>
   </general>
   <kdevautoproject>
     <general>
       <activedir/>
+      <useconfiguration>default</useconfiguration>
     </general>
     <run>
-      <mainprogram>./qegro.py</mainprogram>
+      <mainprogram>qegro.py</mainprogram>
+      <directoryradio>executable</directoryradio>
+      <customdirectory>/</customdirectory>
+      <programargs></programargs>
+      <terminal>false</terminal>
+      <autocompile>true</autocompile>
+      <envvars/>
     </run>
+    <make>
+      <envvars>
+        <envvar value="1" name="WANT_AUTOCONF_2_5" />
+        <envvar value="1" name="WANT_AUTOMAKE_1_6" />
+      </envvars>
+      <abortonerror>true</abortonerror>
+      <numberofjobs>1</numberofjobs>
+      <dontact>false</dontact>
+      <makebin></makebin>
+      <prio>0</prio>
+    </make>
+    <configurations>
+      <default>
+        <envvars/>
+      </default>
+    </configurations>
   </kdevautoproject>
   <kdevdoctreeview>
     <ignoretocs>
@@ -71,9 +99,12 @@
     <groups>
       <group pattern="*.py" name="Python files" />
       <group pattern="*.ui" name="QT Designer files" />
+      <hidenonprojectfiles>false</hidenonprojectfiles>
+      <hidenonlocation>false</hidenonlocation>
     </groups>
   </kdevfileview>
   <kdevfilecreate>
+    <filetypes/>
     <useglobaltypes>
       <type ext="py" />
       <type ext="ui" />
@@ -84,11 +115,55 @@
     <APPNAMELC>qegro</APPNAMELC>
     <APPNAMESC>Qegro</APPNAMESC>
     <APPNAMEUC>QEGRO</APPNAMEUC>
-    <AUTHOR>Luis Cabrera Sauco &amp;&amp; Alberto Morales Diaz</AUTHOR>
-    <EMAIL>amd77@gulic.org, lcabrera@gulic.org</EMAIL>
+    <AUTHOR>Luis Cabrera Sauco &amp;&amp; Alberto Moralez Diaz</AUTHOR>
+    <EMAIL>lcabrera at gulic org &amp;&amp; amd77 at gulic org</EMAIL>
     <LICENSE>Custom</LICENSE>
     <VERSION>0.1</VERSION>
     <YEAR>2005</YEAR>
     <dest>/home/lcabrera/kdevelop/python/qegro</dest>
   </substmap>
+  <kdevpythonsupport>
+    <run>
+      <interpreter></interpreter>
+      <terminal>false</terminal>
+    </run>
+  </kdevpythonsupport>
+  <kdevdebugger>
+    <general>
+      <programargs></programargs>
+      <gdbpath></gdbpath>
+      <dbgshell></dbgshell>
+      <configGdbScript></configGdbScript>
+      <runShellScript></runShellScript>
+      <runGdbScript></runGdbScript>
+      <breakonloadinglibs>true</breakonloadinglibs>
+      <separatetty>false</separatetty>
+      <floatingtoolbar>false</floatingtoolbar>
+    </general>
+    <display>
+      <staticmembers>false</staticmembers>
+      <demanglenames>true</demanglenames>
+      <outputradix>10</outputradix>
+    </display>
+  </kdevdebugger>
+  <kdevvisualadvance>
+    <emulator>VisualBoyAdvance</emulator>
+    <binary></binary>
+    <addOptions></addOptions>
+    <terminal>false</terminal>
+    <fullscreen>false</fullscreen>
+    <graphicFilter>-f0</graphicFilter>
+    <scaling>-1</scaling>
+  </kdevvisualadvance>
+  <kdevdocumentation>
+    <projectdoc>
+      <docsystem></docsystem>
+      <docurl></docurl>
+      <usermanualurl></usermanualurl>
+    </projectdoc>
+  </kdevdocumentation>
+  <ctagspart>
+    <customArguments></customArguments>
+    <customTagfilePath></customTagfilePath>
+  </ctagspart>
 </kdevelop>
