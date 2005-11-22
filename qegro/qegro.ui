@@ -1,0 +1,603 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>qEGRO</class>
+<comment>Comentarios acerca del Proyecto</comment>
+<author>Luis Cabrera Sauco &lt;lcabrera@sauco.gulic.org&gt;</author>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>qEGRO</cstring>
+    </property>
+    <property name="enabled">
+        <bool>true</bool>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>800</width>
+            <height>600</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>236</width>
+            <height>325</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>800</width>
+            <height>600</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>qEgro Project</string>
+    </property>
+    <property name="toolTip" stdset="0">
+        <string>ToolTip del Form</string>
+        <comment>Comentario del ToolTip del Formulario</comment>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QSplitter" row="0" column="0">
+            <property name="name">
+                <cstring>splitter0</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Raised</enum>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="opaqueResize">
+                <bool>true</bool>
+            </property>
+            <widget class="QToolBox">
+                <property name="name">
+                    <cstring>toolBox0</cstring>
+                </property>
+                <property name="maximumSize">
+                    <size>
+                        <width>200</width>
+                        <height>32767</height>
+                    </size>
+                </property>
+                <property name="currentIndex">
+                    <number>0</number>
+                </property>
+                <widget class="QWidget">
+                    <property name="name">
+                        <cstring>page1</cstring>
+                    </property>
+                    <property name="backgroundMode">
+                        <enum>PaletteBackground</enum>
+                    </property>
+                    <attribute name="label">
+                        <string>Búsquedas ...</string>
+                    </attribute>
+                </widget>
+                <widget class="QWidget">
+                    <property name="name">
+                        <cstring>page2</cstring>
+                    </property>
+                    <property name="backgroundMode">
+                        <enum>PaletteBackground</enum>
+                    </property>
+                    <attribute name="label">
+                        <string>Altas, Bajas, Modificaciones ...</string>
+                    </attribute>
+                </widget>
+                <widget class="QWidget">
+                    <property name="name">
+                        <cstring>page</cstring>
+                    </property>
+                    <property name="backgroundMode">
+                        <enum>PaletteBackground</enum>
+                    </property>
+                    <attribute name="label">
+                        <string>Economía</string>
+                    </attribute>
+                </widget>
+                <widget class="QWidget">
+                    <property name="name">
+                        <cstring>page</cstring>
+                    </property>
+                    <property name="backgroundMode">
+                        <enum>PaletteBackground</enum>
+                    </property>
+                    <attribute name="label">
+                        <string>Histórico</string>
+                    </attribute>
+                </widget>
+            </widget>
+            <spacer>
+                <property name="name">
+                    <cstring>spacer0</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                    <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                    <size>
+                        <width>10</width>
+                        <height>10</height>
+                    </size>
+                </property>
+            </spacer>
+            <widget class="QTabWidget">
+                <property name="name">
+                    <cstring>tabWidget0</cstring>
+                </property>
+                <widget class="QWidget">
+                    <property name="name">
+                        <cstring>tab</cstring>
+                    </property>
+                    <attribute name="title">
+                        <string>All</string>
+                    </attribute>
+                </widget>
+                <widget class="QWidget">
+                    <property name="name">
+                        <cstring>tab</cstring>
+                    </property>
+                    <attribute name="title">
+                        <string>Tab 2</string>
+                    </attribute>
+                </widget>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>MenuBar</cstring>
+    </property>
+    <item text="&amp;File" name="fileMenu">
+        <action name="fileNewAction"/>
+        <action name="fileOpenAction"/>
+        <action name="fileSaveAction"/>
+        <action name="fileSaveAsAction"/>
+        <separator/>
+        <action name="filePrintAction"/>
+        <separator/>
+        <action name="fileExitAction"/>
+    </item>
+    <item text="&amp;Edit" name="editMenu">
+        <action name="editUndoAction"/>
+        <action name="editRedoAction"/>
+        <separator/>
+        <action name="editCutAction"/>
+        <action name="editCopyAction"/>
+        <action name="editPasteAction"/>
+        <separator/>
+        <action name="editFindAction"/>
+    </item>
+    <item text="&amp;Help" name="helpMenu">
+        <action name="helpContentsAction"/>
+        <action name="helpIndexAction"/>
+        <separator/>
+        <action name="helpAboutAction"/>
+    </item>
+</menubar>
+<toolbars>
+    <toolbar dock="2">
+        <property name="name">
+            <cstring>toolBar</cstring>
+        </property>
+        <property name="label">
+            <string>Tools</string>
+        </property>
+        <action name="fileNewAction"/>
+        <action name="fileOpenAction"/>
+        <action name="fileSaveAction"/>
+        <action name="fileSaveAsAction"/>
+        <action name="filePrintAction"/>
+        <action name="fileExitAction"/>
+        <separator/>
+        <action name="editUndoAction"/>
+        <action name="editRedoAction"/>
+        <action name="editCutAction"/>
+        <action name="editCopyAction"/>
+        <action name="editPasteAction"/>
+        <action name="editFindAction"/>
+        <separator/>
+        <action name="helpContentsAction"/>
+        <action name="helpIndexAction"/>
+        <action name="helpAboutAction"/>
+    </toolbar>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>fileNewAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image0</iconset>
+        </property>
+        <property name="text">
+            <string>New</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;New</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+N</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileOpenAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image1</iconset>
+        </property>
+        <property name="text">
+            <string>Open</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Open...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+O</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image2</iconset>
+        </property>
+        <property name="text">
+            <string>Save</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Save</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+S</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAsAction</cstring>
+        </property>
+        <property name="text">
+            <string>Save As</string>
+        </property>
+        <property name="menuText">
+            <string>Save &amp;As...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>filePrintAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image3</iconset>
+        </property>
+        <property name="text">
+            <string>Print</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Print...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+P</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileExitAction</cstring>
+        </property>
+        <property name="text">
+            <string>Exit</string>
+        </property>
+        <property name="menuText">
+            <string>E&amp;xit</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editUndoAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image4</iconset>
+        </property>
+        <property name="text">
+            <string>Undo</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Undo</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+Z</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editRedoAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image5</iconset>
+        </property>
+        <property name="text">
+            <string>Redo</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Redo</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+Y</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editCutAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image6</iconset>
+        </property>
+        <property name="text">
+            <string>Cut</string>
+        </property>
+        <property name="menuText">
+            <string>Cu&amp;t</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+X</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editCopyAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image7</iconset>
+        </property>
+        <property name="text">
+            <string>Copy</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Copy</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+C</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editPasteAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image8</iconset>
+        </property>
+        <property name="text">
+            <string>Paste</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Paste</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+V</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editFindAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image9</iconset>
+        </property>
+        <property name="text">
+            <string>Find</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Find...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+F</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpContentsAction</cstring>
+        </property>
+        <property name="text">
+            <string>Contents</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Contents...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpIndexAction</cstring>
+        </property>
+        <property name="text">
+            <string>Index</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Index...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAboutAction</cstring>
+        </property>
+        <property name="text">
+            <string>About</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;About</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+</actions>
+<images>
+    <image name="image0">
+        <data format="PNG" length="189">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000008449444154388ded953d0a80300c465fc5c1b1ab9ba315970e1ec10b78d09e46f03871d2a93f127110fa204ba02f1f2150f80813e9c98bb7374dac2922c90270b32b06888a4b78ef8bf2562376a3c3761680633f84c85a5489b775a31ffa6c7255e26999000884647295d898ec41e8c4d7659486a976fc842aaee22acef0e60779eafb0927db432aa6e3988ccc0000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="230">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000ad49444154388ded943b12c3200c449f18176e7de04c26e303fb084a012460300146e9bc8df8584fcb16865b4132d1a33f183ac33d43e3999ed7338e7b868afb031480e5e262e425b578104055e3bd008a4837f7f2c3e53b543ed54f92e27c64b84b8c0fd6b65ccd715f6dab9af144d685aa19a7d0fd051b70244dadfde3e96b35e30cbafaa66d0d90c63e42010951d8390da0dcb185d374a1aa764ea39c0fc4ce69e6d8d269019e94e56fb74f6f1d846150422ef66d0000000049454e44ae426082</data>
+    </image>
+    <image name="image2">
+        <data format="PNG" length="354">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000012949444154388db595314f853014853f0c43dd68e2e2e8ccee42c22f7abb933184c9dd5f64f216f73733b298b4e31d5ea203af50a840abcf9b107a48efe9e17072817faaec72ffba366fee566faf60049e5fe0f87ea4500508a0c08addc4e563c9e9e30402655d0270e3888d80beac0b5560c5ce48b630306257a362ad067200642277ca96f8fefc402fdd8081aaae665ecc148fe529934fb83deb40699f771306da66b80262edbd86af4c2b8d11b3aadc29f6fba33ceef30e75c7aec77e7fa0d83810e1f10c2ffb633c8e4ac7b23fc6e318e53f793cc6cd79d4366174f6aa6d428f831c6b356cf471ca3db0c23d7427ff166f2a3e3c2539014cb326205e3b79addca0b262a9ea6a3fc7cbafbb56c9398e559c9ce314c549b32245f1d6acc8bcf5b57e4fd9fe963fd4375c36fbc9f949a91d0000000049454e44ae426082</data>
+    </image>
+    <image name="image3">
+        <data format="PNG" length="923">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000036249444154388d8d95b16b1c571087bf53ae988313bced763b1da4d076965cd8b12120a73b9c46b88a48a3b302b1fd0f049cbf2029534655421a2b573a45404dd0b9129722d6a5f25ee5f70a9337dd8ec1f052ecede9149d20d30cbbf0befdcd6fe6cd76b821ce4ecf92610cf2011820102d22081818869a828113c7ed07b73babe7bb37810de3c1dd0778f53871a829a594a829852b8816c924a30a1531c46be73b6b98009c4fce9320202c6118d4d4a8294edc52b961dcbf77ff0a6be326b0578f61040d0842152abcfa2bcf6a4a15aac69effc447eba0af27afd37b7b0f02fd6e1f41e8f7fb1846bfdb0783cdfe261fba1fd8ec6e72e7d33bd72a5fabd83010c01a1b5695ab294dff0c278e68d7fd851b9aa7a6088213b7ec7eeb69fbae9d8e1ebdb5e0b58a73972f9bd2425ba5ed47db4a6aeab5e0b55371323e49bbdbbbcb0fb473bc9a5bd5933f2768ad14d980cf86979371c58af3c9799acea6cc7e9f2122c8b6e0d553b8021fae66c31011e6d59cc91f13bc7a9e7cfd240d3f1ff270f8b0d35985be9a4ee19de135e244aed8b09a0d28a42076157d17397d758a0f8699a7dc1e303a1a3556b44af7f7f631a1f15003228e684ad6668468c64c2e18db2f0c19c2148e7f3aa6fabb02c0cc186c970df4c7e39f53fa27fdaf789bdea632954992a43295e9cdc59bf4dd373fa49d5b3b29cfb792732e6de55b69a3aa2a46870790ad6deedad8e3134a4af6d967500e181d1d32dc1b02a0aa4df3a49771318bf49adb004ea88964d2ec0671202698006a88733cd5ef194945a1059578a27a061f9760d6d80174e7d58c4c849945b2ba8727e22c632a339c098ae1c850f1382b503c8e022352992710a84da8fe9a608b8a04d870e2f08b15e82de27ad9e2b0a0282282e2111c018f4893415002b9383025934b2f0d63435124f6f0be8185e871388229423362620eb58033876a682ab180232768a0872c7e024decdebac786c3a1b2985bb48112702c6038541a881270922f2a71049b23e29a9eb80203f23ce7f0ab2fe82a4a9cd7089051e06506561099914941a573a0268a91d1c06a1cbd85626f0128883a41049e7ffb9c47fb8f3a9db3d3b3347e31e6d7df5e62562302ab3bab516ccb329d142897650b196a1e44181d1df0ece9b30eac2ca193f1491abf7889afaa65039ae9697bdddc2a80dac0167bd8d4d8b9bbc3c197073c1e3d5ef2fe05c9da20b9b52ca44e0000000049454e44ae426082</data>
+    </image>
+    <image name="image4">
+        <data format="PNG" length="218">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000a149444154388ded93410e85300844c77f03eed92b989f862b784f8f501704a168b55d1a7d1b822dc3585ae0e3b14c63dbb9482400ebfe75c984f44f95964b9602a446232e267615ad7e3a16a7d0cc9c01f345e3daf989888ac7fc0edd2fcd7fb6b0bae89df688fa7ac109938beab4f5eb67509505c77edaeabc17ad3f085358d4bc57bcbe828d331e752e33e1dc67e116ce5c4454a331f8f222fef68c0cfae39d6cce7043a6420487cc0000000049454e44ae426082</data>
+    </image>
+    <image name="image5">
+        <data format="PNG" length="218">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000a149444154388ded933d0e80300885a937f09e5ea1310d937befe911703014e89fd5cda46f316de1e3411060eab772f9050624bfaf0070aa5b3efb227e108c2490de776b1440e2e229c03a6d398b643bd1716c6ab360491a695777e65d79065824f8ac111af24ee23554a4c0eb0b30c3398f675f05978f7de54e6d7ee678741cf9f694f9098c41cfec8bd3ae29a47b3b90e2111f0af455592ded78fc4f9b9a7ad605510741d0698984c50000000049454e44ae426082</data>
+    </image>
+    <image name="image6">
+        <data format="PNG" length="220">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000a349444154388dcd92c11183300c04cf191a489fb490975a709f2e413c200c63cef10948c27d18647bbd230bf8533c585ff3b858e49ee06e1b543003a5b3e02ee028f81dafbedda8465ba074e66b531189dc064036b6059a65b8005e610928cbbf85ec496ad32df0303c13480d0bc35b00d6630e1ff6a5ecc0d898d5426a4fba933cdea7c3afb43764fb29981994c6baf97c9914e581ac3b728ddbcc67b38280d16f320152053618a77401cb0000000049454e44ae426082</data>
+    </image>
+    <image name="image7">
+        <data format="PNG" length="277">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000dc49444154388dd5944d0e82400c465f091798fbb8716be249dc1a57b0c223e0553c8189c79923d4c50484d0f22b0bbf64d20c2d5fdf3403f06f124067d4ac3356b5bd45a45bb748b96102a95b1b4544979ab7c61ef55af3761416717a560311084e2cdd66ea0950a846f2b542651e356bd145062b7907339f14391d0a2cf319338ea3f9e3192205ef17da1d8b7b2bbe66c1cc378daeb7b40f143c3be61b890322f7de3e8da5944dc4aa97c13b220f7e40ecd7af26b6d4addf8d386b68bce5dd63bb961ef1c419a3ae21ce27aad83ce329825d88d347e0fdddacb8a33e82aeaee9cbe514170000000049454e44ae426082</data>
+    </image>
+    <image name="image8">
+        <data format="PNG" length="368">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000013749444154388db595318ec32014441f568a94e11ce9b789b4175a8e106459a449cf5e6afb9c8394eefe1618c7c638b6379b91d0f00d0cc360cbf026a88571f9c39ac9a492083278aae6252723e9c1a2e856f12a89faabc7359173a1d48628cc1fd95080f8c6133080c3d696dbcf8d7b7be7b03fccf2f1e3886b1c60d1784c6d46ae2b808041ef3d6001fac5b48cc486758445ef93a93176911ca135683c60387d9e66831c42e3096d3c69329509773bb7067f8d9ceab59ca3ca774eceb7d6391420ae61d689ad3d1000bdc036e995339e3a09889c677356ea82c8b97b1d1f394f329e66e73b81ef895391afae26890b58d50b3fcb308ad0899410fade507c17879eddf63ac7b9f8aa8c971c2b75e9faba9fff72c6a58b55eaf21f1997a07929e312c7130c2e74be39d90a70b2e237e365dd9797f39bf00bf4ff537d1af8426e0000000049454e44ae426082</data>
+    </image>
+    <image name="image9">
+        <data format="PNG" length="760">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000002bf49444154388dd594b18b1b4714873f1d299ec0c52cb8d80517bb708dec4aebe6242785eee2227265613707a9ec26eef237b87615a70aae62bbb1908b5c2ec5a1758adc5de15872e38c8b835161982d023345605f11d814894dc03974212992af7bf0f8de8fc7bc81ff1b9d3f177bfb7b6df4117b62012168a43029c985847eafcfe5e1e5ce299ed3c5d3d9b4b5cf1d6c76190e4604511249b0af17fc74b02401c657c75cd9be722679e7adb4faa6e2e2c725e3dd5b003434d44111515c0cd8a7fbe849cdeecddd3325df9857f3d63eb7949f8e195c9fe01b4fe3a1b65dcc2ac17daf1023d9a8840b86eab83ad32a36820fb099301e5d03852c66b8d7810687c59151a0cf0ca2500c7ad46f227bfb7bed5af17265198e467802aab078e988a9a5360e1587c79192e1571e63329af3a05ed727965f05230900160b5b0d2a82a8801a8c142ce311920a3106b234c3d676adf883a89188d2848041a8638d41d09521e522d67e8bf423510184a80d05c9fac44684103d5dbad4d163107c0ca464d8e502fa4a34fafb3022a2d0487386559c135c1df0d12324f8daa3d2c5c625dd34526b4455a8b54654706f1c65af5c2f2e7b25f5c131a2828f8eae085a7b320ac2aa01852646048373969e641831ebc53be39d4eef7c41f5dd0c15838f1123c2b2a988c6024a0ce0bc437f74649b19499e309d4ddb17472f4e7d761b0045bfa0f8c5109e3c2343d0a814458a140929864c03e607cff0c321b76fddee2c5e2e383e38e6de17f798efcfff52feee34e7d5bc754bc7d1c902315d382780417f7688c2f6d56d6e4c6e74005e2d5eb58f9f3c66f674863186c9cd0965bf64677ba7f39ef82d87d5616b9d050545c9b39c222db834bcf45eefc3470fdbd957336c6d997c32a1ff51ffddf07fccbc9ab7773fbfdbe679de0eb606edfd2fefaf3df7bfc5f4d1b41d6c0dda3ccfdb3b9fdd69ff9dd87f70581db60fbe7e80eafabfe4bfc76fc55a53b9aa0891200000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>fileNewAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>fileNew()</slot>
+    </connection>
+    <connection>
+        <sender>fileOpenAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>fileOpen()</slot>
+    </connection>
+    <connection>
+        <sender>fileSaveAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>fileSave()</slot>
+    </connection>
+    <connection>
+        <sender>fileSaveAsAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>fileSaveAs()</slot>
+    </connection>
+    <connection>
+        <sender>filePrintAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>filePrint()</slot>
+    </connection>
+    <connection>
+        <sender>fileExitAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>fileExit()</slot>
+    </connection>
+    <connection>
+        <sender>editUndoAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>editUndo()</slot>
+    </connection>
+    <connection>
+        <sender>editRedoAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>editRedo()</slot>
+    </connection>
+    <connection>
+        <sender>editCutAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>editCut()</slot>
+    </connection>
+    <connection>
+        <sender>editCopyAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>editCopy()</slot>
+    </connection>
+    <connection>
+        <sender>editPasteAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>editPaste()</slot>
+    </connection>
+    <connection>
+        <sender>editFindAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>editFind()</slot>
+    </connection>
+    <connection>
+        <sender>helpIndexAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>helpIndex()</slot>
+    </connection>
+    <connection>
+        <sender>helpContentsAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>helpContents()</slot>
+    </connection>
+    <connection>
+        <sender>helpAboutAction</sender>
+        <signal>activated()</signal>
+        <receiver>qEGRO</receiver>
+        <slot>helpAbout()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">qegro.ui.h</include>
+</includes>
+<slots>
+    <slot>fileNew()</slot>
+    <slot>fileOpen()</slot>
+    <slot>fileSave()</slot>
+    <slot>fileSaveAs()</slot>
+    <slot>filePrint()</slot>
+    <slot>fileExit()</slot>
+    <slot>editUndo()</slot>
+    <slot>editRedo()</slot>
+    <slot>editCut()</slot>
+    <slot>editCopy()</slot>
+    <slot>editPaste()</slot>
+    <slot>editFind()</slot>
+    <slot>helpIndex()</slot>
+    <slot>helpContents()</slot>
+    <slot>helpAbout()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="6"/>
+</UI>

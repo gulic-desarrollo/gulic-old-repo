@@ -27,7 +27,7 @@ Está constituida por un core principal, que deberá mantener un tamaño muy red
       <mainprogram>qegro.py</mainprogram>
       <directoryradio>executable</directoryradio>
       <customdirectory>/</customdirectory>
-      <programargs></programargs>
+      <programargs/>
       <terminal>false</terminal>
       <autocompile>true</autocompile>
       <envvars/>
@@ -40,7 +40,7 @@ Está constituida por un core principal, que deberá mantener un tamaño muy red
       <abortonerror>true</abortonerror>
       <numberofjobs>1</numberofjobs>
       <dontact>false</dontact>
-      <makebin></makebin>
+      <makebin/>
       <prio>0</prio>
     </make>
     <configurations>
@@ -95,6 +95,7 @@ Está constituida por un core principal, que deberá mantener un tamaño muy red
     <tree>
       <hidenonprojectfiles>false</hidenonprojectfiles>
       <hidepatterns>*.o,*.lo,CVS</hidepatterns>
+      <showvcsfields>true</showvcsfields>
     </tree>
     <groups>
       <group pattern="*.py" name="Python files" />
@@ -124,18 +125,18 @@ Está constituida por un core principal, que deberá mantener un tamaño muy red
   </substmap>
   <kdevpythonsupport>
     <run>
-      <interpreter></interpreter>
+      <interpreter/>
       <terminal>false</terminal>
     </run>
   </kdevpythonsupport>
   <kdevdebugger>
     <general>
-      <programargs></programargs>
-      <gdbpath></gdbpath>
-      <dbgshell></dbgshell>
-      <configGdbScript></configGdbScript>
-      <runShellScript></runShellScript>
-      <runGdbScript></runGdbScript>
+      <programargs/>
+      <gdbpath/>
+      <dbgshell/>
+      <configGdbScript/>
+      <runShellScript/>
+      <runGdbScript/>
       <breakonloadinglibs>true</breakonloadinglibs>
       <separatetty>false</separatetty>
       <floatingtoolbar>false</floatingtoolbar>
@@ -148,8 +149,8 @@ Está constituida por un core principal, que deberá mantener un tamaño muy red
   </kdevdebugger>
   <kdevvisualadvance>
     <emulator>VisualBoyAdvance</emulator>
-    <binary></binary>
-    <addOptions></addOptions>
+    <binary/>
+    <addOptions/>
     <terminal>false</terminal>
     <fullscreen>false</fullscreen>
     <graphicFilter>-f0</graphicFilter>
@@ -157,13 +158,13 @@ Está constituida por un core principal, que deberá mantener un tamaño muy red
   </kdevvisualadvance>
   <kdevdocumentation>
     <projectdoc>
-      <docsystem></docsystem>
-      <docurl></docurl>
-      <usermanualurl></usermanualurl>
+      <docsystem/>
+      <docurl/>
+      <usermanualurl/>
     </projectdoc>
   </kdevdocumentation>
   <ctagspart>
-    <customArguments></customArguments>
-    <customTagfilePath></customTagfilePath>
+    <customArguments/>
+    <customTagfilePath/>
   </ctagspart>
 </kdevelop>
