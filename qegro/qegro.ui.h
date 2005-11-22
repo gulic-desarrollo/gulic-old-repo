@@ -47,72 +47,84 @@ QMessageBox.about(self, 'Aviso', message)
 
 void qEGRO::fileSaveAs()
 {
-pass
+message = u'Esta función todavía\nno ha sido implementada\nGracias por su paciencia.'
+QMessageBox.about(self, 'Aviso', message)
 }
 
 
 void qEGRO::filePrint()
 {
-pass
+message = u'Esta función todavía\nno ha sido implementada\nGracias por su paciencia.'
+QMessageBox.about(self, 'Aviso', message)
 }
 
 
 void qEGRO::fileExit()
 {
-pass
+message = u'Esta función todavía\nno ha sido implementada\nGracias por su paciencia.'
+QMessageBox.about(self, 'Aviso', message)
 }
 
 
 void qEGRO::editUndo()
 {
-pass
+message = u'Esta función todavía\nno ha sido implementada\nGracias por su paciencia.'
+QMessageBox.about(self, 'Aviso', message)
 }
 
 
 void qEGRO::editRedo()
 {
-pass
+message = u'Esta función todavía\nno ha sido implementada\nGracias por su paciencia.'
+QMessageBox.about(self, 'Aviso', message)
 }
 
 
 void qEGRO::editCut()
 {
-pass
+message = u'Esta función todavía\nno ha sido implementada\nGracias por su paciencia.'
+QMessageBox.about(self, 'Aviso', message)
 }
 
 
 void qEGRO::editCopy()
 {
-pass
+message = u'Esta función todavía\nno ha sido implementada\nGracias por su paciencia.'
+QMessageBox.about(self, 'Aviso', message)
 }
 
 
 void qEGRO::editPaste()
 {
-pass
+message = u'Esta función todavía\nno ha sido implementada\nGracias por su paciencia.'
+QMessageBox.about(self, 'Aviso', message)
 }
 
 
 void qEGRO::editFind()
 {
-pass
+message = u'Esta función todavía\nno ha sido implementada\nGracias por su paciencia.'
+QMessageBox.about(self, 'Aviso', message)
 }
 
 
 void qEGRO::helpIndex()
 {
-pass
+message = u'Esta función todavía\nno ha sido implementada\nGracias por su paciencia.'
+QMessageBox.about(self, 'Aviso', message)
 }
 
 
 void qEGRO::helpContents()
 {
-pass
+message = u'Esta función todavía\nno ha sido implementada\nGracias por su paciencia.'
+QMessageBox.about(self, 'Aviso', message)
 }
 
 
 void qEGRO::helpAbout()
 {
-pass
+message = u'Esta función todavía\nno ha sido implementada\nGracias por su paciencia.'
+QMessageBox.about(self, 'Aviso', message)
 }
 
