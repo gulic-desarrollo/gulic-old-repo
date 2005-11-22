@@ -15,3 +15,4 @@
 #
 # For example:
 #ALL (echo Committed to %r/%p; cat) |mail %s -s "CVS notification"
+qegro (echo CVS %r/%p; cat) |mail %s -s "CVS qEGRO" lcabrera@sauco.org,amd77@gulic.org
