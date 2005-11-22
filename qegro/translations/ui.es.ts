@@ -152,11 +152,11 @@
     </message>
     <message>
         <source>Copy</source>
-        <translation>Pegar</translation>
+        <translation>Copiar</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation>&amp;Pegar</translation>
+        <translation>&amp;Copiar</translation>
     </message>
     <message>
         <source>Ctrl+C</source>
@@ -176,11 +176,11 @@
     </message>
     <message>
         <source>Find</source>
-        <translation>Encontrar</translation>
+        <translation>Buscar</translation>
     </message>
     <message>
         <source>&amp;Find...</source>
-        <translation>&amp;Encontrar...</translation>
+        <translation>&amp;Buscar...</translation>
     </message>
     <message>
         <source>Ctrl+F</source>
@@ -208,7 +208,7 @@
     </message>
     <message>
         <source>&amp;About</source>
-        <translation>&amp;Sobre</translation>
+        <translation>&amp;Acerca de</translation>
     </message>
     <message encoding="UTF-8">
         <source>Búsquedas ...</source>

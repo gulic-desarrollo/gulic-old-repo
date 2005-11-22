@@ -57,7 +57,7 @@ def loadTranslations(qApp):
     # Para imponer esto el programa se puede lanzar con: $ LANG=es python qegro.py
     locale = QTextCodec.locale()
      
-    for file in ["ui", "program"]:
+    for file in ["ui", "py"]:
         translator = QTranslator(qApp)
         ret = translator.load( file + "." + locale, 'translations')
         if not ret:
