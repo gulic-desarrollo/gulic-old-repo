@@ -1,4 +1,12 @@
 /****************************************************************************
+** File: $Id$
+** $Author$
+** $Source$
+** $Revision$
+** $Date$
+**
+*****************************************************************************
+**
 ** ui.h extension file, included from the uic-generated form implementation.
 **
 ** If you want to add, delete, or rename functions or slots, use
