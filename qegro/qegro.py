@@ -50,8 +50,25 @@ class qegro(qEGRO):
 
         self.setCaption(self.__tr("qEgro Project MODIFICADO"))
 
+def loadTranslations(qApp):
+    """Load translation files into QApplication.
+       They are loaded based on the locale of the host system."""
+
+    # Para imponer esto el programa se puede lanzar con: $ LANG=es python qegro.py
+    locale = QTextCodec.locale()
+     
+    for file in ["ui", "program"]:
+        translator = QTranslator(qApp)
+        ret = translator.load( file + "." + locale, 'translations')
+        if not ret:
+            print "Warning: %s locale (%s) not loaded" % (file, locale)
+        else:
+            print "%s locale (%s) loaded succesfully" % (file, locale)
+        qApp.installTranslator( translator )
+
 def main(args):
     app = QApplication(sys.argv)
+    loadTranslations(app)
     QObject.connect(app,SIGNAL("lastWindowClosed()"),app,SLOT("quit()"))
     w = qegro()
     app.setMainWidget(w)
