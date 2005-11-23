@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+ <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width='1800' height='1200'>
+	<image x='22.0' y='24.0' width='502' height='386' xlink:href='file:///home/lcabrera/.coccinella/Incoming/91aaff3c-ce2f-47a5-6c7a-1fd7d902e12a.png' id='std image alberto@cabraloca/9703598'/>
+	<text x='201.0' y='129.0' id='std text lcabrera@localhost/159760209' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: black;'/>
+	<polyline points='38.0 144.0 40.0 150.0 40.0 170.0' id='std line alberto@cabraloca/9703600' style='stroke: white; stroke-width: 1.0; stroke-linejoin: round; fill: none;'/>
+	<rect x='549.0' y='225.0' width='343.0' height='241.0' id='std rectangle lcabrera@localhost/159760211' style='stroke: black; stroke-width: 1.0; fill: #eff3d7;'/>
+	<rect x='552.0' y='229.0' width='335.0' height='11.0' id='std rectangle lcabrera@localhost/159760212' style='stroke: black; stroke-width: 1.0; fill: none;'/>
+	<rect x='552.0' y='244.0' width='335.0' height='20.0' id='std rectangle lcabrera@localhost/159760213' style='stroke: black; stroke-width: 1.0; fill: none;'/>
+	<rect x='553.0' y='271.0' width='126.0' height='23.0' id='std rectangle lcabrera@localhost/159760214' style='stroke: black; stroke-width: 1.0; fill: none;'/>
+	<rect x='555.0' y='302.0' width='123.0' height='158.0' id='std rectangle lcabrera@localhost/159760215' style='stroke: black; stroke-width: 1.0; fill: none;'/>
+	<rect x='685.0' y='271.0' width='202.0' height='191.0' id='std rectangle lcabrera@localhost/159760216' style='stroke: black; stroke-width: 1.0; fill: #eff3d7;'/>
+	<text x='381.0' y='193.0' id='std text alberto@cabraloca/9703631' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'>Nombre</text>
+	<text x='380.0' y='210.0' id='std text alberto@cabraloca/9703632' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'>Apell1 </text>
+	<text x='379.0' y='254.0' id='std text alberto@cabraloca/9703633' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'/>
+	<text x='379.0' y='225.0' id='std text alberto@cabraloca/9703634' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'>Apell2</text>
+	<rect x='31.0' y='142.0' width='144.0' height='22.0' id='std rectangle alberto@cabraloca/9703635' style='stroke: #000000; stroke-width: 1.0; fill: none;'/>
+	<rect x='33.0' y='170.0' width='150.0' height='118.0' id='std rectangle alberto@cabraloca/9703636' style='stroke: #000000; stroke-width: 1.0; fill: none;'/>
+	<rect x='189.0' y='168.0' width='8.0' height='122.0' id='std rectangle alberto@cabraloca/9703637' style='stroke: #000000; stroke-width: 1.0; fill: white;'/>
+	<rect x='191.0' y='218.0' width='4.0' height='44.0' id='std rectangle alberto@cabraloca/9703638' style='stroke: #000000; stroke-width: 1.0; fill: none;'/>
+	<rect x='193.0' y='228.0' width='6.0' height='16.0' id='std rectangle alberto@cabraloca/9703639' style='stroke: #000000; stroke-width: 1.0; fill: none;'/>
+	<rect x='193.0' y='230.0' width='8.0' height='24.0' id='std rectangle alberto@cabraloca/9703640' style='stroke: white; stroke-width: 1.0; fill: white;'/>
+	<text x='57.0' y='156.0' id='std text alberto@cabraloca/9703641' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: white;'>cade</text>
+	<text x='43.0' y='158.0' id='std text alberto@cabraloca/9703642' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'>cadena a buscar</text>
+	<text x='43.0' y='190.0' id='std text alberto@cabraloca/9703643' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'>resultados</text>
+	<text x='37.0' y='423.0' id='std text alberto@cabraloca/9703644' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'>ACCIONES SOBRE LOS DATOS</text>
+	<text x='329.0' y='425.0' id='std text alberto@cabraloca/9703645' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'>DATOS</text>
+	<text x='413.0' y='413.0' id='std text alberto@cabraloca/9703646' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'/>
+	<text x='619.0' y='61.0' id='std text alberto@cabraloca/9703647' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'>LOS DATOS SE BUSCAN</text>
+	<text x='621.0' y='71.0' id='std text alberto@cabraloca/9703648' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'><tspan x='621.0' dy='0'>LOS DATOS SE HACEN ALTAS, BAJAS, MODIFICACIONES</tspan><tspan x='621.0' dy='12'>LOS DATOS SE ...</tspan><tspan x='621.0' dy='12'/></text>
+	<text x='701.0' y='99.0' id='std text alberto@cabraloca/9703654' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'/>
+	<polyline points='893.0 99.0 888.0 103.0' id='std line alberto@cabraloca/9703656' style='stroke: #000000; stroke-width: 1.0; stroke-linejoin: round; fill: none;'/>
+	<polyline points='901.0 89.0 885.0 105.0' id='std line alberto@cabraloca/9703657' style='stroke: #000000; stroke-width: 1.0; stroke-linejoin: round; fill: none;'/>
+	<polyline points='883.0 105.0 717.0 101.0' id='std line alberto@cabraloca/9703658' style='stroke: #000000; stroke-width: 1.0; stroke-linejoin: round; fill: none;'/>
+	<polyline points='717.0 101.0 699.0 85.0' id='std line alberto@cabraloca/9703659' style='stroke: #000000; stroke-width: 1.0; stroke-linejoin: round; fill: none;'/>
+	<text x='743.0' y='123.0' id='std text alberto@cabraloca/9703660' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'>ACCIONES</text>
+	<text x='683.0' y='115.0' id='std text alberto@cabraloca/9703661' style='stroke-width: 0; font-family: Helvetica; font-size: 8pt; fill: #000000;'/>
+</svg>
