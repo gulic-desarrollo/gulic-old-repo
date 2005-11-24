@@ -1,0 +1,116 @@
+Base de datos agenda-company1
+==============================
+
+es una base de datos propiedad del usuario sql luis, al cual luis
+puede acceder a todo, mientras que el resto de personas con login sql,
+solo a las TABLAS autorizadas, y de formas concretas (nada, leer o
+leer/escribir).
+
+Supongamos que el usuario pepe (no es el admin, el admin es luis)
+tiene sus datos en el sistema. Para él, estarán creadas las siguientes
+tablas:
+
+TABLA pepe_public
+==================
+
+Esta tabla: pepe/admin la pueden leer/escribir, el resto de personas leer solo.
+
+MODULE            | KEY         | DATATYPE | VALUE
+---------------------------------------------------------
+Direcciones       | Profesional | Texto    | C/La repera, numero 5, 38101, tenerife
+Telefonos         | Profesional | Telefono | 922626262
+Datos Geograficos | Latitud     | Float    | +16.25
+Datos Geograficos | Longitud    | Float    | +28.25
+
+TABLA pepe_private
+==================
+
+Esta tabla: pepe/admin la pueden leer/escribir, el resto de personas nada.
+
+MODULE            | KEY         | DATATYPE | VALUE
+------------------------------------------------------
+Direcciones       | Particular  | Texto    | C/La repera padre, numero 6, 38121, tenerife
+Telefonos         | Profesional | Telefono | 922123462
+Relacion Familiar | Familia     | Relation | Hijo:perico
+Relacion Familiar | Familia     | Relation | Querida:periquita
+Relacion Familiar | Social      | Relation | Padawan:pepeluis
+
+TABLA pepe_system
+=================
+
+Esta tabla: admin la pueden leer/escribir, pepe leer solo, resto de personas nada.
+
+MODULE | KEY     | DATATYPE     | VALUE
+-----------------------------------------
+Cuotas | Anuncio | Comunicacion | 20030101:email@tal.cual.org
+Cuotas | Pagada  | Ingreso      | 20030102:Asiento25
+Cuotas | Anuncio | Comunicacion | 20040101:email2@tal.cual.org
+Cuotas | Pagada  | Ingreso      | 20040116:Asiento125
+Cuotas | Anuncio | Comunicacion | 20050101:email2@tal.cual.org
+Cuotas | Pagada  | Ingreso      | 20050112:Asiento525
+
+Pantallas de datos:
+=====================
+
+Tenemos que tener por algun lado una relacion de pantallas de datos,
+que pueden ser por módulo o mezclar diferentes módulos. Por ejemplo:
+
+Pestaña 1: datos de contacto
+ - Label: entrada de direcciones
+ - USER=pepe MODULE=Direcciones KEY=Particular
+ - USER=pepe MODULE=Direcciones KEY=Profesional
+ - USER=pepe MODULE=Direcciones KEY=De verano
+ - Label: entrada de emails
+ - USER=pepe MODULE=Email KEY=Particular
+ - USER=pepe MODULE=Email KEY=Profesional
+ - USER=pepe MODULE=Email KEY=De verano
+Pestaña 2: ...
+
+Cada una de las lineas genera un control, que será readonly o
+readwrite segun en la tabla en la que esté. El software debe buscar
+en las tablas pepe_private, pepe_public, y pepe_system, y solo
+obtendrá datos de las que está autorizado a ver. Es decir: pepe podrá
+ver/editar todos sus datos excepto los de administrador, manolo podrá
+ver los datos publicos de pepe, los privados no. Y el admin podra
+ver/editar todo. Todo esto dependiendo de la tabla en la que esté, es
+decir, de los permisos del fulano.
+
+Podría diseñarse otra pantalla así:
+
+ - Label: listado de socios
+ - USER=* MODULE=Datos basícos  KEY=Nombre
+ - USER=* MODULE=Datos basícos  KEY=Apellido1
+ - USER=* MODULE=Datos basícos  KEY=Apellido2
+ - USER=* MODULE=Telefonos      KEY=Particular
+ - USER=* MODULE=Telefonos      KEY=Profesional
+ - USER=* MODULE=Social         KEY=Familiar      SEARCH=Querida
+
+Esto nos debería mostrar una tabla de datos con tantas columnas como
+se ven, una para cada usuario, que segun los privilegios nos enseñará
+unas cosas u otras u todas si somos el admin. Bajo este sistema sería
+la consulta más pesada de la aplicacion, pues si tienes N usuarios en
+el sistema, tienes que abrir 3*N tablas, pero todo se puede mejorar
+con un indice y tal.
+
+
+tipos de datos:
+==================
+
+En DATATYPE, aparte de tipos estandar como texto y float, hay tipos
+inventados complejos, como: teléfono, comunicacion, ingreso, etc.
+
+Cada tipo de datos, sea estandar o inventado, tiene asociado un
+control estandar (o bien un control complejo e inventado) que
+tiene unos métodos estandarizados por nosotros que pueden ser:
+new_leersolo(), new_leerescribir(), load(), save(), ... Esto
+nos permite generar una interfaz dinámicamente según el tipo de dato.
+Por ejemplo, el tipo inventado "Telefono" puede tener asociado un
+control de editar normal, pero customizado para que solo deje entrar 9
+dígitos. Un ingreso puede ser un control complejo, formado de varios
+controles que uno presenta el dia, otro el importe, etc.
+
+Tambien cada tipo de dato tiene asociado una presentacion en forma
+de cadena, por ejemplo, el datatype Relation tiene la siguiente
+cadena: "[RELACION]:[USERID]", es decir, "Querida:Mariana", o
+"Hermano:Joaquin".
+
