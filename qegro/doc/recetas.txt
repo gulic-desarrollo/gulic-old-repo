@@ -1,0 +1,68 @@
+#######################################################################
+# File: $Id$
+# $Author$
+# $Source$
+# $Revision$
+# $Date$
+#######################################################################
+
+#############################################################################
+# qegro project
+#
+# Author:
+#         Luis Cabrera Sauco <lcabrera at gulic org>
+#         Alberto Morales Diaz <amd77 at gulic org>
+#
+#         Copyleft  (C)2005-2005
+#
+# This file is part of qegro project.  
+# This file program may be used, distributed and modified without limitation.
+#
+#############################################################################
+
+
+## Campos de ejemplo de un ldap 
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+dn: uid=lcabrera, ou=vmail, o=savor.gulic.org,c=es
+cn: Luis
+sn: Cabrera Sauco
+givenName: Cabrera Sauco
+telephoneNumber: 619 223 487
+street: C/ Mola,5  A. Bajo
+l: Las Palmas
+st: Las Palmas de Gran Canaria
+postalCode: 35018
+loginShell: /bin/bash
+userPassword:: e0NSWVBSUfXBhQUtBDdMVW9yTFk=
+mailAlternateAddress: lcabrera@idecnet.com
+uidNumber: 1009
+gidNumber: 1009
+mailHost: gulic.org
+mailQuota: 2000000s, 1500c
+preferredLanguage: es
+qmailDotMode: both
+accountStatus: active
+ou: vmail
+creatorsName: cn=admin,o=savor.gulic.org, c=es
+createTimestamp: 20011201011651Z
+mail: lcabrera@gulic.org
+mail: lcabrera
+uid: lcabrera
+homeDirectory: /var/qmail/maildirs/lcabrera
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: qmailUser
+mailMessageStore: /var/qmail/maildirs/lcabrera
+modifiersName: cn=admin,o=savor.gulic.org, c=es
+modifyTimestamp: 20040402163758Z
+
+
+## Localizar el nombre de usuario en Win y en Unix
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if sys.platform=="win32":
+    print os.getenv("USERNAME")
+else:
+    print os.getenv("USER")
+
