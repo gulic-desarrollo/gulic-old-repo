@@ -35,10 +35,10 @@ $BEGIN_BODY = '<body>
             <li><a href="index.php?q=RabicheLiveCD">Rabiche Live CD</a></li>
             <!--<li><a href="index.php?q=ApuntesViejos">viejos</a></li>-->
             <li><a href="index.php?q=Colaborar">Colaborar</a></li>
+            <li><a href="index.php?q=Libro">Libro del CILA</a></li>
             <!--
             <li><a href="index.php?q=ApuntesCILA">Apuntes del CILA</a></li>
             <li><a href="index.php?q=EjemplosCILA">Ejemplos de c&oacute;digo</a></li>
-            <li><a href="index.php?q=LibroCILA">Libro del CILA</a></li>
             -->
         </ul>
         
