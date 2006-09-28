@@ -59,6 +59,7 @@ $BEGIN_BODY = '<body>
             <li><a href="index.php?q=Septiembre2003">Septiembre 2003</a></li>
             <li><a href="index.php?q=Octubre2004">Octubre 2004</a></li>
             <li><a href="index.php?q=Octubre2005">Octubre 2005</a></li>		
+            <li><a href="index.php?q=Septiembre2006">Septiebre 2006</a></li>		
         </ul> 
         <div><a href="http://validator.w3.org/check?uri=referer"><img src="img/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a></div>
     </div>
