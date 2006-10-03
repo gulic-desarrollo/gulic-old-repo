@@ -1,0 +1,111 @@
+\documentclass[a3paper,12pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{eurosym}
+\usepackage{graphicx}
+\usepackage{fancybox}
+\usepackage[dvipsnames]{color}
+
+% sacado de /usr/share/doc/texmf/latex/geometry/geometry.dvi.gz
+% para definir tipo de hoja y márgenes (90% texto, 5% margen izqdo, 5 drcho)
+\usepackage[verbose,noheadfoot,dvips,a3paper,hscale=1,vscale=1]{geometry}
+
+% cogidos de la presentacion
+\newcommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+\newcommand{\cila}{{\sc Curso de Introducción a Linux para Alumnos}}
+%\newcommand{\pila}{{\sc Party de Instalación de Linux para Alumnos}}
+%\newcommand{\tila}{{\sc Taller de Iniciación a Linux para Alumnos}}
+\newcommand{\gulic}{{\sc Grupo de Usuarios de Linux de Canarias}}
+\newcommand{\fmat}{{\sc Facultad de Matemáticas}}
+\newcommand{\ull}{{\sc Universidad de La Laguna}}
+\newcommand{\linux}{GNU/Linux}
+\newcommand{\debian}{Debian \linux}
+\newcommand{\gfdl}{GNU Free Documentation License}
+\newcommand{\myoval}[1]{\vspace*{3mm}\Ovalbox{\parbox{\columnwidth}{\large\sf #1}}\vspace*{3mm}}
+\newcommand{\MYOVAL}[1]{\Ovalbox{\parbox{\columnwidth}{\LARGE\bf\sf #1}}\vspace*{2mm}}
+\newcommand{\dcha}[1]{\vspace*{-7mm}\begin{flushright}#1\end{flushright}\vspace*{-4mm}}
+
+\setlength{\parskip}{2mm}
+\setlength{\columnsep}{10mm}
+\setlength{\fboxsep}{2mm}
+\setlength{\fboxrule}{1mm}
+
+\begin{document}
+\thispagestyle{empty}
+
+
+%\vspace*{3mm}\includegraphics[width=285mm]{imagenes/barratotal.eps}
+
+\vspace*{0.5cm}
+%\rotatebox{90}{\resizebox{100mm}{10mm}{\Large\bf Del 18 al 22 de septiembre del2006}}
+
+\vspace*{-8.7cm}
+\hspace*{-6mm}\includegraphics{imagenes/cila_encuentro50.eps}
+
+\vspace*{-16.5cm}
+\vspace*{-18.5cm}\hspace*{2.5cm}
+
+\vspace*{-9cm} %Bug1:::: Comentario añadido para corregir algo a lo chapuza.
+\hspace*{17cm} 
+
+\hspace*{25mm}
+\begin{minipage}{25cm}
+
+%\includegraphics[width=100mm]{imagenes/fecha.eps}
+\resizebox{100mm}{50mm}{\Large\bf \textcolor{white}{CILA}}
+
+%\vspace*{5mm}
+
+%\includegraphics[width=100mm]{imagenes/cila.gulic.org.eps}
+
+%\vspace*{35mm}
+%\vspace*{1.5cm}
+
+\myoval{¿Qué es?} 
+  \large
+	\par \noindent El CILA (Curso de Introducción a Linux para Alumnos) es un
+curso que tradicionalmente a estado destinado a ``usuarios novatos''. Por ``usuarios
+novatos'' entendemos gente que no use habitualmente o desconozca este sistema
+operativo así como el software libre en general. Este año, además, ofrecemos otros cursos más específicos. 
+
+\myoval{Curso Iniciación (2 cle)}
+	\par \noindent Su finalidad es dotar a los alumnos que desconozcan el sistema operativo Linux o el software libre en general de los conocimientos mínimos que les permitan desenvolverse con soltura en este entorno. Aprenderán herramientas de software
+libre mediante charlas y de forma práctica con las que puedan realizar sus trabajos académicos u otras actividades sobre esta plataforma.\\\\
+\myoval{Curso Administración Sistemas Linux (2 cle)}
+  \par \noindent Curso orientado a aquellos usuarios que deseen aprender a dar distintos tipos de servicios con un sistema GNU/Linux. Se requiere que se tenga cierta soltura a la hora de manejar este sistema desde el punto de vista de usuario.
+
+\myoval{Curso Programación Phyton (1 cle)}
+  \par  \noindent Curso orientado a aprender ¿el lenguaje¿ de programación python. Acabarás sabiendo hacer aplicaciones graficas así como trabajando con bases de datos y plataformas web. No es indispensable para cojer este modulo saber programar en python, pero si el programar con soltura, puesto que se avanzara muy rápido en el curso.
+
+\myoval{Curso Herramientas Técnico Ciéntificas (1 cle)}
+  \par \noindent Talleres en el que se introducirán herramientas necesarias para los primeros años de la titulación de matemáticas, aunque las herramientas vistas pueden ser útiles tambien en física y en ingenierías.
+
+\myoval{Fechas, horario y lugar} 
+Los cursos se realizarán los sábados comprendidos entre el 28 de octubre y el 2 de diciembre del 2006 en hora. En el edificio blanco y en el edificio Calabaza de las Facultades de Matemáticas y Física de la Universidad de La Laguna.
+
+\begin{center}
+	\Large \par \noindent \begin{tabular}{ccccc}
+ 	\textbf{Curso}     & \textbf{Plazas}   & \textbf{Días(octubre)} & \textbf{Días(noviembre)} & \textbf{Días(diciembre)} \\
+	 Iniciación		     &  50               &  28                    & 4, 11, 18                &                          \\
+   Administración    &  20               &  28                    & 4, 11, 18                &                          \\
+   P.Python          &  25               &                        & 25                       &  2                       \\
+   H.T.Científicas   &  25               &                        &                          &     											\\         
+	\end{tabular} \\
+\end{center}
+
+\end{minipage}
+
+%\vspace*{10mm}
+
+\vspace*{6mm}\hspace*{2mm}\parbox{30cm}{%
+\centering\Huge\sf
+%Matrícula abierta del 9 al 17 de Septiembre en la oficina del \\
+%Vicerrectorado de Extensión Universitaria, en C/ Viana, 50}
+Más información sobre el curso así como la matrícula en la URL \textcolor{blue}{\tt http://cila.gulic.org} o
+escribiendo a \\ 
+\textcolor{blue}{\tt cila@gulic.org}}
+
+
+\end{document}
