@@ -19,14 +19,6 @@ $BEGIN_BODY = '<body>
             <li><a href="index.php?q=Presentacion">Portada</a></li>
         </ul>
 
-        <p>Edición Matemáticas</p>
-        <ul>
-            <li><a href="index.php?q=MatematicasContenido">Contenido</a></li>
-            <li><a href="index.php?q=MatematicasMatricula">Matrícula</a></li>
-            <li><a href="index.php?q=MatematicasEvaluacion">Evaluación</a></li>
-            <li><a href="index.php?q=MatematicasCalificaciones">Calificaciones</a></li>
-        </ul>
-
         <p>Apuntes</p>
         
         <ul>
@@ -42,14 +34,6 @@ $BEGIN_BODY = '<body>
             -->
         </ul>
         
-        <p>Edición Sociología</p>
-        <ul>
-            <li><a href="index.php?q=SociologiaContenido">Contenido</a></li>
-            <li><a href="index.php?q=SociologiaMatricula">Matrícula</a></li>
-            <li><a href="index.php?q=SociologiaEvaluacion">Evaluación</a></li>
-            <li><a href="index.php?q=SociologiaCalificaciones">Calificaciones</a></li>
-        </ul>
-
         <p>Ediciones Anteriores</p>
         <ul>
             <li><a href="index.php?q=Noviembre2001">Noviembre 2001</a></li>
