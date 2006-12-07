@@ -7,7 +7,7 @@ use DBI;
 
 my $db_name = ''; # Base de datos del curso
 my $user = '';		# Usuario con permisos en la $db_name
-my $user_passwd = 'aika24479';	# password de $user_passwd
+my $user_passwd = '';	# password de $user_passwd
 
 my $db = DBI->connect('dbi:mysql:'.$db_name, $user, $user_passwd, {AutoCommit=>0}); 
 my $resultado;
