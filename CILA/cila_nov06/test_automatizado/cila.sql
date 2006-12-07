@@ -18,6 +18,6 @@ FOREIGN KEY (`DNI`) REFERENCES alumnos (`DNI`));
 
 CREATE TABLE `ctrl_examen` (
 `DNI` VARCHAR( 12 ) NOT NULL ,
-`Ip` CHAR(12) NOT NULL ,
+`Ip` CHAR(15) NOT NULL ,
 PRIMARY KEY (`DNI`, `Ip`), 
 FOREIGN KEY (`DNI`) REFERENCES alumnos (`DNI`));

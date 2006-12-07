@@ -37,11 +37,24 @@ $soluciones = Array("p1" => "c",
 										);
 $preguntas = array_keys($soluciones);
 
+$numrespuestas = 0;
 foreach ($_POST as $key => $value) {
-		if (in_array($key, $preguntas)) {
-			 $respuestas[$key] = $value;  //Respuestas hash con las contestaciones del alumno.
-		}
+    if (in_array($key, $preguntas)) {
+    	 $numrespuestas++;
+       $respuestas[$key] = $value;  //Respuestas hash con las contestaciones del alumno.
+    }
 }
+
+if ($numrespuestas != count($soluciones)) 
+	die("No has respondido a todas las respuestas. Has respondido solo a $numrespuestas. Pulsa atrás en tu navegador, corrígelo y vuelve a enviar el examen");
+
+// Comprobamos que este alumno no haya echo ya el examen.
+$ip = $_SERVER['REMOTE_ADDR'];
+if (!comprueba_examinado($ip, $dni))
+  die("Ya hiciste el examen pillin. Pulsa <a href='calificaciones_ini.php'>aqui</a> para ver las notas.");
+
+db_query("INSERT INTO `ctrl_examen` (DNI, Ip) ".
+	"VALUES ('$dni', '$ip');");
 
 contestacion($dni, $soluciones, $respuestas);
 
