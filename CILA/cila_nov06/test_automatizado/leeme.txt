@@ -1,0 +1,3 @@
+Crear base de datos: 
+  - mysql>create database CILA;
+  - $>mysql CILA -u jonas -p < cila.sql
