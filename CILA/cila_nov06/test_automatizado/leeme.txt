@@ -1,3 +1,31 @@
-Crear base de datos: 
-  - mysql>create database CILA;
-  - $>mysql CILA -u jonas -p < cila.sql
+Ficheros:
+	- utiles_mysql.php: Funciones php de utilidad para el manejo de la base de datos mysql.
+  - mete_alumnos.pl: Script perl para meter los alumnos en la base de datos.
+  - resultados.php: Guarda el examen realizado por un alumnos en la base de datos.
+  - calificaciones_x.php: Muestra las notas de los alumnos.
+  - cila.sql: Contiene la estructura de la base de datos. Sentencias sql para crear las tablas.
+  - examen_X.html: Preguntas del examen, Formulario que envia los datos a resultados.php.
+
+Pasos a dar para poner en marcha la aplicación para realizar examenes automaticamente.
+
+1 En primer lugar crear la base de datos mysql:
+	mysql>create database "NombreBaseDatos"
+
+2 Crear las tablas en la base de datos:
+	$>myql "NombreBaseDatos" -u usuario_db -p < cila.sql
+
+3 Editar utiles_mysql.php y darle los valores correctos a: $user, $passwd, $database
+
+4 Editar mete_alumnos.pl y darle los valores correctos a: $db_name, $user, $user_passwd
+
+5 Meter los alumnos matriculados en el curso:
+	$> mete_alumnos.pl listado_alumnos.csv     
+
+6 Editar examen_X.html con las preguntas.
+
+7 Editar resultados.php con las soluciones a las preguntas.
+
+8 Fin, hacer pruebas a ver si tira o me he olvidado de algún paso para que la realizacion de los test de forma automatizada funcione.
+
+
+  
