@@ -4,9 +4,9 @@
 		obtener su calificación.
 */
  
-$user = ;
-$passwd = ;
-$database = ;
+$user = jonas;
+$passwd = aika24479;
+$database = CILA_PYTHON;
 
 function db() {
     global $host, $user, $passwd, $database;
