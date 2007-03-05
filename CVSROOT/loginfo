@@ -39,4 +39,4 @@
 # or
 #DEFAULT (echo ""; id; echo %{sVv}; date; cat) >> $CVSROOT/CVSROOT/commitlog
 
-CVSROOT syncmail -C 2 -u -f "gulic.org" -S "[CVS GULIC]: " -R "socios@listas.gulic.org" %{sVv} socios@listas.gulic.org
+CVSROOT syncmail -C 2 -u -f "localhost" -S "[CVS GULIC]: " -R "socios@listas.gulic.org" %{sVv} socios@listas.gulic.org
