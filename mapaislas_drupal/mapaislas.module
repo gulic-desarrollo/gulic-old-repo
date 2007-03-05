@@ -1,0 +1,71 @@
+<?php
+
+function mapaislas_help($section) {
+  switch ($section) {
+    case 'admin/modules#description':
+      return t('Mapa Islas');
+  }
+}
+
+function mapaislas_contenido($original = 0) {
+
+    $ruta = drupal_get_path('module', 'mapaislas');
+    $pretexto = "<script type=\"text/javascript\">
+
+if (document.images) {
+  var inames = new Array('Canarias', 'La Palma', 'La Gomera', 'El Hierro', 'Tenerife', 'Gran Canaria', 'Fuerteventura', 'Lanzarote');
+  var flipped = new Array();
+  for(i=0; i < inames.length; i++) {
+    name = inames[i];
+    flipped[name] = new Image();
+    flipped[name].src = '/$ruta/'+name+'.png';
+  }
+}
+
+function carga(mapa, name) {
+  if(document.images) document.images[mapa].src = flipped[name].src;
+} 
+    </script>";
+    $pretexto .= '<img src="/'.$ruta.'/Canarias.png" id="mapa" width="192" height="78" usemap="#map" alt="mapa de canarias" />
+    <map id="map" name="map">
+    <area shape="poly"   coords="25,23,19,23,16,27,22,40,26,34,26,30,27,27"                             onmouseover="carga(\'mapa\', \'La Palma\')"      onmouseout="carga(\'mapa\', \'Canarias\')"    href="/la_palma"       alt="La Palma"      />
+    <area shape="circle" coords="44,49,5"                                                               onmouseover="carga(\'mapa\', \'La Gomera\')"     onmouseout="carga(\'mapa\', \'Canarias\')"    href="/la_gomera"      alt="La Gomera"     />
+    <area shape="poly"   coords="17,68,19,65,22,60,18,59,15,63,10,62,10,65,15,65,16,68"                 onmouseover="carga(\'mapa\', \'El Hierro\')"     onmouseout="carga(\'mapa\', \'Canarias\')"    href="/el_hierro"      alt="El Hierro"     />
+    <area shape="poly"   coords="81,31,72,31,66,38,52,39,61,55,67,55,73,44,73,40,82,33"                 onmouseover="carga(\'mapa\', \'Tenerife\')"      onmouseout="carga(\'mapa\', \'Canarias\')"    href="/tenerife"       alt="Tenerife"      />
+    <area shape="circle" coords="101,55,9"                                                              onmouseover="carga(\'mapa\', \'Gran Canaria\')"  onmouseout="carga(\'mapa\', \'Canarias\')"    href="/gran_canaria"   alt="Gran Canaria"  />
+    <area shape="poly"   coords="159,48,163,37,163,27,157,27,148,46,148,49,142,53,137,53,144,57,149,50" onmouseover="carga(\'mapa\', \'Fuerteventura\')" onmouseout="carga(\'mapa\', \'Canarias\')"    href="/fuerteventura"  alt="Fuerteventura" />
+    <area shape="poly"   coords="166,23,164,26,160,24,162,18,174,12,173,6,177,11,176,18,171,22"         onmouseover="carga(\'mapa\', \'Lanzarote\')"     onmouseout="carga(\'mapa\', \'Canarias\')"    href="/lanzarote"      alt="Lanzarote"     />
+    </map>';
+    $posttexto = '<div class="more-link"><a href="/islas" title="Todas las islas">más</a></div>';
+    $result = db_query_range("SELECT n.nid, n.title, tn.tid, td.name
+    FROM node n
+    INNER JOIN term_node tn USING (nid)
+    INNER JOIN term_data td USING (tid)
+    INNER JOIN term_hierarchy th USING (tid)
+    WHERE n.status = 1 AND th.parent=65
+    ORDER BY n.created DESC", 0, 10);
+    //(tid >= 52 AND tid <= 58)
+  while ($node = db_fetch_object($result)) {
+    //$output[] = '<a href="node/view/' . $node->nid . '" onmouseover="carga(\'' . $node->name . '\')" onmouseout="carga(\'Canarias\')">' . $node->title . '</a>';
+    $title=$node->title;
+    //if (strlen($title) >= 25) $title=substr($title, 0, 22) . '...';
+    $output[] = '<a href="node/view/' . $node->nid . '" title="' . $node->title . '" onmouseover="carga(\'mapa\', \'' . $node->name . '\')" onmouseout="carga(\'mapa\', \'Canarias\')">' . $title . '</a>';
+  }
+  return $pretexto . theme_item_list($output) . $posttexto;
+}
+
+function mapaislas_block($op = 'list', $delta = 0) {
+  switch ($op) {
+    case 'list':
+      $blocks[0]['info'] = t('Mapa Islas');
+      return $blocks;
+    case 'configure':
+      return array();
+    default:
+      $block['subject'] = t('¿Dónde?');
+      $block['content'] = mapaislas_contenido();
+      return $block;
+  }
+}
+
+?>
