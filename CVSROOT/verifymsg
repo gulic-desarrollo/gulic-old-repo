@@ -1,3 +1,12 @@
+# __revision__ = "$Revision$"
+# __date__     = "$Date$"
+# __copyright__= "Copyright (c) gulic.org"
+# __license__  = ""
+# __file__     = "$Id$"
+# __source__   = "$Source$"
+# __doc__      = ""
+
+
 # The "verifymsg" file is used to allow verification of logging
 # information.  It works best when a template (as specified in the
 # rcsinfo file) is provided for the logging procedure.  Given a

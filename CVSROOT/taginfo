@@ -1,3 +1,12 @@
+# __revision__ = "$Revision$"
+# __date__     = "$Date$"
+# __copyright__= "Copyright (c) gulic.org"
+# __license__  = ""
+# __file__     = "$Id$"
+# __source__   = "$Source$"
+# __doc__      = ""
+
+
 # The "taginfo" file is used to control pre-tag checks.
 # The filter on the right is invoked with the following arguments if no format strings are present:
 #
