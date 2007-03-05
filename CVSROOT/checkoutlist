@@ -1,3 +1,12 @@
+# __revision__ = "$Revision$"
+# __date__     = "$Date$"
+# __copyright__= "Copyright (c) gulic.org"
+# __license__  = ""
+# __file__     = "$Id$"
+# __source__   = "$Source$"
+# __doc__      = ""
+
+
 # The "checkoutlist" file is used to support additional version controlled
 # administrative files in $CVSROOT/CVSROOT, such as template files.
 #
