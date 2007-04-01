@@ -1,9 +1,0 @@
-f(x) := 1.0 / (1.0 + x^2);
-xl := {-5, -2, 0, 3, 5};
-yl := {};
-n := Length (xl);
-For ( i := 1 , i <= n , i++ ) [
-  yl := Append (yl, Eval (f (xl[i])));
-];
-pol (x) := Eval (LagrangeInterpolant (xl, yl, x));
-Plot2D ({f(x), pol(x)}, xl[1]:xl[n]);
