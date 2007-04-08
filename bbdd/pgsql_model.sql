@@ -306,7 +306,6 @@ SELECT pg_catalog.setval('partner_id_seq', 1, false);
 
 CREATE TABLE partner (
     id integer DEFAULT nextval('partner_id_seq'::regclass) NOT NULL,
-    ref_idusers integer NOT NULL,
     ref_idpeople integer NOT NULL,
     partner boolean DEFAULT false NOT NULL
 );
@@ -415,11 +414,19 @@ CREATE TABLE quota (
     ref_partnertype integer DEFAULT 1 NOT NULL,
     payment_date date NOT NULL,
     end_of_period date NOT NULL,
-    ref_idquotatype integer DEFAULT 1
+    ref_idquotatype integer DEFAULT 1,
+    isok boolean DEFAULT false
 );
 
 
 ALTER TABLE public.quota OWNER TO lcabrera;
+
+--
+-- Name: COLUMN quota.isok; Type: COMMENT; Schema: public; Owner: lcabrera
+--
+
+COMMENT ON COLUMN quota.isok IS 'Valor Booleano para comprobar si la cuota ha sido pagada o no';
+
 
 --
 -- Name: quotatype_id_seq; Type: SEQUENCE; Schema: public; Owner: lcabrera
@@ -450,11 +457,19 @@ CREATE TABLE quotatype (
     id integer DEFAULT nextval('quotatype_id_seq'::regclass) NOT NULL,
     description character varying(200),
     duration integer DEFAULT 12,
-    warning_time integer DEFAULT 1
+    warning_time integer DEFAULT 1,
+    euros integer DEFAULT 20
 );
 
 
 ALTER TABLE public.quotatype OWNER TO lcabrera;
+
+--
+-- Name: COLUMN quotatype.euros; Type: COMMENT; Schema: public; Owner: lcabrera
+--
+
+COMMENT ON COLUMN quotatype.euros IS 'Importe de cada tipo de cuota.';
+
 
 --
 -- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: lcabrera
