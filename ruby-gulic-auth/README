@@ -1,0 +1,40 @@
+Pasos para utilizar la clase Autenticacion:
+
+1) Instalar los paquetes necesarios: 
+     ruby
+     ruby*-dev
+     libsasl2-dev
+     sasl2-bin
+
+2) Compilar e instalar el binding de sasl:
+
+     (a) Descargar ruby-sasl
+     (b) Compilar:
+         $ cd ruby-sasl
+         $ ./extconf
+         $ ./make
+     
+     (c) Copiar sasl.so al directorio que contiene 'autenticacion.rb'
+
+3) Para que sasl funcione es necesario tener los privilegios necesarios.
+   Para eso podemos:
+
+     (a) Añadir el usuario con el que se va a ejecutar el programa
+         al grupo sasl.
+     
+     (b) O ejecutar nuestro programa como root.
+
+4) Probar el funcionamiento de la clase
+
+     (a) Añadir un usuario de prueba a la base de datos de usuarios:
+           $ sudo saslpasswd2 -c rjs3
+             Password: 1234
+
+     (b) Ejecutar el script 'autenticacion.rb'
+           $ ./autenticacion.rb
+
+         Es importante no olvidarse del punto 3.
+
+5) Usar la clase.
+   Al final del fichero 'autenticacion.rb' hay un ejemplo de uso típico.
+
