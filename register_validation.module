@@ -1,0 +1,103 @@
+<?php
+// $Id $
+
+// Private constants. 
+define('USERNAME_MAX_LENGTH', 60);
+define('DEFAULT_USERNAME_REGEXP', '');
+define('DEFAULT_INVALID_USERNAMES', 'root,noreply');
+
+/**
+ * Implementation of hook_menu().
+ */
+function register_validation_menu($may_cache) {
+  $items = array();
+  
+  if ($may_cache) {
+    $items[] = array(
+      'path' => 'admin/settings/register_validation',
+      'title' => t('Register form validation'),
+      'callback' => 'drupal_get_form',
+      'callback arguments' => array('register_validation_setup'),
+      'description' => t('Configure register form validation options.'),
+      'access' => user_access('administer site configuration'),
+      );
+  }
+  return $items;
+}
+
+/**
+ * Implementation of hook_user().
+ */
+function register_validation_user($type, &$edit, &$user, $category = NULL) {
+  if ($type == 'validate' && $category == 'account') {
+    return _register_validation_user_validate($edit);
+  }
+}
+
+function register_validation_setup() {
+  $forms['username-restrictions'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Username restrictions'),
+    '#description' => t('Configure the rules to restrict the valid usernames for new accounts.'),
+    '#collapsible' => TRUE, 
+    '#collapsed' => FALSE,
+  );
+  $forms['username-restrictions']['username_regexp'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Regular expression'),
+    '#default_value' => variable_get('register_validation_username_regexp', DEFAULT_USERNAME_REGEXP),
+    '#cols' => 50, 
+    '#rows' => 3,
+    '#maxlength' => 255,
+    '#description' => t('Perl Compatible Regular Expression to check the username.')
+  );
+  $forms['username-restrictions']['invalid_usernames'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Ivalid usernames'),
+    '#default_value' => variable_get('register_validation_invalid_usernames', DEFAULT_INVALID_USERNAMES),
+    '#cols' => 50, 
+    '#rows' => 6,
+    '#maxlength' =>1200,
+    '#description' => t('List of usernames to avoid in new accounts.')
+  );
+  $forms['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Save configuration')
+  );
+  return $forms; 
+}
+
+function register_validation_setup_submit($form_id, $form_values) {
+  variable_set('register_validation_username_regexp', $form_values['username_regexp']);
+  variable_set('register_validation_invalid_usernames', $form_values['invalid_usernames']);
+}
+
+function _register_validation_user_validate($edit) {
+    if($error = _register_validation_validate_name($edit['name'])) {
+      form_set_error('name', $error);
+    }
+}
+
+function _register_validation_validate_name($name) {
+  if (!strlen($name)) return t('You must enter a username.');
+  if (substr($name, 0, 1) == ' ') return t('The username cannot begin with a space.');
+  if (substr($name, -1) == ' ') return t('The username cannot end with a space.');
+
+  $username_regexp = variable_get('register_validation_username_regexp', DEFAULT_USERNAME_REGEXP);
+  if($username_regexp) {
+    if (!preg_match("/$username_regexp/x", $name)) return t('The username is not a valid authentication ID.');
+  }
+
+  $invalid_usernames = variable_get('register_validation_invalid_usernames', DEFAULT_INVALID_USERNAMES);
+  if($invalid_usernames) {
+    foreach(split(',', $invalid_usernames) as $username) {
+      if(trim($username) == $name) return t('The username is not a valid authentication ID.');
+    }
+  }
+
+  if (strlen($name) > USERNAME_MAX_LENGTH) {
+    return t('The username %name is too long: it must be %max characters or less.',
+              array('%name' => $name, '%max' => USERNAME_MAX_LENGTH));
+  }
+}
+

@@ -1,0 +1,39 @@
+# $Id $
+# LANGUAGE translation of Register Validation module
+# Copyright (C) 2007 Jesús Torres <aplatanado@gulic.org>
+# This file is distributed under the same license as the Register Validation module.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: register_module 0.1\n"
+"POT-Creation-Date: 2007-08-22 12:17+0100\n"
+"PO-Revision-Date: 2007-08-22 12:17+0100\n"
+"Last-Translator: Jesús Torres <aplatanado@gulic.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\\n\n"
+
+#: ../register_validation.module:18
+msgid "Register form validation"
+msgstr "Validación del formulario de registro"
+
+#: ../register_validation.module:21
+msgid "Configure Register Validation options."
+msgstr "Configurar las opciones de validación del formulario de registro"
+
+#: ../register_validation.module:40
+msgid "Username restrictions"
+msgstr "Restricciones en el nombre de usuario"
+
+#: ../register_validation.module:41
+msgid "Configure the rules to restrict the valid usernames for new accounts."
+msgstr "Configurar las reglas para restringir los nombres de usuario válidos en las nuevas cuentas."
+
+#: ../register_validation.module:52
+msgid "Perl Compatible Regular Expression to check the username."
+msgstr "Expresión regular compatible Perl (PCRE) para comprobar el nombre de usuario."
+
+#: ../register_validation.module:61
+msgid "List of usernames to avoid in new accounts."
+msgstr "Lista de nombres de usuario a evitar en las nuevas cuentas."

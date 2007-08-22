@@ -1,0 +1,4 @@
+; $Id $
+name = Register Validation
+description = "Implements some validation rules in registration form."
+
