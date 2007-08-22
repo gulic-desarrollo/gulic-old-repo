@@ -30,9 +30,17 @@ msgstr "Restricciones en el nombre de usuario"
 msgid "Configure the rules to restrict the valid usernames for new accounts."
 msgstr "Configurar las reglas para restringir los nombres de usuario válidos en las nuevas cuentas."
 
+#: ../register_validation.module:47
+msgid "Regular expression"
+msgstr "Expresión regular"
+
 #: ../register_validation.module:52
 msgid "Perl Compatible Regular Expression to check the username."
 msgstr "Expresión regular compatible Perl (PCRE) para comprobar el nombre de usuario."
+
+#: ../register_validation.module:56
+msgid "Invalid usernames"
+msgstr "Nombres de usuario inválidos"
 
 #: ../register_validation.module:61
 msgid "List of usernames to avoid in new accounts."
