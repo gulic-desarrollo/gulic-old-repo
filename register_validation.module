@@ -1,5 +1,5 @@
 <?php
-// $Id $
+// $Id$
 
 // Private constants. 
 define('USERNAME_MAX_LENGTH', 60);
