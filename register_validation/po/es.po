@@ -1,4 +1,4 @@
-# $Id $
+# $Id$
 # LANGUAGE translation of Register Validation module
 # Copyright (C) 2007 Jesús Torres <aplatanado@gulic.org>
 # This file is distributed under the same license as the Register Validation module.
