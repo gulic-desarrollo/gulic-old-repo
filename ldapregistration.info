@@ -1,0 +1,7 @@
+; $Id$
+name = ldapregistration
+description = "LDAP Registration of new users in an LDAP directory."
+package = Administration
+version = "5.x-1.2"
+project = "ldap_integration"
+dependencies = ldapauth ldapdata
