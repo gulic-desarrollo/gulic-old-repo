@@ -1,0 +1,268 @@
+<?php
+// $Id$
+/**
+ * @file
+ * 
+ * ldapregistration: LDAP Registration
+ *  
+ * The LDAP Registration module adds support for registration
+ * directly into LDAP.  If you use it along with ldapauth
+ * and ldapdata you can implement a single sign on between
+ * multiple drupal sites, with the LDAP directory as the central
+ * user repository for username, password, and email address.
+ * 
+ */
+ 
+include_once('ldap_integration/libdebug.php');
+include_once('ldap_integration/LDAPInterface.php');
+
+/*********************************
+ *       1. Drupal hooks         *
+ *********************************/
+
+function ldapregistration_help($section) {
+  $output = '';
+
+  switch ($section) {
+    case 'admin/modules#ldapregistration':
+      $output = 'ldapregistration';
+      break;
+    case 'admin/modules#description':
+    case 'admin/help#ldapregistration':
+      $output = t('Allows for registration of new users in an LDAP directory.');
+      break;
+    case 'user/help#ldapregistration':
+      $output = t('<p>If you are registered in %org\'s LDAP directory, you\'ll probably be able to login this site by using your LDAP login and password</p>', array('%org' => variable_get('ldap_org_name', LDAP_DEFAULT_ORG)));
+      break;
+  }
+
+  return $output;
+}
+
+
+/**
+ * hook_menu implementation
+ * 
+ * There is one configuration page for LDAP Registration, loaded here.
+ */
+function ldapregistration_menu($may_cache) {
+	$items = array();
+	
+	if ($may_cache) {	
+		$items[] = array(
+	      'path' => 'admin/settings/ldapregistration',
+	      'title' => t('LDAP Registration'),
+	      'callback' => 'drupal_get_form',
+	      'callback arguments' => array('ldapregistration_settings'),
+	      'access' => user_access('access administration pages'),
+      	); 
+  }
+  return $items;
+}
+
+
+/**
+ * hook_user() implementation.  ldapregistration captures new user registration,
+ * as well as some info (LDAP attributes) to display on the forms.
+ */
+function ldapregistration_user($op, &$edit, &$user, $category = NULL) {  
+
+	if ($op == 'register') {// return registration form 		
+	  return ldapregistration_register($edit);
+  	}
+     
+   // If this is a new user registration and user registrations to LDAP
+   // are enabled, then add the user to LDAP
+   
+   $ldap_server = variable_get('ldapregistration_register_server', FALSE);
+   if ($ldap_server 
+   			&& $category == 'account' 
+   			&& $edit['name'] 
+   			&& (!$edit['ldap_external_user'])) {
+		switch ($op) {   	
+			case 'validate':
+				// validate is called first.
+				// the LDAP directory must be checked in case the username 
+				// or e-mail is already in use by another user.	
+				ldapregistration_validate($edit);
+				break;
+			
+			case 'insert':
+				// save the user to the LDAP directory.
+				ldapregistration_insert($edit);   						
+				break;    			
+			}
+  	}
+}
+
+/*********************************
+ *     2. Delegate functions     *
+ *********************************/
+
+function ldapregistration_settings() {
+  global $ldap_attributes;
+  
+  $form['ldapregistration_register_server'] = array('#type' => 'textfield',
+    '#title' => t('The server name, from the LDAP Integration list of servers, that is to be used for inserting new users.'),
+    '#default_value' => variable_get('ldapregistration_register_server', ''),
+    '#size' => 50,
+    '#maxlength' => 255,
+    );
+    
+   $form['ldapregistration_base_dn'] = array('#type' => 'textfield',
+    '#title' => t('The Base DN to add users to.  For example:  ou=Users,dc=yourdomain,dc=org'),
+    '#default_value' => variable_get('ldapregistration_base_dn', ''),
+    '#size' => 50,
+    '#maxlength' => 255,
+    );
+        
+  return system_settings_form($form);
+}
+
+
+// when displaying the registration form, we want to add a couple of LDAP fields,
+// these are:   Given Name, Surname, Phone Number.
+// then these fields are captured and saved to the ldap by the $op=insert case
+// of the ldapregistration_user() hook function.
+function ldapregistration_register(&$edit) {	
+	$form = array();
+	$form['contact'] = array('#type' => 'fieldset', '#title' => t('Contact information'));
+    $form['contact']['givenName'] = array(
+  '#type' => 'textfield',
+  '#title' => t('First Name'),
+  '#default_value' => '',
+  '#size' => 60,
+  '#maxlength' => 64,
+  '#description' => t('First Name')
+   );
+
+   $form['contact']['sn'] = array( '#type' => 'textfield',
+  '#title' => t('Last Name'),
+  '#default_value' => '',
+  '#size' => 60,
+  '#maxlength' => 64,
+  '#description' => t('Last Name'),
+    );
+
+   $form['contact']['telephoneNumber'] = array( '#type' => 'textfield',
+  '#title' => t('Phone Number'),
+  '#default_value' => '',
+  '#size' => 32,
+  '#maxlength' => 32,
+  '#description' => t('Phone Number'),
+    );    
+
+	return $form;
+}
+
+// For LDAP registration we must make sure the user does not
+// already exist in the centralized LDAP directory.  If so
+// we need to return a username taken error. 
+function ldapregistration_validate(&$edit) {
+	//watchdog('ldapregistration',"ldapregsitration_validate hook.  Edit: " . print_r($edit,TRUE));	
+	
+	if ($edit['form_id'] == 'user_register') {  // make sure username is unique!
+		$username = _ldapregistration_escape_username($edit['name']);
+		//watchdog('ldapregistration','escaped username is: [' . $username .']');
+		
+		_ldapauth_init(variable_get('ldapregistration_register_server', FALSE));			
+		$retval = _ldapauth_user_lookup($username);
+		if ($retval != 0) {
+			// the user exists already... register an error saying so.
+			// The error will prevent Drupal from registering the user.
+			watchdog('ldapregistration','username [' . $username .'] was already taken in LDAP directory!');		
+			form_set_error('name', t('The username %name is already taken in the central user directory.  Please choose another.', array('%name' => theme('placeholder', $edit['name']))));		
+		} 
+		// TODO: Check for unique email address and any other unique fields required.
+	}
+}
+
+// When validation has succeeded, the user hook will be called
+// with op=insert, category=account.  At this point it is time for
+// ldapregistration.module to insert a new user into the LDAP directory.
+function ldapregistration_insert(&$edit) {
+	global $ldap;
+	
+	$username = _ldapregistration_escape_username($edit['name']);
+	
+	$pass = $edit['pass'];
+	$mail = $edit['mail'];
+	$sn = $edit['sn'] ? $edit['sn'] : $username;   // surname attribute must always be set, make it username if it's blank!
+	$givenName = $edit['givenName'];
+	$telephoneNumber = $edit['telephoneNumber'];	
+		
+	//watchdog('ldapregistration','insert: username=[' . $username .'], pass=[' . $pass . '], mail=[' . $mail .']');
+	
+	// see if the user exists!  If we are adding a user out of the central directory,
+	// there is no need to re-insert him/her.
+	
+	$retval = _ldapauth_user_lookup($username);
+	//watchdog('ldapregistration','_ldapauth_user_lookup(' . $username . ') returned: [' . $retval . ']');
+
+	if ($retval == 0) {	
+		// add the user!  Initialize the $ldap object
+		$ldap_server = variable_get('ldapregistration_register_server', FALSE);
+		_ldapauth_init($ldap_server);	
+		
+	    $row = db_fetch_object(db_query("SELECT binddn, bindpw FROM {ldapauth} WHERE name = '%s'", $ldap->getOption('name')));
+	    $binddn = $row->binddn;
+	    $bindpass = $row->bindpw;
+	    
+	    //watchdog('ldapregistration', "Binding as DN: [" . $binddn . "], with password length " . strlen($bindpass) );	    
+	    $ldap->connect($binddn, $bindpass);  	
+	    
+		// Now set up the $ldaprecord variable to hold the new user record
+		$ldaprecord['cn'] = $username;
+			
+		// If the Store Encrypted Passwords box is checked, store the
+		// password as an MD5 hash.  The hex value must also be Base64 encoded.
+		// Otherwise, just write the password.
+		$ldaprecord['userPassword'] = variable_get('ldap_store_encrypted_pass', false) ? '{md5}' . base64_encode(pack('H*', md5($pass))) : $pass;  			
+		
+		// The object class for inserting new users.  It is set to inetOrgPerson
+		// TODO: Make the user schema and its required fields configurable.
+		$ldaprecord['objectclass'][0] = "person";
+		$ldaprecord['objectclass'][1] = "organizationalPerson";
+		$ldaprecord['objectclass'][2] = "inetOrgPerson";
+		
+		$ldaprecord['sn'] = $sn;   // $sn is mandatory in the Person schema.
+		
+		// these values are optional fields in inetOrgPerson
+		if ($mail) $ldaprecord['mail'] = $mail;
+		if ($givenName) $ldaprecord['givenName'] = $givenName;
+		if ($telephoneNumber) $ldaprecord['telephoneNumber'] = $telephoneNumber;
+		
+		// The DN (distinguished name) is the unique user identifier in LDAP
+		// it should look something like this:  
+		// cn=Username,ou=Users,dc=yourdomain,dc=org.
+		// We construct that now using the DN from admin/settings/ldapregistration
+		$dn = 'cn=' . $username . ','. variable_get('ldapregistration_base_dn', LDAP_DEFAULT_BASE_DN); 
+		
+		//watchdog('ldapregistration','About to do ldap add.  DN: [' . $dn . '], ldaprecord: [' . print_r($ldaprecord,TRUE) .'], password: [' . $pass . ']');
+		$r = $ldap->add($dn , $ldaprecord);
+		
+		if ($r === TRUE) {
+			watchdog('ldapregistration','added User ' . $edit['name'] . ' to LDAP directory.  DN: ' . $dn);
+						
+			$edit['ldap_config'] = $ldap_server;
+   			$edit['ldap_authentified'] = TRUE;
+   			$edit['ldap_dn'] = $dn;
+   			$edit['dn'] = _ldapauth_login2dn($username); 							
+		} else {
+				watchdog('ldapregistration','error inserting LDAP user ' . $edit['name'] . ' (but connected OK!).  User not added to LDAP!  DN: ' . $dn . ', error: ' . $r);	
+		} 
+	} else {
+		watchdog('ldapregistration', 'User ' . $edit['name'] . ' already exists in LDAP directory, not adding.');	
+	}
+}
+
+function _ldapregistration_escape_username($user) {
+	$eqPos = strpos($user,"=");
+	if ($eqPos === false) {
+		return $user;
+	} else {
+		return strstr($user,0,$eqPos);  // strip off the equals and beyond
+	}
+}
+  
+?>
