@@ -43,5 +43,5 @@ msgid "Invalid usernames"
 msgstr "Nombres de usuario inválidos"
 
 #: ../register_validation.module:61
-msgid "List of usernames to avoid in new accounts."
-msgstr "Lista de nombres de usuario a evitar en las nuevas cuentas."
+msgid "List of usernames to avoid in new accounts. Supports regular expressions e.g. /^anon.*$/i"
+msgstr "Lista de nombres de usuario a evitar en las nuevas cuentas. Admite expresiones regulares, como por ejemplo /^anon.*$/i"

@@ -58,7 +58,7 @@ function register_validation_setup() {
     '#cols' => 50, 
     '#rows' => 6,
     '#maxlength' =>1200,
-    '#description' => t('List of usernames to avoid in new accounts.')
+    '#description' => t('List of usernames to avoid in new accounts. Supports regular expressions e.g. /^anon.*$/i')
   );
   $forms['submit'] = array(
     '#type' => 'submit',
@@ -73,7 +73,7 @@ function register_validation_setup_submit($form_id, $form_values) {
 }
 
 function _register_validation_user_validate($edit) {
-    if($error = _register_validation_validate_name($edit['name'])) {
+    if ($error = _register_validation_validate_name($edit['name'])) {
       form_set_error('name', $error);
     }
 }
@@ -84,14 +84,18 @@ function _register_validation_validate_name($name) {
   if (substr($name, -1) == ' ') return t('The username cannot end with a space.');
 
   $username_regexp = variable_get('register_validation_username_regexp', DEFAULT_USERNAME_REGEXP);
-  if($username_regexp) {
+  if ($username_regexp) {
     if (!preg_match("/$username_regexp/x", $name)) return t('The username is not a valid authentication ID.');
   }
 
   $invalid_usernames = variable_get('register_validation_invalid_usernames', DEFAULT_INVALID_USERNAMES);
-  if($invalid_usernames) {
+  if ($invalid_usernames) {
     foreach(split(',', $invalid_usernames) as $username) {
-      if(trim($username) == $name) return t('The username is not a valid authentication ID.');
+      $tusername = trim($username);
+      if (preg_match('/^\/.*\/[ix]*$/', $tusername)) {
+      	if (preg_match($tusername, $name)) return t('The username is not a valid authentication ID.');
+      }
+      else if ($tusername == $name) return t('The username is not a valid authentication ID.');
     }
   }
 
