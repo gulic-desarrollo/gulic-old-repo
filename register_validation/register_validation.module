@@ -73,7 +73,7 @@ function register_validation_setup_submit($form_id, $form_values) {
 }
 
 function _register_validation_user_validate($edit) {
-    if ($error = _register_validation_validate_name($edit['name'])) {
+    if ($error = _register_validation_validate_name($edit['_account']->name)) {
       form_set_error('name', $error);
     }
 }
