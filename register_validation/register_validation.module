@@ -83,7 +83,6 @@ function register_validation_setup() {
 }
 
 function register_validation_setup_submit($form_id, $form_values) {
-  
   switch ($form_values['op']) {
     case $form_values['submit']:
       variable_set('register_validation_username_regexp', $form_values['username-regexp']);
@@ -102,8 +101,10 @@ function register_validation_setup_submit($form_id, $form_values) {
 }
 
 function _register_validation_user_validate($edit) {
-  if ($error = _register_validation_validate_name($edit['name'])) {
-    form_set_error('name', $error);
+  if ($edit['form_id'] == 'user_register') {
+    if ($error = _register_validation_validate_name($edit['name'])) {
+      form_set_error('name', $error);
+    }
   }
 }
 
