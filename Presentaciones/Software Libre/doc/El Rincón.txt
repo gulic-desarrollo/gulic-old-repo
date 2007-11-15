@@ -1,0 +1,52 @@
+    
+    El próximo día 20 de Octubre, Gulic colaborará en la celebración de 
+    una jornada informática en la instalaciones del "IES El Rincón".
+    
+    Durante esta jornada, que está especialmente orientada hacia los 
+    mismos alumnos del centro, Gulic sacará adelante varias acciones:
+    
+        - Si el número de alumnos del instituto inscritos así lo 
+        requiere, montaremos un taller de instalación de Linux.
+        
+        - En otro taller (con unas 20 máquinas por taller) se pondrá a 
+        disposición de los alumnos distintas distribuciones en formato 
+        "LiveCD" para que las prueben en vivo.
+        
+        - En un tercer taller, ya más orientado a gente que quiera saber
+        algo más de linux y del Software Libre, se impartirán las 
+        siguientes charlas entre los asistentes:
+
+            · Software Libre en Canarias, una charla introductoria en la
+            que se explicarán las 4 libertades y se hablará sobre 
+            licencias y patentes.
+            
+            · Taller de Virtualización, en el que haremos una 
+            demostración, con software libre, de como meter otros 
+            sistemas en tu linux, sobre todo orientado a pruebas en 
+            redes y/o similares.
+            
+            · Instalación de un servidor empresarial, es decir, instalar
+            una máquina linux de manera que pueda llevar los principales
+            servicios que una empresa pueda necesitar hoy.
+            
+    Estas actividades están organizadas por el profesorado de El Rincón 
+    para sus alumnos, pero, cómo es lógico, al ser Gulic colaborador en 
+    ellas, puede asistir cualquier persona que venga en nombre de Gulic.
+    
+    El único requisito que nos han pedido, es el de que la gente 
+    relacionada con Gulic que quiera asistir, lo solicite enviando un 
+    correo a: 
+    
+            elrincon@gulic.org
+            
+    
+    De momento esto es todo. Si quieren más información, el lugar
+    adecuado sería este:
+    
+        http://elrincon.dyndns.info/mod/forum/discuss.php?d=704
+  
+  
+  
+    A ver si sale bien y se repite en breve ;)
+
+        Luis Cabrera, aka lcabrera

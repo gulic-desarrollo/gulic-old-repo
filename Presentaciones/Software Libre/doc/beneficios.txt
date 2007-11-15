@@ -1,0 +1,148 @@
+De: http://atusol.wordpress.com/category/presentacion/ ( atusol on 25th Septiembre 2006)
+
+1. ¿Qué es Linux?
+Linux es, en un sentido muy amplio, un sistema operativo. Sin embargo, más purista y específicamente, Linux es un kernel. El kernel de un sistema operativo, se refiere a su núcleo. El kernel de un sistema operativo se encarga de gestionar los recursos de la memoria, habilitar el acceso a los sistemas de archivos, administrar recursos de red, y muchas cosas más.
+
+2. ¿Y qué es GNU/Linux?
+GNU/Linux es todo el conjunto de herramientas que hacen a Linux un sistema operativo. GNU significa GNU is Not Unix y es el proyecto mundial, de software libre, iniciado en 1984 por Richard M. Stallman. GNU es lo que hace a Linux ser libre y abierto.
+
+3. ¿Linux es gratis?
+No: Linux es libre. El tipo de licencia que Linux posee es denominada GPL, que fue desarrollada por el proyecto GNU. La licencia GPL permite cuatro libertades fundamentales:
+* Libertad de uso.
+* Libertad de aprendizaje.
+* Libertad de modificación.
+* Libertad de redistribución.
+
+4. ¿Linux es software libre?
+Así es. Precisamente por poseer la licencia GNU/GPL.
+
+5. ¿Dónde consigo Linux?
+Cuando una persona «quiere Linux», lo que generalmente busca (o necesita) es una distribución (comúnmente llamada distro). Una distribución es un conjunto de aplicaciones y herramientas que conviven con el núcleo de Linux cumpliendo fundamentalmente tres funciones:
+* Instalación del sistema operativo.
+* Configuraciones del sistema operativo, principalmente de las piezas de hardware.
+* Manejo de software.
+Para mayor información sobre las distribuciones de Linux, vea mas información en el Portal de SomoLibres.org ademas de la sección de distribuciones.
+
+6. ¿Quién es el dueño de Linux?
+Nadie. Comúnmente se confunde a Linux como una empresa, y se cree que como Microsoft.com pertenece a la empresa Microsoft, entonces Linux.com será el sitio oficial de la empresa Linux, o algo similar. Nada de ello. Linux no lo posee nadie, ni siquiera su creador, Linus Torvalds, es dueño de Linux. Ã‰l únicamente posee el registro del nombre, pero el proyecto como tal es 100% libre.
+
+7. ¿Hay que saber programar para usar Linux?
+No.
+
+8. Linux gráficamente, ¿es como MS-DOS?
+Lo que mucha gente cree es que Linux, gráficamente, es como MS-DOS, es decir, con una interfaz de texto, de consola. No. Las diversas interfaces gráficas de Linux y sus escritorios, como GNOME o KDE superan enormemente a Windows®, tanto en desempeño, como en atractivo visual.
+
+9. ¿Tengo que ser un gurú de la computación para usar Linux?
+No. Las versiones más recientes de distribuciones como RedHat y Mandrake dotan al usuario de una enorme facilidad de instalación y configuración de su sistema.
+
+10. ¿Puedo tener Windows y Linux en la misma computadora?
+Sí.
+
+11. Instalando Linux, ¿podré hacer todo lo que hacía en Windows? Usar Word, Excel; navegar por Internet; chatear, etc.
+Desde luego. Para cualquier tarea de oficina se pueden usar OpenOffice.org, KOffice, StarOffice, etc. Y puedes usar una gran cantidad de navegadores, y mensajeros instantáneos, como aMSN o GAIM.
+
+
+¿Qué es software libre?
+Publicado por atusol on 25th Septiembre 2006
+¿Qué es software libre?fauna-gnu.gif
+
+El Software Libre es un asunto de libertad, no de precio. Para entender el concepto, debe pensar en «libertad de expresión», no en «cerveza gratis».
+Software Libre se refiere a la libertad de los usuarios para ejecutar, copiar, distribuir, estudiar, cambiar y mejorar el software. De modo más preciso, se refiere a cuatro libertades de los usuarios del software:
+* La libertad de usar el programa, con cualquier propósito (libertad 0).
+* La libertad de estudiar cómo funciona el programa, y adaptarlo a tus necesidades (libertad 1). El acceso al código fuente es una condición previa para esto.
+* La libertad de distribuir copias, con lo que puedes ayudar a tu vecino libertad 2).
+* La libertad de mejorar el programa y hacer públicas las mejoras a los demás, de modo que toda la comunidad se beneficie. (libertad 3). El acceso al código fuente es un requisito previo para esto.
+Un programa es software libre si los usuarios tienen todas estas libertades. Así pues, deberías tener la libertad de distribuir copias, sea con o sin modificaciones, sea gratis o cobrando una cantidad por la distribución, a cualquiera y a cualquier lugar. El ser libre de hacer esto significa (entre otras cosas) que no tienes que pedir o pagar permisos.
+También deberías tener la libertad de hacer modificaciones y utilizarlas de manera privada en tu trabajo u ocio, sin ni siquiera tener que anunciar que dichas modificaciones existen. Si publicas tus cambios, no tienes por qué avisar a nadie en particular, ni de ninguna manera en particular.
+La libertad para usar un programa significa la libertad para cualquier persona u organización de usarlo en cualquier tipo de sistema informático, para cualquier clase de trabajo, y sin tener obligación de comunicárselo al desarrollador o a alguna otra entidad específica.
+La libertad de distribuir copias debe incluir tanto las formas binarias o ejecutables del programa como su código fuente, sean versiones modificadas o sin modificar (distribuir programas de modo ejecutable es necesario para que los sistemas operativos libres sean fáciles de instalar). Está bien si no hay manera de producir un binario o ejecutable de un programa concreto (ya que algunos lenguajes no tienen esta capacidad), pero debes tener la libertad de distribuir estos formatos si encontraras o desarrollaras la manera de crearlos.
+Para que las libertades de hacer modificaciones y de publicar versiones mejoradas tengan sentido, debes tener acceso al código fuente del programa. Por lo tanto, la posibilidad de acceder al código fuente es una condición necesaria para el software libre. Para que estas libertades sean reales, deben ser irrevocables mientras no hagas nada incorrecto; si el desarrollador del software tiene el poder de revocar la licencia aunque no le hayas dado motivos, el software no es libre.
+Son aceptables, sin embargo, ciertos tipos de reglas sobre la manera de distribuir software libre, mientras no entren en conflicto con las libertades centrales. Por ejemplo, copyleft es la regla que implica que, cuando se redistribuya el programa, no se pueden agregar restricciones para denegar a otras personas las libertades centrales. Esta regla no entra en conflicto con las libertades centrales, sino que más bien las protege.
+Así pues, quizás hayas pagado para obtener copias de software GNU, o tal vez las hayas obtenido sin ningún coste. Pero independientemente de cómo hayas conseguido tus copias, siempre tienes la libertad de copiar y modificar el software, e incluso de vender copias.
+«Software Libre» no significa «no comercial». Un programa libre debe estar disponible para uso comercial, desarrollo comercial y distribución comercial. El desarrollo comercial del software libre ha dejado de ser inusual; el software comercial libre es muy importante.
+Es aceptable que haya reglas acerca de cómo empaquetar una versión modificada, siempre que no bloqueen a consecuencia de ello tu libertad de publicar versiones modificadas. Reglas como «Si haces disponible el programa de esta manera, debes hacerlo disponible también de esta otra» pueden ser igualmente aceptables, bajo la misma condición. (Observa que una regla así todavía te deja decidir si publicar o no el programa). También es aceptable que la licencia requiera que, si has distribuido una version modificada y el desarrollador anterior te pide una copia de ella, debas enviársela.
+Es aceptable que haya reglas acerca de cómo empaquetar una versión modificada, siempre que no bloqueen a consecuencia de ello tu libertad de publicar versiones modificadas. Reglas como «Si haces disponible el programa de esta manera, debes hacerlo disponible también de esta otra» pueden ser igualmente aceptables, bajo la misma condición. (Observa que una regla así todavía te deja decidir si publicar o no el programa). También es aceptable que la licencia requiera que, si has distribuido una version modificada y el desarrollador anterior te pide una copia de ella, debas enviársela.
+En el proyecto GNU, utilizamos «copyleft» para proteger de modo legal estas libertades para todos. Pero el software libre sin «copyleft» también existe. Creemos que hay razones importantes por las que es mejor usar copyleft, pero si tus programas son software libre sin ser copyleft, los podemos utilizar de todos modos.
+A veces las normas de control de exportación del gobierno de los Estados Unidos y las sanciones mercantiles pueden restringir tu libertad de distribuir copias de los programas a nivel internacional. Los desarrolladores de software no tienen el poder de eliminar o sobrepasar estas restricciones, pero lo que pueden y deben hacer es rehusar el imponerlas como condiciones de uso del programa. De esta manera, las restricciones no afectarán a actividades y gente fuera de las jurisdicciones de estos gobiernos.
+Cuando se habla de software libre, es mejor evitar términos como: «regalar» o «gratis», porque esos téminos implican que lo importante es el precio, y no la libertad.
+Por último, fíjate en que los criterios establecidos en esta definición de software libre requieren pensarse cuidadosamente para interpretarlos. Para decidir si una licencia de software concreta es una licencia de software libre, lo juzgamos basándonos en estos criterios para determinar si tanto su espíritu como su letra en particular los cumplen. Si una licencia incluye restricciones contrarias a nuestra ética, la rechazamos, aun cuando no hubiéramos previsto el problema en estos criterios. A veces un requisito de una licencia plantea una situación que necesita de una reflexión minuciosa, e incluso conversaciones con un abogado, antes de que podamos decidir si la exigencia es aceptable. Cuando llegamos a una conclusión, a veces actualizamos estos criterios para que sea más fácil ver por qué ciertas licencias se pueden calificar o no como de software libre.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Las bondades del Software Libre
+
+El Software Libre tiene múltiples aspectos positivos tanto a nivel personal como social, y también empresarial.
+
+
+Beneficios del código abierto
+ -	Apertura: principal beneficio que permite obtener el resto de las ventajas listadas a continuación, la mayoría de las cuales serían irrealizables con código cerrado.
+ -	Transparencia: no hay sorpresas, la calidad del código está a la vista de quien la quiera controlar.
+ -	Seguridad: imposibilidad de ocultar secretamente herramientas de espionaje, bombas informáticas, caballos de Troya y código malicioso en general.
+ -	Aprendizaje: por complejo que sea un programa, los aprendices de brujo pueden repasar su código y formarse con él.
+ -	Herencia cultural: todo el código disponible pasa a formar parte de los recursos públicos de que dispone la Humanidad.
+
+Beneficios de la libertad del uso del software
+ -	Legalidad: conceptos como la piratería o el uso indebido pierden sentido.
+ -	Universalidad: no se puede discriminar tipos de usos ni tipos de usuarios.
+ -	Testeo: un mayor número de personas pueden hacer pruebas de las primeras fases de desarrollo, con lo que el software resultante es más consistente.
+ -	Evaluación: facilidad para probar distintos programas sin restricciones antes de hacer una elección.
+
+Beneficios de las libertades de adaptar y mejorar el código
+ -	Personalización: posibilidad de adaptar el software a nuestras necesidades con recursos propios.
+ -	Localización: posibilidad de traducir el software a nuestro idioma.
+ -	Inversión local: posibilidad de contratar desarrolladores en el propio entorno y fomentar la industria local.
+ -	Colaboración abierta entre desarrolladores: cualquiera puede aportar mejoras utilizando sistemas de control de versiones que eviten el caos improductivo.
+ -	Colaboración entre usuarios y desarrolladores: las propuestas de mejora de los usuarios pueden ser puestas en práctica por desarrolladores voluntarios y los propios usuarios.
+ -	Descentralización: equipos de desarrolladores pueden centrarse en módulos o partes concretas del programa, trabajando en paralelo con otros equipos dedicados a otros módulos.
+ -	Reciclaje: fragmentos de código de un programa pueden ser reutilizados por otros programas.
+ -	Continuidad: si un programa es abandonado por sus desarrolladores iniciales, otros pueden reemprender el trabajo.
+ -	Desvinculación: cualquiera puede optar por iniciar una nueva rama de desarrollo de un programa si lo estima conveniente, como quien deja de ir a un bar para montar el suyo propio.
+ -	Comunidad: todas estas dinámicas propician la creación de comunidades generalmente abiertas, forzosamente horizontales y reguladas por una meritocracia benigna, donde las pocas jerarquías se establecen dinámicamente en base a la participación y el grado de reconocimiento obtenido por cada miembro por parte de sus compañeros.
+ -	Precio: la posibilidad de distribuir el software gratuitamente elimina el riesgo de precios abusivos.
+
+Beneficios de la libertad de distribución del software
+ -	Disponibilidad: muchos pueden obtener Software Libre en cualquier momento por Internet.
+ -	Diseminación: pequeños distribuidores sin ánimo de lucro pueden llevar el software allí donde los principales canales no quieren o no pueden llegar, por ejemplo, lugares sin Internet.
+
+
+Quién produce todo esto y por qué
+
+En la actualidad existen miles de programas libres, disponibles en múltiples idiomas. La inmensa mayoría de este software es gratuito y se encuentra en Internet a dos golpes de ratón. Por descontado, también existen diversos grados de calidad, hay muchos programas inacabados, inestables, redundantes...
+Pero lo importante es que casi todo lo que necesita un usuario corriente está disponible con calidades profesionales equiparables a las de sus equivalentes propietarios. ¿De dónde sale todo este software? ¿Cómo puede ser competitivo y, además, gratuito? ¿Alguien se dedica profesionalmente a esto? ¿De qué ingresos vive?
+Buena parte del desarrollo de Software Libre se realiza en procesos sostenibles donde el dinero tiene un papel secundario o inexistente. El voluntarismo ha jugado un papel clave. Unos lo denominan economía del regalo. Otros, la economía de la felicidad.
+A la mayoría no le importa el nombre: se sienten a gusto con lo que hacen voluntariamente y esto les motiva a seguir trabajando.
+También hay quien contribuye al Software Libre como un complemento formativo o como una manera de ir mejorando el currículo para encontrar trabajo.
+Una parte clave y creciente de este software es desarrollada a nivel profesional y empresarial, con modelos de negocio que no se basan en la venta de programas. Hay quien desarrolla Software Libre como un valor añadido a servicios de pago, para ahorrar el pago de licencias, para evitar las dependencias de proveedores, para competir con programas no libres... También existe una amplia rama de desarrollo financiado por universidades y administraciones con fondos públicos y para beneficio público.
+En la actualidad ya hay cientos de profesionales involucrados en el desarrollo de Software Libre, y la industria informática no duda de que ésta es una actividad creciente con perspectivas de negocio muy interesantes. La combinación de pasiones sociales e intereses empresariales está siendo la semilla del triunfo del Software Libre en múltiples sectores.
+
+---

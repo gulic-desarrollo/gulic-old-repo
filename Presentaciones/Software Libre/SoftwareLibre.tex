@@ -1,0 +1,1677 @@
+%-----------------------------------------------------------------------------
+% $Header: $
+% $Id: $
+% $Revision: $
+%
+% $Name:  $
+%
+% License: GPL
+%
+% $Author: lcabrera $
+%
+% $Date: 2007-10-20 09:33:56 $
+%
+% Copyleft: 2007 Luis Cabrera Sauco <lcabrera@sauco.org>
+%
+% This program is free software; you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation; either version 2 of the License, or
+%  (at your option) any later version.
+%
+%  This program is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+% $RCSfile: $
+% $Locker:  $
+% $State: $
+% $Source: $
+%-----------------------------------------------------------------------------
+
+\documentclass[8pt,twoside,spanish]{beamer}
+
+\mode<presentation>
+{
+	\usetheme{Warsaw}
+
+	%\usetheme{Antibes} % Valdria, pero muy simple 0-10:5
+	%\usetheme{Bergen} % Menus en la parte izq. 0-10: 4
+	%\usetheme{Berkeley} %Me gusta, 0-10:7
+	%\usetheme{Berlin} % 0-10: 6
+	%\usetheme{boxes} % Superbásico 0-10:4
+	%\usetheme{Copenhagen} %Me gusta 0-10:8
+	%\usetheme{Darmstadt} % Bastante visible 0-10:7
+	%\usetheme{default}
+	%\usetheme{Dresden}
+	%\usetheme{Frankfurt}
+	%\usetheme{Roettingen}
+	%\usetheme{Hannover}
+	%\usetheme{Ilmenau}
+	%\usetheme{uanLesPins}
+	%\usetheme{Luebeck}
+	%\usetheme{Madrid}  % Simple, me gusta.
+	%\usetheme{Malmoe}
+	%\usetheme{Marburg}
+	%\usetheme{PaloAlto}
+	%\usetheme{Pittsburgh}
+	%\usetheme{Rochester}
+	%\usetheme{Singapore} %simple y elegante: 0-10:8
+	%\usetheme{Szeged} %Bien, pero ocupa mucha pantalla: 0-10:6
+	%\usetheme{Warsaw}
+
+	%\setbeamercovered{transparent}
+	\setbeamercovered{dynamic}
+
+	% Colores
+	%\usecolortheme{albatross}
+	%\usecolortheme{beetle}
+	\usecolortheme{crane} % ME GUSTA
+	%\usecolortheme{default}
+	%\usecolortheme{dove} % blanco
+	% \usecolortheme{fly} % todo gris
+	%\usecolortheme{lily} % Azul y blanco
+	%\usecolortheme{orchid} % Azul y blanco
+	%\usecolortheme{rose}
+	%\usecolortheme{seagull} % Blanco/Blanco
+	%\usecolortheme{seahorse} % Blanco/Blanco
+	%\usecolortheme{sidebartab}
+	%\usecolortheme{structure}
+	%\usecolortheme{whale}
+
+	%\setbeamercolor{title}{fg=red!80!black,bg=red!20!white}
+
+}
+
+% Mostrar las notas a un lado
+%\setbeameroption{notes on second screen}
+\setbeameroption{shown notes}
+
+\usepackage[spanish]{babel}
+
+\usepackage[latin9]{inputenc}
+%\usepackage[utf8]{inputenc}
+
+\usepackage{courier}
+\usepackage{times}
+\usepackage{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+
+%\usepackage{amsmath}
+% math extension - one probably wants to use symbols like '[' (written as '$[$')
+
+%Muestra la tabla de contenidos al comienzo de cada subsection:
+%\AtBeginSubsection[]
+%{
+%  \begin{frame}<beamer>
+%%    \frametitle{Outline}
+%    \tableofcontents[currentsection,currentsubsection]
+%  \end{frame}
+%}
+
+% IMPORTANTE: Activar para crear presentaciones paso a paso
+%\beamerdefaultoverlayspecification{<+->}
+
+% Ni idea {heredado}
+\usepackage{ucs}
+
+%Descripción basica de la página inicial
+\title{Software Libre en Canarias}
+\subtitle{I.E.S. El Rincón\\Octubre 2007} % (optional)
+\subject{Introducción al Software Libre}
+\author[lcabrera]{Luis Cabrera Sauco \textit{<lcabrera@gulic.org>}}
+\institute{\begin{LARGE}GULIC\end{LARGE}}
+\date[I.E.S. El Rincón]{\today}
+
+%--------------------------------------------------------------------------
+
+\begin{document}
+
+	% you will have to convert the picture to .eps to make this work :
+	%\Logo(2,5){\includegraphics[width=5cm]{gulic.eps}}
+
+	\pgfdeclareimage[height=1cm]{logotipo}{img/gulic}
+	\logo{\pgfuseimage{logotipo}}
+
+	% Página inicial
+	\label{paginainicial}
+	\begin{frame}[plain]
+		\frametitle{\titlepage}
+
+		\begin{columns}[b]
+			\begin{column}{3cm}
+				\pgfdeclareimage[height=1.5cm]{logo_fsf}{img/logotipos_fsf}
+				\pgfuseimage{logo_fsf}
+			\end{column}
+			%\begin{column}{3cm}
+			%	\pgfdeclareimage[height=2cm]{miafoto}{img/Luis}
+			%	\pgfuseimage{miafoto}
+			%\end{column}
+			\begin{column}{3cm}
+				\pgfdeclareimage[height=1cm]{logo_gulic}{img/gulic}
+				\pgfuseimage{logo_gulic}
+			\end{column}
+		\end{columns}
+
+	\end{frame}
+	%\frame{\titlepage} % Embutida
+
+
+
+\label{outline}
+\label{introduccion}
+\part{Introducción \dots}
+	\begin{frame}
+		\allowbreak
+		\frametitle{Outline}
+		\framesubtitle{Contenidos de la Charla}
+
+		\begin{enumerate}
+			\item Introducción: Conceptos Básicos
+			\item Software Libre
+			\item Grupo de Usuarios de Linux de Canarias
+			\item Otros Usuarios
+			\item Software usado en esta presentación
+			\item Ruegos, preguntas u otras cosas
+		\end{enumerate}
+
+		% \tableofcontents
+		% \tableofcontents[pausesections]
+		% \tableofcontents[current]
+
+		%\hyperlink{gulic}{\beamergotobutton{Saltar sección}}
+		%\hypertarget{gulic}{}
+
+		\note{anotacion de prueba}
+	\end{frame}
+
+
+	\label{derechosdeautor}
+	\section[Derechos de Autor]{Derechos de Autor}
+	%-------------------------------------------------------------------
+		% http://es.wikipedia.org/wiki/Autor
+		\begin{frame}
+			\allowbreak
+			\frametitle{Los derechos del Autor}
+			\framesubtitle{El autor decide\dots}
+
+			%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+			%\hypertarget{historia00}{}
+
+			\begin{columns}[b]
+				\begin{column}{3cm}
+					\pgfdeclareimage[height=2cm]{img_desktop_debian}{img/desktop_debian}
+					\pgfuseimage{img_desktop_debian}
+				\end{column}
+
+				\begin{column}{7cm}
+					\begin{block}{Definamos al Autor}
+						\par{Un autor es toda persona que crea una obra susceptible de ser protegida con derechos de autor.}
+					\end{block}
+				\end{column}
+			\end{columns}
+
+			%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+		\end{frame}
+	%-------------------------------------------------------------------
+
+		\label{copyright1}
+		\subsection[Copyright]{Copyright I}
+		%-------------------------------------------------------------------
+			% http://es.wikipedia.org/wiki/Derecho_de_autor
+			\begin{frame}
+				\allowbreak
+				\frametitle{Copyright}
+				\framesubtitle{Derecho a la copia/Derechos del autor}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{itemize}
+					\item Reproducir la obra en copias o fonogramas.
+					\item Preparar obras derivadas basadas en la obra.
+					\item Distribuir copias o fonogramas de la obra al público vendiéndolas o haciendo otro tipo de transferencias de propiedad tales como alquilar, arrendar o prestar dichas copias.
+					\item Presentar la obra públicamente.
+					\item Mostrar la obra públicamente.
+					\item En el caso de grabaciones sonoras, interpretar la obra públicamente a través de la transmisión audiodigital.
+				\end{itemize}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{copyright2}
+		\subsection[Copyright II]{Copyright II}
+		%-------------------------------------------------------------------
+			% http://es.wikipedia.org/wiki/Derecho_de_autor
+			\begin{frame}
+				\allowbreak
+				\frametitle{Copyright}
+				\framesubtitle{Propiedad Intelectual}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+
+					\begin{column}{3cm}
+						\pgfdeclareimage[height=2cm]{img_copyright}{img/copyright}
+						\pgfuseimage{img_copyright}
+					\end{column}
+
+					\begin{column}{7cm}
+						\begin{block}{La Propiedad Intelectual}
+							\begin{itemize}
+								\item En España se conoce como Propiedad Intelectual al Derecho de Autor (Ley de Propiedad Intelectual (LPI), de 11 de noviembre de 1987)
+							\end{itemize}
+						\end{block}
+					\end{column}
+
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{copyleft}
+		\subsection[CopyLeft]{Copyleft}
+		%-------------------------------------------------------------------
+			% http://es.wikipedia.org/wiki/Copyleft
+			\begin{frame}
+				\allowbreak
+				\frametitle{CopyLeft}
+				\framesubtitle{Copia Permitida}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					\begin{column}{2cm}
+						\pgfdeclareimage[height=2cm]{img_copyleft}{img/copyleft}
+						\pgfuseimage{img_copyleft}
+					\end{column}
+
+					\begin{column}{8cm}
+						\begin{block}{Matices\dots}
+							\begin{itemize}
+							\item En un entorno no legal, puede considerarse como opuesto al copyright o derechos de autor tradicionales\dots
+							\item El Autor renuncia a determinados derechos individuales (pero no a todos), a favor de los derechos de la Comunidad.
+							\item Puede ser aplicado a otros contextos, aparte del código fuente de un programa.
+							\end{itemize}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+
+	\label{licencias}
+	\section[Licencias]{Licencias}
+	%-------------------------------------------------------------------
+		% http://www.gnu.org/philosophy/categories.es.html
+		% http://es.wikipedia.org/wiki/Licencia_de_software
+		\begin{frame}
+			\allowbreak
+			\frametitle{Licencias}
+			\framesubtitle{¿Qué es una licencia?}
+
+			%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+			%\hypertarget{historia00}{}
+
+			\begin{columns}[b]
+				%\begin{column}{3cm}
+				%	\pgfdeclareimage[height=2cm]{error_licencia}{img/error_licencia}
+				%	\pgfuseimage{error_licencia}
+				%\end{column}
+
+				\begin{column}{10cm}
+					\begin{block}{Definamos «licencia»}
+						\par{Una licencia de software (en inglés software license) es la autorización o permiso concedido por el titular del derecho de autor, en cualquier forma contractual, al usuario de un programa informático, para utilizar éste en una forma determinada y de conformidad con unas condiciones convenidas.}
+					\end{block}
+				\end{column}
+			\end{columns}
+
+			%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+		\end{frame}
+	%-------------------------------------------------------------------
+
+		\label{ambitodeaplicacion}
+		\subsection[Ámbito de aplicación]{Ambito de aplicación}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{Ámbito de Aplicación}
+				\framesubtitle{Definiendo los límites}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					%\begin{column}{3cm}
+					%	\pgfdeclareimage[height=2cm]{error_licencia}{img/error_licencia}
+					%	\pgfuseimage{error_licencia}
+					%\end{column}
+
+					\begin{column}{10cm}
+						\begin{block}{Hasta donde llega la licencia.}
+						\par{La licencia, que puede ser gratuita u onerosa, precisa los derechos (de uso, modificación o redistribución) concedidos a la persona autorizada y sus límites. Además, puede señalar el plazo de duración, el territorio de aplicación y todas las demás cláusulas que el titular del derecho de autor establezca.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{confusionesbasicas}
+		\subsection[Confusiones habituales]{Confusiones habituales}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{Confusiones habituales}
+				\framesubtitle{Ejemplo en Softtonic}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					\begin{column}{3cm}
+						\pgfdeclareimage[height=2cm]{error_licencia}{img/error_licencia}
+						\pgfuseimage{error_licencia}
+					\end{column}
+
+					\begin{column}{7cm}
+						\begin{block}{Confusiones en Softtonic\dots}
+							\par{Mientras que para un usuario normal de ordenador, estos conceptos no son importantes, el Profesional de la Informática debe saber distinguir estos conceptos al vuelo.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{tiposdelicencia}
+		\subsection[Tipos de Licencias]{Tipos de Licencias}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{Tipos de Licencias}
+				\framesubtitle{}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					\begin{column}{11cm}
+						\begin{block}{Principales tipos de licencia}
+							\begin{itemize}
+								\item Según el deseo del Autor
+								\begin{itemize}
+									\item Licencia de software libre sin protección heredada
+									\item Licencia de software libre con protección heredada
+									\item Licencia de software semilibre
+									\item Licencia de software no libre
+								\end{itemize}
+							\end{itemize}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{licenciasinproteccionheredada}
+		\subsection[L. libres, sin protección heredada]{ - Licencia de software libre sin protección heredada}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{Licencia de software libre sin protección heredada}
+				\framesubtitle{}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					\begin{column}{11cm}
+						\begin{block}{Licencia de software libre sin protección heredada}
+							\par{Se puede crear una obra derivada sin que ésta tenga obligación de protección alguna.}
+							\begin{itemize}
+								\item Academic Free License v.1.2.
+								\item Apache Software License v.1.1.
+								\item Artistic.
+								\item BSD License.
+								\item MIT License.
+								\item University of Illinois/NCSA Open Source License
+								\item W3C Software Notice and License.
+								\item \dots
+							\end{itemize}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{licenciaconproteccionheredada}
+		\subsection[L. libres, con protección heredada]{ - Licencia de software libre con protección heredada}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{Licencia de software libre con protección heredada}
+				\framesubtitle{}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					\begin{column}{11cm}
+						\begin{block}{Licencia de software libre con protección heredada}
+							\par{Algunas restricciones se aplican a las obras derivadas}
+							\begin{itemize}
+								\item Artistic License.
+								\item Common Public License v.1.0.
+								\item GNU General Public License v.2.0.
+								\item GNU Lesser General Public License v.2.1.
+								\item Mozilla Public License
+							\end{itemize}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{licenciasemilibre}
+		\subsection[Licencias semilibres]{ - Licencia de software semilibre}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{Licencia de software semilibre}
+				\framesubtitle{}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					\begin{column}{11cm}
+						\begin{block}{Licencia de software semilibre}
+						\par{La licencia protege a la obra, pero se permite uso, copia, modificación o redistribución permitida sin fines de lucro.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{licencianolibre}
+		\subsection[Licencias NO Libres]{ - Licencia de software no libre}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{Licencia de software no libre}
+				\framesubtitle{}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					\begin{column}{11cm}
+						\begin{block}{Licencia de software no libre}
+							\par{La licencia protege a la obra contra uso, copia o redistribución.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+
+	\label{patentes}
+	\section[Patentes]{Patentes}
+	%-------------------------------------------------------------------
+		% http://buscon.rae.es/draeI/SrvltGUIBusUsual?TIPO_HTML=2&LEMA=patente&FORMATO=ampliado#patente_de_invención.
+		% http://es.wikipedia.org/wiki/Patente
+		% http://es.wikipedia.org/wiki/Patente_de_software
+		% http://www.csol.org/cc60v/PresentacionesAlumnos/Patentes.pdf
+		\begin{frame}
+			\allowbreak
+			\frametitle{Patentes}
+			\framesubtitle{¿Qué es una Patente?}
+
+			%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+			%\hypertarget{historia00}{}
+
+			\begin{columns}[b]
+				%\begin{column}{3cm}
+				%	\pgfdeclareimage[height=2cm]{error_licencia}{img/error_licencia}
+				%	\pgfuseimage{error_licencia}
+				%\end{column}
+
+				\begin{column}{12cm}
+					\begin{block}{Definamos «Patente»}
+						\par{Documento en que oficialmente se le reconoce a alguien una invención y los derechos que de ella se derivan.}
+						\par{\dotsó\dots}
+						\par{en términos más duros: Las patentes de software son monopolios de 20 años que conceden algunas oficinas de patentes en el mundo sobre funcionalidades, algoritmos, representaciones y otras acciones que se pueden llevar a cabo con un ordenador.}
+					\end{block}
+				\end{column}
+			\end{columns}
+
+			%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+		\end{frame}
+
+		\label{origenpatentes}
+		\subsection[El Origen de las Patentes]{El origen de las patentes}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{Origen de las patentes}
+				\framesubtitle{Cómo, cuando y porqué: los argumentos}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					%\begin{column}{3cm}
+					%	\pgfdeclareimage[height=2cm]{error_licencia}{img/error_licencia}
+					%	\pgfuseimage{error_licencia}
+					%\end{column}
+
+					\begin{column}{12cm}
+						\begin{block}{Nacimiento de las patentes}
+							\begin{description}
+								\item[¿Porqué?:]\par{Porque si no se protegían las ideas, los inventores las habrían mantenido en secreto y nunca hubieran llegado al público.}
+								\item[¿Con qué objetivo?]\par{Fomentar el avance de la ciencia.}
+								\item[¿Cuando ocurrió?:]\par{Inglaterra, Siglo XVII}
+							\end{description}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+
+		\label{patentesenelmundo}
+		\subsection[Patentes en el mundo]{Patentes en el mundo}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{Las Patentes según paises}
+				\framesubtitle{\dots y sus sutiles diferencias}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					%\begin{column}{3cm}
+					%	\pgfdeclareimage[height=2cm]{error_licencia}{img/error_licencia}
+					%	\pgfuseimage{error_licencia}
+					%\end{column}
+
+					\begin{column}{12cm}
+						\begin{block}{Patentes según paises}
+							\begin{description}
+								\item[Europa:]\par{En Europa la invención debe aportar una contribución técnica.}
+								\item[Japón:]\par{En Japón la invención debe consistir en una creación muy avanzada de conceptos técnicos mediante la cual se aplique una ley natural.}
+								\item[EEUU:]\par{En Estados Unidos, la invención debe situarse simplemente en el ámbito tecnológico y no es necesaria una contribución técnica.}
+							\end{description}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{patenteseneeuu}
+		\subsection[El sistema de patentes americano]{Las patentes en EEUU}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{Las patentes en EEUU}
+				\framesubtitle{la madre del cordero}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					%\begin{column}{3cm}
+					%	\pgfdeclareimage[height=2cm]{error_licencia}{img/error_licencia}
+					%	\pgfuseimage{error_licencia}
+					%\end{column}
+
+					\begin{column}{12cm}
+						\begin{block}{Características en EEUU}
+							\begin{itemize}
+								\item ¿Se puede patentar el software?
+								\item El sistema vigente en los Estados Unidos permite patentar casi cualquier programa o sistema informático, por muy elemental que sea.
+								\item 20.000 nuevos registros al año en la Oficina de Patentes
+							\end{itemize}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{ejemplosdepatentes}
+		\subsection[Ejemplos]{Ejemplos de Patentes}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{Algunos ejemplos básicos}
+				\framesubtitle{\dotso cómo patentar a lo grande.}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					%\begin{column}{3cm}
+					%	\pgfdeclareimage[height=2cm]{error_licencia}{img/error_licencia}
+					%	\pgfuseimage{error_licencia}
+					%\end{column}
+
+					\begin{column}{11cm}
+						\begin{block}{Ejemplos de patentes}
+							\begin{itemize}
+								\item \par{Usar diferentes colores para identificar unas expresiones de otras en un lenguaje de programación}
+								\item \par{Cualquier programa de agenda que incluya gráficos de barra de las duraciones de las citas.}
+								\item \par{Cualquier procesador de texto que detecte las teclas que emplea el usuario para abrir un comando y le sugiera un método más simple.}
+								\item \par{McDonell Douglas algoritmo para el año 2000:\\\texttt{if ((year += 1900) < 1970) year += 100;}}
+							\end{itemize}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{ejemplosconcretosdepatentes}
+		\subsection[Casos más cercanos]{Casos más cercanos}
+		%-------------------------------------------------------------------
+			% http://www.advogato.org/article/101.html
+			% http://www.xiph.org/vorbis/
+			\begin{frame}
+				\allowbreak
+				\frametitle{Casos más cercanos a nosotros}
+				\framesubtitle{\dots lo que al usuario normal le da igual}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					%\begin{column}{3cm}
+					%	\pgfdeclareimage[height=2cm]{error_licencia}{img/error_licencia}
+					%	\pgfuseimage{error_licencia}
+					%\end{column}
+
+					\begin{column}{12cm}
+						\begin{block}{Casos concretos}
+							\begin{description}
+								\item[MP3:]\par{El «\textbf{Instituto Fraunhoffer}» permite el uso del formato MP3 al usuario normal, pero obliga al pago de un canon a los fabricantes de hardware. La respuesta de la comunidad: Vorbis [ogg]}
+								\item[ASF]\par{\textbf{VirtualDub}: programa GPL, de captura y procesado de vídeo. Logran dar soporte al formato *.ASF, mediante ingeniería inversa. Microsoft les denuncia por implementar el formato y consigue parar el desarrollo del programa.}
+							\end{description}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{ejemploabsurdodepatentes}
+		\subsection[El absurdo de las patentes]{Absurdo total}
+		%-------------------------------------------------------------------
+			% http://www.laflecha.net/canales/empresas/200504253/
+			\begin{frame}
+				\allowbreak
+				\frametitle{Casos más cercanos a nosotros}
+				\framesubtitle{\dots lo que al usuario normal le da igual}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					\begin{column}{2.5cm}
+						\pgfdeclareimage[height=2cm]{img_911}{img/911}
+						\pgfuseimage{img_911}
+					\end{column}
+
+				\begin{column}{9cm}
+						\begin{block}{Ejemplo de un absurdo: secuencias de números}
+							\begin{description}
+								\item[911]\par{Microsoft ha patentado el número 911 (emergencias) en EEUU.\\¿Qué será lo próximo...?\\¿Patentarán el 112 ...?}
+							\end{description}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+
+
+
+\label{sec:softwarelibre}
+\part{Software Libre}
+%-------------------------------------------------------------------
+	% http://es.wikipedia.org/wiki/Software_libre
+	\begin{frame}
+		\allowbreak
+		\frametitle{Software Libre}
+		\framesubtitle{...}
+
+		%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+		%\hypertarget{historia00}{}
+
+		\begin{columns}[b]
+			\begin{column}{2.5cm}
+				\pgfdeclareimage[height=2cm]{img_logotipos_fsf}{img/logotipos_fsf}
+				\pgfuseimage{img_logotipos_fsf}
+			\end{column}
+
+			\begin{column}{9cm}
+				\begin{block}{¿Que haremos en esta sección?}
+					\par{Dar respuestas a las preguntas y dudas más habituales sobre el Software Libre.}
+				\end{block}
+			\end{column}
+		\end{columns}
+
+		%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+	\end{frame}
+%-------------------------------------------------------------------
+
+
+	\label{queeselsoftwarelibre}
+	\section[¿Qué es el Software Libre?]{¿Qué es el Software Libre?}
+	%-------------------------------------------------------------------
+		% http://es.wikipedia.org/wiki/Software_libre
+		\begin{frame}
+			\allowbreak
+			\frametitle{¿qué es el Software Libre?}
+			\framesubtitle{Definición}
+
+			%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+			%\hypertarget{historia00}{}
+
+			\begin{columns}[b]
+				\begin{column}{2.5cm}
+					\pgfdeclareimage[height=2cm]{img_logotipos_fsf}{img/logotipos_fsf}
+					\pgfuseimage{img_logotipos_fsf}
+				\end{column}
+
+				\begin{column}{9cm}
+					\begin{block}{Una definición simple:}
+						\par{El Software Libre es un asunto de \textit{libertad}, no de \textit{precio}.\\Por \textit{Software Libre} debe entenderse la libertad de los usuarios para ejecutar, copiar, distribuir, estudiar, cambiar y mejorar cualquier software.}
+					\end{block}
+				\end{column}
+			\end{columns}
+
+			%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+		\end{frame}
+	%-------------------------------------------------------------------
+
+		\label{origendelsoftwarelibre}
+		\subsection[El Origen del Software Libre]{Origen del Software Libre}
+		%-------------------------------------------------------------------
+		% http://en.wikipedia.org/wiki/Richard_Stallman
+			\begin{frame}
+				\allowbreak
+				\frametitle{\dots en los origenes\dots}
+				\framesubtitle{El peligro de cabrear a la gente}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					\begin{column}{2.5cm}
+						\pgfdeclareimage[height=2.5cm]{img_rms}{img/rms}
+						\pgfuseimage{img_rms}
+					\end{column}
+
+					\begin{column}{9cm}
+						\begin{block}{El origen del movimiento del Software Libre fue\dots}
+							\par{\dots el resultado del enorme enfado que se pilló Richard Stallman a causa de una impresora que funcionaba de forma inadecuada en su lugar de trabajo.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{fechasclaveenelsoftwarelibre}
+		\subsection[Algunas fechas]{Fechas clave en el Software Libre }
+		%-------------------------------------------------------------------
+			% http://es.wikipedia.org/wiki/Richard_Stallman
+			% http://es.wikipedia.org/wiki/Linus_Torvalds
+			% http://es.wikipedia.org/wiki/Free_Software_Foundation
+
+			\begin{frame}
+				\allowbreak
+				\frametitle{Fechas importantes en el S.L.}
+				\framesubtitle{}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					%\begin{column}{2.5cm}
+					%	\pgfdeclareimage[height=2cm]{img_logotipos_fsf}{img/logotipos_fsf}
+					%	\pgfuseimage{img_logotipos_fsf}
+					%\end{column}
+
+					\begin{column}{12cm}
+						\begin{block}{Fechas importantes}
+							\begin{description}
+								\item[1983]\par{El \textbf{27 de septiembre de 1983} Stallman anunció en varios grupos de noticias de Usenet el inicio del proyecto GNU que perseguía crear un sistema operativo completamente libre.}
+								\item[1985]\par{En \textbf{Octubre de 1985}, Richard Stallman junto a otros entusiastas, fundan la «Free Software Foundation»}
+								\item[1991]\par{El \textbf{25 Agosto de 1991}, Linus Torvald anuncia la intención de desarrollar Linux publicamente.\\El 5 de octubre, anuncia la primera versión de Linux capaz de ejecutar BASH.\\En enero de 1992 se adopta la Licencia Pública General (GPL) para Linux.}
+							\end{description}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{fsfygnu}
+		\subsection[FSF/GNU]{FSF - GNU}
+		%-------------------------------------------------------------------
+			% http://en.wikipedia.org/wiki/GNU_Project
+			\begin{frame}
+				\allowbreak
+				\frametitle{FSF - GNU}
+				\framesubtitle{La capa y la espada}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					%\begin{column}{2.5cm}
+					%	\pgfdeclareimage[height=2cm]{img_logotipos_fsf}{img/logotipos_fsf}
+					%	\pgfuseimage{img_logotipos_fsf}
+					%\end{column}
+
+					\begin{column}{12cm}
+						\begin{block}{Dos componentes para una misma cosa\dots}
+							\begin{description}
+								\item[GNU]\par{Es el proyecto de movilización masiva iniciado por Richard Stallman, hoy ya establecido como una autentica Comunidad Virtual.\\ \begin{small}GNU significa \textbf{GNU's Not Unix}\end{small}.}
+								\item[FSF]\par{La \textbf{Free Software Foundation} es una fundación creada para, entre otras cosas, proteger el movimiento GNU.}
+							\end{description}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+	\label{libertadesdelsl}
+	\section[Las 4 Libertades]{Libertades del S.L.}
+	%-------------------------------------------------------------------
+		%Enlaces
+		\begin{frame}
+			\allowbreak
+			\frametitle{Las 4 Libertades del Software Libre}
+			\framesubtitle{Las bases del Software Libre}
+
+			%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+			%\hypertarget{historia00}{}
+
+			\begin{description}
+				\item[Libertad 0:] \textit{Ejecutar el programa con cualquier propósito (privado, educativo, público, comercial, militar, etc.)}
+				\item[Libertad 1:] \textit{Estudiar y modificar el programa (para lo cual es necesario poder acceder al código fuente)}
+				\item[Libertad 2:] \textit{Copiar el programa de manera que se pueda ayudar al vecino o a cualquiera}
+				\item[Libertad 3:] \textit{Mejorar el programa y publicar las mejoras}
+			\end{description}
+
+			\note{Resaltar la importancia de poder manipular el software según nos convenga}
+
+			%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+		\end{frame}
+	%-------------------------------------------------------------------
+
+
+		\label{aclaracionlibrecomercial}
+		\subsection[La pela es la pela]{S.L. vs. Hacer Dinero}
+		%-------------------------------------------------------------------
+			% http://es.wikipedia.org/wiki/Software_libre
+			\begin{frame}
+				\allowbreak
+				\frametitle{De cómo hacer dinero con el Software Libre}
+				\framesubtitle{¿Software Libre == gratis?}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					%\begin{column}{2.5cm}
+					%	\pgfdeclareimage[height=2cm]{img_logotipos_fsf}{img/logotipos_fsf}
+					%	\pgfuseimage{img_logotipos_fsf}
+					%\end{column}
+
+					\begin{column}{12cm}
+						\begin{block}{El Software Libre se puede vender}
+							\par{El software libre suele estar disponible gratuitamente (pero no hay que asociar software libre a software gratuito), o a precio del costo de la distribución de éste, sin embargo no es obligatorio que sea así y, aunque conserve su carácter de libre, puede ser vendido comercialmente.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				\begin{columns}[b]
+					%\begin{column}{2.5cm}
+					%	\pgfdeclareimage[height=2cm]{img_logotipos_fsf}{img/logotipos_fsf}
+					%	\pgfuseimage{img_logotipos_fsf}
+					%\end{column}
+					\begin{column}{12cm}
+						\begin{block}{Software Libre ¿Comercial?}
+							\par{«Software Libre» no significa «no comercial». Un programa libre debe estar disponible para uso comercial, desarrollo comercial y distribución comercial. El desarrollo comercial del Software Libre ha dejado de ser inusual; el Software Comercial Libre es muy importante.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				\begin{columns}[b]
+					%\begin{column}{2.5cm}
+					%	\pgfdeclareimage[height=2cm]{img_logotipos_fsf}{img/logotipos_fsf}
+					%	\pgfuseimage{img_logotipos_fsf}
+					%\end{column}
+
+					\begin{column}{12cm}
+						\begin{block}{Se fomenta el desarrollo local}
+							\par{Otro factor importante, que hay que dejar claro, es que el Software Libre crea empresas locales para aquellas personas que están cualificadas, generando empleos y riqueza.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+
+		\label{politica}
+		\subsection[GNU/Linux y la politica]{Política}
+		%-------------------------------------------------------------------
+			%Enlaces:
+			\begin{frame}
+
+				\allowbreak
+				\frametitle{Enfoque politico}
+				%\framesubtitle{o cómo sacar las cosas de quicio}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\par{La mayoría del software libre se produce por equipos internacionales que cooperan a través de la libre asociación. Los equipos están típicamente compuestos por individuos con una amplia variedad de motivaciones. Existen muchas posturas acerca de la relación entre el software libre y el actual sistema económico capitalista:}
+
+				\begin{itemize}
+					\item \textit{Algunos consideran el software libre como un competidor del capitalismo, una forma de anarquismo práctico.}
+					\item \textit{Algunos consideran el software libre como otra forma de competición en el mercado libre, y que el copyright es una restricción gubernamental sobre el mercado.}
+					\item \textit{Algunos consideran el software libre como una forma de cooperación en un modelo de mercado en una línea próxima al mutualismo.}
+					\item \textit{Algunos comparan el software libre a una economía del regalo, donde el valor de una persona está basado en lo que ésta da a los demás, así como un parentesco a la economía participativa.}
+					\item \textit{Grupos como Oekonux e Hipatia consideran que todo debería producirse de esta forma y que este modelo de producción no se limita a reemplazar el modelo no libre de desarrollo del software. La cooperación basada en la libre asociación puede usarse y se usa para otros propósitos (tales como escribir enciclopedias, por ejemplo).}
+				\end{itemize}
+
+				\note{Resaltar la importancia de poder manipular el software según nos convenga}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{opinionpersona}
+		\subsection[Una opinión personal]{Opinión personal}
+		%-------------------------------------------------------------------
+			%Enlaces:
+			\begin{frame}
+				\allowbreak
+				\frametitle{Un enfoque muy personal}
+				\framesubtitle{Mi forma de ver el Software Libre}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\par{Una aproximación alternativa a lo que es el Software Libre, es la que viene marcada por los siguientes puntos:}
+
+				\begin{description}
+					\item[Egoismo práctico] \textit{Si el Software Libre me resuelve cualquier problema, el Software Libre es mi amigo.}
+					\item[Meritocracia] \textit{El Software Libre evoluciona en función de la calidad de sus programas, por por intereses comerciales. No existe el marketing.}
+					\item[Fiabilidad] \textit{El Software Libre, cuando alcanza la versión estable, me ha demostrado muchisima más fiabilidad que sus equivalentes privativos.}
+					\item[Solidaridad] \textit{Si con un poco de dedicación, de mi tiempo libre, puedo ayudar a mejorarle la vida a alguien, pues muy bien.}
+					\item[\dots]
+				\end{description}
+
+				\par{Lógicamente, existen muchisimas más razones por las que cualquiera puede terminar usando Software Libre. ¿Cuales podrían ser tus razones\dots?}
+
+				\note[item]{Resaltar la importancia de poder manipular el software según nos convenga}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+
+		\label{seguridad}
+		\subsection[Seguridad]{Seguridad}
+		%-------------------------------------------------------------------
+			%Enlaces: http://es.wikipedia.org/wiki/Seguridad_por_oscuridad
+			% http://es.wikipedia.org/wiki/Ley_de_Linus
+			\begin{frame}
+				\allowbreak
+				\frametitle{La Seguridad}
+				\framesubtitle{Blanco vs Negro}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				%\par{}
+
+				\begin{description}
+					\item[Seguridad por Oscuridad] \par{Un sistema que se apoya en la seguridad por ocultación puede tener vulnerabilidades de seguridad teóricas o prácticas, pero sus propietarios o diseñadores creen que estos puntos débiles no se conocen, y que es probable que los atacantes no los descubran.\\¿Pero qué ocurre cuando son descubiertos\dots?}
+					\item[Ley de Linus] \par{\textbf{Dados muchos ojos, todos los errores serán obvios}. A esta frase de Linus Torvalds, Eric S. Raymond lo bautizó como la Ley de Linus.}
+					\item[\dots]
+				\end{description}
+
+				\par{Está claro que estos dos modelos de seguridad se contradicen, sobre todo si hay intereses económicos de por medio.}
+				\par{¿Con cual de estos modelos te quedarías tú?}
+
+				\note[item]{Resaltar la importancia de poder manipular el software según nos convenga}
+
+			\end{frame}
+		%-------------------------------------------------------------------
+
+
+		\label{implantacion}
+		\subsection[Implantación]{Implantación}
+		%-------------------------------------------------------------------
+			%Enlaces:
+			\begin{frame}
+				\allowbreak
+				\frametitle{Implantación del Software Libre}
+				\framesubtitle{Una autentica bola de nieve\dots}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\par{Desde su nacimiento, el Software Libre no ha parado de crecer, pasando diferentes fases, desde la fase inicial en los laboratios o los ámbitos universitarios, otra fase durante la que se incorporó a los servidores de todo tipo de empres y finalizando por la etapa actual, en la que se va a la colonización del mercado doméstico. Aparte de esta evolución, el Software Libre se está implantado en otros muchisimos ambientes:}
+
+				\begin{itemize}
+					\item \textbf{Administraciones Públicas}
+					\item \textbf{Universidad}
+					\item \textbf{Empresa Privada}
+					\item \textbf{Seguridad Nacional}
+					\item \dots
+				\end{itemize}
+
+				%\par{}
+
+				\note[item]{Resaltar la importancia de poder manipular el software según nos convenga}
+
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{esquemasl}
+		\subsection[Esquema del Software Libre]{Esquema}
+		%-------------------------------------------------------------------
+			%Enlaces:
+			\begin{frame}
+				\allowbreak
+				\frametitle{Esquema}
+				%\framesubtitle{Esquema}
+
+				\begin{columns}[b]
+					\begin{column}{13cm}
+						\pgfdeclareimage[height=6cm]{img_MapaConceptual}{img/MapaConceptual}
+						\begin{center}\pgfuseimage{img_MapaConceptual}\end{center}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+
+	\label{sec:linux}
+	\section[El sistema Operativo GNU/Linux]{GNU/Linux}
+	%-------------------------------------------------------------------
+		% Enlaces
+			%Enlaces:
+			\begin{frame}
+				\allowbreak
+				\frametitle{¿Sobre qué hablaremos en esta sección?}
+				\framesubtitle{hablaremos de linux, claro\dots}
+
+				%\hyperlink{historia00}{\beamergotobutton{Saltar sección}}
+				%\hypertarget{historia00}{}
+
+				\begin{columns}[b]
+					\begin{column}{2cm}
+						\pgfdeclareimage[height=2cm]{img_tux}{img/tux}
+						\pgfuseimage{img_tux}
+					\end{column}
+
+					\begin{column}{9cm}
+						\begin{block}
+							\par{\begin{large}GNU/Linux son demasiadas cosas.\end{large}\\Tratar de explicar todo lo que gira alrededor de este sistema operativo es realmente complicado.\\ Vamos a ver si poniendo un poco de orden lo conseguimos\dots}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{outline}{\beamerreturnbutton{Sección Anterior}}
+
+			\end{frame}
+	%-------------------------------------------------------------------
+
+
+		\label{sec:queeslinux}
+		\subsection[¿Qué es el sistema operativo GNU/Linux\dots?]{¿Que es Linux?}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{¿Qué es GNU/Linux?}
+				%\framesubtitle{}
+
+				%\hyperlink{ir_a_label}{\beamergotobutton{Saltar Sección}}
+				%\hypertarget{ir_a_label}{}
+
+				\begin{columns}[b]
+					\begin{column}{2cm}
+						\pgfdeclareimage[height=2cm]{img_tux}{img/tux}
+						\pgfuseimage{img_tux}
+					\end{column}
+					%\begin{column}{3cm}
+					%	\pgfdeclareimage[height=2cm]{miafoto}{img/Luis}
+					%	\pgfuseimage{miafoto}
+					%\end{column}
+					%\begin{column}{3cm}
+					%	\pgfdeclareimage[height=1cm]{logo_gulic}{img/gulic}
+					%	\pgfuseimage{logo_gulic}
+					%\end{column}
+					\begin{column}{9cm}
+						\begin{block}{Linux: }
+							\par{Linux es, en un sentido muy amplio, un sistema operativo.}
+							\par{Sin embargo, más purista y específicamente, Linux es solo y exclusivamente el kernel de este sistema operativo.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{ir_a_label_anterior}{\beamerreturnbutton{Sección Anterior}}
+
+				\note{a}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{sec:definiciongnulinux}
+		\subsection[Definición de GNU/Linux]{¿Definición de GNU/Linux?}
+		%-------------------------------------------------------------------
+			% Enlaces: http://es.wikipedia.org/wiki/Linux
+			\begin{frame}
+				\allowbreak
+				\frametitle{Definición de GNU/Linux}
+				\framesubtitle{\dots un poquito más en serio.}
+
+				%\hyperlink{ir_a_label}{\beamergotobutton{Saltar Sección}}
+				%\hypertarget{ir_a_label}{}
+
+				\begin{columns}[b]
+					\begin{column}{2cm}
+						\pgfdeclareimage[height=2cm]{img_tux}{img/tux}
+						\pgfuseimage{img_tux}
+					\end{column}
+					%\begin{column}{3cm}
+					%	\pgfdeclareimage[height=2cm]{miafoto}{img/Luis}
+					%	\pgfuseimage{miafoto}
+					%\end{column}
+					%\begin{column}{3cm}
+					%	\pgfdeclareimage[height=1cm]{logo_gulic}{img/gulic}
+					%	\pgfuseimage{logo_gulic}
+					%\end{column}
+					\begin{column}{9cm}
+						\begin{block}{Definición}
+							\par{Linux es la denominación de un sistema operativo tipo-Unix y el nombre de un núcleo. Es uno de los paradigmas más prominentes del software libre y del desarrollo del código abierto, cuyo código fuente está disponible públicamente, para que cualquier persona pueda libremente usarlo, estudiarlo, redistribuirlo y, con los conocimientos informáticos adecuados, modificarlo.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{ir_a_label_anterior}{\beamerreturnbutton{Sección Anterior}}
+
+				\note{El kernel de un sistema operativo se encarga de gestionar los recursos de la memoria, habilitar el acceso a los sistemas de archivos, administrar recursos de red, y muchas cosas más.}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+	\label{sec:faq}
+	\section[Preguntas Frecuentes sobre Linux]{FAQ}
+	%-------------------------------------------------------------------
+		% Enlaces
+		\begin{frame}
+			\allowbreak
+			\frametitle{Preguntas Frecuentes sobre GNU/Linux}
+			\framesubtitle{\dots mitos/fud}
+
+			%\hyperlink{ir_a_label}{\beamergotobutton{Saltar Sección}}
+			%\hypertarget{ir_a_label}{}
+
+			\begin{columns}[b]
+				\begin{column}{9cm}
+					\begin{block}{Aquí estamos para que\dots}
+						\begin{center}
+							\par{\begin{large}\textbf{¡PREGUNTE}\end{large}}
+							\par{\begin{large}\textbf{UZTÉ}\end{large}}
+							\par{\begin{large}\textbf{LO QUE QUIERA!}\end{large}}
+						\end{center}
+					\end{block}
+				\end{column}
+			\end{columns}
+			%\hfill\hyperlink{ir_a_label_anterior}{\beamerreturnbutton{Sección Anterior}}
+			\note{El kernel de un sistema operativo se encarga de gestionar los recursos de la memoria, habilitar el acceso a los sistemas de archivos, administrar recursos de red, y muchas cosas más.}
+		\end{frame}
+	%-------------------------------------------------------------------
+
+
+		\label{linuxesgratis}
+		\subsection[¿Linux gratis?]{¿Linux es gratis?}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{¿Hay que pagar para obtener GNU/Linux?}
+				\framesubtitle{}
+
+				%\hyperlink{ir_a_label}{\beamergotobutton{Saltar Sección}}
+				%\hypertarget{ir_a_label}{}
+
+				\begin{columns}[b]
+					\begin{column}{2cm}
+						\pgfdeclareimage[height=1.5cm]{logo_fsf}{img/logotipos_fsf}
+						\pgfuseimage{logo_fsf}
+					\end{column}
+
+					\begin{column}{9cm}
+						\begin{block}{¿GNU/Linux es GRATIS?}
+							\par{\alert{\textit{\textbf{NO}, GNU/Linux es LIBRE}}.\\Puedes hacerte con una copia sin coste alguno, pero claro, si quires que te lo envien en una cajita, con su manual o manuales correspondientes, logicamente tendrá un coste.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{ir_a_label_anterior}{\beamerreturnbutton{Sección Anterior}}
+
+				\note{}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{linuxessoftwarelibre}
+		\subsection[¿Es Linux Software Libre?]{¿Linux es software libre?}
+		%-------------------------------------------------------------------
+			% Enlaces: http://gugs.sindominio.net/faqs/faqlinux.html
+			\begin{frame}
+				\allowbreak
+				\frametitle{¿Es GNU/Linux Software Libre\dots?}
+				\framesubtitle{}
+
+				%\hyperlink{ir_a_label}{\beamergotobutton{Saltar Sección}}
+				%\hypertarget{ir_a_label}{}
+
+				\begin{columns}[b]
+					\begin{column}{5.5cm}
+						\begin{block}{GNU/Linux es Software Libre\dots}
+								\par{\dots precisamente porque fué licenciado bajo el amparo de la GNU/GPL.}
+						\end{block}
+					\end{column}
+
+					\begin{column}{2cm}
+						\begin{center}
+							\pgfdeclareimage[height=1cm]{img_gpl}{img/gpl}
+							\pgfuseimage{img_gpl}
+						\end{center}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{ir_a_label_anterior}{\beamerreturnbutton{Sección Anterior}}
+
+				\note{}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{dondeconsigolinux?}
+		\subsection[¿Donde conseguir GNU/Linux??]{¿Dónde consigo Linux?}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{¿Donde consigo GNU/Linux?}
+				\framesubtitle{\dots y de pas, ¿que son las distribuciones?}
+
+				%\hyperlink{ir_a_label}{\beamergotobutton{Saltar Sección}}
+				%\hypertarget{ir_a_label}{}
+
+				\begin{columns}[b]
+					\begin{column}{12cm}
+						\begin{block}{¿Donde está Linux?}
+							\par{GNU/Linux, ha nacido, ha crecido y está siendo desarrollado integramente a través de Internet.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				\begin{columns}[b]
+					\begin{column}{12cm}
+						\begin{block}{¿Qué son las distribuciones?}
+							\par{Cuando una persona «quiere Linux», lo que generalmente busca (o necesita) es una distribución (comúnmente llamada distro). Una distribución es un conjunto de aplicaciones y herramientas que conviven con el núcleo de Linux}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				\begin{columns}[b]
+					\begin{column}{12cm}
+						\begin{block}{\dots y ahora la pregunta del millón: ¿Qué distribución me recomiendas?}
+							\par{Obviamente, \textbf{Debian}. \textit{Debian} supone una verdadera anomalía que va más allá del propio sistema GNU/Linux. Es la única de las grandes distribuciones que no tiene intereses comerciales ni empresariales. Son sus propios usuarios, muy activos, quienes mantienen la distribución de modo comunitario. Su objetivo es recopilar, difundir y promover el uso del software libre. El servidor de Gulic está basado en Debian, cuyo proyecto y fines compartimos todos los «guliceros».}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{ir_a_label_anterior}{\beamerreturnbutton{Sección Anterior}}
+
+				\note{}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{quieneselpropietariodelinux}
+		\subsection[¿Tiene dueño GNU/Linux?]{¿Quién es el dueño de Linux?}
+		%-------------------------------------------------------------------
+			%Enlaces: http://es.wikipedia.org/wiki/Linux
+			% http://es.wikipedia.org/wiki/Linus_Torvalds
+			% http://es.wikipedia.org/wiki/Linux_International
+			\begin{frame}
+				\allowbreak
+				\frametitle{GNU/Linux, ¿Tiene dueño?}
+				\framesubtitle{}
+
+				%\hyperlink{ir_a_label}{\beamergotobutton{Saltar Sección}}
+				%\hypertarget{ir_a_label}{}
+
+				\begin{columns}[b]
+					\begin{column}{2cm}
+						\pgfdeclareimage[height=3cm]{img_linus}{img/linus}
+						\pgfuseimage{img_linus}
+					\end{column}
+
+					\begin{column}{9cm}
+						\begin{block}{¿Quién es el dueño de Linux?}
+							\par{La marca \textit{Linux} (Número de serie: 1916230) pertenece a \textit{Linus Torvalds} y se define como "un sistema operativo para ordenadores que facilita su uso y operación".}
+							\par{Linux International es una organización creada por Linus Torvalds, el creador de la idea base y primeras versiones del kernel del sistema operativo GNU/Linux basándose a su vez, en el sistema operativo basado en Unix, Minix.\\Linux International se encarga, sin ánimo de lucro, de distribuir información acerca de GNU/Linux, además de ciertas actividades relacionadas con la promoción de Linux en ferias de informática, así como dar cierta ayuda económica a programadores, procedentes de donaciones a Linux International.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{ir_a_label_anterior}{\beamerreturnbutton{Sección Anterior}}
+
+				\note{}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{hayquesaberprogramarparausarlinux}
+		\subsection[¿Hay que saber programar para usar GNU/Linux?]{¿Hay que saber programar para usar Linux?}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{}
+				\framesubtitle{}
+
+				%\hyperlink{ir_a_label}{\beamergotobutton{Saltar Sección}}
+				%\hypertarget{ir_a_label}{}
+
+				\begin{columns}[b]
+					\begin{column}{9cm}
+						\begin{block}{¿Hay que saber programar para usar Linux?}
+							\begin{center}
+								\pgfdeclareimage[height=2cm]{img_no}{img/no}
+								\pgfuseimage{img_no}
+							\end{center}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				\begin{columns}[b]
+					\begin{column}{9cm}
+						\begin{block}{¿Es GNU/Linux sólo para \textit{programadores}?}
+							\begin{center}
+								\pgfdeclareimage[height=2cm]{img_no}{img/no}
+								\pgfuseimage{img_no}
+							\end{center}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{ir_a_label_anterior}{\beamerreturnbutton{Sección Anterior}}
+
+				\note{}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{escomomsdos}
+		\subsection[Una terminal negra y oscura]{¿Es como MS-DOS?}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{La Estética de GNU/Linux}
+				\framesubtitle{}
+
+				%\hyperlink{ir_a_label}{\beamergotobutton{Saltar Sección}}
+				%\hypertarget{ir_a_label}{}
+
+				\begin{columns}[b]
+					\begin{column}{2cm}
+						\pgfdeclareimage[height=1.5cm]{logo_fsf}{img/logotipos_fsf}
+						\pgfuseimage{logo_fsf}
+					\end{column}
+					%\begin{column}{3cm}
+					%	\pgfdeclareimage[height=2cm]{miafoto}{img/Luis}
+					%	\pgfuseimage{miafoto}
+					%\end{column}
+					%\begin{column}{3cm}
+					%	\pgfdeclareimage[height=1cm]{logo_gulic}{img/gulic}
+					%	\pgfuseimage{logo_gulic}
+					%\end{column}
+					\begin{column}{9cm}
+						\begin{block}{¿Cómo es graficamente GNU/Linux?}
+							\par{Para nada. No hay nada como echar un vistazo a YouTube para demostrarlo... [Buscar por compiz, fusion, beryl\dots] }
+							\par{\url{http://www.youtube.com/watch?v=E4Fbk52Mk1w}}
+							\par{\url{http://www.youtube.com/watch?v=_ImW0-MgR8I&mode=related&search=}}
+							\par{\url{http://www.youtube.com/watch?v=4uNQcD82mhk&mode=related&search=}}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{ir_a_label_anterior}{\beamerreturnbutton{Sección Anterior}}
+
+				\note{}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+
+
+		\label{convivirlinuxwindows}
+		\subsection[¿Puedo mantener mi Windows mientras migro a Linux?]{¿Puedo tener Windows y Linux en el mismo ordenador?}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{¿GNU/Linux y Windows en la misma máquina?}
+				\framesubtitle{}
+
+				%\hyperlink{ir_a_label}{\beamergotobutton{Saltar Sección}}
+				%\hypertarget{ir_a_label}{}
+
+
+				\begin{columns}[b]
+					\begin{column}{9cm}
+						\begin{block}{¿Puedo tener instalado GNU/Linux y Windows al mismo tiempo?}
+							\par{Si, siempre puede hacer falta Windows para echar una partidita a algún juego.}
+							\par{\textsl{No recomendamos usar Windows para cosas serias.}}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{ir_a_label_anterior}{\beamerreturnbutton{Sección Anterior}}
+
+				\note{}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+		\label{equivalenciaswindowslinux}
+		\subsection[¿Podré hacer todo lo que hacia en Windows?]{¿Podré hacer todo lo que hacía en MSWindows?}
+		%-------------------------------------------------------------------
+			\begin{frame}
+				\allowbreak
+				\frametitle{¿Hay software equivalente al que solía usar con Windows?}
+				\framesubtitle{}
+
+				%\hyperlink{ir_a_label}{\beamergotobutton{Saltar Sección}}
+				%\hypertarget{ir_a_label}{}
+
+
+				\begin{columns}[b]
+					\begin{column}{9cm}
+						\begin{block}{¿Software equivalente para GNU/Linux?}
+							\par{Para las tareas principales, si, sin duda. El «\emph{Software Vertical}» va llegando poco a poco.}
+						\end{block}
+					\end{column}
+				\end{columns}
+
+				%\hfill\hyperlink{ir_a_label_anterior}{\beamerreturnbutton{Sección Anterior}}
+
+				\note{}
+			\end{frame}
+		%-------------------------------------------------------------------
+
+
+\label{comunidad}
+\part{Comunidad}
+
+	\label{quesomos}
+	\section[G.u.l.i.c]{Grupo de Usuarios de Linux de Canarias}
+	%-------------------------------------------------------------------
+
+		\begin{frame}{¿Qué somos \dots?}
+
+			\begin{block}{¿Qué es un LUG/GUL?}
+				\begin{itemize}
+					\item ¿Un \alert{grupos de amigos}?
+					\item ¿Un grupo de \alert{gente con intereses comunes}?
+					\item ¿Un \alert{foco de difusión} de Conocimiento Libre?
+				\end{itemize}
+			\end{block}
+
+			\begin{block}{¿Qué es Gulic?}
+				\par{Pues si: somos un grupo de amigos, que quieren tener más amigos, que comparten intereses comunes y que se empeñan en que la gente tenga acceso al Conocimiento (que si es Libre, mejor).}
+			\end{block}
+
+		\end{frame}
+	%-------------------------------------------------------------------
+
+	\label{resumenrapido}
+	\subsection[¿Qué es Gulic?]{¿Qué es Gulic?}
+	%-------------------------------------------------------------------
+		\begin{frame}{Resumen rápido}
+
+			\begin{itemize}
+				\item Origen
+				\item Nuestra historia
+				\item Colaboraciones
+				\item Recursos
+				\item Futuro
+			\end{itemize}
+			\par{\url{http://www.gulic.org/}}
+		\end{frame}
+	%-------------------------------------------------------------------
+
+	\label{Colaborar}
+	\subsection[Colaborar con Gulic]{Colaborar}
+	%-------------------------------------------------------------------
+		\begin{frame}{¿Cómo podemos ayudarnos?}
+
+			% Ejemplo de como insertar una imagen
+			\begin{figure}
+				\pgfdeclareimage[height=1cm]{img_gulic}{img/gulic}
+				\pgfuseimage{img_gulic}
+				\caption{Grupo de Usuarios de Linux de Canarias}
+			\end{figure}
+
+			\par{Contacta con nosotros cuando quieras, bien a través de nuestra web \textbf{http://www.gulic.org/} o bien a través de \textbf{secretario@gulic.org}\\Estaremos encantados de conocerte.}
+		\end{frame}
+	%-------------------------------------------------------------------
+
+		\label{quepuedohaceryo}
+		\subsection{¿que puedo hacer yo?}
+			%-------------------------------------------------------------------
+				\begin{frame}
+					\frametitle{Qué puede hacer un usuario normal...}
+					\par{¿Que tal si contactas con nosotros...?\\Ya te indicaremos como empezar a moverte ;)}
+				\end{frame}
+			%-------------------------------------------------------------------
+
+
+%\part{Software usado en esta presentación}
+%
+%	\section[]{Historia}
+%	%-------------------------------------------------------------------
+%		\begin{frame}
+%			\frametitle{Historia02}
+%			\label{historia02}
+%		\end{frame}
+%	%-------------------------------------------------------------------
+
+\part{Ruegos, preguntas u otras cosas}
+
+%	\section[]{Historia}
+%	%-------------------------------------------------------------------
+%		\begin{frame}
+%			\frametitle{Historia}
+%			\label{historia03}
+%		\end{frame}
+%	%-------------------------------------------------------------------
+
+	\section[]{Rondó final}
+
+		\begin{frame}
+			\frametitle{Preguntas, respuestas y otras cosas}
+			\label{preguntasyrepuestas}
+			\par{¡Sorprendannos! ;)}
+		\end{frame}
+	%-------------------------------------------------------------------
+
+%\appendix
+%	\section[]{appenndixname}
+%		\frame{tableofcontents}
+%
+%		\subsection[]{Material adicional}
+%			\frame{Detalles}
+%
+%			\frame{Texto no dicho en la charla principal}
+%
+%		\subsection[]{Más material}
+%			\frame{Más detalles}
+
+
+%\begin{thebibliography}{1}
+%\bibitem{Author1990}
+%	A. Author.
+%	\newblock \emph{Handbook of Everything}.
+%	\newblock Some Press, 1990.
+%	\beamertemplatearticlebibitems
+%
+%\bibitem{Someone2002}
+%	S. Someone.
+%	\newblock On this and that\emph{.}
+%	\newblock \emph{Journal on This and That}. 2(1):50--100, 2000.
+%
+%\end{thebibliography}
+
+\end{document}
