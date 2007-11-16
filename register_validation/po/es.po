@@ -1,4 +1,5 @@
 # $Id$
+#
 # LANGUAGE translation of Register Validation module
 # Copyright (C) 2007 Jesús Torres <aplatanado@gulic.org>
 # This file is distributed under the same license as the Register Validation module.
@@ -6,15 +7,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: register_module 0.1\n"
-"POT-Creation-Date: 2007-08-22 12:17+0100\n"
-"PO-Revision-Date: 2007-08-22 12:17+0100\n"
+"POT-Creation-Date: 2007-11-16 17:30+0000\n"
+"PO-Revision-Date: 2007-11-16 17:54+0000\n"
 "Last-Translator: Jesús Torres <aplatanado@gulic.org>\n"
+"Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\\n\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../register_validation.module:20
+#: register_validation.module:20
 msgid ""
 "<p>The Register Validation module provides a mechanism to validate the username\n"
 "                   entered by new users in the registration form.</p>"
@@ -22,34 +24,38 @@ msgstr ""
 "<p>El módulo Register Validation proporciona un mecanismo para validar el nombre de usuario\n"
 "                   introducido por los nuevos usuarios en el formulario de registro.</p>"
 
-#: ../register_validation.module:36
+#: register_validation.module:36
 msgid "Register form validation"
 msgstr "Validación del formulario de registro"
 
-#: ../register_validation.module:39
+#: register_validation.module:39
 msgid "Configure register form validation options."
 msgstr "Configurar las opciones de validación del formulario de registro"
 
-#: ../register_validation.module:58
+#: register_validation.module:58
 msgid "Username restrictions"
 msgstr "Restricciones en el nombre de usuario"
 
-#: ../register_validation.module:59
+#: register_validation.module:59
 msgid "Configure the rules to restrict the valid usernames for new accounts."
 msgstr "Configurar las reglas para restringir los nombres de usuario válidos en las nuevas cuentas."
 
-#: ../register_validation.module:65
+#: register_validation.module:65
 msgid "Regular expression"
 msgstr "Expresión regular"
 
-#: ../register_validation.module:70
+#: register_validation.module:70
 msgid "Perl Compatible Regular Expression to check the username."
 msgstr "Expresión regular compatible Perl (PCRE) para comprobar el nombre de usuario."
 
-#: ../register_validation.module:74
+#: register_validation.module:74
 msgid "Invalid usernames"
 msgstr "Nombres de usuario inválidos"
 
-#: ../register_validation.module:79
+#: register_validation.module:79
 msgid "List of usernames to avoid in new accounts. Supports regular expressions e.g. /^anon.*$/i"
 msgstr "Lista de nombres de usuario a evitar en las nuevas cuentas. Admite expresiones regulares, como por ejemplo /^anon.*$/i"
+
+#: register_validation.info:0
+msgid "Implements some validation rules in registration form."
+msgstr "Implementa algunas reglas de validación en el formulario de registro."

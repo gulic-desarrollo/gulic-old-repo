@@ -1,0 +1,59 @@
+# $Id$
+#
+# LANGUAGE translation of Register Validation module
+# Copyright (C) 2007 Jesús Torres <aplatanado@gulic.org>
+# This file is distributed under the same license as the Register Validation module.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: register_module 0.1\n"
+"POT-Creation-Date: 2007-11-16 17:30+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: register_validation.module:20
+msgid "<p>The Register Validation module provides a mechanism to validate the username\n                   entered by new users in the registration form.</p>"
+msgstr ""
+
+#: register_validation.module:36
+msgid "Register form validation"
+msgstr ""
+
+#: register_validation.module:39
+msgid "Configure register form validation options."
+msgstr ""
+
+#: register_validation.module:58
+msgid "Username restrictions"
+msgstr ""
+
+#: register_validation.module:59
+msgid "Configure the rules to restrict the valid usernames for new accounts."
+msgstr ""
+
+#: register_validation.module:65
+msgid "Regular expression"
+msgstr ""
+
+#: register_validation.module:70
+msgid "Perl Compatible Regular Expression to check the username."
+msgstr ""
+
+#: register_validation.module:74
+msgid "Invalid usernames"
+msgstr ""
+
+#: register_validation.module:79
+msgid "List of usernames to avoid in new accounts. Supports regular expressions e.g. /^anon.*$/i"
+msgstr ""
+
+#: register_validation.info:0
+msgid "Implements some validation rules in registration form."
+msgstr ""
+
