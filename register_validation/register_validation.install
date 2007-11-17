@@ -1,0 +1,12 @@
+<?php
+// $Id$
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function register_validation_uninstall() {
+  variable_del('register_validation_username_regexp');
+  variable_del('register_validation_invalid_usernames');
+}
+
+?>
