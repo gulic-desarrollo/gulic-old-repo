@@ -1,0 +1,6 @@
+; $Id: ldapprov.info,v 1.1 2007/09/26 20:15:05 miglius Exp $
+name = ldapprov
+description = "Implements LDAP users provisioning."
+package = Administration
+dependencies = ldapauth
+
