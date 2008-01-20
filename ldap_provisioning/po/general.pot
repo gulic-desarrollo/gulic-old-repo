@@ -892,12 +892,3 @@ msgstr ""
 #: ldapprov.module:312;318;321;326;349;352;377;403;408;1064;1084;1243;1247;1367;1370;1894;2116;2120;2240;2335;2398;2401;2407;2477;2480 ldapprov.info:0
 msgid "ldapprov"
 msgstr ""
-
-#: ldapprov_hack.info:0
-msgid "GULiC's Hacks to LDAP Provisioning"
-msgstr ""
-
-#: ldapprov_hack.info:0
-msgid "Implements some hacks to the LDAP Provisioning module."
-msgstr ""
-

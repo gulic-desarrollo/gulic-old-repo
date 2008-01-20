@@ -1006,11 +1006,3 @@ msgstr "Error XML: %s en la línea %d"
 #: ldapprov.info:0
 msgid "ldapprov"
 msgstr "ldapprov"
-
-#: ldapprov_hack.info:0
-msgid "GULiC's Hacks to LDAP Provisioning"
-msgstr "Hack de GULiC a LDAP Provisioning"
-
-#: ldapprov_hack.info:0
-msgid "Implements some hacks to the LDAP Provisioning module."
-msgstr "Implementa algunos hacks al módulo LDAP Provisioning."
