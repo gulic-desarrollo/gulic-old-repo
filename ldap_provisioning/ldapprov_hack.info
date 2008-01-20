@@ -1,6 +1,0 @@
-; $Id: $
-name = GULiC's Hacks to LDAP Provisioning
-description = "Implements some hacks to the LDAP Provisioning module."
-package = Administration
-dependencies = ldapprov
-
