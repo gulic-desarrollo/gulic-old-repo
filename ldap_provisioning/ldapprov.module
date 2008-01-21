@@ -2264,8 +2264,8 @@ function _ldapprov_create_user($edit) {
   $name_attr = $_ldapprov_ldap->getOption('user_attr') ? $_ldapprov_ldap->getOption('user_attr') : LDAP_DEFAULT_USER_ATTRIBUTE;
 
   // First and last names
-  $first_name = $edit['first_name']; 
-  $last_name = $edit['last_name']; 
+  $first_name = (!module_exists('profile') || !variable_get('ldapprov_profile', FALSE) || variable_get('ldapprov_profile_first', '') == '') ? $edit['first_name'] : $edit[variable_get('ldapprov_profile_first', '')]; 
+  $last_name = (!module_exists('profile') || !variable_get('ldapprov_profile', FALSE) || variable_get('ldapprov_profile_last', '') == '') ? $edit['last_name'] : $edit[variable_get('ldapprov_profile_last', '')]; 
   
   if (variable_get('ldapprov_allow_username', 1)) {
     $username = $edit['username'];
