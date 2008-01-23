@@ -1,0 +1,105 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from file: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:21+0000\n"
+"PO-Revision-Date: 2008-01-23 00:21+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: register_validation.module:20
+msgid "<p>The Register Validation module provides a mechanism to validate the username\n                   entered by new users in the registration form.</p>"
+msgstr ""
+"<p>El módulo Register Validation proporciona un mecanismo para "
+"validar el nombre de usuario\n"
+"                   introducido por los nuevos usuarios en el "
+"formulario de registro.</p>"
+
+#: register_validation.module:36
+msgid "Register form validation"
+msgstr "Validación del formulario de registro"
+
+#: register_validation.module:39
+msgid "Configure register form validation options."
+msgstr "Configurar las opciones de validación del formulario de registro"
+
+#: register_validation.module:58
+msgid "Username restrictions"
+msgstr "Restricciones en el nombre de usuario"
+
+#: register_validation.module:59
+msgid "Configure the rules to restrict the valid usernames for new accounts."
+msgstr ""
+"Configurar las reglas para restringir los nombres de usuario válidos "
+"para las nuevas cuentas."
+
+#: register_validation.module:65
+msgid "Regular expression"
+msgstr "Expresión regular"
+
+#: register_validation.module:70
+msgid "Perl Compatible Regular Expression to check the username."
+msgstr ""
+"Expresión regular compatible Perl (PCRE) para comprobar el nombre de "
+"usuario."
+
+#: register_validation.module:74
+msgid "Invalid usernames"
+msgstr "Nombres de usuario inválidos"
+
+#: register_validation.module:79
+msgid "List of usernames to avoid in new accounts. Supports regular expressions e.g. /^anon.*$/i"
+msgstr ""
+"Lista de nombres de usuario a evitar en las nuevas cuentas. Admite "
+"expresiones regulares, como por ejemplo /^anon.*$/i"
+
+#: register_validation.module:91
+msgid "The configuration options have been saved."
+msgstr "Se han guardado las opciones de configuración."
+
+#: register_validation.module:98
+msgid "The configuration options have been reset to their default values."
+msgstr ""
+"Se han restablecido los valores predefinidos de las opciones de "
+"configuración."
+
+#: register_validation.module:112
+msgid "You must enter a username."
+msgstr "Debe ingresar un nombre de usuario."
+
+#: register_validation.module:113
+msgid "The username cannot begin with a space."
+msgstr "El nombre del usuario no puede comenzar con un espacio."
+
+#: register_validation.module:114
+msgid "The username cannot end with a space."
+msgstr "El nombre del usuario no puede finalizar con un espacio."
+
+#: register_validation.module:118;126;128
+msgid "The username is not a valid authentication ID."
+msgstr "El nombre del usuario no es un id. de autenticación válido."
+
+#: register_validation.module:133
+msgid "The username %name is too long: it must be %max characters or less."
+msgstr ""
+"El nombre del usuario %name es demasiado largo. Debe tener %max "
+"caracteres o menos."
+
+#: register_validation.info:0
+msgid "Register Validation"
+msgstr "Validación del Registro"
+
+#: register_validation.info:0
+msgid "Implements some validation rules in registration form."
+msgstr "Implementa algunas reglas de validación en el formulario de registro."
+

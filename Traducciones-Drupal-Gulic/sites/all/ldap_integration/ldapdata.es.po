@@ -1,0 +1,133 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  ldapdata.module,v 1.15 2007/07/22 20:04:25 kreaper
+#  ldapdata.info,v 1.2 2007/02/11 01:28:03 kreaper
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:17+0000\n"
+"PO-Revision-Date: 2008-01-23 00:17+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: ldapdata.module:10
+msgid "LDAP attributes"
+msgstr ""
+
+#: ldapdata.module:11
+msgid "LDAP entry"
+msgstr ""
+
+#: ldapdata.module:44
+msgid "Edit LDAP account info"
+msgstr ""
+
+#: ldapdata.module:82;98;107
+msgid "LDAP Data"
+msgstr ""
+
+#: ldapdata.module:83
+msgid "Configure LDAP Data"
+msgstr ""
+
+#: ldapdata.module:89
+msgid "LDAP DATA"
+msgstr ""
+
+#: ldapdata.module:121
+msgid "edit"
+msgstr "editar"
+
+#: ldapdata.module:121
+msgid "reset"
+msgstr "reiniciar"
+
+#: ldapdata.module:125
+msgid "LDAP Config"
+msgstr ""
+
+#: ldapdata.module:127
+msgid "Operations"
+msgstr "Operaciones"
+
+#: ldapdata.module:144
+msgid "Are you sure you want to reset the groups mapping to defaults ?"
+msgstr ""
+
+#: ldapdata.module:146
+msgid "<em>This action cannot be undone.</p>"
+msgstr ""
+
+#: ldapdata.module:147
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: ldapdata.module:148
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ldapdata.module:171
+msgid "<p><strong style=\"color: red;\">PLEASE NOTE</strong>: advanced configuration for this module can be set by editing the module's config file, located at <em style=\"font-style: normal; padding: 1px 3px; border: 1px solid #8888CC; background-color: #DDDDFF\">modules/ldap_integration/ldap_integration/ldapdata.conf.php</em> in your Drupal install.</p>"
+msgstr ""
+
+#: ldapdata.module:180
+msgid "Changes in account fields will be mapped to LDAP attributes and back (see <em style=\"font-style: normal; padding: 1px 3px; border: 1px solid #8888CC; background-color: #DDDDFF\">modules/ldap_integration/ldap_integration/ldapdata.conf.php</em>)"
+msgstr ""
+
+#: ldapdata.module:181
+msgid "Same, but read-only mode."
+msgstr ""
+
+#: ldapdata.module:182
+msgid "No attribute mapping will be done at all (<strong><em>Clears any existing mappings</em></strong>)"
+msgstr ""
+
+#: ldapdata.module:190
+msgid "<div class=\"form-item\"><label>If you selected the first or the second option above, please specify here: </label><table><thead><tr><th> Drupal field</th><th>LDAP attribute</th></tr></thead><tbody>"
+msgstr ""
+
+#: ldapdata.module:222
+msgid "<p>Users may be able to view their LDAP attributes' values, as well as edit them. You can configure this feature here.</p>"
+msgstr ""
+
+#: ldapdata.module:278
+msgid "<p>When reading/editing attributes, this module logs on to the LDAP directory using the user's DN//pass pair. However, many LDAP setups do not allow their users to edit attributes.</p><p>If this is your case, but still you want users to edit their LDAP attributes via Drupal, you should set up an special user on your directory, with special access to edit your users' attributes. Then this module will use it to log on and edit data.</p>"
+msgstr ""
+
+#: ldapdata.module:283
+msgid "DN for reading/editing attributes"
+msgstr ""
+
+#: ldapdata.module:292
+msgid "Password for reading/editing attributes"
+msgstr ""
+
+#: ldapdata.module:302
+msgid "Clear current password"
+msgstr ""
+
+#: ldapdata.module:439;485;556;603;698
+msgid "user"
+msgstr "usuario"
+
+#: ldapdata.info:0
+msgid "ldapdata"
+msgstr ""
+
+#: ldapdata.info:0
+msgid "Permits reading and editing of own's LDAP data for users authenticated via ldapauth module."
+msgstr ""
+
+#: ldapdata.info:0
+msgid "Administration"
+msgstr "Administración"
+

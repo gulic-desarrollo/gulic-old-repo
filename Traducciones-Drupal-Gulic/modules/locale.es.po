@@ -1,0 +1,389 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  locale.module,v 1.155 2006/12/27 13:11:59 drumm
+#  locale.info,v 1.3 2006/11/21 20:55:34 dries
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:02+0000\n"
+"PO-Revision-Date: 2008-01-23 00:02+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: locale.module:22
+msgid "The locale module allows you to present your Drupal site in a language other than the default English. You can use it to set up a multi-lingual web site or replace given <em>built-in</em> text with text which has been customized for your site. Whenever the locale module encounters text which needs to be displayed, it tries to translate it into the currently selected language. If a translation is not available, then the string is remembered, so you can look up untranslated strings easily."
+msgstr ""
+"El módulo locale le permite presentar su sitio Drupal en un idioma "
+"diferente al inglés, que es el predefinido. Puede usarlo para "
+"configurar un sitio web en varios idiomas o para reemplazar el texto "
+"<em>original</em> con el texto que ha personalizado para su sitio. "
+"Cuando el módulo locale encuentra texto que se tiene que mostrar, "
+"intenta traducirlo al idioma seleccionado. Si no está disponible una "
+"traducción, se recuerda la cadena para que pueda acceder fácilmente "
+"a las cadenas no traducidas."
+
+#: locale.module:23
+msgid "The locale module provides two options for providing translations. The first is the integrated web interface, via which you can search for untranslated strings, and specify their translations. An easier and less time-consuming method is to import existing translations for your language. These translations are available as <em>GNU gettext Portable Object files</em> (<em>.po</em> files for short). Translations for many languages are available for download from the translation page."
+msgstr ""
+"El módulo locale proporciona dos opciones para las traducciones. La "
+"primera es la interfaz web integrada, mediante la que puede buscar las "
+"cadenas no traducidas y especificar sus traducciones. Un método más "
+"sencillo y que consume menos tiempo es importar las traducciones "
+"existentes para su idioma. Estas traducciones están disponibles como "
+"<em>archivos de objeto portables GNU gettext</em> (en pocas palabras, "
+"archivos <em>.po</em>). Hay traducciones para muchos idiomas listas "
+"para descargar en la página de traducciones."
+
+#: locale.module:24
+msgid "If an existing translation does not meet your needs, the <em>.po</em> files are easily edited with special editing tools. The locale module's import feature allows you to add strings from such files into your site's database. The export functionality enables you to share your translations with others, generating Portable Object files from your site strings."
+msgstr ""
+"Si alguna de las traducciones existentes no se ajusta a sus "
+"necesidades, puede editar de forma sencilla los archivos <em>.po</em> "
+"con alguna de las herramientas especiales para la edición. La "
+"característica de importación del módulo locale le permite añadir "
+"las cadenas de esos archivos a la base de datos del sitio. La "
+"funcionalidad de exportación le permite compartir sus traducciones "
+"con otras personas, generando archivos de objeto portables con las "
+"cadenas de su sitio."
+
+#: locale.module:25
+msgid "For more information please read the configuration and customization handbook <a href=\"@locale\">Locale page</a>."
+msgstr ""
+"Si quiere más información puede leer el manual de configuración y "
+"de personalización en la <a href=\"@locale\">página de locale</a>."
+
+#: locale.module:29
+msgid "<p>Drupal provides support for the translation of its interface text into different languages. This page provides an overview of the installed languages. You can add a language on the <a href=\"@add-language\">add language page</a>, or directly by <a href=\"@import\">importing a translation</a>. If multiple languages are enabled, registered users will be able to set their preferred language. The site default will be used for anonymous visitors and for users without their own settings.</p><p>Drupal interface translations may be added or extended by several courses: by <a href=\"@import\">importing</a> an existing translation, by <a href=\"@search\">translating everything</a> from scratch, or by a combination of these approaches.</p>"
+msgstr ""
+"<p>Drupal proporciona soporte para la traducción de su interfaz de "
+"texto en distintos idiomas.  Esta página contiene una vista general "
+"de los idiomas instalados. Puede añadir un idioma en la <a "
+"href=\"@add-language\">página añadir idioma</a> o directamente <a "
+"href=\"@import\">importar una traducción</a>. Si hay activados varios "
+"idiomas, los usuarios registrados pueden definir cuál es su idioma "
+"preferido. El idioma predefinido del sitio se utiliza para los "
+"visitantes anónimos y para los usuarios que no hayan cambiado sus "
+"preferencias.</p><p>Se pueden añadir traducciones de la interfaz o "
+"extender las existentes de varias formas: <a "
+"href=\"@import\">importando</a> una traducción existente, <a "
+"href=\"@search\">traduciéndolo todo</a> desde cero o con una "
+"combinación de las dos aproximaciones.</p>"
+
+#: locale.module:31
+msgid "You need to add all languages in which you would like to display the site interface. If you can't find the desired language in the quick-add dropdown, then you will need to provide the proper language code yourself. The language code may be used to negotiate with browsers and to present flags, etc., so it is important to pick a code that is standardised for the desired language. You can also add a language by <a href=\"@import\">importing a translation</a>."
+msgstr ""
+"Tiene que añadir todos los idiomas que quiera poner a disposición de "
+"los usuarios del sitio. Si no puede encontrar el idioma que quiere en "
+"la lista desplegable, tiene que proporcionar el código adecuado del "
+"idioma. El código del idioma se puede usar para negociar con los "
+"navegadores, las banderas presentes, etc., por lo que es importante "
+"que seleccione uno estándar para el idioma que desee. También puede "
+"añadir idiomas <a href=\"@import\">importando una traducción</a>."
+
+#: locale.module:33
+msgid "This page allows you to import a translation provided in the gettext Portable Object (.po) format. The easiest way to get your site translated is to obtain an existing Drupal translation and to import it. You can find existing translations on the <a href=\"@url\">Drupal translation page</a>. Note that importing a translation file might take a while."
+msgstr ""
+"Esta página le permite importar una traducción que esté en formato "
+"de objeto portable de gettext (.po).  La forma más sencilla de tener "
+"su sitio traducido es obtener una traducción de Drupal e importarla. "
+"Puede encontrar las traducciones existentes en la <a "
+"href=\"@url\">página de traducciones de Drupal</a>. Tenga en cuenta "
+"que la importación del archivo con las traducciones puede tardar "
+"algún tiempo."
+
+#: locale.module:35
+msgid "This page allows you to export Drupal strings. The first option is to export a translation so it can be shared. The second option generates a translation template, which contains all Drupal strings, but without their translations. You can use this template to start a new translation using various software packages designed for this task."
+msgstr ""
+"Esta página le permite exportar cadenas de Drupal. La primera opción "
+"es exportar una traducción para que la pueda compartir. La segunda "
+"opción genera una plantilla de traducciones, que contiene todas las "
+"cadenas de Drupal, pero sin las traducciones. Puede usar esta "
+"plantilla para comenzar una traducción nueva usando uno de los "
+"diversos paquetes de software diseñados para esta tarea."
+
+#: locale.module:37
+msgid "It is often convenient to get the strings from your setup on the <a href=\"@export\">export page</a>, and use a desktop Gettext translation editor to edit the translations. On this page you can search in the translated and untranslated strings, and the default English texts provided by Drupal."
+msgstr ""
+"Suele ser más conveniente obtener las cadenas de su configuración en "
+"la <a href=\"@export\">página de exportación</a> y usar un editor de "
+"traducciones de Gettext para editar las traducciones.  En esta página "
+"puede buscar las cadenas traducidas y no traducidas, y el texto "
+"predefinido en inglés que proporciona Drupal."
+
+#: locale.module:51
+msgid "Localization"
+msgstr "Localización"
+
+#: locale.module:52
+msgid "Configure site localization and user interface translation."
+msgstr ""
+"Configura la localización del sitio y la traducción de la interfaz "
+"de usuario."
+
+#: locale.module:58
+msgid "Manage languages"
+msgstr "Gestionar idiomas"
+
+#: locale.module:63
+msgid "Manage strings"
+msgstr "Gestionar cadenas"
+
+#: locale.module:71
+msgid "List"
+msgstr "Lista"
+
+#: locale.module:77
+msgid "Add language"
+msgstr "Añadir idioma"
+
+#: locale.module:83
+msgid "Import"
+msgstr "Importar"
+
+#: locale.module:89
+msgid "Export"
+msgstr "Exportar"
+
+#: locale.module:97
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: locale.module:107
+msgid "Edit string"
+msgstr "Editar cadena"
+
+#: locale.module:113
+msgid "Delete string"
+msgstr "Eliminar cadena"
+
+#: locale.module:142
+msgid "Interface language settings"
+msgstr "Opciones de idioma de la interfaz"
+
+#: locale.module:146
+msgid "Language"
+msgstr "Idioma"
+
+#: locale.module:149
+msgid "Selecting a different locale will change the interface language of the site."
+msgstr ""
+"Al seleccionar un locale diferente se cambia el idioma de la interfaz "
+"del sitio."
+
+#: locale.module:314
+msgid "The English locale cannot be deleted."
+msgstr "El locale Inglés no se puede eliminar."
+
+#: locale.module:326
+msgid "Are you sure you want to delete the language %name?"
+msgstr "¿Está seguro de que quiere eliminar el idioma %name?"
+
+#: locale.module:326
+msgid "Deleting a language will remove all data associated with it. This action cannot be undone."
+msgstr ""
+"Al eliminar un idioma se eliminan todos los datos asociados con él. "
+"Esta acción no se puede deshacer."
+
+#: locale.module:326
+msgid "Delete"
+msgstr "Eliminar"
+
+#: locale.module:326
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: locale.module:338
+msgid "The language %locale has been removed."
+msgstr "Se ha eliminado el idioma %locale."
+
+#: locale.module:340
+msgid "locale"
+msgstr "locale"
+
+#: locale.module:0
+msgid "January"
+msgstr "Enero"
+
+#: locale.module:0
+msgid "Jan"
+msgstr "Ene"
+
+#: locale.module:0
+msgid "February"
+msgstr "Febrero"
+
+#: locale.module:0
+msgid "Feb"
+msgstr "Feb"
+
+#: locale.module:0
+msgid "March"
+msgstr "Marzo"
+
+#: locale.module:0
+msgid "Mar"
+msgstr "Mar"
+
+#: locale.module:0
+msgid "April"
+msgstr "Abril"
+
+#: locale.module:0
+msgid "Apr"
+msgstr "Abr"
+
+#: locale.module:0;0
+msgid "May"
+msgstr "Mayo"
+
+#: locale.module:0
+msgid "June"
+msgstr "Junio"
+
+#: locale.module:0
+msgid "Jun"
+msgstr "Jun"
+
+#: locale.module:0
+msgid "July"
+msgstr "Julio"
+
+#: locale.module:0
+msgid "Jul"
+msgstr "Jul"
+
+#: locale.module:0
+msgid "August"
+msgstr "Agosto"
+
+#: locale.module:0
+msgid "Aug"
+msgstr "Ago"
+
+#: locale.module:0
+msgid "September"
+msgstr "Septiembre"
+
+#: locale.module:0
+msgid "Sep"
+msgstr "Sep"
+
+#: locale.module:0
+msgid "October"
+msgstr "Octubre"
+
+#: locale.module:0
+msgid "Oct"
+msgstr "Oct"
+
+#: locale.module:0
+msgid "November"
+msgstr "Noviembre"
+
+#: locale.module:0
+msgid "Nov"
+msgstr "Nov"
+
+#: locale.module:0
+msgid "December"
+msgstr "Diciembre"
+
+#: locale.module:0
+msgid "Dec"
+msgstr "Dic"
+
+#: locale.module:0;0
+msgid "Thu"
+msgstr "Jue"
+
+#: locale.module:0;0
+msgid "Thursday"
+msgstr "Jueves"
+
+#: locale.module:0
+msgid "Fri"
+msgstr "Vie"
+
+#: locale.module:0
+msgid "Friday"
+msgstr "Viernes"
+
+#: locale.module:0
+msgid "Sat"
+msgstr "Sáb"
+
+#: locale.module:0
+msgid "Saturday"
+msgstr "Sábado"
+
+#: locale.module:0
+msgid "Sun"
+msgstr "Dom"
+
+#: locale.module:0
+msgid "Sunday"
+msgstr "Domingo"
+
+#: locale.module:0
+msgid "Mon"
+msgstr "Lun"
+
+#: locale.module:0
+msgid "Monday"
+msgstr "Lunes"
+
+#: locale.module:0
+msgid "Tue"
+msgstr "Mar"
+
+#: locale.module:0
+msgid "Tuesday"
+msgstr "Martes"
+
+#: locale.module:0
+msgid "Wed"
+msgstr "Mié"
+
+#: locale.module:0
+msgid "Wednesday"
+msgstr "Miércoles"
+
+#: locale.module:0
+msgid "am"
+msgstr "am"
+
+#: locale.module:0
+msgid "pm"
+msgstr "pm"
+
+#: locale.module:0
+msgid "AM"
+msgstr ""
+
+#: locale.module:0
+msgid "PM"
+msgstr ""
+
+#: locale.info:0
+msgid "Locale"
+msgstr "Locale"
+
+#: locale.info:0
+msgid "Enables the translation of the user interface to languages other than English."
+msgstr ""
+"Permite la traducción de la interfaz de usuario a idiomas distintos "
+"del inglés."
+
+#: locale.info:0
+msgid "Core - optional"
+msgstr "Core - opcional"
+

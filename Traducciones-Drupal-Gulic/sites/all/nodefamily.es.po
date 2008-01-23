@@ -1,0 +1,165 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  nodefamily.module,v 1.19.2.13 2007/04/29 14:12:58 fago
+#  nodefamily.info,v 1.1 2007/01/28 01:04:57 fago
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:19+0000\n"
+"PO-Revision-Date: 2008-01-23 00:19+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: nodefamily.module:19
+msgid "Node family"
+msgstr ""
+
+#: nodefamily.module:20
+msgid "Manage relations between content types."
+msgstr ""
+
+#: nodefamily.module:49
+msgid "Add relation between content types"
+msgstr ""
+
+#: nodefamily.module:53;133
+msgid "Parent type"
+msgstr ""
+
+#: nodefamily.module:59;133
+msgid "Child type"
+msgstr ""
+
+#: nodefamily.module:65
+msgid "Add relation"
+msgstr ""
+
+#: nodefamily.module:73
+msgid "You have to select two different content types."
+msgstr ""
+
+#: nodefamily.module:78
+msgid "You must not add this relation as it would result in a loop."
+msgstr ""
+
+#: nodefamily.module:147
+msgid "delete"
+msgstr "eliminar"
+
+#: nodefamily.module:196
+msgid "You can't create more nodes of this type for this user."
+msgstr ""
+
+#: nodefamily.module:251
+msgid "Maximum number of nodes of this content type per user. Enter 0 for no limit."
+msgstr ""
+
+#: nodefamily.module:260
+msgid "You can't create any more nodes of this type."
+msgstr ""
+
+#: nodefamily.module:268
+msgid "Entry must be an integer."
+msgstr ""
+
+#: nodefamily.module:271
+msgid "Entry must be at least 0."
+msgstr ""
+
+#: nodefamily.module:732
+msgid "Lonely node management"
+msgstr ""
+
+#: nodefamily.module:733
+msgid "Lonely node display"
+msgstr ""
+
+#: nodefamily.module:778
+msgid "You have not created a @type yet. Go ahead and create one!"
+msgstr ""
+
+#: nodefamily.module:787
+msgid "content type"
+msgstr ""
+
+#: nodefamily.module:843
+msgid "nodefamily relation: parent - child"
+msgstr ""
+
+#: nodefamily.module:847
+msgid "nodefamily relation: child - parent"
+msgstr ""
+
+#: nodefamily.module:868
+msgid "Nodefamily: Child Node ID"
+msgstr ""
+
+#: nodefamily.module:875
+msgid "This allows you to filter by child node ID."
+msgstr ""
+
+#: nodefamily.module:875;900
+msgid "You can optionally restrict the filter to a certain content type, which makes sense to use in conjunctions with the NOT EQUAL operator."
+msgstr ""
+
+#: nodefamily.module:893
+msgid "Nodefamily: Parent Node ID"
+msgstr ""
+
+#: nodefamily.module:900
+msgid "This allows you to filter by parent node ID."
+msgstr ""
+
+#: nodefamily.module:938
+msgid "Nodefamily: Parent ID"
+msgstr ""
+
+#: nodefamily.module:940
+msgid "This argument is the Node ID of the parent node of a node."
+msgstr ""
+
+#: nodefamily.module:943
+msgid "Nodefamily: Child ID"
+msgstr ""
+
+#: nodefamily.module:945
+msgid "This argument is the Node ID of the child node of a node."
+msgstr ""
+
+#: nodefamily.module:948
+msgid "Nodefamily: Grandchild ID"
+msgstr ""
+
+#: nodefamily.module:950
+msgid "This argument is the Node ID of a grandchild node of a node."
+msgstr ""
+
+#: nodefamily.module:953
+msgid "Nodefamily: Grandparent ID"
+msgstr ""
+
+#: nodefamily.module:955
+msgid "This argument is the Node ID of a grandparent node of a node."
+msgstr ""
+
+#: nodefamily.info:0
+msgid "Node Family"
+msgstr ""
+
+#: nodefamily.info:0
+msgid "Builds node families based on content types and author information."
+msgstr ""
+
+#: nodefamily.info:0
+msgid "Node Profile"
+msgstr ""
+

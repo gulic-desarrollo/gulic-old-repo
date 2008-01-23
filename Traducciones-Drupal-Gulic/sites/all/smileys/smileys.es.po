@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+  <title>Localización | Grupo de Usuarios de Linux de Canarias</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/comun/favicon.ico" type="image/x-icon" />
+  <style type="text/css" media="screen">@import "/sites/all/modules/admin_menu/admin_menu.css";</style>
+<style type="text/css" media="all">@import "/modules/aggregator/aggregator.css";</style>
+<style type="text/css" media="all">@import "/modules/book/book.css";</style>
+<style type="text/css" media="all">@import "/modules/node/node.css";</style>
+<style type="text/css" media="all">@import "/modules/poll/poll.css";</style>
+<style type="text/css" media="all">@import "/modules/system/admin.css";</style>
+<style type="text/css" media="all">@import "/modules/system/defaults.css";</style>
+<style type="text/css" media="all">@import "/modules/system/system.css";</style>
+<style type="text/css" media="all">@import "/modules/user/user.css";</style>
+<style type="text/css" media="all">@import "/sites/all/modules/event/event.css";</style>
+<style type="text/css" media="all">@import "/sites/default/themes/gulic/style.css";</style>
+  <script type="text/javascript" src="/misc/jquery.js"></script>
+<script type="text/javascript" src="/misc/drupal.js"></script>
+<script type="text/javascript" src="/sites/all/modules/admin_menu/admin_menu.js"></script>
+<script type="text/javascript" src="/misc/collapse.js"></script>
+  <script type="text/javascript"> </script>
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" id="header">
+  <tr>
+    <td id="logo">
+      <a href="/" title="Inicio"><img src="/comun/logo-carnaval.png" alt="Inicio" /></a>      <h1 class='site-name'><a href="/" title="Inicio">Grupo de Usuarios de Linux de Canarias</a></h1>      <div class='site-slogan'>Primero en GULiC, después en Google </div>    </td>
+    <td id="menu">
+      <div style="float: right"><a href="http://bardinux.ull.es/" title="Ir a foro de la distribución Bardinux de la ULL"><img src="/comun/logoBardinux.png" alt="Bardinux"/></a></div>
+                      </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div></div></td>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" id="content">
+  <tr>
+    <td id="sidebar-left">
+      <form action="http://www.gulic.org/search/node"  accept-charset="UTF-8" method="post" id="search-theme-form">
+<div><div id="search" class="container-inline"><div class="form-item">
+ <input type="text" maxlength="128" name="search_theme_form_keys" id="edit-search-theme-form-keys"  size="15" value="" title="Introduzca los términos que quiera buscar." class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Buscar"  class="form-submit" />
+<input type="hidden" name="form_token" id="edit-search-theme-form-form-token" value="1bcf3be65680db236e53817415e865ca"  />
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
+</div>
+</div></form>
+      <hr />
+        <div class="block block-countdown" id="block-countdown-0">
+    <h2 class="title">Quedan...</h2>
+    <div class="content"><em>53</em> días para <em>nuestro décimo aniversario</em>.</div>
+ </div>
+  <div class="block block-menu" id="block-menu-139">
+    <h2 class="title">Enlaces</h2>
+    <div class="content">
+<ul class="menu">
+<li class="expanded"><a href="/">Drupal</a>
+<ul class="menu">
+<li class="leaf"><a href="/webchat">WebChat</a></li>
+<li class="leaf"><a href="/forum">Foros</a></li>
+<li class="leaf"><a href="/blog">Blogs</a></li>
+<li class="leaf"><a href="/tracker">Tracker</a></li>
+
+</ul>
+</li>
+<li class="expanded"><a href="/node/5">Gulic</a>
+<ul class="menu">
+<li class="leaf"><a href="/node/30">Actividades</a></li>
+<li class="leaf"><a href="/node/11">Documentación</a></li>
+<li class="leaf"><a href="/node/15">Traducciones</a></li>
+
+</ul>
+</li>
+<li class="expanded"><a href="/">Socios</a>
+<ul class="menu">
+<li class="leaf"><a href="http://webmail.gulic.org/">Correo</a></li>
+<li class="leaf"><a href="https://wiki.gulic.org/manuales:servicios:inicio">Manual de servicios</a></li>
+<li class="leaf"><a href="http://wiki.gulic.org/">Wiki</a></li>
+
+</ul>
+</li>
+<li class="expanded"><a href="/">Recursos</a>
+<ul class="menu">
+<li class="leaf"><a href="http://almacen.gulic.org/">Almacén</a></li>
+<li class="leaf"><a href="http://listas.gulic.org/">Listas de correo</a></li>
+<li class="leaf"><a href="http://pastebin.gulic.org/">Pastebin</a></li>
+<li class="leaf"><a href="http://almacen.gulic.org">Almacen</a></li>
+
+</ul>
+</li>
+
+</ul>
+</div>
+ </div>
+  <div class="block block-user" id="block-user-1">
+    <h2 class="title">lcabrera</h2>
+    <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="/search">Buscar</a></li>
+<li class="leaf"><a href="/blog/lcabrera">Mi blog</a></li>
+<li class="leaf"><a href="/user/lcabrera">Mi cuenta</a></li>
+<li class="leaf"><a href="/privatemsg/inbox">My inbox</a></li>
+<li class="leaf"><a href="/subscriptions">My subscriptions</a></li>
+<li class="collapsed"><a href="/node/add">Crear contenido</a></li>
+<li class="leaf"><a href="/tracker">Envíos recientes</a></li>
+<li class="collapsed"><a href="/aggregator">Agregador de noticias</a></li>
+<li class="expanded"><a href="/admin">Administrar</a>
+<ul class="menu">
+<li class="collapsed"><a href="/admin/build" title="Controla la apariencia del sitio.">Construcción del sitio</a></li>
+<li class="collapsed"><a href="/admin/content" title="Gestiona el contenido de su sitio.">Gestión de contenido</a></li>
+<li class="expanded"><a href="/admin/settings" title="Ajustar las opciones de configuración básicas del sitio.">Configuración del sitio</a>
+<ul class="menu">
+<li class="leaf"><a href="/admin/settings/pathauto" title="Configura la creación automática de alias de URL para los envíos.">Alias automático de URL</a></li>
+<li class="leaf"><a href="/admin/settings/blogapi" title="Configura qué tipos de contenidos y qué motores externos se pueden usar como clientes para blogs.">APIs de Blog</a></li>
+<li class="leaf"><a href="/admin/settings/date-time" title="Opciones para la visualización de la fecha y de la hora, así como la zona horaria predefinida del sistema.">Día y hora</a></li>
+<li class="leaf"><a href="/admin/settings/uploads" title="Controla cómo se adjuntan los archivos al contenido.">Descargas de archivos</a></li>
+<li class="collapsed"><a href="/admin/settings/event" title="Set up how your site handles events.">Eventos</a></li>
+<li class="leaf"><a href="/admin/settings/filters" title="Configura cómo se filtra el contenido introducido por los usuarios, entre el que se incluyen las etiquetas HTML permitidas, las etiquetas de código PHP. También permite la activación de los filtros proporcionados por el módulo.">Formato de entrada</a></li>
+<li class="leaf"><a href="/admin/settings/forward" title="Configure settings for forward module.">Forward</a></li>
+<li class="leaf"><a href="/admin/settings/site-information" title="Cambia la información básica del sitio, como el nombre del sitio, el slogan, la dirección de correo, la misión, la página principal y más.">Información del sitio</a></li>
+<li class="leaf"><a href="/admin/settings/error-reporting" title="Controla cómo gestiona Drupal los errores como los 403/404, así como los informes de error de PHP.">Informar de errores</a></li>
+<li class="leaf"><a href="/admin/settings/image-toolkit" title="Elija qué juego de herramientas de imágenes quiere usar, si ha instalado otros juegos de herramientas de imágenes.">Juego de herramientas de imágenes</a></li>
+<li class="leaf"><a href="/admin/settings/ldapdata" title="Configure LDAP Data">LDAP Data</a></li>
+<li class="leaf"><a href="/admin/settings/ldapgroups" title="Configure LDAP Groups Settings">LDAP Groups</a></li>
+<li class="leaf"><a href="/admin/settings/ldapauth" title="Configure LDAP settings">LDAP Integration</a></li>
+<li class="leaf"><a href="/admin/settings/locale" title="Configura la localización del sitio y la traducción de la interfaz de usuario.">Localización</a></li>
+<li class="leaf"><a href="/admin/settings/site-maintenance" title="Desactivar el sitio por cuestiones de mantenimiento o reactivarlo.">Mantenimiento del sitio</a></li>
+<li class="leaf"><a href="/admin/settings/node_adoption" title="Set default node owner.">Node Adoption</a></li>
+<li class="leaf"><a href="/admin/settings/search" title="Configura las opciones de relevancia para la búsqueda y otras opciones de indexación">Opciones de búsqueda</a></li>
+<li class="leaf"><a href="/admin/settings/privatemsg" title="Configure Privatemsg settings.">Privatemsg</a></li>
+<li class="leaf"><a href="/admin/settings/quicktags" title="Configure Quicktags options.">Quicktags</a></li>
+<li class="leaf"><a href="/admin/settings/performance" title="Activa o desactiva la caché de páginas para los usuarios anónimos, y activa o desactiva el preprocesador CSS.">Rendimiento</a></li>
+<li class="leaf"><a href="/admin/settings/securepages" title="Configure which pages are and are not to be viewed in SSL">Secure Pages</a></li>
+<li class="leaf"><a href="/admin/settings/file-system" title="Le dice a Drupal dónde se deben almacenar los archivos y cómo debe accederse a ellos.">Sistema de archivos</a></li>
+<li class="leaf"><a href="/admin/settings/smileys" title="Replaces smileys inside posts with images.">Smileys</a></li>
+<li class="leaf"><a href="/admin/settings/subscriptions" title="Enables site settings for user subscriptions.">Subscriptions</a></li>
+<li class="leaf"><a href="/admin/settings/admin" title="Opciones de apariencia de las páginas de administración.">Tema de administración</a></li>
+<li class="leaf"><a href="/admin/settings/clean-urls" title="Activa o desactiva URLs limpias en su sitio.">URLs limpios</a></li>
+<li class="leaf"><a href="/admin/settings/register_validation" title="Configurar las opciones de validación del formulario de registro">Validación del formulario de registro</a></li>
+<li class="leaf"><a href="/admin/settings/filterbynodetype">Input filter node types</a></li>
+
+</ul>
+</li>
+<li class="collapsed"><a href="/admin/user" title="Gestiona los usuarios del sitio, los grupos y el acceso a las características del sitio.">Gestión de usuarios</a></li>
+<li class="collapsed"><a href="/admin/logs" title="Observa los registros del sistema y otra información de estado.">Registros</a></li>
+<li class="leaf"><a href="/admin/help">Ayuda</a></li>
+
+</ul>
+</li>
+<li class="leaf"><a href="/logout">Cerrar sesión</a></li>
+
+</ul>
+</div>
+ </div>
+  <div class="block block-mapaislas" id="block-mapaislas-0">
+    <h2 class="title">¿Dónde?</h2>
+    <div class="content"><script type="text/javascript">
+
+if (document.images) {
+  var inames = new Array('Canarias', 'La Palma', 'La Gomera', 'El Hierro', 'Tenerife', 'Gran Canaria', 'Fuerteventura', 'Lanzarote');
+  var flipped = new Array();
+  for(i=0; i < inames.length; i++) {
+    name = inames[i];
+    flipped[name] = new Image();
+    flipped[name].src = '/sites/all/modules/mapaislas/'+name+'.png';
+  }
+}
+
+function carga(mapa, name) {
+  if(document.images) document.images[mapa].src = flipped[name].src;
+} 
+    </script><img src="/sites/all/modules/mapaislas/Canarias.png" id="mapa" width="192" height="78" usemap="#map" alt="mapa de canarias" />
+    <map id="map" name="map">
+    <area shape="poly"   coords="25,23,19,23,16,27,22,40,26,34,26,30,27,27"                             onmouseover="carga('mapa', 'La Palma')"      onmouseout="carga('mapa', 'Canarias')"    href="/islas/la_palma"       alt="La Palma"      />
+    <area shape="circle" coords="44,49,5"                                                               onmouseover="carga('mapa', 'La Gomera')"     onmouseout="carga('mapa', 'Canarias')"    href="/islas/la_gomera"      alt="La Gomera"     />
+    <area shape="poly"   coords="17,68,19,65,22,60,18,59,15,63,10,62,10,65,15,65,16,68"                 onmouseover="carga('mapa', 'El Hierro')"     onmouseout="carga('mapa', 'Canarias')"    href="/islas/el_hierro"      alt="El Hierro"     />
+    <area shape="poly"   coords="81,31,72,31,66,38,52,39,61,55,67,55,73,44,73,40,82,33"                 onmouseover="carga('mapa', 'Tenerife')"      onmouseout="carga('mapa', 'Canarias')"    href="/islas/tenerife"       alt="Tenerife"      />
+    <area shape="circle" coords="101,55,9"                                                              onmouseover="carga('mapa', 'Gran Canaria')"  onmouseout="carga('mapa', 'Canarias')"    href="/islas/gran_canaria"   alt="Gran Canaria"  />
+    <area shape="poly"   coords="159,48,163,37,163,27,157,27,148,46,148,49,142,53,137,53,144,57,149,50" onmouseover="carga('mapa', 'Fuerteventura')" onmouseout="carga('mapa', 'Canarias')"    href="/islas/fuerteventura"  alt="Fuerteventura" />
+    <area shape="poly"   coords="166,23,164,26,160,24,162,18,174,12,173,6,177,11,176,18,171,22"         onmouseover="carga('mapa', 'Lanzarote')"     onmouseout="carga('mapa', 'Canarias')"    href="/islas/lanzarote"      alt="Lanzarote"     />
+    </map><div class="item-list"></div><div class="more-link"><a href="/islas" title="Todas las islas">más</a></div></div>
+ </div>
+  <div class="block block-event" id="block-event-1">
+    <h2 class="title">Eventos próximos</h2>
+    <div class="content"><div class="item-list"><ul><li>No upcoming events available</li></ul></div><div class="ical-link"><a href="https://www.gulic.org/event/ical" title="Añadir este calendario a iCalendar"><img src="/sites/all/modules/event/images/ical16x16.gif" alt="Añadir elemento al calendario" /></a></div><div class="more-link"><a href="/event" title="Más eventos.">más</a></div></div>
+ </div>
+  <div class="block block-user" id="block-user-3">
+    <h2 class="title">En línea</h2>
+    <div class="content">En este momento hay <em>2 usuarios</em> y <em>1 invitado</em> en línea.<div class="item-list"><h3>Usuarios en línea</h3><ul><li><a href="/user/lcabrera" title="Ver el perfil de usuario.">lcabrera</a></li><li><a href="/user/siniestro" title="Ver el perfil de usuario.">SiNiESTrO</a></li></ul></div></div>
+ </div>
+    </td>    <td valign="top">
+            <div id="main">
+                <div class="breadcrumb"><a href="/">Inicio</a> » <a href="/admin">Administrar</a> » <a href="/admin/settings" title="Ajustar las opciones de configuración básicas del sitio.">Configuración del sitio</a></div>        <h1 class="title">Localización</h1>
+        <div class="tabs"><ul class="tabs primary">
+<li><a href="/admin/settings/locale">Gestionar idiomas</a></li>
+<li><a href="/admin/settings/locale/string/search">Gestionar cadenas</a></li>
+<li class="active"><a href="/admin/settings/locale/potx" class="active">Extraer textos</a></li>
+</ul>
+</div>
+        <div class="help">Esta página le permite generar plantilla de traducción para los módulos. Seleccione el módulo para el que desea generar la plantilla. Se generará un único fichero de Plantilla (Gettext Portable Object), de modo que pueda grabarse para comenzar la traducción.
+</div>        <div class="messages error">
+ <ul>
+  <li>Invalid marker content in <em>pathauto_node.inc</em>:<em>23</em>
+* <em>t</em>(<em>&#039;[&#039;.$pattern.&#039;]&#039;)</em>
+
+</li>
+  <li>Invalid marker content in <em>pathauto_node.inc</em>:<em>23</em>
+* <em>t</em>(<em>$description)</em>
+
+</li>
+  <li>Invalid marker content in <em>pathauto_taxonomy.inc</em>:<em>20</em>
+* <em>t</em>(<em>&#039;[&#039;.$pattern.&#039;]&#039;)</em>
+
+</li>
+  <li>Invalid marker content in <em>pathauto_taxonomy.inc</em>:<em>20</em>
+* <em>t</em>(<em>$description)</em>
+
+</li>
+  <li>Invalid marker content in <em>pathauto_taxonomy.inc</em>:<em>112</em>
+* <em>t</em>(<em>&#039;[&#039;.$pattern.&#039;]&#039;)</em>
+
+</li>
+  <li>Invalid marker content in <em>pathauto_taxonomy.inc</em>:<em>112</em>
+* <em>t</em>(<em>$description)</em>
+
+</li>
+  <li>Invalid marker content in <em>pathauto_user.inc</em>:<em>20</em>
+* <em>t</em>(<em>&#039;[&#039;.$pattern.&#039;]&#039;)</em>
+
+</li>
+  <li>Invalid marker content in <em>pathauto_user.inc</em>:<em>20</em>
+* <em>t</em>(<em>$description)</em>
+
+</li>
+  <li>Invalid marker content in <em>pathauto_user.inc</em>:<em>47</em>
+* <em>t</em>(<em>&#039;[&#039;.$pattern.&#039;]&#039;)</em>
+
+</li>
+  <li>Invalid marker content in <em>pathauto_user.inc</em>:<em>47</em>
+* <em>t</em>(<em>$description)</em>
+
+</li>
+  <li>Invalid marker content in <em>pathauto_user.inc</em>:<em>72</em>
+* <em>t</em>(<em>&#039;[&#039;.$pattern.&#039;]&#039;)</em>
+
+</li>
+  <li>Invalid marker content in <em>pathauto_user.inc</em>:<em>72</em>
+* <em>t</em>(<em>$description)</em>
+
+</li>
+  <li>Invalid marker content in <em>pathauto.module</em>:<em>171</em>
+* <em>t</em>(<em>$transliteration_help)</em>
+
+</li>
+  <li>Invalid marker content in <em>potx.module</em>:<em>63</em>
+* <em>t</em>(<em>$name)</em>
+
+</li>
+  <li>Invalid marker content in <em>privatemsg.module</em>:<em>118</em>
+* <em>t</em>(<em>variable_get(&#039;privatemsg_menu_link&#039;,&#039;My inbox&#039;))</em>
+
+</li>
+  <li>Invalid marker content in <em>smileys.module</em>:<em>123</em>
+* <em>t</em>(<em>&#039;You can define a global list of smileys on the &#039;.l(&#039;smileys settings page&#039;,&#039;admin/settings/smileys&#039;).&#039;.&#039;)</em>
+
+</li>
+  <li>Invalid marker content in <em>smileys.module</em>:<em>246</em>
+* <em>t</em>(<em>$package)</em>
+
+</li>
+  <li>Invalid marker content in <em>smileys.module</em>:<em>260</em>
+* <em>t</em>(<em>&#039;No smilies found. You may &lt;a href=&quot;&#039;.url(&#039;admin/settings/smileys/add&#039;).&#039;&quot;&gt;add&lt;/a&gt; custom smilies, or &#039;.$import.&#039; smiley packages.&#039;)</em>
+
+</li>
+  <li>Invalid marker content in <em>smileys.module</em>:<em>123</em>
+* <em>t</em>(<em>&#039;You can define a global list of smileys on the &#039;.l(&#039;smileys settings page&#039;,&#039;admin/settings/smileys&#039;).&#039;.&#039;)</em>
+
+</li>
+  <li>Invalid marker content in <em>smileys.module</em>:<em>246</em>
+* <em>t</em>(<em>$package)</em>
+
+</li>
+  <li>Invalid marker content in <em>smileys.module</em>:<em>260</em>
+* <em>t</em>(<em>&#039;No smilies found. You may &lt;a href=&quot;&#039;.url(&#039;admin/settings/smileys/add&#039;).&#039;&quot;&gt;add&lt;/a&gt; custom smilies, or &#039;.$import.&#039; smiley packages.&#039;)</em>
+
+</li>
+ </ul>
+</div>
+        <form action="/admin/settings/locale/potx"  accept-charset="UTF-8" method="post" id="potx-select-form">
+<div><fieldset class=" collapsible collapsed"><legend>Módulos en "modules"</legend><div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/aggregator"   class="form-radio" /> Extrae del módulo <em>aggregator</em> en el directorio <em>modules/aggregator</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/block"   class="form-radio" /> Extrae del módulo <em>block</em> en el directorio <em>modules/block</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/blog"   class="form-radio" /> Extrae del módulo <em>blog</em> en el directorio <em>modules/blog</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/blogapi"   class="form-radio" /> Extrae del módulo <em>blogapi</em> en el directorio <em>modules/blogapi</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/book"   class="form-radio" /> Extrae del módulo <em>book</em> en el directorio <em>modules/book</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/comment"   class="form-radio" /> Extrae del módulo <em>comment</em> en el directorio <em>modules/comment</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/filter"   class="form-radio" /> Extrae del módulo <em>filter</em> en el directorio <em>modules/filter</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/forum"   class="form-radio" /> Extrae del módulo <em>forum</em> en el directorio <em>modules/forum</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/help"   class="form-radio" /> Extrae del módulo <em>help</em> en el directorio <em>modules/help</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/locale"   class="form-radio" /> Extrae del módulo <em>locale</em> en el directorio <em>modules/locale</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/menu"   class="form-radio" /> Extrae del módulo <em>menu</em> en el directorio <em>modules/menu</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/node"   class="form-radio" /> Extrae del módulo <em>node</em> en el directorio <em>modules/node</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/path"   class="form-radio" /> Extrae del módulo <em>path</em> en el directorio <em>modules/path</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/poll"   class="form-radio" /> Extrae del módulo <em>poll</em> en el directorio <em>modules/poll</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/profile"   class="form-radio" /> Extrae del módulo <em>profile</em> en el directorio <em>modules/profile</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/search"   class="form-radio" /> Extrae del módulo <em>search</em> en el directorio <em>modules/search</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/statistics"   class="form-radio" /> Extrae del módulo <em>statistics</em> en el directorio <em>modules/statistics</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/system"   class="form-radio" /> Extrae del módulo <em>system</em> en el directorio <em>modules/system</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/taxonomy"   class="form-radio" /> Extrae del módulo <em>taxonomy</em> en el directorio <em>modules/taxonomy</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/tracker"   class="form-radio" /> Extrae del módulo <em>tracker</em> en el directorio <em>modules/tracker</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/upload"   class="form-radio" /> Extrae del módulo <em>upload</em> en el directorio <em>modules/upload</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/user"   class="form-radio" /> Extrae del módulo <em>user</em> en el directorio <em>modules/user</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="modules/watchdog"   class="form-radio" /> Extrae del módulo <em>watchdog</em> en el directorio <em>modules/watchdog</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+</fieldset>
+<fieldset class=" collapsible collapsed"><legend>Módulos en "sites/all/modules"</legend><div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/admin_menu"   class="form-radio" /> Extrae del módulo <em>admin_menu</em> en el directorio <em>sites/all/modules/admin_menu</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/autolocale"   class="form-radio" /> Extrae del módulo <em>autolocale</em> en el directorio <em>sites/all/modules/autolocale</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/comment_upload"   class="form-radio" /> Extrae del módulo <em>comment_upload</em> en el directorio <em>sites/all/modules/comment_upload</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/countdown"   class="form-radio" /> Extrae del módulo <em>countdown</em> en el directorio <em>sites/all/modules/countdown</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/event"   class="form-radio" /> Extrae de todos los módulos en el directorio "sites/all/modules/event"</label>
+ <div class="description">Para extraer los textos de un único módulo dentro de este directorio, marque la casilla de ese módulo en la lista que ve a continuación.</div>
+</div>
+<fieldset class=" collapsible collapsed"><legend>Módulos en "sites/all/modules/event"</legend><div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/event/event.module"   class="form-radio" /> Extraer del módulo <em>event</em></label>
+ <div class="description">Extraer de los ficheros que se llaman <em>event.*</em>, en el directorio <em>sites/all/modules/event</em>.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/event/contrib"   class="form-radio" /> Extrae del módulo <em>basicevent</em> en el directorio <em>sites/all/modules/event/contrib</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+</fieldset>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/filterbynodetype"   class="form-radio" /> Extrae del módulo <em>filterbynodetype</em> en el directorio <em>sites/all/modules/filterbynodetype</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/forward"   class="form-radio" /> Extrae del módulo <em>forward</em> en el directorio <em>sites/all/modules/forward</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/jabbernotify"   class="form-radio" /> Extrae del módulo <em>jabbernotify</em> en el directorio <em>sites/all/modules/jabbernotify</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/ldap_integration"   class="form-radio" /> Extrae de todos los módulos en el directorio "sites/all/modules/ldap_integration"</label>
+ <div class="description">Para extraer los textos de un único módulo dentro de este directorio, marque la casilla de ese módulo en la lista que ve a continuación.</div>
+</div>
+<fieldset class=" collapsible collapsed"><legend>Módulos en "sites/all/modules/ldap_integration"</legend><div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/ldap_integration/ldapauth.module"   class="form-radio" /> Extraer del módulo <em>ldapauth</em></label>
+ <div class="description">Extraer de los ficheros que se llaman <em>ldapauth.*</em>, en el directorio <em>sites/all/modules/ldap_integration</em>.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/ldap_integration/ldapdata.module"   class="form-radio" /> Extraer del módulo <em>ldapdata</em></label>
+ <div class="description">Extraer de los ficheros que se llaman <em>ldapdata.*</em>, en el directorio <em>sites/all/modules/ldap_integration</em>.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/ldap_integration/ldapgroups.module"   class="form-radio" /> Extraer del módulo <em>ldapgroups</em></label>
+ <div class="description">Extraer de los ficheros que se llaman <em>ldapgroups.*</em>, en el directorio <em>sites/all/modules/ldap_integration</em>.</div>
+</div>
+</fieldset>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/loginmenu"   class="form-radio" /> Extrae del módulo <em>loginmenu</em> en el directorio <em>sites/all/modules/loginmenu</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/mapaislas"   class="form-radio" /> Extrae del módulo <em>mapaislas</em> en el directorio <em>sites/all/modules/mapaislas</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/marksmarty"   class="form-radio" /> Extrae del módulo <em>marksmarty</em> en el directorio <em>sites/all/modules/marksmarty</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/mass_contact"   class="form-radio" /> Extrae del módulo <em>mass_contact</em> en el directorio <em>sites/all/modules/mass_contact</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/moduleweight"   class="form-radio" /> Extrae del módulo <em>moduleweight</em> en el directorio <em>sites/all/modules/moduleweight</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/node_adoption"   class="form-radio" /> Extrae del módulo <em>node_adoption</em> en el directorio <em>sites/all/modules/node_adoption</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/nodefamily"   class="form-radio" /> Extrae del módulo <em>nodefamily</em> en el directorio <em>sites/all/modules/nodefamily</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/nodeprofile"   class="form-radio" /> Extrae del módulo <em>nodeprofile</em> en el directorio <em>sites/all/modules/nodeprofile</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/pathauto"   class="form-radio" /> Extrae del módulo <em>pathauto</em> en el directorio <em>sites/all/modules/pathauto</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/portada"   class="form-radio" /> Extrae del módulo <em>portada</em> en el directorio <em>sites/all/modules/portada</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/potx"   class="form-radio" /> Extrae del módulo <em>potx</em> en el directorio <em>sites/all/modules/potx</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/privatemsg"   class="form-radio" /> Extrae del módulo <em>privatemsg</em> en el directorio <em>sites/all/modules/privatemsg</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/quicktags"   class="form-radio" /> Extrae del módulo <em>quicktags</em> en el directorio <em>sites/all/modules/quicktags</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/register_validation"   class="form-radio" /> Extrae del módulo <em>register_validation</em> en el directorio <em>sites/all/modules/register_validation</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/smileys"   class="form-radio" /> Extrae de todos los módulos en el directorio "sites/all/modules/smileys"</label>
+ <div class="description">Para extraer los textos de un único módulo dentro de este directorio, marque la casilla de ese módulo en la lista que ve a continuación.</div>
+</div>
+<fieldset class=" collapsible collapsed"><legend>Módulos en "sites/all/modules/smileys"</legend><div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/smileys/smileys.module"   class="form-radio" /> Extraer del módulo <em>smileys</em></label>
+ <div class="description">Extraer de los ficheros que se llaman <em>smileys.*</em>, en el directorio <em>sites/all/modules/smileys</em>.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/smileys/smileys_import.module"   class="form-radio" /> Extraer del módulo <em>smileys_import</em></label>
+ <div class="description">Extraer de los ficheros que se llaman <em>smileys_import.*</em>, en el directorio <em>sites/all/modules/smileys</em>.</div>
+</div>
+</fieldset>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/subform_element"   class="form-radio" /> Extrae del módulo <em>subform_element</em> en el directorio <em>sites/all/modules/subform_element</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/subscriptions"   class="form-radio" /> Extrae del módulo <em>subscriptions</em> en el directorio <em>sites/all/modules/subscriptions</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/token"   class="form-radio" /> Extrae del módulo <em>token</em> en el directorio <em>sites/all/modules/token</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/trackback"   class="form-radio" /> Extrae del módulo <em>trackback</em> en el directorio <em>sites/all/modules/trackback</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/update_status"   class="form-radio" /> Extrae del módulo <em>update_status</em> en el directorio <em>sites/all/modules/update_status</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/upload_preview"   class="form-radio" /> Extrae del módulo <em>upload_preview</em> en el directorio <em>sites/all/modules/upload_preview</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/all/modules/webchat2"   class="form-radio" /> Extrae del módulo <em>webchat2</em> en el directorio <em>sites/all/modules/webchat2</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+</fieldset>
+<fieldset class=" collapsible collapsed"><legend>Módulos en "sites/default/modules"</legend><div class="form-item">
+ <label class="option"><input type="radio" name="module" value="sites/default/modules/securepages"   class="form-radio" /> Extrae del módulo <em>securepages</em> en el directorio <em>sites/default/modules/securepages</em></label>
+ <div class="description">Extrae los mensajes de todos los archivos que se encuentren en este directorio.</div>
+</div>
+</fieldset>
+<div class="form-item">
+ <label>Plantilla de idioma: </label>
+ <div class="form-radios"><div class="form-item">
+ <label class="option"><input type="radio" name="langcode" value="n/a"  checked="checked"  class="form-radio" /> Plantilla independiente del idioma.</label>
+</div>
+<div class="form-item">
+ <label class="option"><input type="radio" name="langcode" value="es"   class="form-radio" /> Fichero de plantilla para traducciones del Español</label>
+</div>
+</div>
+ <div class="description">Exportar una plantilla independiente del idioma o dependiente del idioma (formas plurales, nombre del equipo del lenguaje, etc.)</div>
+</div>
+<div class="form-item">
+ <label class="option"><input type="checkbox" name="translations" id="edit-translations" value="1"   class="form-checkbox" /> Incluir traducciones</label>
+ <div class="description">Incluye traducciones de las cadenas en el fichero generado. Se ignorará en las plantillas independientes del idioma.</div>
+</div>
+<input type="submit" name="op" id="edit-submit" value="Extraer"  class="form-submit" />
+<input type="hidden" name="form_token" id="edit-potx-select-form-form-token" value="45bfd9d033fcefb0c36ef6b37ec9d331"  />
+<input type="hidden" name="form_id" id="edit-potx-select-form" value="potx_select_form"  />
+
+</div></form>
+              </div>
+    </td>
+      </tr>
+</table>
+
+<div id="footer">
+  CopyLeft (2007) GULIC
+</div>
+<div id="admin_menu">
+<ul><li class="expandable admin_menu-icon"><a href="/node" title=""><img class="admin_menu-icon" src="/misc/favicon.ico" width="16" height="16" alt="" /></a>
+<ul><li class="expandable"><a href="/admin" title="">Administrar</a>
+<ul><li><a href="/admin/by-module" title="">Por módulo</a></li></ul></li><li><a href="/admin/logs/status/run-cron?destination=user%2F6" title="">Ejecutar cron</a></li><li class="expandable"><a href="http://drupal.org" title="">Drupal.org</a>
+<ul><li><a href="http://drupal.org/project/issues/admin_menu" title="">Administration Menu issue queue</a></li><li><a href="http://drupal.org/project/issues/autolocale" title="">Autolocale issue queue</a></li><li><a href="http://drupal.org/project/issues/basicevent" title="">Basic event issue queue</a></li><li><a href="http://drupal.org/project/issues/comment_upload" title="">Comment upload issue queue</a></li><li><a href="http://drupal.org/project/issues/countdown" title="">Countdown issue queue</a></li><li><a href="http://drupal.org/project/issues/drupal" title="">Drupal issue queue</a></li><li><a href="http://drupal.org/project/issues/event" title="">Event issue queue</a></li><li><a href="http://drupal.org/project/issues/filterbynodetype" title="">Filter By Node Type issue queue</a></li><li><a href="http://drupal.org/project/issues/forward" title="">Forward issue queue</a></li><li><a href="http://drupal.org/project/issues/jabbernotify" title="">JabberNotify issue queue</a></li><li><a href="http://drupal.org/project/issues/ldapauth" title="">ldapauth issue queue</a></li><li><a href="http://drupal.org/project/issues/ldapdata" title="">ldapdata issue queue</a></li><li><a href="http://drupal.org/project/issues/ldapgroups" title="">ldapgroups issue queue</a></li><li><a href="http://drupal.org/project/issues/loginmenu" title="">Login Menu issue queue</a></li><li><a href="http://drupal.org/project/issues/mapaislas" title="">MapaIslas issue queue</a></li><li><a href="http://drupal.org/project/issues/marksmarty" title="">Marksmarty issue queue</a></li><li><a href="http://drupal.org/project/issues/mass_contact" title="">Mass Contact issue queue</a></li><li><a href="http://drupal.org/project/issues/moduleweight" title="">Module Weight issue queue</a></li><li><a href="http://drupal.org/project/issues/node_adoption" title="">Node Adoption issue queue</a></li><li><a href="http://drupal.org/project/issues/nodefamily" title="">Node Family issue queue</a></li><li><a href="http://drupal.org/project/issues/nodeprofile" title="">Node Profile issue queue</a></li><li><a href="http://drupal.org/project/issues/pathauto" title="">Pathauto issue queue</a></li><li><a href="http://drupal.org/project/issues/privatemsg" title="">Privatemsg issue queue</a></li><li><a href="http://drupal.org/project/issues/quicktags" title="">Quicktags issue queue</a></li><li><a href="http://drupal.org/project/issues/register_validation" title="">Register Validation issue queue</a></li><li><a href="http://drupal.org/project/issues/securepages" title="">Secure Pages issue queue</a></li><li><a href="http://drupal.org/project/issues/smileys_import" title="">Smileys Import issue queue</a></li><li><a href="http://drupal.org/project/issues/smileys" title="">Smileys issue queue</a></li><li><a href="http://drupal.org/project/issues/subform_element" title="">Subform Element issue queue</a></li><li><a href="http://drupal.org/project/issues/subscriptions" title="">Subscriptions issue queue</a></li><li><a href="http://drupal.org/project/issues/token" title="">Token issue queue</a></li><li><a href="http://drupal.org/project/issues/trackback" title="">Trackback issue queue</a></li><li><a href="http://drupal.org/project/issues/potx" title="">Translation template extractor issue queue</a></li><li><a href="http://drupal.org/project/issues/update_status" title="">Update status issue queue</a></li><li><a href="http://drupal.org/project/issues/upload_preview" title="">Upload preview issue queue</a></li><li><a href="http://drupal.org/project/issues/webchat2" title="">Webchat2 issue queue</a></li></ul></li></ul></li><li class="admin_menu-action admin_menu-logout"><a href="/logout" title="">Logout lcabrera</a></li><li class="admin_menu-action admin_menu-icon admin_menu-users"><a href="/admin/user/user" title="">5 / 3 <img src="/sites/all/modules/admin_menu/images/icon_users.png" width="16" height="15" alt="Current anonymous / authenticated users" title="Current anonymous / authenticated users" /></a></li><li class="expandable"><a href="/admin/build" title="">Construcción del sitio</a>
+<ul><li class="expandable"><a href="/admin/build/path" title="">Alias de URL</a>
+<ul><li><a href="/admin/build/path" title="">Lista</a></li><li><a href="/admin/build/path/add" title="">Añadir alias</a></li><li><a href="/admin/build/path/delete_bulk" title="">Delete aliases</a></li></ul></li><li class="expandable"><a href="/admin/build/block" title="">Bloques</a>
+<ul><li class="expandable"><a href="/admin/build/block" title="">Lista</a>
+<ul><li><a href="/admin/build/block" title="">opciones de gulic</a></li><li><a href="/admin/build/block/list/Aeon5" title="">opciones de Aeon5</a></li><li><a href="/admin/build/block/list/andreas09" title="">opciones de andreas09</a></li><li><a href="/admin/build/block/list/B7" title="">opciones de B7</a></li><li><a href="/admin/build/block/list/B7+Brown" title="">opciones de B7 Brown</a></li><li><a href="/admin/build/block/list/B7+Green" title="">opciones de B7 Green</a></li><li><a href="/admin/build/block/list/bluebreeze" title="">opciones de bluebreeze</a></li><li><a href="/admin/build/block/list/bluebreeze-fixed" title="">opciones de bluebreeze-fixed</a></li><li><a href="/admin/build/block/list/bluemarine" title="">opciones de bluemarine</a></li><li><a href="/admin/build/block/list/chameleon" title="">opciones de chameleon</a></li><li><a href="/admin/build/block/list/cod_organizing" title="">opciones de cod_organizing</a></li><li><a href="/admin/build/block/list/css" title="">opciones de css</a></li><li><a href="/admin/build/block/list/danger4k" title="">opciones de danger4k</a></li><li><a href="/admin/build/block/list/foliage" title="">opciones de foliage</a></li><li><a href="/admin/build/block/list/garland" title="">opciones de garland</a></li><li><a href="/admin/build/block/list/gulic-ng" title="">opciones de gulic-ng</a></li><li><a href="/admin/build/block/list/marvin" title="">opciones de marvin</a></li><li><a href="/admin/build/block/list/minnelli" title="">opciones de minnelli</a></li><li><a href="/admin/build/block/list/multiflex37" title="">opciones de multiflex37</a></li><li><a href="/admin/build/block/list/pushbutton" title="">opciones de pushbutton</a></li><li><a href="/admin/build/block/list/ubiquity" title="">opciones de ubiquity</a></li></ul></li><li><a href="/admin/build/block/add" title="">Añadir bloque</a></li></ul></li><li class="expandable"><a href="/admin/build/modules" title="">Módulos</a>
+<ul><li><a href="/admin/build/modules/uninstall" title="">Desinstalar</a></li><li><a href="/admin/build/modules" title="">Lista</a></li></ul></li><li class="expandable"><a href="/admin/build/mass_contact" title="">Mass Contact form</a>
+<ul><li><a href="/admin/build/mass_contact" title="">Lista</a></li><li><a href="/admin/build/mass_contact/add" title="">Añadir categoría</a></li><li><a href="/admin/build/mass_contact/settings" title="">Opciones</a></li></ul></li><li class="expandable"><a href="/admin/build/menu" title="">Menús</a>
+<ul><li><a href="/admin/build/menu" title="">Lista</a></li><li><a href="/admin/build/menu/menu/add" title="">Añadir menú</a></li><li><a href="/admin/build/menu/item/add" title="">Añadir opción de menú</a></li><li><a href="/admin/build/menu/settings" title="">Opciones</a></li></ul></li><li class="expandable"><a href="/admin/build/themes" title="">Temas</a>
+<ul><li><a href="/admin/build/themes" title="">Lista</a></li><li class="expandable"><a href="/admin/build/themes/settings" title="">Configurar</a>
+<ul><li><a href="/admin/build/themes/settings" title="">Opciones globales</a></li><li><a href="/admin/build/themes/settings/garland" title="">garland</a></li><li><a href="/admin/build/themes/settings/gulic" title="">gulic</a></li></ul></li></ul></li></ul></li><li class="expandable"><a href="/admin/content" title="">Gestión de contenido</a>
+<ul><li class="expandable"><a href="/admin/content/aggregator" title="">Agregador de noticias</a>
+<ul><li><a href="/admin/content/aggregator" title="">Lista</a></li><li><a href="/admin/content/aggregator/add/category" title="">Añadir categoría</a></li><li><a href="/admin/content/aggregator/add/feed" title="">Añadir origen</a></li><li><a href="/admin/content/aggregator/settings" title="">Opciones</a></li></ul></li><li><a href="/admin/content/search" title="">Buscar contenido</a></li><li class="expandable"><a href="/admin/content/taxonomy" title="">Categorías</a>
+<ul><li><a href="/admin/content/taxonomy" title="">Lista</a></li><li><a href="/admin/content/taxonomy/add/vocabulary" title="">Añadir vocabulario</a></li></ul></li><li class="expandable"><a href="/admin/content/comment" title="">Comentarios</a>
+<ul><li class="expandable"><a href="/admin/content/comment" title="">Lista</a>
+<ul><li><a href="/admin/content/comment" title="">Comentarios publicados</a></li><li><a href="/admin/content/comment/list/approval" title="">Cola de aprobación</a></li></ul></li><li><a href="/admin/content/comment/settings" title="">Opciones</a></li></ul></li><li class="expandable"><a href="/admin/content/node" title="">Contenido</a>
+<ul><li><a href="/admin/content/node" title="">Lista</a></li><li><a href="/node/add/bio" title="">Add Biography</a></li><li><a href="/node/add/book" title="">Add Book page</a></li><li><a href="/node/add/poll" title="">Add Encuesta</a></li><li><a href="/node/add/blog" title="">Add entrada de blog</a></li><li><a href="/node/add/event" title="">Add Event</a></li><li><a href="/node/add/mass_contact" title="">Add Mass Contact</a></li><li><a href="/node/add/page" title="">Add Página</a></li><li><a href="/node/add/story" title="">Add Story</a></li><li><a href="/node/add/forum" title="">Add Tema del foro</a></li></ul></li><li class="expandable"><a href="/admin/content/forum" title="">Foros</a>
+<ul><li><a href="/admin/content/forum" title="">Lista</a></li><li><a href="/admin/content/forum/add/container" title="">Añadir contenedor</a></li><li><a href="/admin/content/forum/add/forum" title="">Añadir foro</a></li><li><a href="/admin/content/forum/settings" title="">Opciones</a></li></ul></li><li class="expandable"><a href="/admin/content/book" title="">Libros</a>
+<ul><li><a href="/admin/content/book" title="">Lista</a></li><li><a href="/admin/content/book/orphan" title="">Páginas huérfanas</a></li></ul></li><li><a href="/admin/content/nodefamily" title="">Node family</a></li><li><a href="/admin/content/node-settings" title="">Opciones de envío</a></li><li><a href="/admin/content/rss-publishing" title="">Publicación RSS</a></li><li class="expandable"><a href="/admin/content/types" title="">Tipo de contenido</a>
+<ul><li><a href="/admin/content/types" title="">Lista</a></li><li><a href="/admin/content/types/add" title="">Añadir tipo de contenido</a></li></ul></li><li class="expandable"><a href="/admin/content/trackback" title="">Trackbacks</a>
+<ul><li class="expandable"><a href="/admin/content/trackback" title="">Lista</a>
+<ul><li><a href="/admin/content/trackback" title="">New trackbacks</a></li><li><a href="/admin/content/trackback/list/approval" title="">Cola de aprobación</a></li></ul></li><li><a href="/admin/content/trackback/settings" title="">Opciones</a></li></ul></li></ul></li><li class="expandable"><a href="/admin/settings" title="">Configuración del sitio</a>
+<ul><li><a href="/admin/settings/pathauto" title="">Alias automático de URL</a></li><li><a href="/admin/settings/blogapi" title="">APIs de Blog</a></li><li><a href="/admin/settings/date-time" title="">Día y hora</a></li><li><a href="/admin/settings/uploads" title="">Descargas de archivos</a></li><li class="expandable"><a href="/admin/settings/event" title="">Eventos</a>
+<ul><li><a href="/admin/settings/event/overview" title="">Event overview</a></li><li><a href="/admin/settings/event/timezone" title="">Gestión de Zona horaria</a></li></ul></li><li class="expandable"><a href="/admin/settings/filters" title="">Formato de entrada</a>
+<ul><li><a href="/admin/settings/filters" title="">Lista</a></li><li><a href="/admin/settings/filters/add" title="">Añadir formato de entrada</a></li></ul></li><li><a href="/admin/settings/forward" title="">Forward</a></li><li><a href="/admin/settings/site-information" title="">Información del sitio</a></li><li><a href="/admin/settings/error-reporting" title="">Informar de errores</a></li><li><a href="/admin/settings/image-toolkit" title="">Juego de herramientas de imágenes</a></li><li class="expandable"><a href="/admin/settings/ldapdata" title="">LDAP Data</a>
+<ul><li><a href="/admin/settings/ldapdata" title="">LDAP Data</a></li></ul></li><li><a href="/admin/settings/ldapgroups" title="">LDAP Groups</a></li><li class="expandable"><a href="/admin/settings/ldapauth" title="">LDAP Integration</a>
+<ul><li><a href="/admin/settings/ldapauth" title="">Lista</a></li><li><a href="/admin/settings/ldapauth/add" title="">Configure LDAP Server</a></li><li><a href="/admin/settings/ldapauth/options" title="">System Wide Options</a></li></ul></li><li class="expandable"><a href="/admin/settings/locale" title="">Localización</a>
+<ul><li class="expandable"><a href="/admin/settings/locale" title="">Gestionar idiomas</a>
+<ul><li><a href="/admin/settings/locale" title="">Lista</a></li><li><a href="/admin/settings/locale/language/add" title="">Añadir idioma</a></li><li><a href="/admin/settings/locale/language/import" title="">Importar</a></li><li><a href="/admin/settings/locale/language/autoimport" title="">Automatic import</a></li><li><a href="/admin/settings/locale/language/export" title="">Exportar</a></li></ul></li><li><a href="/admin/settings/locale/string/search" title="">Gestionar cadenas</a></li><li><a href="/admin/settings/locale/potx" title="" class="active">Extraer textos</a></li></ul></li><li><a href="/admin/settings/site-maintenance" title="">Mantenimiento del sitio</a></li><li><a href="/admin/settings/node_adoption" title="">Node Adoption</a></li><li><a href="/admin/settings/search" title="">Opciones de búsqueda</a></li><li><a href="/admin/settings/privatemsg" title="">Privatemsg</a></li><li><a href="/admin/settings/quicktags" title="">Quicktags</a></li><li><a href="/admin/settings/performance" title="">Rendimiento</a></li><li><a href="/admin/settings/securepages" title="">Secure Pages</a></li><li><a href="/admin/settings/file-system" title="">Sistema de archivos</a></li><li class="expandable"><a href="/admin/settings/smileys" title="">Smileys</a>
+<ul><li><a href="/admin/settings/smileys" title="">Lista</a></li><li><a href="/admin/settings/smileys/add" title="">Add</a></li><li><a href="/admin/settings/smileys/import" title="">Importar</a></li><li><a href="/admin/settings/smileys/export" title="">Exportar</a></li><li><a href="/admin/settings/smileys/configure" title="">Opciones</a></li></ul></li><li><a href="/admin/settings/subscriptions" title="">Subscriptions</a></li><li><a href="/admin/settings/admin" title="">Tema de administración</a></li><li><a href="/admin/settings/clean-urls" title="">URLs limpios</a></li><li><a href="/admin/settings/register_validation" title="">Validación del formulario de registro</a></li><li><a href="/admin/settings/filterbynodetype" title="">Input filter node types</a></li></ul></li><li class="expandable"><a href="/admin/user" title="">Gestión de usuarios</a>
+<ul><li><a href="/admin/user/search" title="">Buscar usuarios</a></li><li><a href="/admin/user/access" title="">Control de acceso</a></li><li><a href="/admin/user/settings" title="">Opciones del usuario</a></li><li><a href="/admin/user/profile" title="">Perfiles</a></li><li class="expandable"><a href="/admin/user/rules" title="">Reglas de acceso</a>
+<ul><li><a href="/admin/user/rules" title="">Lista</a></li><li><a href="/admin/user/rules/add" title="">Agregar regla</a></li><li><a href="/admin/user/rules/check" title="">Reglas de verificación</a></li></ul></li><li><a href="/admin/user/roles" title="">Roles</a></li><li class="expandable"><a href="/admin/user/user" title="">Usuarios</a>
+<ul><li><a href="/admin/user/user" title="">Lista</a></li><li><a href="/admin/user/user/create" title="">Añadir usuario</a></li></ul></li></ul></li><li class="expandable"><a href="/admin/logs" title="">Registros</a>
+<ul><li><a href="/admin/logs/watchdog" title="">Entradas de blogs recientes</a></li><li><a href="/admin/logs/hits" title="">Accesos recientes</a></li><li><a href="/admin/logs/forward" title="">Forward tracking</a></li><li><a href="/admin/logs/search" title="">Frases principales en las búsquedas</a></li><li><a href="/admin/logs/access-denied" title="">Principales errores de "acceso denegado"</a></li><li><a href="/admin/logs/page-not-found" title="">Principales errores de "página no encontrada"</a></li><li><a href="/admin/logs/referrers" title="">Referentes principales</a></li><li><a href="/admin/logs/pages" title="">Páginas principales</a></li><li><a href="/admin/logs/visitors" title="">Visitantes principales</a></li><li><a href="/admin/logs/settings" title="">Opciones del registro de acceso</a></li><li class="expandable"><a href="/admin/logs/updates" title="">Available updates</a>
+<ul><li><a href="/admin/logs/updates" title="">Lista</a></li><li><a href="/admin/logs/updates/settings" title="">Opciones</a></li></ul></li><li><a href="/admin/logs/status" title="">Informe de estado</a></li></ul></li><li><a href="/admin/help" title="">Ayuda</a></li></ul></div></body>
+</html>

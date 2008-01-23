@@ -1,0 +1,228 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  poll.module,v 1.222.2.4 2007/12/27 08:26:00 drumm
+#  poll.info,v 1.3 2006/11/21 20:55:35 dries
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:04+0000\n"
+"PO-Revision-Date: 2008-01-23 00:04+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: poll.module:16
+msgid "The poll module can be used to create simple polls for site users. A poll is a simple multiple choice questionnaire which displays the cumulative results of the answers to the poll. Having polls on the site is a good way to get instant feedback from community members."
+msgstr ""
+"El módulo poll se puede utilizar para crear encuestas sencillas para "
+"los usuarios del sitio. Una encuesta es un simple cuestionario con "
+"varias opciones, que muestra los resultados acumulados de las "
+"respuestas de la encuesta. Tener encuestas en el sitio es una buena "
+"forma de obtener una información muy valiosa de los miembros de la "
+"comunidad."
+
+#: poll.module:17
+msgid "Users can create a poll. The title of the poll should be the question, then enter the answers and the \"base\" vote counts. You can also choose the time period over which the vote will run.The <a href=\"@poll\">poll</a> item in the navigation menu will take you to a page where you can see all the current polls, vote on them (if you haven't already) and view the results."
+msgstr ""
+"Los usuarios pueden crear una encuesta. El título de la encuesta "
+"debería ser la pregunta, luego introduzca las respuestas y el número "
+"de votos de «base». También puede elegir el período de tiempo de "
+"vigencia de la votación. La opción <a href=\"@poll\">encuesta</a> "
+"del menú de navegación le lleva a una página en la que puede ver "
+"las encuestas actuales, votar en ellas (si es que no lo ha hecho ya) y "
+"ver los resultados."
+
+#: poll.module:18
+msgid "For more information please read the configuration and customization handbook <a href=\"@poll\">Poll page</a>."
+msgstr ""
+"Si quiere más información, puede leer el manual de configuración y "
+"de personalización de la <a href=\"@poll\">página de poll</a>."
+
+#: poll.module:40
+msgid "Most recent poll"
+msgstr "Encuesta más reciente"
+
+#: poll.module:54;321 poll.info:0
+msgid "Poll"
+msgstr "Encuesta"
+
+#: poll.module:105
+msgid "Negative values are not allowed."
+msgstr "No se permiten los valores negativos."
+
+#: poll.module:110
+msgid "You must fill in at least two choices."
+msgstr "Debe cumplimentar al menos dos opciones."
+
+#: poll.module:147
+msgid "Choices"
+msgstr "Opciones"
+
+#: poll.module:159
+msgid "Need more choices"
+msgstr "Se necesitan más opciones"
+
+#: poll.module:161
+msgid "If the amount of boxes above isn't enough, check this box and click the Preview button below to add some more."
+msgstr ""
+"Si la cantidad de casillas de arriba no es suficiente, marque esta "
+"casilla y haga clic en el botón de vista preliminar de abajo para "
+"añadir más."
+
+#: poll.module:168
+msgid "Choice @n"
+msgstr "Opción @n"
+
+#: poll.module:175
+msgid "Votes for choice @n"
+msgstr "Votos para la opción @n"
+
+#: poll.module:183
+msgid "Unlimited"
+msgstr "Ilimitado"
+
+#: poll.module:184
+msgid "Closed"
+msgstr "Cerrada"
+
+#: poll.module:184
+msgid "Active"
+msgstr "Activo"
+
+#: poll.module:187
+msgid "Settings"
+msgstr "Opciones"
+
+#: poll.module:191
+msgid "Poll status"
+msgstr "Estado de la encuesta"
+
+#: poll.module:194
+msgid "When a poll is closed, visitors can no longer vote for it."
+msgstr ""
+"Cuando una encuesta está cerrada, los visitantes ya no pueden votar "
+"en ella."
+
+#: poll.module:199
+msgid "Poll duration"
+msgstr "Duración de la encuesta"
+
+#: poll.module:202
+msgid "After this period, the poll will be closed automatically."
+msgstr "Tras este período, la encuesta se cierra automáticamente."
+
+#: poll.module:235
+msgid "Polls"
+msgstr "Encuestas"
+
+#: poll.module:241;384;492;613
+msgid "Vote"
+msgstr "Votar"
+
+#: poll.module:247
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: poll.module:261
+msgid "Votes"
+msgstr "Votos"
+
+#: poll.module:269;606
+msgid "Results"
+msgstr "Resultados"
+
+#: poll.module:323
+msgid "A poll is a multiple-choice question which visitors can vote on."
+msgstr ""
+"Una encuesta es una pregunta de selección múltiple en la que los "
+"usuarios pueden votar."
+
+#: poll.module:324
+msgid "Question"
+msgstr "Pregunta"
+
+#: poll.module:338
+msgid "open"
+msgstr "abierta"
+
+#: poll.module:338
+msgid "closed"
+msgstr "cerrada"
+
+#: poll.module:432;439
+msgid "Total votes: %votes"
+msgstr "Total de votos: %votes"
+
+#: poll.module:451
+msgid "Cancel your vote"
+msgstr "Cancelar su voto"
+
+#: poll.module:489
+msgid "This table lists all the recorded votes for this poll.  If anonymous users are allowed to vote, they will be identified by the IP address of the computer they used when they voted."
+msgstr ""
+"Esta tabla muestra todos los votos registrados para la encuenta. Si se "
+"le permite votar a los usuarios anónimos, se identifican por la "
+"dirección IP del computador que han utilizado para votar."
+
+#: poll.module:491
+msgid "Visitor"
+msgstr "Visitante"
+
+#: poll.module:538
+msgid "Your vote was recorded."
+msgstr "Se ha registrado su voto."
+
+#: poll.module:541
+msgid "You are not allowed to vote on this poll."
+msgstr "No se le permite votar en esta encuesta."
+
+#: poll.module:545
+msgid "You did not specify a valid poll choice."
+msgstr "No ha especificado una opción válida para la encuesta."
+
+#: poll.module:575
+msgid "Your vote was canceled."
+msgstr "Su voto se ha cancelado."
+
+#: poll.module:578
+msgid "You are not allowed to cancel an invalid poll choice."
+msgstr ""
+"No se le permite cancelar una opción de la encuesta que no es "
+"válida."
+
+#: poll.module:604
+msgid "Older polls"
+msgstr "Encuestas anteriores"
+
+#: poll.module:604
+msgid "View the list of polls on this site."
+msgstr "Ver la lista con las encuestas del sitio."
+
+#: poll.module:606
+msgid "View the current poll results."
+msgstr "Ver los resultados de la encuesta actual."
+
+#: poll.module:338;418
+msgid "1 vote"
+msgid_plural "@count votes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: poll.info:0
+msgid "Allows your site to capture votes on different topics in the form of multiple choice questions."
+msgstr ""
+"Permite al sitio recopilar votaciones sobre diferentes temas a modo de "
+"preguntas de selección múltiple."
+
+#: poll.info:0
+msgid "Core - optional"
+msgstr "Core - opcional"
+

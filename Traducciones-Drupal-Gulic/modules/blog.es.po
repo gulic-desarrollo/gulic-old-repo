@@ -1,0 +1,146 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  blog.module,v 1.271.2.2 2007/04/23 17:05:11 dries
+#  blog.info,v 1.4 2006/12/17 22:02:46 dries
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-22 23:17+0000\n"
+"PO-Revision-Date: 2008-01-22 23:17+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: blog.module:15
+msgid "Blog entry"
+msgstr "Entrada de blog"
+
+#: blog.module:17
+msgid "A blog is a regularly updated journal or diary made up of individual posts shown in reversed chronological order. Each member of the site may create and maintain a blog."
+msgstr ""
+"Un blog es una especie de diario actualizado regularmente y compuesto "
+"de envíos individuales que se muestran en orden cronológico inverso. "
+"Un blog está estrechamente ligada a su autor, por lo que cada usuario "
+"tiene su propio blog."
+
+#: blog.module:51 blog.info:0
+msgid "Blog"
+msgstr "Blog"
+
+#: blog.module:52
+msgid "View recent blog entries"
+msgstr "Ver entradas de blog recientes"
+
+#: blog.module:52;241
+msgid "Read @username's latest blog entries."
+msgstr "Leer lo más reciente del blog de @username."
+
+#: blog.module:55
+msgid "History"
+msgstr "Historial"
+
+#: blog.module:65
+msgid "The blog module allows registered users to maintain an online weblog (commonly known as a blog), often referred to as an online journal or diary. Blogs are made up of individual posts that are time stamped and are typically viewed by date as you would a diary. Blogs often contain links to web pages users have read and/or agree/disagree with."
+msgstr ""
+"El módulo blog permite que los usuarios registrados gestionen un "
+"weblog on line (lo que se suele conocer como blog), al que también se "
+"puede denominar diario en la red o diario. Los blogs se componen de "
+"envíos individuales con una sello de tiempo y se suelen ver por "
+"fechas, al igual que un diario. Los blogs suelen tener enlaces a "
+"páginas web que los usuarios han leído y con las que están de "
+"acuerdo o no."
+
+#: blog.module:66
+msgid "The blog module adds a <em>user blogs</em> navigation link to the site, which takes any visitor to a page that displays the most recent blog entries from all the users on the site. The navigation menu has a <em>create a blog entry</em> link (which takes you to a submission form) and a <em>view personal blog</em> link (which displays your blog entries as other people will see them). The blog module also creates a <em>recent blog posts</em> block that can be enabled."
+msgstr ""
+"El módulo blog añade un enlace de navegación <em>blogs de "
+"usuarios</em> al sitio,que lleva a cualquier visitante a una página "
+"que muestra las entradas más recientes en los blogs de todos los "
+"usuarios del sitio. El menú de navegación tiene un enlace <em>crear "
+"una entrada de blog</em> (que le lleva a un formulario de envío) y un "
+"enlace <em>blog personal</em> (que muestra las entradas a su blog tal "
+"y como las verían los demás).  El módulo blog también crea un "
+"bloque <em>envíos recientes a blogs</em>, que se puede activar."
+
+#: blog.module:67
+msgid "If a user has the ability to post blogs, then the import module (news aggregator) will display a blog-it link next to each news item in its lists. Clicking on this takes the user to the blog submission form, with the title, a link to the item, and a link to the source into the body text already in the text box, ready for the user to add a comment or explanation. This actively encourages people to add blog entries about things they see and hear elsewhere in the website and from your syndicated partner sites."
+msgstr ""
+"Si un usuario tiene la capacidad de realizar envíos a blogs, el "
+"módulo de importación (agregador de noticias) le muestra un enlace "
+"blog-it junto a cada noticia de la lista. Al hacer clic sobre este "
+"enlace, al usuario se le muestra el formulario de envío del blog, con "
+"el título, un enlace a esa noticia y un enlace al origen en el cuerpo "
+"del texto, todo escrito ya en la casilla de texto y listo para que el "
+"usuario escriba su comentario o su explicación. Esta opción promueve "
+"y facilita la adición de entradas de blogs sobre cosas que se han "
+"visto en la propia sede web o en las sedes que comparten el contenido "
+"con la suya."
+
+#: blog.module:68
+msgid "For more information please read the configuration and customization handbook <a href=\"@blog\">Blog page</a>."
+msgstr ""
+"Si quiere más información, puede leer el manual de configuración y "
+"de personalización en la <a href=\"@blog\">página de blog</a>."
+
+#: blog.module:134;223
+msgid "@name's blog"
+msgstr "blog de @name"
+
+#: blog.module:137
+msgid "Post new blog entry."
+msgstr "Envía una entrada nueva al blog."
+
+#: blog.module:140
+msgid "You are not allowed to post a new blog entry."
+msgstr "No se le permite enviar una entrada nueva al blog."
+
+#: blog.module:155
+msgid "RSS - !title"
+msgstr "RSS: !title"
+
+#: blog.module:178
+msgid "RSS - blogs"
+msgstr "RSS: blogs"
+
+#: blog.module:222;257
+msgid "Blogs"
+msgstr "Blogs"
+
+#: blog.module:239
+msgid "@username's blog"
+msgstr "blog de @username"
+
+#: blog.module:261
+msgid "My blog"
+msgstr "Mi blog"
+
+#: blog.module:277;286
+msgid "Recent blog posts"
+msgstr "Entradas recientes en el blog"
+
+#: blog.module:285
+msgid "more"
+msgstr "más"
+
+#: blog.module:285
+msgid "Read the latest blog entries."
+msgstr "Leer los últimos envíos al blog."
+
+#: blog.info:0
+msgid "Enables keeping easily and regularly updated user web pages or blogs."
+msgstr ""
+"Permite un mantenimiento y una actualización sencilla de las páginas "
+"web o de los blogs del usuario."
+
+#: blog.info:0
+msgid "Core - optional"
+msgstr "Core - opcional"
+

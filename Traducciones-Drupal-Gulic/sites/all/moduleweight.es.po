@@ -1,0 +1,69 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  moduleweight.module,v 1.4.2.1 2007/07/01 17:00:01 darrenoh
+#  moduleweight.info,v 1.1.2.1 2007/06/18 23:06:52 dww
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:18+0000\n"
+"PO-Revision-Date: 2008-01-23 00:18+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: moduleweight.module:11
+msgid "Drupal assigns each module a weight. For most operations involving any module that defines a particular hook, the modules are invoked in order first by weight, then by name."
+msgstr ""
+
+#: moduleweight.module:12
+msgid "This module adds a weight column to the modules table at !modules, allowing weights to be viewed and edited. Once activated, a weight column appears on the modules table. To change a module weight, edit its value and press \"Save configuration\". Any user who can submit the !modules form will be able to change module weights."
+msgstr ""
+
+#: moduleweight.module:57
+msgid "The !module module weight must be a number."
+msgstr ""
+
+#: moduleweight.module:81
+msgid "Enabled"
+msgstr "Activado"
+
+#: moduleweight.module:83
+msgid "Throttle"
+msgstr "Regulación"
+
+#: moduleweight.module:85
+msgid "Weight"
+msgstr "Peso"
+
+#: moduleweight.module:86
+msgid "Name"
+msgstr "Nombre"
+
+#: moduleweight.module:87
+msgid "Version"
+msgstr "Versión"
+
+#: moduleweight.module:88
+msgid "Description"
+msgstr "Descripción"
+
+#: moduleweight.module:92
+msgid "Other"
+msgstr ""
+
+#: moduleweight.info:0
+msgid "Module Weight"
+msgstr ""
+
+#: moduleweight.info:0
+msgid "Allows module weights to be viewed and edited."
+msgstr ""
+

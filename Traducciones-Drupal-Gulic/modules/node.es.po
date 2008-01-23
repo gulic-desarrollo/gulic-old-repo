@@ -1,0 +1,1029 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  content_types.inc,v 1.24.2.3 2007/12/27 09:57:47 drumm
+#  node.module,v 1.776.2.22 2008/01/07 01:31:26 drumm
+#  node.info,v 1.3 2006/11/21 20:55:34 dries
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:03+0000\n"
+"PO-Revision-Date: 2008-01-23 00:03+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: content_types.inc:15;76
+msgid "Name"
+msgstr "Nombre"
+
+#: content_types.inc:15;85;99 node.module:1608
+msgid "Type"
+msgstr "Tipo"
+
+#: content_types.inc:15;107
+msgid "Description"
+msgstr "Descripción"
+
+#: content_types.inc:15 node.module:1608;1671
+msgid "Operations"
+msgstr "Operaciones"
+
+#: content_types.inc:26 node.module:1596
+msgid "edit"
+msgstr "editar"
+
+#: content_types.inc:30 node.module:1701
+msgid "delete"
+msgstr "eliminar"
+
+#: content_types.inc:46 node.module:2225
+msgid "No content types available."
+msgstr "No hay tipos de contenido disponibles."
+
+#: content_types.inc:62 node.module:390;1608
+msgid "Title"
+msgstr "Título"
+
+#: content_types.inc:63 node.module:397
+msgid "Body"
+msgstr "Cuerpo"
+
+#: content_types.inc:73
+msgid "Identification"
+msgstr "Identificación"
+
+#: content_types.inc:79
+msgid "The human-readable name of this content type. This text will be displayed as part of the list on the <em>create content</em> page. It is recommended that this name begins with a capital letter and consists only of letters, numbers, and <strong>spaces</strong>. This name must be unique to this content type."
+msgstr ""
+"El nombre legible por los humanos de este tipo de contenido. Este "
+"texto se muestra como parte de la lista en la página <em>crear "
+"contenido</em>. Se recomienda que este nombre comience con una letra "
+"mayúscula y que conste sólo de letras, número y "
+"<strong>espacios</strong>. Este nombre debe ser único para este tipo "
+"de contenido."
+
+#: content_types.inc:90
+msgid "The machine-readable name of this content type. This text will be used for constructing the URL of the <em>create content</em> page for this content type. This name may consist of only of lowercase letters, numbers, and underscores. Dashes are not allowed. Underscores will be converted into dashes when constructing the URL of the <em>create content</em> page. This name must be unique to this content type."
+msgstr ""
+"El nombre legible por la máquina de este tipo de contenido. Este "
+"texto se usa para construir el URL de la página <em>crear "
+"contenido</em> para este tipo de contenido. Este nombre puede constar "
+"sólo de letras minúsculas, números y guiones bajos. Los guiones no "
+"se admiten. Los guiones bajos se convierten en guiones cuando se "
+"construye el URL de la página <em>crear contenido</em>. Este nombre "
+"debe ser único para este tipo de contenido."
+
+#: content_types.inc:102
+msgid "The machine-readable name of this content type. This field cannot be modified for system-defined content types."
+msgstr ""
+"El nombre legible por la máquina de este tipo de contenido. Este "
+"campo no se puede modificar en los tipos de contenido definidos por el "
+"sistema."
+
+#: content_types.inc:110
+msgid "A brief description of this content type. This text will be displayed as part of the list on the <em>create content</em> page."
+msgstr ""
+"Una breve descripción de este tipo de contenido. Este texto se "
+"muestra como parte de la lista de la página <em>crear contenido</em>."
+
+#: content_types.inc:115
+msgid "Submission form"
+msgstr "Formulario de envío"
+
+#: content_types.inc:120
+msgid "Title field label"
+msgstr "Etiqueta del campo Título"
+
+#: content_types.inc:129
+msgid "This content type does not have a title field."
+msgstr "Este tipo de contenido no tiene un campo de título."
+
+#: content_types.inc:133
+msgid "Body field label"
+msgstr "Etiqueta del campo de cuerpo"
+
+#: content_types.inc:136
+msgid "To omit the body field for this content type, remove any text and leave this field blank."
+msgstr ""
+"Para omitir el campo de cuerpo de este tipo de contenido, elimine "
+"cualquier texto y deje en blanco este campo."
+
+#: content_types.inc:140
+msgid "Minimum number of words"
+msgstr "Número mínimo de palabras"
+
+#: content_types.inc:143
+msgid "The minimum number of words for the body field to be considered valid for this content type. This can be useful to rule out submissions that do not meet the site's standards, such as short test posts."
+msgstr ""
+"El número mínimo de palabras que un artículo debe contener para ser "
+"considerado válido. Puede ser útil para descartar envíos que no "
+"cumplan con los estándares del sitio, como envíos cortos "
+"correspondientes a pruebas."
+
+#: content_types.inc:147
+msgid "Explanation or submission guidelines"
+msgstr "Explicación o directrices para envíos"
+
+#: content_types.inc:149
+msgid "This text will be displayed at the top of the submission form for this content type. It is useful for helping or instructing your users."
+msgstr ""
+"Este texto se muestra por encima del formulario de envío de este tipo "
+"de contenido. Es útil para proporcionar ayuda o instrucciones para "
+"los usuarios."
+
+#: content_types.inc:153
+msgid "Workflow"
+msgstr "Flujo de trabajo"
+
+#: content_types.inc:157
+msgid "Default options"
+msgstr "Opciones predefinidas"
+
+#: content_types.inc:160 node.module:2104
+msgid "Published"
+msgstr "Publicado"
+
+#: content_types.inc:161 node.module:2105
+msgid "Promoted to front page"
+msgstr "Promocionado a la página principal"
+
+#: content_types.inc:162 node.module:2106
+msgid "Sticky at top of lists"
+msgstr "Pegajoso en la cima de las listas"
+
+#: content_types.inc:163 node.module:2107
+msgid "Create new revision"
+msgstr "Crear revisión nueva"
+
+#: content_types.inc:165
+msgid "Users with the <em>administer nodes</em> permission will be able to override these options."
+msgstr ""
+"Los usuarios con permiso para <em>administrar nodos</em> pueden eludir "
+"estas opciones."
+
+#: content_types.inc:195
+msgid "Save content type"
+msgstr "Guardar este tipo de contenido"
+
+#: content_types.inc:203;284
+msgid "Delete content type"
+msgstr "Eliminar el tipo de contenido"
+
+#: content_types.inc:211;281;305;326
+msgid "Reset to defaults"
+msgstr "Restaurar con los valores predefinidos"
+
+#: content_types.inc:234
+msgid "The machine-readable name %type is already taken."
+msgstr "El nombre legible por la máquina %type ya está asignado."
+
+#: content_types.inc:237
+msgid "The machine-readable name can only consist of lowercase letters, underscores, and numbers."
+msgstr ""
+"El nombre legible por la máquina sólo puede constar de letras "
+"minúsculas, guiones bajos y números."
+
+#: content_types.inc:241
+msgid "Invalid type. Please enter a type name other than '0' (the character zero)."
+msgstr ""
+"Tipo no válido. Debe introducir un nombre para el tipo que no sea "
+"\"0\" (el carácter cero)."
+
+#: content_types.inc:248
+msgid "The human-readable name %name is already taken."
+msgstr "El nombre legible por los humanos %name ya está asignado."
+
+#: content_types.inc:327
+msgid "The content type %name has been reset to its default values."
+msgstr "El tipo de contenido %name se ha reiniciado a su valor predefinido."
+
+#: content_types.inc:332
+msgid "The content type %name has been updated."
+msgstr "Se ha actualizado el tipo de contenido %name."
+
+#: content_types.inc:335
+msgid "The content type %name has been added."
+msgstr "Se ha añadido el tipo de contenido %name."
+
+#: content_types.inc:336
+msgid "Added content type %name."
+msgstr "Añadido el tipo de contenido %name."
+
+#: content_types.inc:336 node.module:2317;2322
+msgid "view"
+msgstr "ver"
+
+#: content_types.inc:385
+msgid "Are you sure you want to delete the content type %type?"
+msgstr "¿Está seguro que quiere borrar el tipo de contenido %type?"
+
+#: content_types.inc:393 node.module:1651;1793;2346
+msgid "This action cannot be undone."
+msgstr "Esta acción no se puede deshacer."
+
+#: content_types.inc:395 node.module:1207;1260;1307;1793;2117;2347;2477
+msgid "Delete"
+msgstr "Eliminar"
+
+#: content_types.inc:405
+msgid "The content type %name has been deleted."
+msgstr "Se ha eliminado el tipo de contenido %name."
+
+#: content_types.inc:406
+msgid "Deleted content type %name."
+msgstr "Eliminado el tipo de contenido %name."
+
+#: content_types.inc:336
+msgid "node"
+msgstr "nodo"
+
+#: content_types.inc:406
+msgid "menu"
+msgstr "menú"
+
+#: content_types.inc:390
+msgid "<strong>Warning:</strong> there is currently @count %type post on your site. It may not be able to be displayed or edited correctly, once you have removed this content type."
+msgid_plural "<strong>Warning:</strong> there are currently @count %type posts on your site. They may not be able to be displayed or edited correctly, once you have removed this content type."
+msgstr[0] ""
+msgstr[1] ""
+
+#: node.module:18
+msgid "All content in a website is stored and treated as <b>nodes</b>. Therefore nodes are any postings such as blogs, stories, polls and forums. The node module manages these content types and is one of the strengths of Drupal over other content management systems."
+msgstr ""
+"Todo el contenido de una sede web se almacena y se trata como "
+"<b>nodos</b>. Por tanto, los nodos son cualquier tipo de envío como "
+"blogs, historias, encuestas y foros. El módulo nodo gestiona estos "
+"tipos de contenido y es uno de los puntos fuertes de Drupal frente a "
+"otros sistemas de gestión de contenido."
+
+#: node.module:19
+msgid "Treating all content as nodes allows the flexibility of creating new types of content. It also allows you to painlessly apply new features or changes to all content. Comments are not stored as nodes but are always associated with a node."
+msgstr ""
+"Tratar todo el contenido como nodos permite la flexibilidad de crear "
+"tipos nuevos de contenido. También permite aplicar fácilmente nuevas "
+"características o cambios a todo el contenido. Los comentarios no se "
+"almacenan como nodos, pero también se asocian siempre con un nodo."
+
+#: node.module:20
+msgid "<p>Node module features</p>\n<ul>\n<li>The list tab provides an interface to search and sort all content on your site.</li>\n<li>The configure settings tab has basic settings for content on your site.</li>\n<li>The configure content types tab lists all content types for your site and lets you configure their default workflow.</li>\n<li>The search tab lets you search all content on your site</li>\n</ul>\n"
+msgstr ""
+"<p>Características del módulo nodo</p>\n"
+"<ul>\n"
+"<li>La solapa lista proporciona una interfaz para buscar y para "
+"ordenar todo el contenido de su sitio.</li>\n"
+"<li>La solapa configurar opciones tiene opciones básicas para el "
+"contenido de su sitio.</li>\n"
+"<li>La solapa configurar tipos de contenido lista todos los tipos de "
+"contenido de su sitio y le permite configurar el flujo de trabajo "
+"predefinido.</li>\n"
+"<li>La solapa buscar le permite buscar entre el contenido de su "
+"sitio.</li>\n"
+"</ul>\n"
+
+#: node.module:28
+msgid "For more information please read the configuration and customization handbook <a href=\"@node\">Node page</a>."
+msgstr ""
+"Si quiere más información, puede leer el manual de configuración y "
+"de personalización en la <a href=\"@node\">página de nodo</a>."
+
+#: node.module:31
+msgid "Enter a simple pattern to search for a post. Words are matched exactly. Phrases can be surrounded by quotes to do an exact search."
+msgstr ""
+"Introduzca un patrón sencillo para buscar en los envíos. Las "
+"palabras tienen que coincidir exactamente. Las frases se tienen que "
+"entrecomillar para realizar una búsqueda exacta."
+
+#: node.module:33
+msgid "Below is a list of all the content types on your site. All posts that exist on your site are instances of one of these content types."
+msgstr ""
+"Debajo hay una lista con todos los tipos de contenido de su sitio. "
+"Todos los envíos que existen en su sitio son ejemplos de uno de estos "
+"tipos de contenido."
+
+#: node.module:35
+msgid "To create a new content type, enter the human-readable name, the machine-readable name, and all other relevant fields that are on this page. Once created, users of your site will be able to create posts that are instances of this content type."
+msgstr ""
+"Para crear un tipo de contenido nuevo, introduzca el nombre legible "
+"por los humanos, el nombre legible por la máquina y todos los campos "
+"relevantes que hay en esta página. Cando se crean, los usuarios de su "
+"sitio pueden crear envíos que son ejemplares de este tipo de "
+"contenido."
+
+#: node.module:39
+msgid "The revisions let you track differences between multiple versions of a post."
+msgstr ""
+"La revisión le permite seguir la pista de las diferencias que hay "
+"entre distintas versiones de un envío."
+
+#: node.module:815;1091;1145
+msgid "Content"
+msgstr "Contenido"
+
+#: node.module:832
+msgid "Content ranking"
+msgstr "Ranking de contenido"
+
+#: node.module:834
+msgid "The following numbers control which properties the content search should favor when ordering the results. Higher numbers mean more influence, zero means the property is ignored. Changing these numbers does not require the search index to be rebuilt. Changes take effect immediately."
+msgstr ""
+"Los números siguientes controlan qué propiedades de la búsqueda de "
+"contenido deben definir la ordenación de los resultados. Los números "
+"mayores implican mayor influencia. Cero significa que la propiedad se "
+"ignora. Al cambiar estos números no es necesario reconstruir el "
+"índice de búsqueda. Los cambios surten efecto inmediatamente."
+
+#: node.module:836
+msgid "Keyword relevance"
+msgstr "Relevancia de clave"
+
+#: node.module:837
+msgid "Recently posted"
+msgstr "Enviado recientemente"
+
+#: node.module:839
+msgid "Number of comments"
+msgstr "Número de comentarios"
+
+#: node.module:842
+msgid "Number of views"
+msgstr "Número de lecturas"
+
+#: node.module:969
+msgid "Factor"
+msgstr "Factor"
+
+#: node.module:969
+msgid "Weight"
+msgstr "Peso"
+
+#: node.module:989
+msgid "If the site is experiencing problems with permissions to content, you may have to rebuild the permissions cache. Possible causes for permission problems are disabling modules or configuration changes to permissions. Rebuilding will remove all privileges to posts, and replace them with permissions based on the current modules and settings."
+msgstr ""
+"Si el sitio tiene problemas con los permisos del contenido, puede "
+"querer reconstruir la caché de permisos. Las posibles causas para los "
+"problemas de permisos son la desactivación de los módulos o los "
+"cambios en la configuración de los permisos. Reconstruir implica "
+"eliminar todos los privilegios del envío y reemplazarlos por los "
+"permisos en base a los módulos y opciones actuales."
+
+#: node.module:990
+msgid "Rebuilding may take some time if there is a lot of content or complex permission settings. After rebuilding has completed posts will automatically use the new permissions."
+msgstr ""
+"La reconstrucción puede llevar algo de tiempo si hay mucho contenido "
+"o si las opciones de los permisos son complejas. Al acabar la "
+"reconstrucción, todos los envíos utilizarán automáticamente los "
+"permisos nuevos."
+
+#: node.module:992
+msgid "Node access status"
+msgstr "Estado de acceso del nodo"
+
+#: node.module:994;1022;1032
+msgid "Rebuild permissions"
+msgstr "Reconstruir permisos"
+
+#: node.module:998
+msgid "Number of posts on main page"
+msgstr "Número de envíos en la página principal"
+
+#: node.module:1000
+msgid "The default maximum number of posts to display per page on overview pages such as the main page."
+msgstr ""
+"El número máximo predefinido de envíos que se deben mostrar en cada "
+"página de resumen, como la página principal."
+
+#: node.module:1003
+msgid "Length of trimmed posts"
+msgstr "Longitud de los envíos recortados"
+
+#: node.module:1004
+msgid "Unlimited"
+msgstr "Ilimitado"
+
+#: node.module:1004
+msgid "200 characters"
+msgstr "200 caracteres"
+
+#: node.module:1004
+msgid "400 characters"
+msgstr "400 caracteres"
+
+#: node.module:1004
+msgid "600 characters"
+msgstr "600 caracteres"
+
+#: node.module:1005
+msgid "800 characters"
+msgstr "800 caracteres"
+
+#: node.module:1005
+msgid "1000 characters"
+msgstr "1000 caracteres"
+
+#: node.module:1005
+msgid "1200 characters"
+msgstr "1200 caracteres"
+
+#: node.module:1005
+msgid "1400 characters"
+msgstr "1400 caracteres"
+
+#: node.module:1006
+msgid "1600 characters"
+msgstr "1600 caracteres"
+
+#: node.module:1006
+msgid "1800 characters"
+msgstr "1800 caracteres"
+
+#: node.module:1006
+msgid "2000 characters"
+msgstr "2000 caracteres"
+
+#: node.module:1007
+msgid "The maximum number of characters used in the trimmed version of a post. Drupal will use this setting to determine at which offset long posts should be trimmed. The trimmed version of a post is typically used as a teaser when displaying the post on the main page, in XML feeds, etc. To disable teasers, set to 'Unlimited'. Note that this setting will only affect new or updated content and will not affect existing teasers."
+msgstr ""
+"El número máximo de caracteres que se deben usar en la versión "
+"recortada de un envío. Drupal usa esta opción para determinar en "
+"qué punto se deben cortar los envíos excesivamente largos. La "
+"versión recortada de un envío suele ser el avance del envío que se "
+"muestra en la página principal, en los orígenes XML, etc. Para "
+"desactivar los avances, defínalo como \"Ilimitado\". Tenga en cuenta "
+"que esta definición sólo afecta al contenido nuevo o actualizado y "
+"los avances existentes no se van a ver afectados."
+
+#: node.module:1011
+msgid "Preview post"
+msgstr "Vista previa del envío"
+
+#: node.module:1012
+msgid "Optional"
+msgstr "Opcional"
+
+#: node.module:1012
+msgid "Required"
+msgstr "Requerido"
+
+#: node.module:1012
+msgid "Must users preview posts before submitting?"
+msgstr "¿Deben los usuarios previsualizar antes de enviar?"
+
+#: node.module:1031
+msgid "Are you sure you want to rebuild node permissions on the site?"
+msgstr ""
+"¿Está seguro de que quiere reconstruir los permisos de los nodos del "
+"sitio?"
+
+#: node.module:1032
+msgid "This will wipe all current node permissions and rebuild them based on current settings. Rebuilding the permissions may take a while so please be patient. This action cannot be undone."
+msgstr ""
+"Limpia todos los permisos del nodo actual y los reconstruye en base a "
+"las opciones actuales. La reconstrucción de los permisos puede llevar "
+"algo de tiempo, así que sea paciente. Esta acción no se puede "
+"deshacer."
+
+#: node.module:1032;1652;1735;1793;2347
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: node.module:1040
+msgid "The node access table has been rebuilt."
+msgstr "Se ha reconstruido la tabla de accesos al nodo."
+
+#: node.module:1064
+msgid "Read more"
+msgstr "Leer más"
+
+#: node.module:1066
+msgid "Read the rest of this posting."
+msgstr "Leer el resto de este envío."
+
+#: node.module:1081
+msgid "Content management"
+msgstr "Gestión de contenido"
+
+#: node.module:1082
+msgid "Manage your site's content."
+msgstr "Gestiona el contenido de su sitio."
+
+#: node.module:1092
+msgid "View, edit, and delete your site's content."
+msgstr "Ve, edita y elimina el contenido de su sitio."
+
+#: node.module:1097;1133
+msgid "List"
+msgstr "Lista"
+
+#: node.module:1101
+msgid "Search content"
+msgstr "Buscar contenido"
+
+#: node.module:1102
+msgid "Search content by keyword."
+msgstr "Busca contenido por palabra."
+
+#: node.module:1110
+msgid "Post settings"
+msgstr "Opciones de envío"
+
+#: node.module:1111
+msgid "Control posting behavior, such as teaser length, requiring previews before posting, and the number of posts on the front page."
+msgstr ""
+"Controla el comportamiento del envío, como la longitud del avance, la "
+"necesidad de una vista preliminar antes de enviar y el número de "
+"envíos en la página principal."
+
+#: node.module:1118
+msgid "rebuild permissions"
+msgstr "reconstruir permisos"
+
+#: node.module:1126
+msgid "Content types"
+msgstr "Tipo de contenido"
+
+#: node.module:1127
+msgid "Manage posts by content type, including default status, front page promotion, etc."
+msgstr ""
+"Gestiona los envíos por tipo de contenido, incluyendo el estado "
+"predefinido, la promoción a la página principal, etc."
+
+#: node.module:1139
+msgid "Add content type"
+msgstr "Añadir tipo de contenido"
+
+#: node.module:1150;2275
+msgid "Create content"
+msgstr "Crear contenido"
+
+#: node.module:1155
+msgid "RSS feed"
+msgstr "Origen RSS"
+
+#: node.module:1176;1193;1198
+msgid "View"
+msgstr "Ver"
+
+#: node.module:1201
+msgid "Edit"
+msgstr "Editar"
+
+#: node.module:1216
+msgid "Revisions"
+msgstr "Revisiones"
+
+#: node.module:1283
+msgid "Publish"
+msgstr "Publicar"
+
+#: node.module:1287
+msgid "Unpublish"
+msgstr "No publicar"
+
+#: node.module:1291
+msgid "Promote to front page"
+msgstr "Promocionar a la página principal"
+
+#: node.module:1295
+msgid "Demote from front page"
+msgstr "Degradar de la página principal"
+
+#: node.module:1299
+msgid "Make sticky"
+msgstr "Hacer pegajoso"
+
+#: node.module:1303
+msgid "Remove stickiness"
+msgstr "Quitar condición de pegajoso"
+
+#: node.module:1366
+msgid "status"
+msgstr "estado"
+
+#: node.module:1367;1595
+msgid "published"
+msgstr "publicado"
+
+#: node.module:1367;1595
+msgid "not published"
+msgstr "no publicado"
+
+#: node.module:1368
+msgid "promoted"
+msgstr "promocionado"
+
+#: node.module:1368
+msgid "not promoted"
+msgstr "no promocionado"
+
+#: node.module:1369
+msgid "sticky"
+msgstr "pegajoso"
+
+#: node.module:1369
+msgid "not sticky"
+msgstr "no pegajoso"
+
+#: node.module:1370
+msgid "type"
+msgstr "tipo"
+
+#: node.module:1373
+msgid "category"
+msgstr "categoría"
+
+#: node.module:1421
+msgid "Show only items where"
+msgstr "Mostrar sólo los elementos en los que"
+
+#: node.module:1448;1506
+msgid "Refine"
+msgstr "Refinar"
+
+#: node.module:1448;1505
+msgid "Filter"
+msgstr "Filtrar"
+
+#: node.module:1450;1518
+msgid "Undo"
+msgstr "Deshacer"
+
+#: node.module:1451;1521
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: node.module:1479
+msgid "and"
+msgstr "y"
+
+#: node.module:1479
+msgid "where"
+msgstr "donde"
+
+#: node.module:1485
+msgid "is"
+msgstr "es"
+
+#: node.module:1546
+msgid "The update has been performed."
+msgstr "Se ha realizado la actualización."
+
+#: node.module:1553
+msgid "No items selected."
+msgstr "No hay ítems seleccionados."
+
+#: node.module:1578
+msgid "Update options"
+msgstr "Opciones de actualización"
+
+#: node.module:1587
+msgid "Update"
+msgstr "Actualizar"
+
+#: node.module:1608
+msgid "Author"
+msgstr "Autor"
+
+#: node.module:1608
+msgid "Status"
+msgstr "Estado"
+
+#: node.module:1625
+msgid "No posts available."
+msgstr "No hay envíos disponibles."
+
+#: node.module:1650
+msgid "Are you sure you want to delete these items?"
+msgstr "¿Está seguro de que quiere eliminar estos elementos?"
+
+#: node.module:1652
+msgid "Delete all"
+msgstr "Eliminar todos"
+
+#: node.module:1660
+msgid "The items have been deleted."
+msgstr "Se han eliminado los elementos."
+
+#: node.module:1669
+msgid "Revisions for %title"
+msgstr "Revisiones para %title"
+
+#: node.module:1671
+msgid "Revision"
+msgstr "Revisión"
+
+#: node.module:1689;1695
+msgid "!date by !username"
+msgstr "!date por !username"
+
+#: node.module:1692
+msgid "current revision"
+msgstr "revisión actual"
+
+#: node.module:1698
+msgid "revert"
+msgstr "volver"
+
+#: node.module:1723
+msgid "You tried to revert to an invalid revision."
+msgstr "Ha intentado volver a una revisión que no es válida."
+
+#: node.module:1735
+msgid "Are you sure you want to revert to the revision from %revision-date?"
+msgstr ""
+
+#: node.module:1735
+msgid "Revert"
+msgstr "Volver"
+
+#: node.module:1742
+msgid "Copy of the revision from %date."
+msgstr "Copia de la revisión de %date."
+
+#: node.module:1749
+msgid "%title has been reverted back to the revision from %revision-date"
+msgstr "%title ha sido devuelto a la revisión de %revision-date"
+
+#: node.module:1750
+msgid "@type: reverted %title revision %revision."
+msgstr "@type: devuelto %title a la revisión %revision."
+
+#: node.module:1769
+msgid "Deletion failed. You tried to delete a non-existing revision."
+msgstr ""
+
+#: node.module:1773
+msgid "Deletion failed. You tried to delete the current revision."
+msgstr "Fallo en el borrado. Se intentó eliminar la revisión actual."
+
+#: node.module:1793
+msgid "Are you sure you want to delete the revision from %revision-date?"
+msgstr ""
+
+#: node.module:1800
+msgid "Deleted %title revision %revision."
+msgstr "Eliminada la revisión %revision de %title."
+
+#: node.module:1801
+msgid "@type: deleted %title revision %revision."
+msgstr "@type: eliminada la revisión %revision de %title."
+
+#: node.module:1833;1837
+msgid "Syndicate"
+msgstr "Distribuir"
+
+#: node.module:1900
+msgid "read more"
+msgstr "leer más"
+
+#: node.module:1976
+msgid "The body of your @type is too short. You need at least %words words."
+msgstr ""
+"El cuerpo de @type es demasiado corto. Al menos tiene que tener %words "
+"palabras."
+
+#: node.module:1980
+msgid "This content has been modified by another user, changes cannot be saved."
+msgstr ""
+"Este contenido lo ha modificado otro usuario. Los cambios no se pueden "
+"guardar."
+
+#: node.module:1989
+msgid "The username %name does not exist."
+msgstr "El nombre del usuario %name no existe."
+
+#: node.module:1994
+msgid "You have to specify a valid date."
+msgstr "Debe especificar una fecha válida."
+
+#: node.module:2072
+msgid "Log message"
+msgstr "Mensaje de registro"
+
+#: node.module:2075
+msgid "An explanation of the additions or updates being made to help other authors understand your motivations."
+msgstr ""
+"Una explicación de las adiciones o actualizaciones que se han hecho "
+"para ayudar a que otros autores entiendan sus motivaciones."
+
+#: node.module:2083
+msgid "Authoring information"
+msgstr "Información de autoría"
+
+#: node.module:2088
+msgid "Authored by"
+msgstr "Creado por"
+
+#: node.module:2088
+msgid "Leave blank for %anonymous."
+msgstr "Dejar vacío para %anonymous."
+
+#: node.module:2088
+msgid "Anonymous"
+msgstr "Anónimo"
+
+#: node.module:2089
+msgid "Authored on"
+msgstr "Creado el"
+
+#: node.module:2089
+msgid "Format: %time. Leave blank to use the time of form submission."
+msgstr ""
+"Formato: %time. Déjelo vacío para usar la hora del formulario de "
+"envío."
+
+#: node.module:2099
+msgid "Publishing options"
+msgstr "Opciones de publicación"
+
+#: node.module:2114;2128;2148;2274
+msgid "Preview"
+msgstr "Vista previa"
+
+#: node.module:2115
+msgid "Submit"
+msgstr "Enviar"
+
+#: node.module:2205;2275
+msgid "Submit @name"
+msgstr "Enviar @name"
+
+#: node.module:2213
+msgid "Add a new @s."
+msgstr "Añadir un @s nuevo."
+
+#: node.module:2222
+msgid "Choose the appropriate item from the list:"
+msgstr "Elija un elemento adecuado de la lista:"
+
+#: node.module:2275
+msgid "Home"
+msgstr "Inicio"
+
+#: node.module:2290
+msgid "The trimmed version of your post shows what your post looks like when promoted to the main page or when exported for syndication. You can insert the delimiter \"&lt;!--break--&gt;\" (without the quotes) to fine-tune where your post gets split."
+msgstr ""
+"La versión recortada del envío le muestra cómo quedará ese envío "
+"cuando se promocione a la página principal o cuando se exporte para "
+"la distribución. Puede insertar el delimitador «&lt;!--break--&gt;» "
+"(sin las comillas) para ajustar mejor el punto de recorte de su "
+"envío."
+
+#: node.module:2291
+msgid "Preview trimmed version"
+msgstr "Vista previa de la versión recortada"
+
+#: node.module:2293
+msgid "Preview full version"
+msgstr "Vista previa de la versión completa"
+
+#: node.module:2305
+msgid "Log"
+msgstr "Registro"
+
+#: node.module:2317
+msgid "@type: updated %title."
+msgstr "@type: actualizado %title."
+
+#: node.module:2318
+msgid "The %post has been updated."
+msgstr "Se ha actualizado el %post."
+
+#: node.module:2322
+msgid "@type: added %title."
+msgstr "@type: añadido %title."
+
+#: node.module:2323
+msgid "Your %post has been created."
+msgstr "Se ha creado su %post."
+
+#: node.module:2344
+msgid "Are you sure you want to delete %title?"
+msgstr "¿Está seguro de que quiere eliminar %title?"
+
+#: node.module:2383
+msgid "%title has been deleted."
+msgstr "Se ha eliminado %title."
+
+#: node.module:2384
+msgid "@type: deleted %title."
+msgstr "@type: eliminado %title."
+
+#: node.module:2407
+msgid "Revision of %title from %date"
+msgstr "Revisión de %title de %date"
+
+#: node.module:2433
+msgid "RSS"
+msgstr "RSS"
+
+#: node.module:2445
+msgid "<h1 class=\"title\">Welcome to your new Drupal website!</h1><p>Please follow these steps to set up and start using your website:</p>"
+msgstr ""
+"<h1 class=\"title\">Bienvenido a su nuevo sitio web con "
+"Drupal.</h1><p>Debe seguir estos pasos para configurar y empezar a "
+"usar su sitio web:</p>"
+
+#: node.module:2449
+msgid "<strong>Create your administrator account</strong> To begin, <a href=\"@register\">create the first account</a>. This account will have full administration rights and will allow you to configure your website."
+msgstr ""
+"<strong>Cree su cuenta de administrador</strong> Para empezar, <a "
+"href=\"@register\">cree la primera cuenta</a>. Esta cuenta tiene todos "
+"los derechos de administración y le permite configurar su sitio web."
+
+#: node.module:2451
+msgid "<strong>Configure your website</strong> Once logged in, visit the <a href=\"@admin\">administration section</a>, where you can <a href=\"@config\">customize and configure</a> all aspects of your website."
+msgstr ""
+"<strong>Configure su sitio web</strong> Cuando ingrese, puede visitar "
+"la <a href=\"@admin\">sección de administración</a>, en la que puede "
+"<a href=\"@config\">personalizar y configurar</a> todos los aspectos "
+"de su sitio web."
+
+#: node.module:2452
+msgid "<strong>Enable additional functionality</strong> Next, visit the <a href=\"@modules\">module list</a> and enable features which suit your specific needs. You can find additional modules in the <a href=\"@download_modules\">Drupal modules download section</a>."
+msgstr ""
+"<strong>Active funcionalidad adicional</strong> Luego, puede visitar "
+"la <a href=\"@modules\">lista de módulos</a> y activar "
+"características que se ajustes a sus necesidades específicas. Puede "
+"encontrar módulos adicionales en la <a "
+"href=\"@download_modules\">sección de descarga de módulos de "
+"Drupal</a>."
+
+#: node.module:2453
+msgid "<strong>Customize your website design</strong> To change the \"look and feel\" of your website, visit the <a href=\"@themes\">themes section</a>. You may choose from one of the included themes or download additional themes from the <a href=\"@download_themes\">Drupal themes download section</a>."
+msgstr ""
+"<strong>Personalice el diseño de su sitio web</strong> Para cambiar "
+"la \"apariencia\" de su sitio web, puede visitar la <a "
+"href=\"@themes\">sección temas</a>. Puede elegir de entre uno de los "
+"temas incluidos o descargar temas adicionales de la <a "
+"href=\"@download_themes\">sección de descarga de temas de Drupal</a>."
+
+#: node.module:2454
+msgid "<strong>Start posting content</strong> Finally, you can <a href=\"@content\">create content</a> for your website. This message will disappear once you have promoted a post to the front page."
+msgstr ""
+"<strong>Empiece a enviar contenido</strong> Por último, puede <a "
+"href=\"@content\">crear contenido</a> para su sitio web. Este mensaje "
+"desaparece en cuanto llegue un envío a la página principal."
+
+#: node.module:2456
+msgid "For more information, please refer to the <a href=\"@help\">help section</a>, or the <a href=\"@handbook\">online Drupal handbooks</a>. You may also post at the <a href=\"@forum\">Drupal forum</a>, or view the wide range of <a href=\"@support\">other support options</a> available."
+msgstr ""
+"Tiene más información en la <a href=\"@help\">sección de ayuda</a> "
+"o en los <a href=\"@handbook\">manuales online de Drupal</a>. También "
+"puede consultar el <a href=\"@forum\">foro de Drupal</a> o dirigirse a "
+"alguna de las <a href=\"@support\">múltiples opciones de soporte</a> "
+"disponibles."
+
+#: node.module:2554;2606
+msgid "Advanced search"
+msgstr "Búsqueda avanzada"
+
+#: node.module:2565
+msgid "Containing any of the words"
+msgstr "Que contenga cualquiera de las palabras"
+
+#: node.module:2571
+msgid "Containing the phrase"
+msgstr "Que contenga la frase"
+
+#: node.module:2577
+msgid "Containing none of the words"
+msgstr "Que no contenga ninguna de las palabras"
+
+#: node.module:2586
+msgid "Only in the category(s)"
+msgstr "Sólo en las categorías"
+
+#: node.module:2599
+msgid "Only of the type(s)"
+msgstr "Sólo de los tipos"
+
+#: node.module:1750;1801;2317;2322;2384
+msgid "content"
+msgstr "contenido"
+
+#: node.module:68
+msgid "1 comment"
+msgid_plural "@count comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: node.info:0
+msgid "Node"
+msgstr "Nodo"
+
+#: node.info:0
+msgid "Allows content to be submitted to the site and displayed on pages."
+msgstr "Permite que se envíe contenido al sitio y se muestre en las páginas."
+
+#: node.info:0
+msgid "Core - required"
+msgstr "Core - necesario"
+

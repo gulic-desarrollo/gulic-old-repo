@@ -1,0 +1,118 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  upload_preview.module,v 1.7 2007/01/30 17:24:41 timcn
+#  upload_preview.install,v 1.2 2007/01/04 11:23:08 timcn
+#  upload_preview.info,v 1.1 2006/12/23 13:38:33 timcn
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:22+0000\n"
+"PO-Revision-Date: 2008-01-23 00:22+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: upload_preview.module:75
+msgid "No preview"
+msgstr ""
+
+#: upload_preview.module:80
+msgid "Delete"
+msgstr "Eliminar"
+
+#: upload_preview.module:81
+msgid "List"
+msgstr "Lista"
+
+#: upload_preview.module:82
+msgid "Size"
+msgstr "Tamaño"
+
+#: upload_preview.module:93
+msgid "This file is not yet saved. The prospective URL will be <a href=\"@url\">@url</a>."
+msgstr ""
+
+#: upload_preview.module:96
+msgid "This file can be found at <a href=\"@url\">@url</a>."
+msgstr ""
+
+#: upload_preview.module:173
+msgid "Previews"
+msgstr ""
+
+#: upload_preview.module:175
+msgid "Controls the behavior of previews in the file attachment section."
+msgstr ""
+
+#: upload_preview.module:182
+msgid "Preview path"
+msgstr ""
+
+#: upload_preview.module:184
+msgid "Private"
+msgstr ""
+
+#: upload_preview.module:185
+msgid "Subdirectory in the global file directory where previews will be stored."
+msgstr ""
+
+#: upload_preview.module:190
+msgid "Image size"
+msgstr ""
+
+#: upload_preview.module:194
+msgid "The image size for the preview images (e.g. 150x150). The aspect ratio will be maintained while resizing."
+msgstr ""
+
+#: upload_preview.module:195
+msgid "WIDTHxHEIGHT"
+msgstr "ANCHOxALTO"
+
+#: upload_preview.module:199
+msgid "Never"
+msgstr "Nunca"
+
+#: upload_preview.module:202
+msgid "File lifetime"
+msgstr ""
+
+#: upload_preview.module:203
+msgid "The period until upload preview files are deleted. In case they get deleted before the user saved the post, they are regenerated automatically. Requires crontab."
+msgstr ""
+
+#: upload_preview.module:221
+msgid "The specified preview image size is invalid."
+msgstr ""
+
+#: upload_preview.module:231 upload_preview.install:12
+msgid "Attachment previews are disabled. The preview directory %directory has not been properly configured."
+msgstr ""
+
+#: upload_preview.module:237 upload_preview.install:17
+msgid "Make sure you have a working image toolkit installed and enabled. Further information can be found on the <a href=\"@url\">Image toolkit settings page</a>."
+msgstr ""
+
+#: upload_preview.module:246
+msgid "Preview"
+msgstr "Vista previa"
+
+#: upload_preview.module:246
+msgid "Description"
+msgstr "Descripción"
+
+#: upload_preview.info:0
+msgid "Upload preview"
+msgstr ""
+
+#: upload_preview.info:0
+msgid "Adds image preview thumbnails to the file attachment section."
+msgstr ""
+

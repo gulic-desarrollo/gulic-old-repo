@@ -1,0 +1,115 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  potx.module,v 1.1.2.15 2007/11/12 20:17:18 goba
+#  potx.info,v 1.1.2.4 2007/11/12 20:17:18 goba
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:20+0000\n"
+"PO-Revision-Date: 2008-01-23 00:20+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: potx.module:20
+msgid "This page allows you to generate translation templates for module files. Select the module you wish to generate a template file for. A single Gettext Portable Object (Template) file is generated, so you can easily save it and start translation."
+msgstr ""
+"Esta página le permite generar plantilla de traducción para los "
+"módulos. Seleccione el módulo para el que desea generar la "
+"plantilla. Se generará un único fichero de Plantilla (Gettext "
+"Portable Object), de modo que pueda grabarse para comenzar la "
+"traducción."
+
+#: potx.module:32
+msgid "Extract strings"
+msgstr "Extraer textos"
+
+#: potx.module:57
+msgid "Language independent template"
+msgstr "Plantilla independiente del idioma."
+
+#: potx.module:63
+msgid "Template file for !langname translations"
+msgstr "Fichero de plantilla para traducciones del !langname"
+
+#: potx.module:67
+msgid "Template language"
+msgstr "Plantilla de idioma"
+
+#: potx.module:70
+msgid "Export a language independent or language dependent (plural forms, language team name, etc.) template."
+msgstr ""
+"Exportar una plantilla independiente del idioma o dependiente del "
+"idioma (formas plurales, nombre del equipo del lenguaje, etc.)"
+
+#: potx.module:74
+msgid "Include translations"
+msgstr "Incluir traducciones"
+
+#: potx.module:75
+msgid "Include translations of strings in the file generated. Not applicable for language independent templates."
+msgstr ""
+"Incluye traducciones de las cadenas en el fichero generado. Se "
+"ignorará en las plantillas independientes del idioma."
+
+#: potx.module:81
+msgid "Extract"
+msgstr "Extraer"
+
+#: potx.module:92
+msgid "You should select a module to export."
+msgstr "Debe seleccionar el módulo a exportar"
+
+#: potx.module:187
+msgid "Extract from %module_name module, in directory %dir_name"
+msgstr "Extrae del módulo %module_name en el directorio %dir_name"
+
+#: potx.module:188
+msgid "Generates output from all files found in this directory."
+msgstr ""
+"Extrae los mensajes de todos los archivos que se encuentren en este "
+"directorio."
+
+#: potx.module:203
+msgid "Extract from all modules in directory \"@dir_name\""
+msgstr "Extrae de todos los módulos en el directorio \"@dir_name\""
+
+#: potx.module:204
+msgid "To extract from a single module in this directory, choose the module entry in the fieldset below."
+msgstr ""
+"Para extraer los textos de un único módulo dentro de este "
+"directorio, marque la casilla de ese módulo en la lista que ve a "
+"continuación."
+
+#: potx.module:213
+msgid "Modules in \"@dir_name\""
+msgstr "Módulos en \"@dir_name\""
+
+#: potx.module:233
+msgid "Extract from module %module_name"
+msgstr "Extraer del módulo %module_name"
+
+#: potx.module:234
+msgid "Extract from files named %module_pattern, in directory %module_dir."
+msgstr ""
+"Extraer de los ficheros que se llaman %module_pattern, en el "
+"directorio %module_dir."
+
+#: potx.info:0
+msgid "Translation template extractor"
+msgstr ""
+
+#: potx.info:0
+msgid "Provides a web interface and an API to extract translatable text from the sources of installed components."
+msgstr ""
+"Proporciona una interfaz web y un API para extraer texto traducible "
+"del código fuente de los componentes instalados."
+

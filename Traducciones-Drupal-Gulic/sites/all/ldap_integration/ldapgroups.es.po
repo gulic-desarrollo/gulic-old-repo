@@ -1,0 +1,153 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  ldapgroups.module,v 1.24 2007/07/22 20:04:25 kreaper
+#  ldapgroups.info,v 1.3 2007/02/11 01:28:03 kreaper
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:17+0000\n"
+"PO-Revision-Date: 2008-01-23 00:17+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: ldapgroups.module:34;59;66;75
+msgid "LDAP Groups"
+msgstr ""
+
+#: ldapgroups.module:37
+msgid "Maps LDAP groups to Drupal roles for users authenticated via <strong>ldapauth</strong> module."
+msgstr ""
+
+#: ldapgroups.module:40
+msgid "Configure the Drupal Roles mapping with the LDAP Groups below. "
+msgstr ""
+
+#: ldapgroups.module:41
+msgid "Only the %activated LDAP configurations are listed. "
+msgstr ""
+
+#: ldapgroups.module:42
+msgid "Additional LDAP Sources may be configured/enabled in the "
+msgstr ""
+
+#: ldapgroups.module:43
+msgid "!modulename"
+msgstr ""
+
+#: ldapgroups.module:44
+msgid " administration area. </p><p style=\"margin: 1em;\"><strong style=\"color: red;\">PLEASE NOTE</strong>: advanced configuration for this module can be set by editing the module's config file, located at <em style=\"font-style: normal; padding: 1px 3px; border: 1px solid #8888CC; background-color: #DDDDFF\">modules/ldap_integration/ldap_integration/ldapgroups.conf.php</em> in your Drupal install.</p>"
+msgstr ""
+
+#: ldapgroups.module:60
+msgid "Configure LDAP Groups Settings"
+msgstr ""
+
+#: ldapgroups.module:90
+msgid "edit"
+msgstr "editar"
+
+#: ldapgroups.module:90
+msgid "reset"
+msgstr "reiniciar"
+
+#: ldapgroups.module:94
+msgid "LDAP Config"
+msgstr ""
+
+#: ldapgroups.module:96
+msgid "Operations"
+msgstr "Operaciones"
+
+#: ldapgroups.module:111
+msgid "Are you sure you want to reset the groups mapping to defaults ?"
+msgstr ""
+
+#: ldapgroups.module:113
+msgid "<em>This action cannot be undone.</p>"
+msgstr ""
+
+#: ldapgroups.module:114
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: ldapgroups.module:115
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ldapgroups.module:122
+msgid "Group is specified in user's DN"
+msgstr ""
+
+#: ldapgroups.module:134
+msgid "Attribute of the DN which contains the group name"
+msgstr ""
+
+#: ldapgroups.module:138
+msgid "The name of the attribute which contains the group name. In the example above, it would be <em style=\"font-style: normal; padding: 1px 3px; border: 1px solid #8888CC; background-color: #DDDDFF\">ou</em>, as the DN contains the string <em style=\"font-style: normal; padding: 1px 3px; border: 1px solid #8888CC; background-color: #DDDDFF\">ou=Group1</em> and <em style=\"font-style: normal; padding: 1px 3px; border: 1px solid #8888CC; background-color: #DDDDFF\">Group1</em> happens to be the desired group name."
+msgstr ""
+
+#: ldapgroups.module:144
+msgid "Groups are specified by LDAP attributes"
+msgstr ""
+
+#: ldapgroups.module:152
+msgid "Attribute names (one per line)"
+msgstr ""
+
+#: ldapgroups.module:156
+msgid "If the groups are stored in the user entries, along with the rest of their data, then enter here a list of attributes which may contain them."
+msgstr ""
+
+#: ldapgroups.module:162
+msgid "Groups exist as LDAP entries where a multivalued attribute contains the members' CNs"
+msgstr ""
+
+#: ldapgroups.module:170
+msgid "Nodes containing groups (one per line)"
+msgstr ""
+
+#: ldapgroups.module:174
+msgid "Enter here a list of nodes from where groups should be searched for. The module will look them up recursively from the given nodes."
+msgstr ""
+
+#: ldapgroups.module:179
+msgid "Attribute holding group members"
+msgstr ""
+
+#: ldapgroups.module:183
+msgid "Name of the multivalued attribute which holds the CNs of group members, for example: !attr"
+msgstr ""
+
+#: ldapgroups.module:203;208
+msgid "ldapgroups: ldap config %config updated."
+msgstr ""
+
+#: ldapgroups.module:203;208
+msgid "ldap"
+msgstr ""
+
+#: ldapgroups.module:325
+msgid "user"
+msgstr "usuario"
+
+#: ldapgroups.info:0
+msgid "ldapgroups"
+msgstr ""
+
+#: ldapgroups.info:0
+msgid "Integrated LDAP Groups with Drupal Roles"
+msgstr ""
+
+#: ldapgroups.info:0
+msgid "Administration"
+msgstr "Administración"
+

@@ -1,0 +1,338 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  upload.module,v 1.148.2.3 2008/01/07 01:00:23 drumm
+#  upload.info,v 1.3 2006/11/21 20:55:35 dries
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:06+0000\n"
+"PO-Revision-Date: 2008-01-23 00:06+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: upload.module:16
+msgid "The upload module allows users to upload files to the site. The ability to upload files to a site is important for members of a community who want to share work. It is also useful to administrators who want to keep uploaded files connected to a node or page."
+msgstr ""
+"El módulo upload permite que los usuarios publiquen archivos en el "
+"sitio. La capacidad para publicar archivos en un sitio es importante "
+"para que los miembros de la comunidad que quieran puedan compartir su "
+"trabajo. También es útil para los administradores que quieran "
+"mantener los archivos publicados conectados con un nodo o con una "
+"página."
+
+#: upload.module:17
+msgid "Users with the upload files permission can upload attachments. You can choose which post types can take attachments on the content types settings page. Each user role can be customized for the file size of uploads, and the dimension of image files."
+msgstr ""
+"Los usuarios con permiso para publicar archivos pueden publicar "
+"adjuntos. Puede elegir qué tipos de envío pueden recibir adjuntos en "
+"la página de opciones de contenido. Para cada rol de usuarios se "
+"puede personalizar el tamaño del archivo publicado y la dimensión de "
+"los archivos de imagen."
+
+#: upload.module:18
+msgid "For more information please read the configuration and customization handbook <a href=\"@upload\">Upload page</a>."
+msgstr ""
+"Tiene más información en el manual de configuración y de "
+"personalización en el manual de la <a href=\"@upload\">página de "
+"upload</a>."
+
+#: upload.module:21
+msgid "Users with the <a href=\"@permissions\">upload files permission</a> can upload attachments. Users with the <a href=\"@permissions\">view uploaded files permission</a> can view uploaded attachments. You can choose which post types can take attachments on the <a href=\"@types\">content types settings</a> page."
+msgstr ""
+"Los usuarios con <a href=\"@permissions\">permiso para cargar "
+"archivos</a> pueden cargar adjuntos. Los usuarios con <a "
+"href=\"@permissions\">permiso para ver archivos cargados</a> pueden "
+"ver los archivos subidos. Puede elegir qué tipos de envíos admiten "
+"adjuntos en la página <a href=\"@types\">opciones de tipo de "
+"contenido</a>."
+
+#: upload.module:50
+msgid "Read full article to view attachments."
+msgstr "Lea el artículo completo para ver los adjuntos."
+
+#: upload.module:73
+msgid "File uploads"
+msgstr "Descargas de archivos"
+
+#: upload.module:74
+msgid "Control how files may be attached to content."
+msgstr "Controla cómo se adjuntan los archivos al contenido."
+
+#: upload.module:94
+msgid "File download"
+msgstr "Descarga de archivo"
+
+#: upload.module:113
+msgid "The maximum allowed image size expressed as WIDTHxHEIGHT (e.g. 640x480). Set to 0 for no restriction."
+msgstr ""
+"El tamaño máximo permitido para las imágenes, expresado como "
+"ANCHOxALTO (por ejemplo, 640x480). Defínalo como 0 si no quiere "
+"restricciones."
+
+#: upload.module:120;213
+msgid "Your PHP settings limit the maximum file size per upload to %size."
+msgstr ""
+"Su configuración de PHP limita el tamaño máximo por subida de "
+"archivo a %size MB."
+
+#: upload.module:121
+msgid "Depending on your sever environment, these settings may be changed in the system-wide php.ini file, a php.ini file in your Drupal root directory, in your Drupal site's settings.php file, or in the .htaccess file in your Drupal root directory."
+msgstr ""
+"Según el entorno del servidor, estas opciones se pueden cambiar en el "
+"archivo php.ini del servidor o en un archivo php.ini del directorio "
+"raíz de Drupal, en el archivo settings.php o en el archivo .htaccess "
+"del directorio raíz de Drupal."
+
+#: upload.module:124;127;142;145
+msgid "The %role file size limit must be a number and greater than zero."
+msgstr ""
+"El límite de tamaño de archivo %role debe ser un número y mayor que "
+"cero."
+
+#: upload.module:124;127;134
+msgid "default"
+msgstr "predefinido"
+
+#: upload.module:134;152
+msgid "The %role maximum file size per upload is greater than the total file size allowed per user"
+msgstr ""
+"El tamaño máximo del archivo por subida de %role es mayor que el "
+"tamaño total de archivos permitido para el usuario."
+
+#: upload.module:167
+msgid "General settings"
+msgstr "Opciones generales"
+
+#: upload.module:172
+msgid "Maximum resolution for uploaded images"
+msgstr "Resolución máxima para las imágenes cargadas"
+
+#: upload.module:176
+msgid "The maximum allowed image size (e.g. 640x480). Set to 0 for no restriction."
+msgstr ""
+"El tamaño máximo permitido para las imágenes (por ejemplo, "
+"640x480). Defínalo como 0 si no quiere restricciones."
+
+#: upload.module:177
+msgid "WIDTHxHEIGHT"
+msgstr "ANCHOxALTO"
+
+#: upload.module:181
+msgid "List files by default"
+msgstr "Mostrar los archivos de forma predefinida"
+
+#: upload.module:183
+msgid "No"
+msgstr "No"
+
+#: upload.module:183
+msgid "Yes"
+msgstr "Sí"
+
+#: upload.module:184
+msgid "Set whether files attached to nodes are listed or not in the node view by default."
+msgstr ""
+"Define si los archivos adjuntos a los nodos se deben mostrar o no en "
+"la vista de nodo de forma predefinida."
+
+#: upload.module:189
+msgid "Default permitted file extensions"
+msgstr "Extensiones de archivos permitidas predefinidas"
+
+#: upload.module:192
+msgid "Default extensions that users can upload. Separate extensions with a space and do not include the leading dot."
+msgstr ""
+"Las extensiones predefinidas que los usuarios pueden cargar. Las "
+"extensiones se deben separar con un espacio y no deben incluir el "
+"punto inicial."
+
+#: upload.module:196
+msgid "Default maximum file size per upload"
+msgstr "Tamaño máximo predefinido de archivo por carga"
+
+#: upload.module:200
+msgid "The default maximum file size a user can upload."
+msgstr ""
+"El tamaño máximo predefinido del archivo que un usuario puede "
+"cargar."
+
+#: upload.module:201;210
+msgid "MB"
+msgstr "MB"
+
+#: upload.module:205
+msgid "Default total file size per user"
+msgstr "Tamaño total de archivos predefinido por usuario"
+
+#: upload.module:209
+msgid "The default maximum size of all files a user can have on the site."
+msgstr ""
+"El tamaño máximo predefinidos de todos los archivos que un usuario "
+"puede tener en el sitio."
+
+#: upload.module:221
+msgid "Settings for @role"
+msgstr "Opciones para @role"
+
+#: upload.module:227
+msgid "Permitted file extensions"
+msgstr "Extensiones de archivos permitidas"
+
+#: upload.module:230
+msgid "Extensions that users in this role can upload. Separate extensions with a space and do not include the leading dot."
+msgstr ""
+"Las extensiones que los usuarios de este rol pueden cargar. Las "
+"extensiones se deben separar con un espacio y no deben incluir el "
+"punto inicial."
+
+#: upload.module:234
+msgid "Maximum file size per upload"
+msgstr "Tamaño máximo del archivo por carga"
+
+#: upload.module:238
+msgid "The maximum size of a file a user can upload (in megabytes)."
+msgstr ""
+"El tamaño máximo de un archivo que un usuario puede cargar (en "
+"megabytes)."
+
+#: upload.module:242
+msgid "Total file size per user"
+msgstr "Tamaño total de archivos por usuario"
+
+#: upload.module:246
+msgid "The maximum size of all files a user can have on the site (in megabytes)."
+msgstr ""
+"El tamaño máximo de todos los archivos que un usuario puede tener en "
+"el sitio (en megabytes)."
+
+#: upload.module:345
+msgid "Attachments"
+msgstr "Adjuntos"
+
+#: upload.module:347
+msgid "Disabled"
+msgstr "Desactivado"
+
+#: upload.module:347
+msgid "Enabled"
+msgstr "Activado"
+
+#: upload.module:361
+msgid "File attachments"
+msgstr "Archivos adjuntos"
+
+#: upload.module:364
+msgid "Changes made to the attachments are not permanent until you save this post. The first \"listed\" file will be included in RSS feeds."
+msgstr ""
+"Los cambios que se hacen a los adjuntos no son permanentes hasta que "
+"guarda el envío. El primer archivo de la lista se incluye en los "
+"orígenes RSS."
+
+#: upload.module:382
+msgid "File attachments are disabled. The file directories have not been properly configured."
+msgstr ""
+"Los adjuntos de archivos están desactivados. Los directorios de "
+"archivos no se han configurado adecuadamente."
+
+#: upload.module:384
+msgid "Please visit the <a href=\"@admin-file-system\">file system configuration page</a>."
+msgstr ""
+"Puede visitar la <a href=\"@admin-file-system\">página de "
+"configuración del sistema de archivos</a>."
+
+#: upload.module:387
+msgid "Please contact the site administrator."
+msgstr "Puede ponerse en contacto con el administrador del sitio."
+
+#: upload.module:446
+msgid "The selected file %name can not be attached to this post, because it is only possible to attach files with the following extensions: %files-allowed."
+msgstr ""
+"El archivo seleccionado %name no se pude adjuntar a este envío porque "
+"sólo se pueden adjuntar archivos con las siguientes extensiones: "
+"%files-allowed."
+
+#: upload.module:450
+msgid "The selected file %name can not be attached to this post, because it exceeded the maximum filesize of %maxsize."
+msgstr ""
+"El archivo seleccionado %name no se puede adjuntar a este envío "
+"porque excede el tamaño máximo del archivo, de %maxsize."
+
+#: upload.module:454
+msgid "The selected file %name can not be attached to this post, because the disk quota of %quota has been reached."
+msgstr ""
+"El archivo seleccionado %name no se puede adjuntar a este envío "
+"porque se ha alcanzado la cuota de disco, de %quota."
+
+#: upload.module:458
+msgid "The selected file %name can not be attached to this post, because the filename is too long."
+msgstr ""
+"El archivo seleccionado %name no se puede adjuntar a este envío "
+"porque el nombre del archivo es demasiado largo."
+
+#: upload.module:582
+msgid "Attachment"
+msgstr "Adjunto"
+
+#: upload.module:582;818
+msgid "Size"
+msgstr "Tamaño"
+
+#: upload.module:666
+msgid "Your filename has been renamed to conform to site policy."
+msgstr ""
+"Se ha cambiado el nombre del archivo para que se ajuste a la política "
+"del sitio."
+
+#: upload.module:803
+msgid "Attach new file"
+msgstr "Adjuntar un archivo nuevo"
+
+#: upload.module:804
+msgid "Attach"
+msgstr "Adjuntar"
+
+#: upload.module:818
+msgid "Delete"
+msgstr "Eliminar"
+
+#: upload.module:818
+msgid "List"
+msgstr "Lista"
+
+#: upload.module:818
+msgid "Description"
+msgstr "Descripción"
+
+#: upload.module:868
+msgid "The image was resized to fit within the maximum allowed resolution of %resolution pixels."
+msgstr ""
+"Se cambió el tamaño de la imagen para que coincida con la "
+"resolución máxima admitida, de %resolution píxeles."
+
+#: upload.module:48;549
+msgid "1 attachment"
+msgid_plural "@count attachments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: upload.info:0
+msgid "Upload"
+msgstr "Cargar"
+
+#: upload.info:0
+msgid "Allows users to upload and attach files to content."
+msgstr "Permite que los usuarios carguen y adjunten archivos al contenido."
+
+#: upload.info:0
+msgid "Core - optional"
+msgstr "Core - opcional"
+

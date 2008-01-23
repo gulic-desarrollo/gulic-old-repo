@@ -1,0 +1,171 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  watchdog.module,v 1.165.2.1 2007/01/23 19:07:33 dries
+#  watchdog.info,v 1.3 2006/11/21 20:55:36 dries
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:07+0000\n"
+"PO-Revision-Date: 2008-01-23 00:07+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: watchdog.module:21
+msgid "The watchdog module monitors your system, capturing system events in a log to be reviewed by an authorized individual at a later time. This is useful for site administrators who want a quick overview of activities on their site. The logs also record the sequence of events, so it can be useful for debugging site errors."
+msgstr ""
+"El módulo watchdog monitoriza su sistema, capturando los eventos del "
+"sistema en un registro para que los puedan ver posteriormente quienes "
+"tengan autorización. Es útil para los administradores del sitio que "
+"quieran tener una visión rápida de las actividades que se producen "
+"en el sitio. Los registros también almacenan la secuencia de eventos, "
+"que puede ser útil para depurar los errores del sitio."
+
+#: watchdog.module:22
+msgid "The watchdog log is simply a list of recorded events containing usage data, performance data, errors, warnings and operational information. Administrators should check the watchdog report on a regular basis to ensure their site is working properly."
+msgstr ""
+"El registro del vigilante es una lista de los eventos que se registran "
+"y que contienen datos de uso, de rendimiento, errores, advertenias e "
+"información de las operaciones. Los administradores deberían "
+"comprobar regularmente los informes del vigilante para verificar que "
+"el sitio funciona adecuadamente."
+
+#: watchdog.module:23
+msgid "For more information please read the configuration and customization handbook <a href=\"@watchdog\">Watchdog page</a>."
+msgstr ""
+"Si quiere más información, puede leer el manual de configuración y "
+"de personalización en la <a href=\"@watchdog\">página de "
+"watchlog</a>."
+
+#: watchdog.module:26
+msgid "The watchdog module monitors your web site, capturing system events in a log to be reviewed by an authorized individual at a later time. The watchdog log is simply a list of recorded events containing usage data, performance data, errors, warnings and operational information. It is vital to check the watchdog report on a regular basis as it is often the only way to tell what is going on."
+msgstr ""
+"El módulo watchdog (vigilante) monitoriza su sitio web, capturando "
+"los eventos del sistema en un registro para que los puedan ver quienes "
+"tengan autorización.  El vigilante no es más que una lista de los "
+"eventos almacenados, que contiene datos de uso, de rendimiento, de "
+"errores, de avisos y de información sobre las operaciones que se "
+"realizan. Es vital verificar el informe del vigilante con cierta "
+"regularidad, porque a menudo es el único que le dice qué está "
+"pasando."
+
+#: watchdog.module:37
+msgid "Recent log entries"
+msgstr "Entradas de blogs recientes"
+
+#: watchdog.module:38
+msgid "View events that have recently been logged."
+msgstr "Ve los eventos que se han registrado recientemente."
+
+#: watchdog.module:41
+msgid "Top 'page not found' errors"
+msgstr "Principales errores de \"página no encontrada\""
+
+#: watchdog.module:42
+msgid "View 'page not found' errors (404s)."
+msgstr "Ver los errores de \"página no encontrada\" (404)."
+
+#: watchdog.module:45
+msgid "Top 'access denied' errors"
+msgstr "Principales errores de \"acceso denegado\""
+
+#: watchdog.module:46
+msgid "View 'access denied' errors (403s)."
+msgstr "Ver los errores de \"acceso denegado\" (403)."
+
+#: watchdog.module:49
+msgid "Details"
+msgstr "Detalles"
+
+#: watchdog.module:83
+msgid "all messages"
+msgstr "todos los mensajes"
+
+#: watchdog.module:85
+msgid "!type messages"
+msgstr "mensajes !type"
+
+#: watchdog.module:94
+msgid "Filter by message type"
+msgstr "Filtrar por tipo de mensaje"
+
+#: watchdog.module:98
+msgid "Filter"
+msgstr "Filtrar"
+
+#: watchdog.module:108;108;198
+msgid "warning"
+msgstr "advertencia"
+
+#: watchdog.module:109;109;198
+msgid "error"
+msgstr "error"
+
+#: watchdog.module:116;204
+msgid "Type"
+msgstr "Tipo"
+
+#: watchdog.module:117;208
+msgid "Date"
+msgstr "Fecha"
+
+#: watchdog.module:118;167;224
+msgid "Message"
+msgstr "Mensaje"
+
+#: watchdog.module:119;212
+msgid "User"
+msgstr "Usuario"
+
+#: watchdog.module:120
+msgid "Operations"
+msgstr "Operaciones"
+
+#: watchdog.module:150;177
+msgid "No log messages available."
+msgstr "No hay mensajes disponibles."
+
+#: watchdog.module:166
+msgid "Count"
+msgstr "Número"
+
+#: watchdog.module:198
+msgid "notice"
+msgstr "aviso"
+
+#: watchdog.module:216
+msgid "Location"
+msgstr "Ubicación"
+
+#: watchdog.module:220
+msgid "Referrer"
+msgstr "Referente"
+
+#: watchdog.module:228
+msgid "Severity"
+msgstr "Severidad"
+
+#: watchdog.module:232
+msgid "Hostname"
+msgstr "Nombre de la máquina"
+
+#: watchdog.info:0
+msgid "Watchdog"
+msgstr "Vigilante"
+
+#: watchdog.info:0
+msgid "Logs and records system events."
+msgstr "Registra y guarda los eventos de sistema."
+
+#: watchdog.info:0
+msgid "Core - required"
+msgstr "Core - necesario"
+

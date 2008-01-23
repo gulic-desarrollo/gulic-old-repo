@@ -1,0 +1,186 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  nodeprofile_workflow_ng.inc,v 1.1.2.2 2007/09/15 11:49:21 fago
+#  nodeprofile.info,v 1.1.2.3 2007/06/18 23:06:54 dww
+#  nodeprofile.module,v 1.7.2.32 2008/01/03 21:32:56 fago
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:19+0000\n"
+"PO-Revision-Date: 2008-01-23 00:19+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: nodeprofile_workflow_ng.inc:15
+msgid "User has nodeprofile"
+msgstr ""
+
+#: nodeprofile_workflow_ng.inc:17
+msgid "User"
+msgstr "Usuario"
+
+#: nodeprofile_workflow_ng.inc:19 nodeprofile.info:0;0
+msgid "Node Profile"
+msgstr ""
+
+#: nodeprofile_workflow_ng.inc:38
+msgid "Node Profile Content Type"
+msgstr ""
+
+#: nodeprofile_workflow_ng.inc:41
+msgid "Select the node profile content type, which the user must have created."
+msgstr ""
+
+#: nodeprofile.module:25;740
+msgid "Edit"
+msgstr "Editar"
+
+#: nodeprofile.module:30
+msgid "Node profile"
+msgstr ""
+
+#: nodeprofile.module:31
+msgid "Configure the display and management of this node profile."
+msgstr ""
+
+#: nodeprofile.module:45
+msgid "delete relation"
+msgstr ""
+
+#: nodeprofile.module:61
+msgid "Input Form Integration"
+msgstr ""
+
+#: nodeprofile.module:62
+msgid "Note that this settings apply only to this content type, not to any possible related content types that might extend this profile."
+msgstr ""
+
+#: nodeprofile.module:67
+msgid "Integrate this node profile with user categories."
+msgstr ""
+
+#: nodeprofile.module:69
+msgid "If selected this node profile's form will appear as a new category at the \"My Account\" - \"Edit\" pages, just like the profile.module."
+msgstr ""
+
+#: nodeprofile.module:73
+msgid "Show this node profile during user registration."
+msgstr ""
+
+#: nodeprofile.module:75
+msgid "If selected this node profile's form will be shown on the user register page. "
+msgstr ""
+
+#: nodeprofile.module:76
+msgid "Note that this will bypass the node creation permission settings, so this will work for your users regardless if they have access to edit or create their nodeprofile later!"
+msgstr ""
+
+#: nodeprofile.module:83
+msgid "Roles allowed to see this node profile during user registration"
+msgstr ""
+
+#: nodeprofile.module:86
+msgid "If the <em>Show this node profile during user registration</em> option has been enabled, you may select what roles will see it. If no role is selected, all users will see this node profile. Note that this feature relies on the Role Signup module."
+msgstr ""
+
+#: nodeprofile.module:91
+msgid "The !rolesignup module is currently not installed. If installed, it would allow you show this node profile only to users who register for specific roles."
+msgstr ""
+
+#: nodeprofile.module:91
+msgid "Role Signup"
+msgstr ""
+
+#: nodeprofile.module:95
+msgid "Weight"
+msgstr "Peso"
+
+#: nodeprofile.module:97
+msgid "The weight of nodes of this content type where ever they appear - this applies to the input form integration as well to the display integration."
+msgstr ""
+
+#: nodeprofile.module:102
+msgid "Display settings"
+msgstr ""
+
+#: nodeprofile.module:103
+msgid "This allows you to customize the display of this nodeprofile."
+msgstr ""
+
+#: nodeprofile.module:108
+msgid "User page display style"
+msgstr ""
+
+#: nodeprofile.module:111
+msgid "Don't display this nodeprofile on the user account page"
+msgstr ""
+
+#: nodeprofile.module:112
+msgid "Display it as link to the profile node"
+msgstr ""
+
+#: nodeprofile.module:113
+msgid "Display it as full node view"
+msgstr ""
+
+#: nodeprofile.module:114
+msgid "Display it as teaser node view"
+msgstr ""
+
+#: nodeprofile.module:119
+msgid "Include an edit link to the display"
+msgstr ""
+
+#: nodeprofile.module:124
+msgid "Include an add link to the display if they haven't yet."
+msgstr ""
+
+#: nodeprofile.module:126
+msgid "If selected and the user has no profile of this type yet, a link to add one is shown on the user page."
+msgstr ""
+
+#: nodeprofile.module:131
+msgid "Submit"
+msgstr "Enviar"
+
+#: nodeprofile.module:256
+msgid "Use this content type as a nodeprofile for users"
+msgstr ""
+
+#: nodeprofile.module:495
+msgid "%title has been deleted."
+msgstr "Se ha eliminado %title."
+
+#: nodeprofile.module:496
+msgid "@type: deleted %title."
+msgstr "@type: eliminado %title."
+
+#: nodeprofile.module:692
+msgid "edit"
+msgstr "editar"
+
+#: nodeprofile.module:725
+msgid "Create your @profile_node."
+msgstr ""
+
+#: nodeprofile.module:732
+msgid "View"
+msgstr "Ver"
+
+#: nodeprofile.module:496
+msgid "content"
+msgstr "contenido"
+
+#: nodeprofile.info:0
+msgid "Marks content types as profiles."
+msgstr ""
+

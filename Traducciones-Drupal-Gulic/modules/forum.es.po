@@ -1,0 +1,472 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  forum.module,v 1.375.2.6 2007/08/08 06:27:22 drumm
+#  forum.info,v 1.4 2006/11/21 20:55:34 dries
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-22 23:24+0000\n"
+"PO-Revision-Date: 2008-01-22 23:24+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: forum.module:15
+msgid "The forum module lets you create threaded discussion forums for a particular topic on your site. This is similar to a message board system such as phpBB. Forums are very useful because they allow community members to discuss topics with one another, and they are archived for future reference."
+msgstr ""
+"El módulo forum le permite crear foros de discusión en su sede web "
+"para debatir sobre algunos temas en particular. Es similar a un "
+"sistema de tablón de mensajes como phpBB. Los foros son muy útiles "
+"porque permiten que los miembros de la comunidad debatan entre sí "
+"sobre diversos asuntos, y que se almacenen estos debates para su "
+"posterior consulta."
+
+#: forum.module:16
+msgid "Forums can be organized under what are called <em>containers</em>. Containers hold forums and, in turn, forums hold threaded discussions. Both containers and forums can be placed inside other containers and forums. By planning the structure of your containers and forums well, you make it easier for users to find a topic area of interest to them. Forum topics can be moved by selecting a different forum and can be left in the existing forum by selecting <em>leave a shadow copy</em>. Forum topics can also have their own URL."
+msgstr ""
+"Los foros se pueden organizar mediante los denominados "
+"<em>contenedores</em>. Los contenedores albergan foros y los foros "
+"almacenan debates. Ambos (contenedores y foros) se pueden ubicar "
+"dentro de otros contenedores y de foros. Si planifica bien la "
+"estructura de los contenedores y de los foros, a los usuarios les "
+"será fácil encontrar un área temática de su interés. Los temas "
+"del foro se pueden eliminar seleccionando un foro diferente, y se "
+"pueden dejar en el foro existente seleccionando <em>dejar una "
+"copia</em>.  Los temas del foro también pueden tener sus propios "
+"URLs."
+
+#: forum.module:17
+msgid "Forums module <strong>requires Taxonomy and Comments module</strong> be enabled."
+msgstr ""
+"El módulo de foros <strong>necesita que estén activados los módulos "
+"taxonomy y comments</strong>."
+
+#: forum.module:18
+msgid "For more information please read the configuration and customization handbook <a href=\"@forum\">Forum page</a>."
+msgstr ""
+"Si quiere más información, puede leer el manual de la configuración "
+"y de la personalización en la <a href=\"@forum\">página de "
+"Forum</a>."
+
+#: forum.module:21
+msgid "This is a list of existing containers and forums that you can edit. Containers hold forums and, in turn, forums hold threaded discussions. Both containers and forums can be placed inside other containers and forums. By planning the structure of your containers and forums well, you make it easier for users to find a topic area of interest to them."
+msgstr ""
+"Es una lista con los contenedores y foros existentes, que puede "
+"editar. Los contenedores albergan foros y los foros almacenan debates. "
+"Ambos (contenedores y foros) se pueden ubicar dentro de otros "
+"contenedores y de foros. Si planifica bien la estructura de los "
+"contenedores y de los foros, a los usuarios les será fácil encontrar "
+"un área temática de su interés."
+
+#: forum.module:23
+msgid "Containers help you organize your forums. The job of a container is to hold, or contain, other forums that are related. For example, a container named \"Food\" might hold two forums named \"Fruit\" and \"Vegetables\"."
+msgstr ""
+"Los contenedores le ayudan a organizar los foros. El trabajo de un "
+"contenedor es albergar o contener otros foros que estén relacionados "
+"entre sí. Por ejemplo, un contenedor llamado \"Comida\" podría tener "
+"dos foros llamados \"Frutas\" y \"Verduras\"."
+
+#: forum.module:25
+msgid "A forum holds discussion topics that are related. For example, a forum named \"Fruit\" might contain topics titled \"Apples\" and \"Bananas\"."
+msgstr ""
+"Un foro alberga debates organizados por temas. Por ejemplo, un foro "
+"llamado \"Frutas\" puede contener debates llamados \"Manzanas\" y "
+"\"Plátanos\"."
+
+#: forum.module:27
+msgid "These settings provide the ability to fine tune the display of your forum topics."
+msgstr ""
+"Estas opciones permiten un ajuste fino de la pantalla de temas del "
+"foro."
+
+#: forum.module:39;44;673
+msgid "Forums"
+msgstr "Foros"
+
+#: forum.module:45
+msgid "Control forums and their hierarchy and change forum settings."
+msgstr ""
+"Controla los foros y su relación jerárquica y cambia las opciones de "
+"los foros."
+
+#: forum.module:50
+msgid "List"
+msgstr "Lista"
+
+#: forum.module:55
+msgid "Add container"
+msgstr "Añadir contenedor"
+
+#: forum.module:61
+msgid "Add forum"
+msgstr "Añadir foro"
+
+#: forum.module:67
+msgid "Settings"
+msgstr "Opciones"
+
+#: forum.module:79
+msgid "Edit container"
+msgstr "Editar contenedor"
+
+#: forum.module:85
+msgid "Edit forum"
+msgstr "Editar foro"
+
+#: forum.module:102
+msgid "Forum topic"
+msgstr "Tema del foro"
+
+#: forum.module:104
+msgid "Create a new topic for discussion in the forums."
+msgstr "Crea un tema de debate nuevo en los foros."
+
+#: forum.module:105
+msgid "Subject"
+msgstr "Asunto"
+
+#: forum.module:176
+msgid "Hot topic threshold"
+msgstr "Umbral de tema candente"
+
+#: forum.module:179
+msgid "The number of posts a topic must have to be considered hot."
+msgstr ""
+"El número de respuestas que debe tener un debate para que se "
+"considere candente."
+
+#: forum.module:183
+msgid "Topics per page"
+msgstr "Temas por página"
+
+#: forum.module:186
+msgid "The default number of topics displayed per page; links to browse older messages are automatically being displayed."
+msgstr ""
+"El número predefinido de temas que se muestra en cada página. Los "
+"enlaces para ir a los mensajes anteriores se muestran "
+"automáticamente."
+
+#: forum.module:188
+msgid "Date - newest first"
+msgstr "Fecha: primero los más recientes"
+
+#: forum.module:188
+msgid "Date - oldest first"
+msgstr "Fecha: primero los más antiguos"
+
+#: forum.module:188
+msgid "Posts - most active first"
+msgstr "Envíos: primero los más activos"
+
+#: forum.module:188
+msgid "Posts - least active first"
+msgstr "Envíos: primero los menos activos"
+
+#: forum.module:190
+msgid "Default order"
+msgstr "Orden predefinido"
+
+#: forum.module:193
+msgid "The default display order for topics."
+msgstr "El orden predefinido para mostrar los temas."
+
+#: forum.module:206
+msgid "This is the designated forum vocabulary. Some of the normal vocabulary options have been removed."
+msgstr ""
+"Este es el vocabulario diseñado para el foro. Se han eliminado "
+"algunas de las opciones habituales del vocabulario normal."
+
+#: forum.module:209
+msgid "forum topic"
+msgstr "tema del foro"
+
+#: forum.module:209
+msgid "forum topic is affixed to the forum vocabulary."
+msgstr "el tema del foro está fijado al vocabulario del foro."
+
+#: forum.module:240;256
+msgid "Active forum topics"
+msgstr "Temas activos"
+
+#: forum.module:241;265
+msgid "New forum topics"
+msgstr "Temas nuevos"
+
+#: forum.module:245
+msgid "Number of topics"
+msgstr "Número de temas"
+
+#: forum.module:275
+msgid "more"
+msgstr "más"
+
+#: forum.module:275
+msgid "Read the latest forum topics."
+msgstr "Leer los últimos temas del foro."
+
+#: forum.module:364
+msgid "The item %forum is only a container for forums. Please select one of the forums below it."
+msgstr ""
+"El elemento %forum sólo es un contenedor para foros. Seleccione uno "
+"de los foros que hay debajo de él."
+
+#: forum.module:394
+msgid "Leave shadow copy"
+msgstr "Dejar una copia sombreada"
+
+#: forum.module:394
+msgid "If you move this topic, you can leave a link in the old forum to the new forum."
+msgstr ""
+"Si mueve este tema, puede dejar un enlace al nuevo foro en el foro "
+"anterior."
+
+#: forum.module:436
+msgid "Container name"
+msgstr "Nombre del contenedor"
+
+#: forum.module:440
+msgid "The container name is used to identify related forums."
+msgstr ""
+"El nombre del contenedor se utiliza para identificar los foros "
+"relacionados."
+
+#: forum.module:446;501
+msgid "Description"
+msgstr "Descripción"
+
+#: forum.module:448
+msgid "The container description can give users more information about the forums it contains."
+msgstr ""
+"La descripción del contenedor puede dar a los usuarios información "
+"adicional sobre los foros que contiene."
+
+#: forum.module:451;506
+msgid "Parent"
+msgstr "Padre"
+
+#: forum.module:453;508
+msgid "Weight"
+msgstr "Peso"
+
+#: forum.module:455
+msgid "When listing containers, those with with light (small) weights get listed before containers with heavier (larger) weights. Containers with equal weights are sorted alphabetically."
+msgstr ""
+"Cuando se muestra la lista de contenedores, los que tienen pesos más "
+"ligeros (más pequeños) aparecen antes que los más pesados "
+"(mayores). Los contenedores con igual peso se muestran ordenados "
+"alfabéticamente."
+
+#: forum.module:462;514
+msgid "Submit"
+msgstr "Enviar"
+
+#: forum.module:465;474;516;565
+msgid "Delete"
+msgstr "Eliminar"
+
+#: forum.module:494
+msgid "Forum name"
+msgstr "Nombre del foro"
+
+#: forum.module:497
+msgid "The forum name is used to identify related discussions."
+msgstr "El nombre del foro se utiliza para identificar debates relacionados."
+
+#: forum.module:503
+msgid "The forum description can give users more information about the discussion topics it contains."
+msgstr ""
+"La descripción del foro puede dar a los usuarios información "
+"adicional sobre los temas de discusión que contiene."
+
+#: forum.module:510
+msgid "When listing forums, those with lighter (smaller) weights get listed before containers with heavier (larger) weights. Forums with equal weights are sorted alphabetically."
+msgstr ""
+"Cuando se muestra la lista de foros, los que tienen pesos más ligeros "
+"(más pequeños) aparecen antes que los más pesados (mayores). Los "
+"foros con igual peso se muestran ordenados alfabéticamente."
+
+#: forum.module:530
+msgid "forum container"
+msgstr "contenedor de foro"
+
+#: forum.module:534
+msgid "forum"
+msgstr "foro"
+
+#: forum.module:545
+msgid "Created new @type %term."
+msgstr "Creado nuevo @type %term."
+
+#: forum.module:548
+msgid "The @type %term has been updated."
+msgstr "Se ha actualizado el @type %term."
+
+#: forum.module:565
+msgid "Are you sure you want to delete the forum %name?"
+msgstr "¿Está seguro de que quiere eliminar el foro %name?"
+
+#: forum.module:565
+msgid "Deleting a forum or container will delete all sub-forums and associated posts as well. This action cannot be undone."
+msgstr ""
+"Al eliminar un foro o un contenedor, se eliminan también todos los "
+"subforos y los envíos asociados a ellos. Esta acción no se puede "
+"deshacer."
+
+#: forum.module:565
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: forum.module:573
+msgid "The forum %term and all sub-forums and associated posts have been deleted."
+msgstr ""
+"Se ha eliminado el foro %term y todos los subforos y envíos asociados "
+"a él."
+
+#: forum.module:574
+msgid "forum: deleted %term and all its sub-forums and associated posts."
+msgstr "forum: eliminado %term y todos los subforos y envíos asociados."
+
+#: forum.module:583
+msgid "Name"
+msgstr "Nombre"
+
+#: forum.module:583
+msgid "Operations"
+msgstr "Operaciones"
+
+#: forum.module:589
+msgid "edit container"
+msgstr "editar contenedor"
+
+#: forum.module:592
+msgid "edit forum"
+msgstr "editar foro"
+
+#: forum.module:598
+msgid "There are no existing containers or forums. You may add some on the <a href=\"@container\">add container</a> or <a href=\"@forum\">add forum</a> pages."
+msgstr ""
+"No hay ni contenedores ni foros. Puede añadirlos en las páginas <a "
+"href=\"@container\">añadir contenedor</a> o <a "
+"href=\"@forum\">añadir foro</a>."
+
+#: forum.module:630
+msgid "root"
+msgstr "raíz"
+
+#: forum.module:639
+msgid "Containers are usually placed at the top (root) level of your forum but you can also place a container inside a parent container or forum."
+msgstr ""
+"Los contenedores se suelen ubicar en el nivel principal (raíz) del "
+"foro, pero también puede ubicar un contenedor dentro de un contenedor "
+"o de un foro padre."
+
+#: forum.module:642
+msgid "You may place your forum inside a parent container or forum, or at the top (root) level of your forum."
+msgstr ""
+"Puede ubicar el foro dentro de un contenedor o un foro padre, o en el "
+"nivel principal (raíz) del foro."
+
+#: forum.module:690
+msgid "@time ago<br />by !author"
+msgstr "hace @time<br/>por !author"
+
+#: forum.module:693
+msgid "n/a"
+msgstr "n/d"
+
+#: forum.module:775
+msgid "Topic"
+msgstr "Tema"
+
+#: forum.module:776
+msgid "Replies"
+msgstr "Respuestas"
+
+#: forum.module:777
+msgid "Created"
+msgstr "Creado"
+
+#: forum.module:778
+msgid "Last reply"
+msgstr "Última respuesta"
+
+#: forum.module:899
+msgid "Post new forum topic."
+msgstr "Enviar un tema nuevo al foro."
+
+#: forum.module:902
+msgid "You are not allowed to post a new forum topic."
+msgstr "No tiene autorización para enviar un tema nuevo al foro."
+
+#: forum.module:905
+msgid "<a href=\"@login\">Login</a> to post a new forum topic."
+msgstr ""
+"<a href=\"@login\">Inicie la sesión</a> para enviar un tema nuevo al "
+"foro."
+
+#: forum.module:918
+msgid "No forums defined"
+msgstr "Ningún foro definido"
+
+#: forum.module:935 forum.info:0
+msgid "Forum"
+msgstr "Foro"
+
+#: forum.module:935
+msgid "Topics"
+msgstr "Temas"
+
+#: forum.module:935
+msgid "Posts"
+msgstr "Envíos"
+
+#: forum.module:935
+msgid "Last post"
+msgstr "Último envío"
+
+#: forum.module:994
+msgid "This topic has been moved"
+msgstr "Este tema se ha movido"
+
+#: forum.module:1080
+msgid "‹ "
+msgstr "‹ "
+
+#: forum.module:1080
+msgid "Go to previous forum topic"
+msgstr "Ir al tema anterior del foro"
+
+#: forum.module:1087
+msgid " ›"
+msgstr " ›"
+
+#: forum.module:1087
+msgid "Go to next forum topic"
+msgstr "Ir al tema siguiente del foro"
+
+#: forum.module:574
+msgid "content"
+msgstr "contenido"
+
+#: forum.module:966;1001
+msgid "1 new"
+msgid_plural "@count new"
+msgstr[0] ""
+msgstr[1] ""
+
+#: forum.info:0
+msgid "Enables threaded discussions about general topics."
+msgstr "Permite debates sobre temas generales."
+
+#: forum.info:0
+msgid "Core - optional"
+msgstr "Core - opcional"
+

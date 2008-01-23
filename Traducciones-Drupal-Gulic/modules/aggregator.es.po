@@ -1,0 +1,520 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  aggregator.module,v 1.324.2.2 2008/01/10 22:14:24 drumm
+#  aggregator.info,v 1.3 2006/11/21 20:55:33 dries
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-22 23:16+0000\n"
+"PO-Revision-Date: 2008-01-22 23:16+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: aggregator.module:15
+msgid "The news aggregator is a powerful on-site RSS syndicator/news reader that can gather fresh content from news sites and weblogs around the web."
+msgstr ""
+"El agredador de noticias es un poderoso lector de noticias y de "
+"orígenes RSS para el sitio, que puede obtener el contenido más "
+"reciente de los sitios de noticias y de los weblogs que hay en la red."
+
+#: aggregator.module:16
+msgid "Users can view the latest news chronologically in the <a href=\"@aggregator\">main news aggregator display</a> or by <a href=\"@aggregator-sources\">source</a>. Administrators can add, edit and delete feeds and choose how often to check for newly updated news for each individual feed. Administrators can also tag individual feeds with categories, offering selective grouping of some feeds into separate displays. Listings of the latest news for individual sources or categorized sources can be enabled as blocks for display in the sidebar through the <a href=\"@admin-block\">block administration page</a>. The news aggregator requires cron to check for the latest news from the sites to which you have subscribed. Drupal also provides a <a href=\"@aggregator-opml\">machine-readable OPML file</a> of all of your subscribed feeds."
+msgstr ""
+"Los usuarios pueden ver las últimas noticias cronológicamente en la "
+"<a href=\"@aggregator\">pantalla principal del agregador de "
+"noticias</a> o por <a href=\"@aggregator-sources\">orígenes</a>. Los "
+"administradores pueden añadir, editar y eliminar orígenes y elegir "
+"la frecuencia con la que se comprueba si hay actualizaciones en cada "
+"origen. Los administradores también pueden clasificar los orígenes "
+"por categorías, ofreciendo así una agrupación selectiva de "
+"orígenes en pantallas diferentes. Se pueden activar los listados de "
+"las últimas noticias para orígenes o para categorías de orígenes "
+"en la barra lateral, mediante la <a href=\"@admin-block\">página de "
+"administración de bloques</a>. El agregador de noticias necesita que "
+"cron consulte si hay noticias recientes en los sitios a los que esté "
+"suscrito. Drupal también proporciona un <a "
+"href=\"@aggregator-opml\">archivo OPML legible por máquinas</a> con "
+"todos los orígenes a los que está suscrito."
+
+#: aggregator.module:17
+msgid "For more information please read the configuration and customization handbook <a href=\"@aggregator\">Aggregator page</a>."
+msgstr ""
+"Si quiere más información, puede dirigirse al manual de "
+"configuración y de personalización en la <a "
+"href=\"@aggregator\">página del agregador</a>."
+
+#: aggregator.module:20
+msgid "Thousands of sites (particularly news sites and weblogs) publish their latest headlines and/or stories in a machine-readable format so that other sites can easily link to them. This content is usually in the form of an <a href=\"http://blogs.law.harvard.edu/tech/rss\">RSS</a> feed (which is an XML-based syndication standard). To display the feed or category in a block you must decide how many items to show by editing the feed or block and turning on the <a href=\"@block\">feed's block</a>."
+msgstr ""
+"Miles de sitios (más concretamente, sitios de noticias y weblogs) "
+"publican sus titulares y/o historias más recientes un un formato "
+"legible por las máquinas para que otros sitios puedan enlazar "
+"fácilmente con ellos. Este contenido suele tener la forma de un "
+"origen <a href=\"http://blogs.law.harvard.edu/tech/rss\">RSS</a> (que "
+"es un estándar de distribución en XML). Para mostrar el origen o la "
+"categoría en un bloque tiene que decidir cuántos elementos deben ser "
+"visibles editando el origen o el bloque y activando el <a "
+"href=\"@block\">bloque de origen</a>."
+
+#: aggregator.module:22
+msgid "Add a site that has an RSS/RDF/Atom feed. The URL is the full path to the feed file. For the feed to update automatically you must run \"cron.php\" on a regular basis. If you already have a feed with the URL you are planning to use, the system will not accept another feed with the same URL."
+msgstr ""
+"Añadir un sitio que tenga un origen RSS/RDF/Atom. El URL es la ruta "
+"completa al archivo con el origen. Para que el origen se actualice "
+"automáticamente debe lanzar \"cron.php\" regularmente. Si ya ha dado "
+"de alta un URL, el sistema no aceptará otro origen que tenga ese "
+"mismo URL."
+
+#: aggregator.module:24
+msgid "Categories provide a way to group items from different news feeds together. Each news category has its own feed page and block. For example, you could tag various sport-related feeds as belonging to a category called <em>Sports</em>. News items can be added to a category automatically by setting a feed to automatically place its item into that category, or by using the categorize items link in any listing of news items."
+msgstr ""
+"Las categorías proporcionan una forma de agrupar diversas fuentes de "
+"información. Cada categoría de noticias tiene su propio origen y su "
+"bloque. Por ejemplo, podría etiquetar varios orígenes relacionados "
+"con el deporte y hacer que pertenecieran a la categoría "
+"<em>Deportes</em>. Las noticias se pueden añadir automáticamente a "
+"una categoría si se define un origen que ponga automáticamente esas "
+"noticias en esa categoría, o usando el enlace categorizar ítems de "
+"las listas de noticias."
+
+#: aggregator.module:38;80
+msgid "News aggregator"
+msgstr "Agregador de noticias"
+
+#: aggregator.module:39
+msgid "Configure which content your site aggregates from other sites, how often it polls them, and how they're categorized."
+msgstr ""
+"Configure qué contenido agrega su sitio desde otros sitios, la "
+"frecuencia de actualización y su categorización."
+
+#: aggregator.module:43
+msgid "Add feed"
+msgstr "Añadir origen"
+
+#: aggregator.module:49
+msgid "Add category"
+msgstr "Añadir categoría"
+
+#: aggregator.module:56;1019
+msgid "Remove items"
+msgstr "Eliminar ítems"
+
+#: aggregator.module:63
+msgid "Update items"
+msgstr "Actualizar ítems"
+
+#: aggregator.module:68
+msgid "List"
+msgstr "Lista"
+
+#: aggregator.module:72
+msgid "Settings"
+msgstr "Opciones"
+
+#: aggregator.module:85
+msgid "Sources"
+msgstr "Fuentes"
+
+#: aggregator.module:89;1407
+msgid "Categories"
+msgstr "Categorías"
+
+#: aggregator.module:94
+msgid "RSS feed"
+msgstr "Origen RSS"
+
+#: aggregator.module:99
+msgid "OPML feed"
+msgstr "Origen OPML"
+
+#: aggregator.module:127;149
+msgid "View"
+msgstr "Ver"
+
+#: aggregator.module:131;153;1147
+msgid "Categorize"
+msgstr "Categorizar"
+
+#: aggregator.module:137;159
+msgid "Configure"
+msgstr "Configurar"
+
+#: aggregator.module:173
+msgid "Edit feed"
+msgstr "Editar origen"
+
+#: aggregator.module:184
+msgid "Edit category"
+msgstr "Editar categoría"
+
+#: aggregator.module:198
+msgid "none"
+msgstr "ninguno"
+
+#: aggregator.module:202
+msgid "Allowed HTML tags"
+msgstr "Etiquetas HTML permitidas"
+
+#: aggregator.module:204
+msgid "The list of tags which are allowed in feeds, i.e., which will not be removed by Drupal."
+msgstr ""
+"La lista de etiquetas admisibles en los orígenes, esto es, las que no "
+"debe eliminar Drupal."
+
+#: aggregator.module:208
+msgid "Items shown in sources and categories pages"
+msgstr "Elementos que se muestran en las páginas de fuentes y de categorías"
+
+#: aggregator.module:210
+msgid "The number of items which will be shown with each feed or category in the feed and category summary pages."
+msgstr ""
+"El número de elementos que se mostrarán con cada origen o categoría "
+"en las páginas resumen de orígenes y categorías."
+
+#: aggregator.module:214
+msgid "Discard news items older than"
+msgstr "Descartar noticias anteriores a"
+
+#: aggregator.module:216
+msgid "Older news items will be automatically discarded. Requires crontab."
+msgstr ""
+"Las noticias anteriores se descartan automáticamente. Necesita "
+"crontab."
+
+#: aggregator.module:220
+msgid "Category selection type"
+msgstr "Tipo de selección de categoría"
+
+#: aggregator.module:221
+msgid "checkboxes"
+msgstr "casillas de verificación"
+
+#: aggregator.module:221
+msgid "multiple selector"
+msgstr "selector múltiple"
+
+#: aggregator.module:222
+msgid "The type of category selection widget which is shown on categorization pages. Checkboxes are easier to use; a multiple selector is good for working with large numbers of categories."
+msgstr ""
+"El elemento visual del tipo de selección de categoría que se muestra "
+"en las páginas de categorización. Las casillas de verificación son "
+"más fáciles de usar. El selector múltiple es buen cuando se trabaja "
+"con un gran número de categorías."
+
+#: aggregator.module:257
+msgid "!title category latest items"
+msgstr "últimos elementos de la categoría !title"
+
+#: aggregator.module:261
+msgid "!title feed latest items"
+msgstr "últimos elementos del origen !title"
+
+#: aggregator.module:272
+msgid "Number of news items in block"
+msgstr "Número de noticias en el bloque"
+
+#: aggregator.module:291;299
+msgid "more"
+msgstr "más"
+
+#: aggregator.module:291
+msgid "View this feed's recent news."
+msgstr "Ver las noticias más recientes de este origen."
+
+#: aggregator.module:299
+msgid "View this category's recent news."
+msgstr "Ver las noticias recientes de esta categoría."
+
+#: aggregator.module:322;426;986;997
+msgid "Title"
+msgstr "Título"
+
+#: aggregator.module:328
+msgid "Description"
+msgstr "Descripción"
+
+#: aggregator.module:331;345;462;476
+msgid "Submit"
+msgstr "Enviar"
+
+#: aggregator.module:334;364;465;500
+msgid "Delete"
+msgstr "Eliminar"
+
+#: aggregator.module:354
+msgid "A category named %category already exists. Please enter a unique title."
+msgstr ""
+"Ya existe una categoría llamada %category. Introduzca un título "
+"único."
+
+#: aggregator.module:373
+msgid "The category %category has been updated."
+msgstr "Se ha actualizado la categoría %category."
+
+#: aggregator.module:382
+msgid "Category %category deleted."
+msgstr "Categoría %category eliminada."
+
+#: aggregator.module:383
+msgid "The category %category has been deleted."
+msgstr "Se ha eliminado la categoría %category."
+
+#: aggregator.module:393
+msgid "Category %category added."
+msgstr "Categoría %category añadida."
+
+#: aggregator.module:393;529
+msgid "view"
+msgstr "ver"
+
+#: aggregator.module:394
+msgid "The category %category has been added."
+msgstr "Se ha añadido la categoría %category."
+
+#: aggregator.module:429
+msgid "The name of the feed; typically the name of the web site you syndicate content from."
+msgstr ""
+"El nombre del origen. Suele ser el nombre del sitio web que distribuye "
+"contenido."
+
+#: aggregator.module:433
+msgid "URL"
+msgstr "URL"
+
+#: aggregator.module:436
+msgid "The fully-qualified URL of the feed."
+msgstr "El URL completo del origen."
+
+#: aggregator.module:440
+msgid "Update interval"
+msgstr "Intervalo de actualización"
+
+#: aggregator.module:443
+msgid "The refresh interval indicating how often you want to update this feed. Requires crontab."
+msgstr ""
+"El intervalo de actualización indica la frecuencia con la que quiere "
+"que se actualice este origen. Necesita crontab."
+
+#: aggregator.module:456
+msgid "Categorize news items"
+msgstr "Categorizar noticias"
+
+#: aggregator.module:459
+msgid "New items in this feed will be automatically filed in the checked categories as they are received."
+msgstr ""
+"Los elementos nuevos en este origen se archivarán automáticamente en "
+"las categorías que estén marcadas para recibirlos."
+
+#: aggregator.module:486
+msgid "A feed named %feed already exists. Please enter a unique title."
+msgstr ""
+"Ya existe un origen denominado %feed. Debe introducir un título "
+"único."
+
+#: aggregator.module:489
+msgid "A feed with this URL %url already exists. Please enter a unique URL."
+msgstr "Ya existe un origen con el URL %url. Indique un URL único."
+
+#: aggregator.module:509
+msgid "The feed %feed has been updated."
+msgstr "Se ha actualizado el origen %feed."
+
+#: aggregator.module:518
+msgid "Feed %feed deleted."
+msgstr "Origen %feed eliminado."
+
+#: aggregator.module:519
+msgid "The feed %feed has been deleted."
+msgstr "Se ha eliminado el origen %feed."
+
+#: aggregator.module:529
+msgid "Feed %feed added."
+msgstr "Origen %feed añadido."
+
+#: aggregator.module:530
+msgid "The feed %feed has been added."
+msgstr "Se ha añadido el origen %feed."
+
+#: aggregator.module:583
+msgid "The news items from %site have been removed."
+msgstr "Se han eliminado las noticias de %site."
+
+#: aggregator.module:713
+msgid "There is no new syndicated content from %site."
+msgstr "No hay nuevo contenido nuevo distribuido por %site."
+
+#: aggregator.module:717
+msgid "Updated URL for feed %title to %url."
+msgstr "URL actualizado a %url para el origen %title."
+
+#: aggregator.module:765;766
+msgid "There is new syndicated content from %site."
+msgstr "Hay contenido nuevo distribuido por %site."
+
+#: aggregator.module:770
+msgid "The feed from %site seems to be broken, due to \"%error\"."
+msgstr "El origen RSS de %site parece estar roto, debido a \"%error\"."
+
+#: aggregator.module:771
+msgid "The feed from %site seems to be broken, because of error \"%error\"."
+msgstr "El origen RSS de %site parece estar roto, debido al error \"%error\"."
+
+#: aggregator.module:827
+msgid "The feed from %site seems to be broken, due to an error \"%error\" on line %line."
+msgstr ""
+"El origen RSS de %site parece estar roto, debido a un error \"%error\" "
+"en la línea %line."
+
+#: aggregator.module:828
+msgid "The feed from %site seems to be broken, because of error \"%error\" on line %line."
+msgstr ""
+"El origen RSS de %site parece estar roto, debido a un error \"%error\" "
+"en la línea %line."
+
+#: aggregator.module:984
+msgid "Feed overview"
+msgstr "Resumen del origen"
+
+#: aggregator.module:986;997
+msgid "Items"
+msgstr "Elementos"
+
+#: aggregator.module:986
+msgid "Last update"
+msgstr "Última actualización"
+
+#: aggregator.module:986
+msgid "Next update"
+msgstr "Próxima actualización"
+
+#: aggregator.module:986;997
+msgid "Operations"
+msgstr "Operaciones"
+
+#: aggregator.module:989;1321
+msgid "@time ago"
+msgstr "hace @time"
+
+#: aggregator.module:989;989;1324
+msgid "never"
+msgstr "nunca"
+
+#: aggregator.module:989
+msgid "%time left"
+msgstr "%time restante"
+
+#: aggregator.module:989;1000
+msgid "edit"
+msgstr "editar"
+
+#: aggregator.module:989
+msgid "remove items"
+msgstr "eliminar elementos"
+
+#: aggregator.module:989
+msgid "update items"
+msgstr "actualizar elementos"
+
+#: aggregator.module:995
+msgid "Category overview"
+msgstr "Resumen de la categoría"
+
+#: aggregator.module:1016
+msgid "Are you sure you want to remove all items from the feed %feed?"
+msgstr ""
+
+#: aggregator.module:1018
+msgid "This action cannot be undone."
+msgstr "Esta acción no se puede deshacer."
+
+#: aggregator.module:1020
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: aggregator.module:1051;1240;382;393;518;529;717;765;770;827
+msgid "aggregator"
+msgstr "agregador"
+
+#: aggregator.module:1072
+msgid "aggregator - @title"
+msgstr "agregador: @title"
+
+#: aggregator.module:1107
+msgid "Save categories"
+msgstr "Guardar las categorías"
+
+#: aggregator.module:1156
+msgid "You are not allowed to categorize this feed item."
+msgstr "No se le permite categorizar este origen."
+
+#: aggregator.module:1169
+msgid "The categories have been saved."
+msgstr "Se han guardado las categorías."
+
+#: aggregator.module:1192;1296
+msgid "More"
+msgstr "Más"
+
+#: aggregator.module:1212
+msgid "in category"
+msgstr "en categoría"
+
+#: aggregator.module:1227
+msgid "read more"
+msgstr "leer más"
+
+#: aggregator.module:1240
+msgid "aggregated feeds"
+msgstr "orígenes añadidos"
+
+#: aggregator.module:1318
+msgid "URL:"
+msgstr "URL:"
+
+#: aggregator.module:1331
+msgid "Updated:"
+msgstr "Actualizado:"
+
+#: aggregator.module:1346;1346
+msgid "blog it"
+msgstr "a la bitácora"
+
+#: aggregator.module:1347
+msgid "Comment on this news item in your personal blog."
+msgstr "Comentar esta noticia en su bitácora personal."
+
+#: aggregator.module:1367
+msgid "%age old"
+msgstr "hace %age"
+
+#: aggregator.module:1387
+msgid "%ago ago"
+msgstr "hace %ago"
+
+#: aggregator.module:989;1000;1426
+msgid "1 item"
+msgid_plural "@count items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: aggregator.info:0
+msgid "Aggregator"
+msgstr "Agregador"
+
+#: aggregator.info:0
+msgid "Aggregates syndicated content (RSS, RDF, and Atom feeds)."
+msgstr "Agrega el contenido distribuido (orígenes RSS, RDF y Atom)."
+
+#: aggregator.info:0
+msgid "Core - optional"
+msgstr "Core - opcional"
+

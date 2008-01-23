@@ -1,0 +1,424 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  taxonomy.module,v 1.330.2.15 2007/12/20 07:48:11 drumm
+#  taxonomy.info,v 1.3 2006/11/21 20:55:35 dries
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:06+0000\n"
+"PO-Revision-Date: 2008-01-23 00:06+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: taxonomy.module:77;753
+msgid "Categories"
+msgstr "Categorías"
+
+#: taxonomy.module:78
+msgid "Create vocabularies and terms to categorize your content."
+msgstr "Crea vocabularios y términos para categorizar el contenido."
+
+#: taxonomy.module:83;129
+msgid "List"
+msgstr "Lista"
+
+#: taxonomy.module:88
+msgid "Add vocabulary"
+msgstr "Añadir vocabulario"
+
+#: taxonomy.module:95
+msgid "Edit vocabulary"
+msgstr "Editar vocabulario"
+
+#: taxonomy.module:101
+msgid "Edit term"
+msgstr "Editar término"
+
+#: taxonomy.module:107
+msgid "Taxonomy term"
+msgstr "Término de taxonomía"
+
+#: taxonomy.module:113
+msgid "Autocomplete taxonomy"
+msgstr "Autocompletar la taxonomía"
+
+#: taxonomy.module:122
+msgid "List terms"
+msgstr "Lista de términos"
+
+#: taxonomy.module:134
+msgid "Add term"
+msgstr "Añadir término"
+
+#: taxonomy.module:159
+msgid "edit vocabulary"
+msgstr "editar vocabulario"
+
+#: taxonomy.module:160
+msgid "list terms"
+msgstr "lista de términos"
+
+#: taxonomy.module:161
+msgid "add terms"
+msgstr "añadir términos"
+
+#: taxonomy.module:165
+msgid "No categories available."
+msgstr "No hay categorías disponibles."
+
+#: taxonomy.module:167;179
+msgid "Name"
+msgstr "Nombre"
+
+#: taxonomy.module:167
+msgid "Type"
+msgstr "Tipo"
+
+#: taxonomy.module:167;179
+msgid "Operations"
+msgstr "Operaciones"
+
+#: taxonomy.module:198;209;308;312;474;478
+msgid "edit"
+msgstr "editar"
+
+#: taxonomy.module:214
+msgid "No terms available."
+msgstr "No hay términos disponibles."
+
+#: taxonomy.module:234
+msgid "Vocabulary name"
+msgstr "Nombre del vocabulario"
+
+#: taxonomy.module:237
+msgid "The name for this vocabulary. Example: \"Topic\"."
+msgstr "El nombre para este vocabulario. Ejemplo: \"Temas\"."
+
+#: taxonomy.module:241;409
+msgid "Description"
+msgstr "Descripción"
+
+#: taxonomy.module:243
+msgid "Description of the vocabulary; can be used by modules."
+msgstr "Descripción del vocabulario: la pueden usar los módulos."
+
+#: taxonomy.module:246
+msgid "Help text"
+msgstr "Texto de ayuda"
+
+#: taxonomy.module:249
+msgid "Instructions to present to the user when choosing a term."
+msgstr ""
+"Instrucciones para presentar al usuario cuando vaya a elegir un "
+"término."
+
+#: taxonomy.module:252
+msgid "Types"
+msgstr "Tipos"
+
+#: taxonomy.module:255
+msgid "A list of node types you want to associate with this vocabulary."
+msgstr ""
+"Una lista de los tipos de nodos que quiere asociar con este "
+"vocabulario."
+
+#: taxonomy.module:259
+msgid "Hierarchy"
+msgstr "Jerarquía"
+
+#: taxonomy.module:261
+msgid "Disabled"
+msgstr "Desactivado"
+
+#: taxonomy.module:261
+msgid "Single"
+msgstr "Simple"
+
+#: taxonomy.module:261
+msgid "Multiple"
+msgstr "Múltiple"
+
+#: taxonomy.module:262
+msgid "Allows <a href=\"@help-url\">a tree-like hierarchy</a> between terms of this vocabulary."
+msgstr ""
+"Permite una <a href=\"@help-url\">jerarquía de árbol</a> entre los "
+"términos de este vocabulario."
+
+#: taxonomy.module:265;432
+msgid "Related terms"
+msgstr "Términos relacionados"
+
+#: taxonomy.module:267
+msgid "Allows <a href=\"@help-url\">related terms</a> in this vocabulary."
+msgstr ""
+"Permite <a href=\"@help-url\">términos relacionados</a> en este "
+"vocabulario."
+
+#: taxonomy.module:270
+msgid "Free tagging"
+msgstr "Etiquetado libre"
+
+#: taxonomy.module:272
+msgid "Content is categorized by typing terms instead of choosing from a list."
+msgstr ""
+"El contenido se categoriza tecleando términos en lugar de "
+"eligiéndolos de una lista."
+
+#: taxonomy.module:275
+msgid "Multiple select"
+msgstr "Selección múltiple"
+
+#: taxonomy.module:277
+msgid "Allows nodes to have more than one term from this vocabulary (always true for free tagging)."
+msgstr ""
+"Permite que los nodos tengan más de un término en este vocabulario "
+"(siempre es cierto para el etiquetado libre)."
+
+#: taxonomy.module:280
+msgid "Required"
+msgstr "Requerido"
+
+#: taxonomy.module:282
+msgid "If enabled, every node <strong>must</strong> have at least one term in this vocabulary."
+msgstr ""
+"Si está activado, cada nodo <strong>debe</strong> tener al menos un "
+"término en este vocabulario."
+
+#: taxonomy.module:285;442
+msgid "Weight"
+msgstr "Peso"
+
+#: taxonomy.module:287
+msgid "In listings, the heavier vocabularies will sink and the lighter vocabularies will be positioned nearer the top."
+msgstr ""
+"En las listas, los vocabularios más pesados se hunden y los más "
+"ligeros están más cerca de la parte superior."
+
+#: taxonomy.module:290;450
+msgid "Submit"
+msgstr "Enviar"
+
+#: taxonomy.module:292;384;455;608;1426;1439
+msgid "Delete"
+msgstr "Eliminar"
+
+#: taxonomy.module:307;308
+msgid "Created new vocabulary %name."
+msgstr "Creado un vocabulario nuevo, %name."
+
+#: taxonomy.module:311;312
+msgid "Updated vocabulary %name."
+msgstr "Actualizado el vocabulario %name."
+
+#: taxonomy.module:380
+msgid "Are you sure you want to delete the vocabulary %title?"
+msgstr "¿Está seguro de que quiere eliminar el vocabulario %title?"
+
+#: taxonomy.module:383
+msgid "Deleting a vocabulary will delete all the terms in it. This action cannot be undone."
+msgstr ""
+"Al eliminar un vocabulario se eliminan todos los términos que hay en "
+"él. Esta acción no se puede deshacer."
+
+#: taxonomy.module:385;609
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: taxonomy.module:390;391
+msgid "Deleted vocabulary %name."
+msgstr "Eliminado el vocabulario %name."
+
+#: taxonomy.module:401
+msgid "Term name"
+msgstr "Nombre del término"
+
+#: taxonomy.module:404
+msgid "The name of this term."
+msgstr "El nombre de este término."
+
+#: taxonomy.module:411
+msgid "A description of the term."
+msgstr "Una descripción del término."
+
+#: taxonomy.module:424
+msgid "Parent"
+msgstr "Padre"
+
+#: taxonomy.module:424
+msgid "Parent term"
+msgstr "Término padre"
+
+#: taxonomy.module:424;427
+msgid "root"
+msgstr "raíz"
+
+#: taxonomy.module:427
+msgid "Parents"
+msgstr "Padres"
+
+#: taxonomy.module:427
+msgid "Parent terms"
+msgstr "Términos padres"
+
+#: taxonomy.module:432
+msgid "none"
+msgstr "ninguno"
+
+#: taxonomy.module:437
+msgid "Synonyms"
+msgstr "Sinónimos"
+
+#: taxonomy.module:439
+msgid "<a href=\"@help-url\">Synonyms</a> of this term, one synonym per line."
+msgstr ""
+"<a href=\"@help-url\">Sinónimos</a> de este término, un sinónimo "
+"por línea."
+
+#: taxonomy.module:444
+msgid "In listings, the heavier terms will sink and the lighter terms will be positioned nearer the top."
+msgstr ""
+"En las listas, los términos más pesados se hunden y los más ligeros "
+"se ponen más cerca de la zona superior."
+
+#: taxonomy.module:473;474
+msgid "Created new term %term."
+msgstr "Creado el término nuevo %term."
+
+#: taxonomy.module:477;478
+msgid "Updated term %term."
+msgstr ""
+
+#: taxonomy.module:604
+msgid "Are you sure you want to delete the term %title?"
+msgstr "¿Está seguro de que quiere eliminar el término %title?"
+
+#: taxonomy.module:607
+msgid "Deleting a term will delete all its children if there are any. This action cannot be undone."
+msgstr ""
+"Al eliminar un término se eliminan todos los hijos que tiene. Esta "
+"acción no se puede deshacer."
+
+#: taxonomy.module:614;615
+msgid "Deleted term %name."
+msgstr "Eliminado el término %name."
+
+#: taxonomy.module:627
+msgid "- Please choose -"
+msgstr ""
+
+#: taxonomy.module:627
+msgid "- None selected -"
+msgstr ""
+
+#: taxonomy.module:630
+msgid "- None -"
+msgstr ""
+
+#: taxonomy.module:724
+msgid "A comma-separated list of terms describing this content. Example: funny, bungee jumping, \"Company, Inc.\"."
+msgstr ""
+"Una lista de términos separados por comas que describe el contenido. "
+"Ejemplo: divertido, puenting, \"Empresa, S.A.\"."
+
+#: taxonomy.module:804
+msgid "The %name vocabulary can not be modified in this way."
+msgstr "El vocabulario %name no se puede modificar de esta forma."
+
+#: taxonomy.module:1292
+msgid "There are currently no posts in this category."
+msgstr "Actualmente no hay envíos en esta categoría."
+
+#: taxonomy.module:1467
+msgid "The taxonomy module is one of the most popular features because users often want to create categories to organize content by type. A simple example would be organizing a list of music reviews by musical genre."
+msgstr ""
+"El módulo taxonomy es uno de los más populares, porque permite que "
+"los usuarios creen las categorías que deseen para organizar el "
+"contenido según su tipo. Un ejemplo sencillo sería organizar una "
+"lista de revisiones de música por su género musical."
+
+#: taxonomy.module:1468
+msgid "Taxonomy is the study of classification. The taxonomy module allows you to define vocabularies (sets of categories) which are used to classify content. The module supports hierarchical classification and association between terms, allowing for truly flexible information retrieval and classification. The taxonomy module allows multiple lists of categories for classification (controlled vocabularies) and offers the possibility of creating thesauri (controlled vocabularies that indicate the relationship of terms) and taxonomies (controlled vocabularies where relationships are indicated hierarchically). To view and manage the terms of each vocabulary, click on the associated <em>list terms</em> link. To delete a vocabulary and all its terms, choose <em>edit vocabulary.</em>"
+msgstr ""
+"La taxonomía también es el estudio de la clasificación. El módulo "
+"taxonomy permite definir vocabularios (conjuntos de categorías), que "
+"se usan para clasificar el contenido. El módulo admite la "
+"clasificación jerárquica y la asociación entre los términos, "
+"permitiendo una recuperación y una clasificación verdaderamente "
+"flexible. El módulo taxonomy permite varias listas de categorías "
+"para la clasificación (vocabularios controlados) y ofrece la "
+"posibilidad de crear tesauros (vocabularios controlados que indican la "
+"relación entre los términos) y taxonomías (vocabularios controlados "
+"en los que las relaciones se indican jerárquicamente). Para ver y "
+"gestionar los términos de cada vocabulario, haga clic en el enlace "
+"<em>lista de términos</em> asociado. Para eliminar un vocabulario y "
+"todos sus términos, elija <em>editar vocabulario</em>."
+
+#: taxonomy.module:1469
+msgid "A controlled vocabulary is a set of terms to use for describing content (known as descriptors in indexing lingo). Drupal allows you to describe each piece of content (blog, story, etc.) using one or many of these terms. For simple implementations, you might create a set of categories without subcategories, similar to Slashdot's sections. For more complex implementations, you might create a hierarchical list of categories."
+msgstr ""
+"Un vocabulario controlado es una serie de términos que se usan para "
+"describir el contenido (conocidos como descriptores en la indexación "
+"lingo). Drupal le permite describir cada unidad de contenido "
+"(bitácora, historia, etc.) usando uno o muchos de estos términos. "
+"Para las implementaciones sencillas puede crear una serie de "
+"categorías sin subcategorías, similar a las secciones de "
+"Slashdot.org. Para implementaciones más complejas, puede crear una "
+"lista jerárquica de categorías."
+
+#: taxonomy.module:1470
+msgid "For more information please read the configuration and customization handbook <a href=\"@taxonomy\">Taxonomy page</a>."
+msgstr ""
+"Si quiere más información, puede leer el manual de configuración y "
+"de personalización en la <a href=\"@taxonomy\">página de "
+"tatxonomía</a>."
+
+#: taxonomy.module:1473
+msgid "The taxonomy module allows you to classify content into categories and subcategories; it allows multiple lists of categories for classification (controlled vocabularies) and offers the possibility of creating thesauri (controlled vocabularies that indicate the relationship of terms), taxonomies (controlled vocabularies where relationships are indicated hierarchically), and free vocabularies where terms, or tags, are defined during content creation. To view and manage the terms of each vocabulary, click on the associated <em>list terms</em> link. To delete a vocabulary and all its terms, choose \"edit vocabulary\"."
+msgstr ""
+"El módulo taxonomy le permite clasificar el contenido en categorías "
+"y subcategorías. Permite listas múltiples de categorías para la "
+"clasificación (vocabularios controlados) y ofrece la posibilidad de "
+"crear tesauros (vocabularios controlados que indican relación entre "
+"términos), taxonomías (vocabularios controlados donde las relaciones "
+"se indican jerárquicamente) y vocabularios libres en los que los "
+"términos o etiquetas se definen durante la creación del contenido. "
+"Para ver y gestionar los términos de cada vocabulario, haga clic en "
+"el enlace <em>lista de términos</em> asociado. Para eliminar un "
+"vocabulario y todos sus términos, elija \"editar vocabulario\"."
+
+#: taxonomy.module:1475
+msgid "When you create a controlled vocabulary you are creating a set of terms to use for describing content (known as descriptors in indexing lingo). Drupal allows you to describe each piece of content (blog, story, etc.) using one or many of these terms. For simple implementations, you might create a set of categories without subcategories. For more complex implementations, you might create a hierarchical list of categories."
+msgstr ""
+"Cuando crea un vocabulario controlado, está creando una serie de "
+"términos que se usan para describir el contenido (conocidos como "
+"descriptores en la indexación lingo). Drupal le permite describir "
+"cada unidad de contenido (blog, historia, etc.) usando uno o muchos de "
+"estos términos. Para las implementaciones sencillas puede crear una "
+"serie de categorías sin subcategorías. Para implementaciones más "
+"complejas, puede crear una lista jerárquica de categorías."
+
+#: taxonomy.module:308;312;391;474;478;615
+msgid "taxonomy"
+msgstr "taxonomía"
+
+#: taxonomy.info:0
+msgid "Taxonomy"
+msgstr "Taxonomía"
+
+#: taxonomy.info:0
+msgid "Enables the categorization of content."
+msgstr "Activa la categorización del contenido."
+
+#: taxonomy.info:0
+msgid "Core - optional"
+msgstr "Core - opcional"
+

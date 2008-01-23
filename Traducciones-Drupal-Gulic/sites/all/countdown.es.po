@@ -1,0 +1,161 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  countdown.module,v 1.4 2007/01/15 23:34:37 deekayen
+#  countdown.info,v 1.1 2006/11/06 21:23:59 deekayen
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:10+0000\n"
+"PO-Revision-Date: 2008-01-23 00:10+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: countdown.module:18
+msgid "Don't forget to configure the event name and date in Administer/blocks/Countdown configure"
+msgstr ""
+
+#: countdown.module:41
+msgid "Event Name"
+msgstr ""
+
+#: countdown.module:45
+msgid "Event name you're counting to or from."
+msgstr ""
+
+#: countdown.module:51
+msgid "Accuracy"
+msgstr ""
+
+#: countdown.module:53
+msgid "days"
+msgstr ""
+
+#: countdown.module:53
+msgid "hours"
+msgstr ""
+
+#: countdown.module:53
+msgid "minutes"
+msgstr "minutos"
+
+#: countdown.module:54
+msgid "Select the smallest amount of detail to display. For example, selecting \"days\" will display only days, selecting \"hours\" will display the number of days and hours."
+msgstr ""
+
+#: countdown.module:62
+msgid "Target date/time"
+msgstr ""
+
+#: countdown.module:65
+msgid "Select a date relative to the server time: %s"
+msgstr ""
+
+#: countdown.module:71
+msgid "Year"
+msgstr "Año"
+
+#: countdown.module:79
+msgid "Month"
+msgstr "Mes"
+
+#: countdown.module:81
+msgid "January"
+msgstr "Enero"
+
+#: countdown.module:81
+msgid "February"
+msgstr "Febrero"
+
+#: countdown.module:81
+msgid "March"
+msgstr "Marzo"
+
+#: countdown.module:81
+msgid "April"
+msgstr "Abril"
+
+#: countdown.module:82
+msgid "May"
+msgstr "Mayo"
+
+#: countdown.module:82
+msgid "June"
+msgstr "Junio"
+
+#: countdown.module:82
+msgid "July"
+msgstr "Julio"
+
+#: countdown.module:82
+msgid "August"
+msgstr "Agosto"
+
+#: countdown.module:83
+msgid "September"
+msgstr "Septiembre"
+
+#: countdown.module:83
+msgid "October"
+msgstr "Octubre"
+
+#: countdown.module:83
+msgid "November"
+msgstr "Noviembre"
+
+#: countdown.module:83
+msgid "December"
+msgstr "Diciembre"
+
+#: countdown.module:89
+msgid "Day"
+msgstr "Día"
+
+#: countdown.module:98
+msgid "Hour"
+msgstr ""
+
+#: countdown.module:107
+msgid "Minute"
+msgstr ""
+
+#: countdown.module:113
+msgid "Seconds"
+msgstr ""
+
+#: countdown.module:128 countdown.info:0
+msgid "Countdown"
+msgstr ""
+
+#: countdown.module:144
+msgid "%i days"
+msgstr "%i días"
+
+#: countdown.module:146
+msgid ", %i hours"
+msgstr ""
+
+#: countdown.module:149
+msgid ", %i minutes"
+msgstr ""
+
+#: countdown.module:152
+msgid ", %i seconds"
+msgstr ""
+
+#: countdown.info:0
+msgid "Adds a block to count the days, hours, minutes, and seconds since or until a specified event."
+msgstr ""
+
+#: countdown.info:0
+msgid "Event"
+msgstr ""
+

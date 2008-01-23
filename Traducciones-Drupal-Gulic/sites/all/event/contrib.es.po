@@ -1,0 +1,291 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  basicevent.module,v 1.9.2.1 2007/03/19 13:28:34 killes
+#  basicevent.info,v 1.1.2.1 2007/03/29 21:23:18 killes
+#  event_all_day.info,v 1.1 2007/03/30 14:26:13 killes
+#  event_views.info,v 1.1 2007/01/07 12:58:42 karens
+#  event_views.module,v 1.19 2007/01/07 12:58:42 karens
+#  n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:15+0000\n"
+"PO-Revision-Date: 2008-01-23 00:15+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: basicevent.module:15;54 basicevent.info:0 event_all_day/event_all_day.info:0 event_views/event_views.info:0
+msgid "Event"
+msgstr ""
+
+#: basicevent.module:17
+msgid "An event is a story which can be given a start and end date, thus appearing in the events calendar."
+msgstr ""
+"Un evento es una historia que puede tener una fecha de comienzo y de "
+"fin, entonces aparecer en el calendario de los eventos."
+
+#: basicevent.module:67
+msgid "event content-type settings page"
+msgstr "La pagína de los parámetros del contenido tipo del evento"
+
+#: basicevent.module:68
+msgid "The event node is currently set to never appear in the calendar. You will not be able to set the start and end dates until an administrator changes the content-type settings. This is done using the !link."
+msgstr ""
+
+#: basicevent.module:73 event_views/event_views.module:361;482;588
+msgid "Title"
+msgstr "Título"
+
+#: basicevent.module:81
+msgid "Body"
+msgstr "Cuerpo"
+
+#: basicevent.info:0
+msgid "Basic event"
+msgstr ""
+
+#: basicevent.info:0
+msgid "A story-like node that implements the event API automatically."
+msgstr ""
+
+#: event_all_day/event_all_day.module:19
+msgid "All day"
+msgstr ""
+
+#: event_all_day/event_all_day.info:0
+msgid "Event All Day"
+msgstr ""
+
+#: event_all_day/event_all_day.info:0
+msgid "Allows creation of all-day events."
+msgstr ""
+
+#: event_views/event_views.module:14
+msgid "<p>The Event Views module makes the event fields available to the Views module, and creates default event views that filter dates using a drop-down date selector, the jscalendar selector, or by arguments in the url. Set up a default event view by going to %link and select <strong>add</strong>. Save the default views as-is or make any changes you like.</p>"
+msgstr ""
+"<p>El módulo Event Views rende los campos de eventos disponibles para "
+"el módulo Views y crea vistas de evento por defecto que filtra las "
+"fechas usando un selector de fecha desenrollando, el selecdor "
+"jscalendor o con los parámetros en la URL. Establece una vista por "
+"defecto de los eventos consultando %link y seleccionando "
+"<strong>añadir</strong>. Guarda las vistas por defecto como tal, o "
+"haga los cambios necessitados.</p> "
+
+#: event_views/event_views.module:15
+msgid "<p>You can change the format of the output. The default views display a list of events, but you can change it to a table or a teaser list in the <strong>Page</strong> settings. You can also add or remove fields from the view.</p>"
+msgstr ""
+"<p>Se puede cambiar el formato de la salida. La vista preliminar "
+"mostra una lista de los eventos, pero usted la puede reemplazar por "
+"una table o en una lista resumida en la <strong>Página</strong> de "
+"los parámetros. Campos se pueden también añadir o suprimir de la "
+"vista.</p>"
+
+#: event_views/event_views.module:16
+msgid "<p>You can filter events in several ways. Use filters to pre-select a date range, expose those filters to allow the viewer to select a date range, or eliminate the filters and give the view year, month, and day arguments to filter the events by the url (i.e. YYYY/MM/DD).</p>"
+msgstr ""
+"<p>Usted puede filtrar los eventos de varias maneras. Usa filtros para "
+"selectar un campo de fecha, exponer estos filtros para habilitar los "
+"visitantes a selectar un campo de fecha, o elimina los filtros y "
+"mostra los parámetros del año, mes y dia para filtrar los eventos "
+"con el url (i.e. AAAA/MM/DD).</p>"
+
+#: event_views/event_views.module:35
+msgid "now"
+msgstr "ahora"
+
+#: event_views/event_views.module:55;76
+msgid "Event: Start Time"
+msgstr "Event: Hora de comienzo"
+
+#: event_views/event_views.module:62;77
+msgid "Event: End Time"
+msgstr "Evento: Hora de terminación"
+
+#: event_views/event_views.module:69
+msgid "Event: Timezone"
+msgstr "Entrada de zona horaria del evento"
+
+#: event_views/event_views.module:82
+msgid "Event: Start Date"
+msgstr "Fecha de comienzo."
+
+#: event_views/event_views.module:87
+msgid "This filter allows events to be filtered by their start date. Enter dates in the format: CCYY-MM-DD HH:MM:SS. Enter 'now' to use the current time. You may enter a delta (in seconds) to the option that will be added to the time; this is most useful when combined with now. If you have the jscalendar module from jstools installed, you can use a popup date picker here."
+msgstr ""
+"El filtro permite que los eventos estén filtrados por su fecha de "
+"fin. Introduzca fechas seguiendo el modelo : CCYY-MM-DD HH:MM:SS. "
+"Incribe 'now' para usar la hora en curso. Establecerá un delta "
+"(secundos) para la opcion que será añadida al tiempo; eso es más "
+"utile cuando está combinado con ahora. Si usted tiene el módulo "
+"jscalendar de jstools intalado, puede usar un popup recolector de "
+"fecha aquí. "
+
+#: event_views/event_views.module:91
+msgid "Event: End Date"
+msgstr "Evento : Fecha final"
+
+#: event_views/event_views.module:96
+msgid "This filter allows events to be filtered by their end date. Enter dates in the format: CCYY-MM-DD HH:MM:SS. Enter 'now' to use the current time. You may enter a delta (in seconds) to the option that will be added to the time; this is most useful when combined with now. If you have the jscalendar module from jstools installed, you can use a popup date picker here."
+msgstr ""
+"El filtro permite que los eventos estén filtrados por su fecha de "
+"comienzo. Introduzca fechas siguiendo el ejemplo : AAAA-MM-DD "
+"HH:MM:SS. Inscribe 'ahora' para usar la hora en curso. Establecerá un "
+"delta (secundos) al opción que será añadida al tiempo ; esto es "
+"más utile cuando está combinado con ahora. Si usted tiene el "
+"jscalendar módulo de jstools instalado, puede usar un popup "
+"recolector de fecha aquí. "
+
+#: event_views/event_views.module:100;166
+msgid "Event: Start Year"
+msgstr "Evento: Año de comienzo"
+
+#: event_views/event_views.module:106
+msgid "Filter by year. Use the option to select the date field to filter on."
+msgstr ""
+"Filtrar por año. Usa esta opción para seleccionar el campo de fecha "
+"que quiere filtrar."
+
+#: event_views/event_views.module:110;171
+msgid "Event: Start Month"
+msgstr "Evento: Mes de comienzo"
+
+#: event_views/event_views.module:116
+msgid "Filter by month. Use the option to select the date field to filter on."
+msgstr ""
+"Filtrar por mes. Usa esta opción para seleccionar el campo de fecha "
+"que quiere filtrar.  "
+
+#: event_views/event_views.module:120;176
+msgid "Event: Start Day"
+msgstr "Evento: Día de comienzo"
+
+#: event_views/event_views.module:126
+msgid "Filter by day. Use the option to select the date field to filter on."
+msgstr ""
+"Filtrar por día. Usa esta opción para seleccionar el campo de fecha "
+"que quiere filtrar."
+
+#: event_views/event_views.module:147
+msgid "Event: Type"
+msgstr "Evento : Tipo"
+
+#: event_views/event_views.module:152
+msgid "A node type selector that is limited to event-enabled node types. Use as exposed filter that only contains event node types."
+msgstr ""
+"Un selector de tipo nodo que está limitado al tipo de nodo de evento "
+"activados. Usa como un filtro que contiene solamente nodos de tipo "
+"evento."
+
+#: event_views/event_views.module:168
+msgid "Filter by the event year (YYYY)."
+msgstr ""
+
+#: event_views/event_views.module:173
+msgid "Filter by the event month (1-12). Place this argument after a 'Year' argument."
+msgstr ""
+
+#: event_views/event_views.module:178
+msgid "Filter by the event day (1-31). Place this argument after a 'Year' and a 'Month' argument."
+msgstr ""
+
+#: event_views/event_views.module:181
+msgid "Event: Start Week"
+msgstr "Evento : Semana de comienzo"
+
+#: event_views/event_views.module:183
+msgid "Filter by the week number (1-52). Place this argument after a 'Year' argument."
+msgstr ""
+
+#: event_views/event_views.module:278
+msgid "Week "
+msgstr "Semana"
+
+#: event_views/event_views.module:286;308
+msgid "N/A"
+msgstr "N/D"
+
+#: event_views/event_views.module:330
+msgid "event_select"
+msgstr "event_select"
+
+#: event_views/event_views.module:331
+msgid "Events list filtered by drop-down date selector."
+msgstr "Lista de eventos filtrada por un selector de fecha "
+
+#: event_views/event_views.module:337;458;564
+msgid "event list"
+msgstr "lista de los eventos"
+
+#: event_views/event_views.module:368;489;595
+msgid "Start Time:"
+msgstr "Fecha de comienzo:"
+
+#: event_views/event_views.module:375;496;602
+msgid "End Time:"
+msgstr "Fecha final:"
+
+#: event_views/event_views.module:422
+msgid "Start Year:"
+msgstr "Año del comienzo :"
+
+#: event_views/event_views.module:431
+msgid "Start Month:"
+msgstr "Mes del comienzo :"
+
+#: event_views/event_views.module:440
+msgid "Start Day:"
+msgstr "Día del comienzo :"
+
+#: event_views/event_views.module:451
+msgid "event_js"
+msgstr "event_js"
+
+#: event_views/event_views.module:452
+msgid "Events list filtered by js date selector."
+msgstr "Lista de eventos filtrada con el selector js date"
+
+#: event_views/event_views.module:535
+msgid "Start Date"
+msgstr "Fecha de comienzo"
+
+#: event_views/event_views.module:544
+msgid "End Date"
+msgstr "Fecha de fin."
+
+#: event_views/event_views.module:557
+msgid "event_date"
+msgstr "event_date"
+
+#: event_views/event_views.module:558
+msgid "Events list filtered by url arguments."
+msgstr "La lista de eventos filtrada pos parámetros url."
+
+#: event_views/event_views.module:628
+msgid "Year"
+msgstr "Año"
+
+#: event_views/event_views.module:634
+msgid "Month"
+msgstr "Mes"
+
+#: event_views/event_views.module:640
+msgid "Day"
+msgstr "Día"
+
+#: event_views/event_views.info:0
+msgid "Event Views"
+msgstr ""
+
+#: event_views/event_views.info:0
+msgid "Views-enables the event fields and creates default event views."
+msgstr ""
+

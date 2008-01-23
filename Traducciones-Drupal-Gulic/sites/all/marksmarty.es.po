@@ -1,0 +1,89 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  marksmarty.module,v 1.18 2006/10/07 19:28:17 teradome
+#  n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:18+0000\n"
+"PO-Revision-Date: 2008-01-23 00:18+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: marksmarty.module:11;81
+msgid "Markdown with SmartyPants"
+msgstr ""
+
+#: marksmarty.module:14
+msgid "Allows content to be submitted using Markdown, a simple plain-text syntax that is filtered into valid XHTML, and converts plain ASCII characters to Unicode entities using SmartyPants."
+msgstr ""
+
+#: marksmarty.module:29
+msgid "Quick Tips:<ul>\n  \t  <li>Two or more spaces at a line's end = Line break</li>\n      <li>Double returns = Paragraph</li>\n      <li>*Single asterisks* or _single underscores_ = <em>Emphasis</em></li>\n      <li>**Double** or __double__ = <strong>Strong</strong></li>\n      <li>This is [a link](http://the.link.com \"The optional title text\")</li>\n      </ul>For complete details on the Markdown syntax, see the <a href=\"http://daringfireball.net/projects/markdown/syntax\">Markdown documentation</a>."
+msgstr ""
+
+#: marksmarty.module:38
+msgid "You can use !link to format and style the text."
+msgstr ""
+
+#: marksmarty.module:38
+msgid "Markdown syntax"
+msgstr ""
+
+#: marksmarty.module:47 marksmarty.info:0
+msgid "Allows content to be submitted using Markdown, a simple plain-text syntax that is transformed into valid XHTML, and/or using SmartyPants, a filter for auto-translating plain ASCII characters to Unicode characters."
+msgstr ""
+
+#: marksmarty.module:51
+msgid "<p>The Markdown with SmartyPants module allows you to enter content using <a href=\"http://daringfireball.net/projects/markdown\">Markdown</a>, a simple plain-text syntax that is transformed into valid XHTML, and will automatically convert plain ASCII characters to their proper Unicode entities in context (\"curly quotes,\" et al.) using <a href=\"http://daringfireball.net/projects/smartypants\">SmartyPants</a>.</p>"
+msgstr ""
+
+#: marksmarty.module:91
+msgid "Enable Markdown?"
+msgstr ""
+
+#: marksmarty.module:93;99
+msgid "No"
+msgstr "No"
+
+#: marksmarty.module:93;99
+msgid "Yes"
+msgstr "Sí"
+
+#: marksmarty.module:97
+msgid "Enable SmartyPants?"
+msgstr ""
+
+#: marksmarty.module:103
+msgid "Hyphenation settings for SmartyPants"
+msgstr ""
+
+#: marksmarty.module:105
+msgid "\"--\" for em-dashes; no en-dash support"
+msgstr ""
+
+#: marksmarty.module:105
+msgid "\"---\" for em-dashes; \"--\" for en-dashes"
+msgstr ""
+
+#: marksmarty.module:105
+msgid "\"--\" for em-dashes; \"---\" for en-dashes"
+msgstr ""
+
+#: marksmarty.info:0
+msgid "Marksmarty"
+msgstr ""
+
+#: marksmarty.info:0
+msgid "Input filters"
+msgstr ""
+

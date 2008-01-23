@@ -1,0 +1,381 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  ldapauth.module,v 1.28 2007/08/22 23:55:21 kreaper
+#  ldapauth.info,v 1.2 2007/01/28 20:38:03 kreaper
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:17+0000\n"
+"PO-Revision-Date: 2008-01-23 00:17+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: ldapauth.module:41
+msgid "Enables authentication via LDAP."
+msgstr ""
+
+#: ldapauth.module:44
+msgid "Login using LDAP."
+msgstr ""
+
+#: ldapauth.module:77
+msgid "LDAP Integration"
+msgstr ""
+
+#: ldapauth.module:80
+msgid "Configure LDAP settings"
+msgstr ""
+
+#: ldapauth.module:85
+msgid "List"
+msgstr "Lista"
+
+#: ldapauth.module:93;113
+msgid "Configure LDAP Server"
+msgstr ""
+
+#: ldapauth.module:103
+msgid "System Wide Options"
+msgstr ""
+
+#: ldapauth.module:122
+msgid "Delete LDAP Server"
+msgstr ""
+
+#: ldapauth.module:131
+msgid "Activate LDAP Source"
+msgstr ""
+
+#: ldapauth.module:140
+msgid "De-Activate LDAP Source"
+msgstr ""
+
+#: ldapauth.module:180;942
+msgid "edit"
+msgstr "editar"
+
+#: ldapauth.module:181
+msgid "!link_text"
+msgstr ""
+
+#: ldapauth.module:182
+msgid "delete"
+msgstr "eliminar"
+
+#: ldapauth.module:186
+msgid "LDAP Config"
+msgstr ""
+
+#: ldapauth.module:188
+msgid "Operations"
+msgstr "Operaciones"
+
+#: ldapauth.module:199
+msgid "LDAP Configuration %config has been de-activated."
+msgstr ""
+
+#: ldapauth.module:200
+msgid "ldapauth: ldap config %config de-activated."
+msgstr ""
+
+#: ldapauth.module:209
+msgid "LDAP Configuration %config has been activated."
+msgstr ""
+
+#: ldapauth.module:210
+msgid "ldapauth: ldap config %config activated."
+msgstr ""
+
+#: ldapauth.module:216
+msgid "Drupal's DB first, then LDAP directory"
+msgstr ""
+
+#: ldapauth.module:218
+msgid "LDAP directory only"
+msgstr ""
+
+#: ldapauth.module:223
+msgid "Authentication mode"
+msgstr ""
+
+#: ldapauth.module:224
+msgid "<p><strong>NOTE:</strong> These settings have no effect on Drupal user with uid 1. The admin account never uses LDAP.<strong></p>"
+msgstr ""
+
+#: ldapauth.module:231
+msgid "Choose authentication mode"
+msgstr ""
+
+#: ldapauth.module:232
+msgid "<p>Pick the mode based on the types of user accounts and other configuration decisions...</p>"
+msgstr ""
+
+#: ldapauth.module:240
+msgid "Security Options"
+msgstr ""
+
+#: ldapauth.module:242
+msgid "<p>If you use the <strong>ldapdata</strong> module and want to allow users to modify their LDAP attributes, you have two options:</p><ul><li>Setup a special ldap manager DN that has (limited) permissions to edit the requisite LDAP records - using this method means Drupal's built in password reset will work;</li> <li>or allow this module to store the user's LDAP password, in clear text, during the session;</li></ul><p>Physically, these passwords are stored in the Drupal's session table in clear text. This is not ideal and is not the recomended configuration.</p><p>Unless you need to use the latter configuration, leave this checked.</p>"
+msgstr ""
+
+#: ldapauth.module:248
+msgid "Do not store users' passwords during sessions"
+msgstr ""
+
+#: ldapauth.module:255
+msgid "Anonymous UI Options"
+msgstr ""
+
+#: ldapauth.module:256
+msgid "<p>Effects the interface for all non-authenticated users.</p>"
+msgstr ""
+
+#: ldapauth.module:263
+msgid "Remove <em>Request new password</em> link from login block"
+msgstr ""
+
+#: ldapauth.module:269;308
+msgid "Do nothing"
+msgstr ""
+
+#: ldapauth.module:270
+msgid "Overwrite form with HTML in textfield"
+msgstr ""
+
+#: ldapauth.module:271
+msgid "Prepend HTML to form"
+msgstr ""
+
+#: ldapauth.module:276
+msgid "Alter <em>Request New Password</em> form"
+msgstr ""
+
+#: ldapauth.module:284
+msgid "New password reset message"
+msgstr ""
+
+#: ldapauth.module:290
+msgid "<p>The <em>Request New Password</em> form cannot be removed, but it can be altered. Pick the mode based on the types of user accounts and other configuration decisions.</p>"
+msgstr ""
+
+#: ldapauth.module:295
+msgid "LDAP UI Options"
+msgstr ""
+
+#: ldapauth.module:296
+msgid "<p>Alters LDAP users' interface only, though admin accounts can still access email and password fields of LDAP users regardless of selections. Does not effect non-LDAP authenticated accounts. </p>"
+msgstr ""
+
+#: ldapauth.module:303
+msgid "Remove password change fields from user edit form"
+msgstr ""
+
+#: ldapauth.module:309
+msgid "Remove email field from form"
+msgstr ""
+
+#: ldapauth.module:310
+msgid "Disable email field on form"
+msgstr ""
+
+#: ldapauth.module:315
+msgid "Alter email field on user edit form"
+msgstr ""
+
+#: ldapauth.module:316
+msgid "<p>Remove or disable email field from user edit form for LDAP authenticated users.</p>"
+msgstr ""
+
+#: ldapauth.module:325
+msgid "Reset to default values"
+msgstr ""
+
+#: ldapauth.module:375
+msgid "Server settings"
+msgstr ""
+
+#: ldapauth.module:382
+msgid "Name"
+msgstr "Nombre"
+
+#: ldapauth.module:384
+msgid "Choose a <em><strong>unique</strong></em> name for this server configuration."
+msgstr ""
+
+#: ldapauth.module:392
+msgid "LDAP server"
+msgstr ""
+
+#: ldapauth.module:396
+msgid "<p>The domain name or IP address of your LDAP Server.</p>"
+msgstr ""
+
+#: ldapauth.module:405
+msgid "LDAP port"
+msgstr ""
+
+#: ldapauth.module:409
+msgid "<p>The TCP/IP port on the above server which accepts LDAP connections. Must be an integer.</p>"
+msgstr ""
+
+#: ldapauth.module:414
+msgid "Use Start-TLS"
+msgstr ""
+
+#: ldapauth.module:417
+msgid "<p>Secure the connection between the Drupal and the LDAP servers using TLS.<br /><em>Note: To use START-TLS, you must set the LDAP Port to 389.</em></p>"
+msgstr ""
+
+#: ldapauth.module:422
+msgid "Store passwords in encrypted form"
+msgstr ""
+
+#: ldapauth.module:425
+msgid "<p>Secure the password in LDAP by storing it MD5 encrypted (use with care, as some LDAP directories may do this automatically, what would cause logins problems).</p>"
+msgstr ""
+
+#: ldapauth.module:437
+msgid "Base DNs"
+msgstr ""
+
+#: ldapauth.module:441
+msgid "<p>Base DNs for users. Enter one per line in case you need several of them.</p>"
+msgstr ""
+
+#: ldapauth.module:446
+msgid "UserName attribute"
+msgstr ""
+
+#: ldapauth.module:450
+msgid "<p>The attribute that holds the users' login name. (eg. <em style=\"font-style: normal; padding: 1px 3px; border: 1px solid #8888CC; background-color: #DDDDFF\">cn</em> for eDir or <em style=\"font-style: normal; padding: 1px 3px; border: 1px solid #8888CC; background-color: #DDDDFF\">sAMAccountName</em> for Active Directory).</p>"
+msgstr ""
+
+#: ldapauth.module:455
+msgid "Email attribute"
+msgstr ""
+
+#: ldapauth.module:459
+msgid "<p>The attribute that holds the users' email address. (eg. <em style=\"font-style: normal; padding: 1px 3px; border: 1px solid #8888CC; background-color: #DDDDFF\">mail</em>).</p>"
+msgstr ""
+
+#: ldapauth.module:475
+msgid "DN for non-anonymous search"
+msgstr ""
+
+#: ldapauth.module:484
+msgid "Password for non-anonymous search"
+msgstr ""
+
+#: ldapauth.module:493
+msgid "Clear current password"
+msgstr ""
+
+#: ldapauth.module:515
+msgid "An LDAP config with that name already exists."
+msgstr ""
+
+#: ldapauth.module:519
+msgid "LDAP Configuration %config has been added."
+msgstr ""
+
+#: ldapauth.module:520
+msgid "ldapauth: ldap config %config added."
+msgstr ""
+
+#: ldapauth.module:530
+msgid "LDAP Configuration %config has been updated."
+msgstr ""
+
+#: ldapauth.module:531
+msgid "ldapauth: ldap config %config updated."
+msgstr ""
+
+#: ldapauth.module:547
+msgid "Are you sure you want to delete the ldap configration named <em><strong>%server</strong></em>?"
+msgstr ""
+
+#: ldapauth.module:549
+msgid "<p>This action cannot be undone.</p>"
+msgstr ""
+
+#: ldapauth.module:550
+msgid "Delete"
+msgstr "Eliminar"
+
+#: ldapauth.module:551
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ldapauth.module:555
+msgid "No such LDAP config: %config"
+msgstr ""
+
+#: ldapauth.module:563
+msgid "LDAP Configuration %config has been deleted."
+msgstr ""
+
+#: ldapauth.module:564
+msgid "ldapauth: ldap config %config deleted."
+msgstr ""
+
+#: ldapauth.module:835
+msgid "The username %name has been blocked."
+msgstr ""
+
+#: ldapauth.module:839
+msgid "The name %name is a reserved username."
+msgstr "El nombre %name está reservado."
+
+#: ldapauth.module:853
+msgid "Sorry. Unrecognized username or password."
+msgstr "Disculpe. No se reconoce el nombre del usuario o la contraseña."
+
+#: ldapauth.module:853
+msgid "Have you forgotten your password?"
+msgstr "¿Ha olvidado su contraseña?"
+
+#: ldapauth.module:854
+msgid "Login attempt failed for %user: %error."
+msgstr "Intento de ingreso fallido para %user: %error."
+
+#: ldapauth.module:942
+msgid "New external user - ldapauth: %user using module %module."
+msgstr ""
+
+#: ldapauth.module:945
+msgid "Another user already exists in this system with the same login name. You should contact the system's administrator in order to solve this conflict."
+msgstr ""
+
+#: ldapauth.module:946
+msgid "LDAP user with DN %dn has a naming conflict with non-LDAP user %account"
+msgstr ""
+
+#: ldapauth.module:200;210;520;531;564
+msgid "ldap"
+msgstr ""
+
+#: ldapauth.module:713;854;942;946
+msgid "user"
+msgstr "usuario"
+
+#: ldapauth.info:0
+msgid "ldapauth"
+msgstr ""
+
+#: ldapauth.info:0
+msgid "Implements LDAP Authentication"
+msgstr ""
+
+#: ldapauth.info:0
+msgid "Administration"
+msgstr "Administración"
+

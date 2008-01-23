@@ -1,0 +1,90 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  autolocale.module,v 1.6.2.1 2007/10/11 20:53:43 goba
+#  autolocale.install,v 1.7.2.1 2007/10/11 20:53:43 goba
+#  autolocale.info,v 1.2.2.1 2007/06/18 23:06:31 dww
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:10+0000\n"
+"PO-Revision-Date: 2008-01-23 00:10+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: autolocale.module:12
+msgid "Automatic import scans all enabled modules and themes for interface translation files under their directories and imports all files found for the selected language. This operation could be resource intensive, and is irreversible."
+msgstr ""
+
+#: autolocale.module:31
+msgid "Automatic import"
+msgstr ""
+
+#: autolocale.module:54
+msgid "No foreign language enabled on your site. You need to <a href=\"@urladd\">add</a> and <a href=\"@urlenable\">enable</a> at least one foreign language to import strings for."
+msgstr ""
+
+#: autolocale.module:62
+msgid "Language"
+msgstr "Idioma"
+
+#: autolocale.module:65
+msgid "Select the language to autoimport translation files into."
+msgstr ""
+
+#: autolocale.module:70
+msgid "Remove existing translations first"
+msgstr ""
+
+#: autolocale.module:72
+msgid "It is advised to remove the existing translations in the given language for performance reasons, if you have no custom strings added, which are not available in the PO files to import. This removes strings left from upgrades or previously tried and removed modules."
+msgstr ""
+
+#: autolocale.module:77
+msgid "Perform automatic import"
+msgstr ""
+
+#: autolocale.module:89
+msgid "Invalid language code (@langcode) choosen for automatic import."
+msgstr ""
+
+#: autolocale.module:102;103
+msgid "Existing translations removed from @language."
+msgstr ""
+
+#: autolocale.module:110;111
+msgid "New @language strings imported."
+msgstr ""
+
+#: autolocale.module:103;111 autolocale.install:70
+msgid "locale"
+msgstr "locale"
+
+#: autolocale.install:10
+msgid "Now you can <a href=\"@url\">import interface translations</a> automatically"
+msgstr ""
+
+#: autolocale.install:69
+msgid "Imported translation file @filename"
+msgstr ""
+
+#: autolocale.install:70
+msgid "Imported %filepath into %langcode."
+msgstr ""
+
+#: autolocale.info:0
+msgid "Autolocale"
+msgstr ""
+
+#: autolocale.info:0
+msgid "Automatically imports interface translations."
+msgstr ""
+

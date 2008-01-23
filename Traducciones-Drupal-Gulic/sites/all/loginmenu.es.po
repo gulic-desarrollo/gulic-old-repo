@@ -1,0 +1,49 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  loginmenu.module,v 1.2 2006/11/19 20:30:05 rwohleb
+#  loginmenu.info,v 1.1 2006/11/19 20:36:11 rwohleb
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2008-01-23 00:17+0000\n"
+"PO-Revision-Date: 2008-01-23 00:17+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: loginmenu.module:8
+msgid "Generates a login link for anonymous users"
+msgstr ""
+
+#: loginmenu.module:11
+msgid "By design the login link will be at the top of the menu."
+msgstr ""
+
+#: loginmenu.module:14
+msgid "Generates a login link in the navigation menu for anon only."
+msgstr ""
+
+#: loginmenu.module:29;30
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#: loginmenu.info:0
+msgid "Login Menu"
+msgstr ""
+
+#: loginmenu.info:0
+msgid "Generates a login link for anonymous users."
+msgstr ""
+
+#: loginmenu.info:0
+msgid "Optional"
+msgstr "Opcional"
+
