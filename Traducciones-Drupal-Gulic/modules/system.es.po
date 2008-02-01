@@ -1,5 +1,5 @@
+# translation of system.po to es_ES
 # $Id$
-#
 # Spanish translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
@@ -7,22 +7,23 @@
 #  system.install,v 1.69.2.9 2008/01/10 22:14:24 drumm
 #  system.info,v 1.3 2006/11/21 20:55:35 dries
 #
-#, fuzzy
+# Luis Cabrera Sauco <lcabrera@sauco.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
+"Project-Id-Version: system\n"
 "POT-Creation-Date: 2008-01-23 00:04+0000\n"
-"PO-Revision-Date: 2008-01-23 00:04+0000\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2008-01-23 23:54+0000\n"
+"Last-Translator: Luis Cabrera Sauco <lcabrera@sauco.org>\n"
+"Language-Team: es_ES <es@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: system.module:19
 msgid "The system module provides system-wide defaults such as running jobs at a particular time, and storing web pages to improve efficiency. The ability to run scheduled jobs makes administering the web site more usable, as administrators do not have to manually start jobs. The storing of web pages, or caching, allows the site to efficiently re-use web pages and improve web site performance. The system module provides control over preferences, behaviours including visual and operational settings."
-msgstr ""
+msgstr "El módulo <em>system</em> provee servicios generales a todo el sistema, tales como la ejecución de tareas periódicas o el almacenamientos de páginas web con el objetivo de aumentar la eficiencia del sistema. La habilidad de ejecutar tareas periódicas convierte la administración del sitio en una tarea algo más sencilla, evitando que el administrador tenga que realizar determinadas tareas de manera manual. El almacenamiento de páginas web, o <em>caching</em>, permite la reutilización de esas páginas y por tanto, el aumento de eficiencia en el rendimiento general del sitio. El módulo <em>system</em> provee control ciertas preferencias, incluyendo opciones de configuración visuales y operacionales."
 
 #: system.module:20
 msgid "Some modules require regularly scheduled actions, such as cleaning up logfiles. Cron, which stands for chronograph, is a periodic command scheduler executing commands at intervals specified in seconds. It can be used to control the execution of daily, weekly and monthly jobs (or anything with a period measured in seconds). The aggregator module periodically updates feeds using cron. Ping periodically notifies services of new content on your site. Search periodically indexes the content on your site. Automating tasks is one of the best ways to keep a system running smoothly, and if most of your administration does not require your direct involvement, cron is an ideal solution. Cron can, if necessary, also be run manually."
@@ -407,7 +408,7 @@ msgstr "Dirección de correo-e"
 
 #: system.module:550
 msgid "A valid e-mail address to be used as the \"From\" address by the auto-mailer during registration, new password requests, notifications, etc.  To lessen the likelihood of e-mail being marked as spam, this e-mail address should use the same domain as the website."
-msgstr ""
+msgstr "Una dirección de correo será usada en el \"From\" por el auto-mailer durante el registro de usuarios, las peticiones de nuevas contraseñas, notificaciones, etc. Para evitar que esa dirección de correo sea marcada como SPAM, debería tener el mismo dominio que el que tiene el sitio."
 
 #: system.module:555
 msgid "Slogan"
@@ -559,7 +560,7 @@ msgstr ""
 
 #: system.module:661
 msgid "<strong class=\"error\">The following enabled modules are incompatible with aggressive mode caching and might not function properly: %modules</strong>"
-msgstr ""
+msgstr "<strong class=\"error\">Los siguientes módulos activos son incompatibles con el modo agresivo de la caché, y podría darse el caso de que no funcionen adecuadamente: %modules</strong>"
 
 #: system.module:664
 msgid "<strong class=\"ok\">Currently, all enabled modules are compatible with the aggressive caching policy.</strong> Please note, if you use aggressive caching and enable new modules, you will need to check this page again to ensure compatibility."
@@ -943,7 +944,7 @@ msgstr "Descripción"
 
 #: system.module:1552
 msgid "Other"
-msgstr ""
+msgstr "Otros"
 
 #: system.module:1671
 msgid "The following modules will be completely uninstalled from your site, and <em>all data from these modules will be lost</em>!"
@@ -1260,8 +1261,8 @@ msgstr "Configurar permisos"
 #: system.module:1414
 msgid "You must enable the %dependencies module to install %module."
 msgid_plural "You must enable the %dependencies modules to install %module."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Se debe activar el módulo %dependencies para instalar el módulo %module."
+msgstr[1] "Se deben activar los módulos %dependencies para poder instalar el módulo %module."
 
 #: system.install:85
 msgid "You can <a href=\"@cron\">run cron manually</a>."
@@ -1312,7 +1313,7 @@ msgstr ""
 
 #: system.install:43
 msgid "<em>register_globals</em> is enabled. Drupal requires this configuration directive to be disabled. Your site may not be secure when <em>register_globals</em> is enabled. The PHP manual has instructions for <a href=\"http://php.net/configuration.changes\">how to change configuration settings</a>."
-msgstr ""
+msgstr "<em>register_globals</em> está activado. Drupal requiere que esta directiva de configuración sea desactivada. Su sitio no estará seguro mientras <em>register_globals</em> esté activada. El manual de PHP contiene instrucciones acerca de <a href=\"http://php.net/configuration.changes\">cómo cambiar las opciones de configuración</a>."
 
 #: system.install:57
 msgid "Not protected"

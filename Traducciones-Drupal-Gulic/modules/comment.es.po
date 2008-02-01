@@ -1,88 +1,52 @@
+# translation of comment.po to es_ES
 # $Id$
-#
 # Spanish translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
 #  comment.module,v 1.520.2.12 2007/11/07 08:03:30 drumm
 #  comment.info,v 1.3 2006/11/21 20:55:34 dries
 #
-#, fuzzy
+# Luis Cabrera Sauco <lcabrera@sauco.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
+"Project-Id-Version: comment\n"
 "POT-Creation-Date: 2008-01-22 23:23+0000\n"
-"PO-Revision-Date: 2008-01-22 23:23+0000\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2008-01-23 20:54+0000\n"
+"Last-Translator: Luis Cabrera Sauco <lcabrera@sauco.org>\n"
+"Language-Team: es_ES <es@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: comment.module:129
 msgid "The comment module creates a discussion board for each post. Users can post comments to discuss a forum topic, weblog post, story, collaborative book page, etc. The ability to comment is an important part of involving members in a community dialogue."
-msgstr ""
-"El módulo comentario crea un foro de debate para cada envío. Los "
-"usuarios pueden enviar comentarios para tratar un tema del foro, un "
-"envío al weblog, una historia, una página de un libro colaborativo, "
-"etc. La capacidad para realizar comentarios es una parte importante "
-"para implicar a los miembros de una comunidad en el debate."
+msgstr "El módulo comentario crea un foro de debate para cada envío. Los usuarios pueden enviar comentarios para tratar un tema del foro, un envío al weblog, una historia, una página de un libro colaborativo, etc. La capacidad para realizar comentarios es una parte importante para implicar a los miembros de una comunidad en el debate."
 
 #: comment.module:130
 msgid "An administrator can give comment permissions to user groups, and users can (optionally) edit their last comment, assuming no others have been posted since. Attached to each comment board is a control panel for customizing the way that comments are displayed. Users can control the chronological ordering of posts (newest or oldest first) and the number of posts to display on each page. Comments behave like other user submissions. Filters, smileys and HTML that work in nodes will also work with comments. The comment module provides specific features to inform site members when new comments have been posted."
 msgstr ""
-"El administrador puede dar permiso para realizar comentarios a grupos "
-"de usuarios y los usuarios pueden (opcionalmente) editar su último "
-"comentario, asumiendo que ningún otro haya realizado un envío. Junto "
-"a cada tablero para comentarios hay un panel de control para "
-"personalizar la forma en la que se muestran los comentarios. Los "
-"usuarios pueden controlar la ordenación cronológica de los envíos "
-"(primero los más recientes o los más antiguos) y el número de "
-"envíos que se deben mostrar en cada página. Los comentarios se "
-"comportan como los demás envíos. Los filtros, los emoticonos y el "
-"HTML que funciona para los nodos también se aplica a los comentarios. "
-"El módulo comment proporciona características específicas para "
-"informar a los miembros del sitio de cuándo se han enviado "
-"comentarios nuevos."
+"El administrador puede dar permiso para realizar comentarios a grupos de usuarios y los usuarios pueden (opcionalmente) editar su último comentario, asumiendo que ningún otro haya realizado un envío. Junto a cada tablero para comentarios hay un panel de control para personalizar la forma en la que se muestran los comentarios. Los usuarios pueden controlar la ordenación cronológica de los envíos (primero los más recientes o los más antiguos) y el número de envíos que se deben mostrar en cada página. Los comentarios se comportan como los demás envíos. Los filtros, los emoticonos y el HTML que funciona para los nodos también se aplica a los comentarios. El módulo comment proporciona características específicas para "
+"informar a los miembros del sitio de cuándo se han enviado comentarios nuevos."
 
 #: comment.module:131
 msgid "For more information please read the configuration and customization handbook <a href=\"@comment\">Comment page</a>."
-msgstr ""
-"Si quiere más información, puede leer el manual de configuración y "
-"de personalización en la <a href=\"@comment\">página de comment</a>."
+msgstr "Si quiere más información, puede leer el manual de configuración y de personalización en la <a href=\"@comment\">página de comment</a>."
 
 #: comment.module:135
 msgid "Below is a list of the latest comments posted to your site. Click on a subject to see the comment, the author's name to edit the author's user information , 'edit' to modify the text, and 'delete' to remove their submission."
-msgstr ""
-"Abajo hay una lista con los últimos comentarios publicados en el "
-"sitio. Haga clic en el asunto para ver el comentario, en el nombre del "
-"autor para editar la información de usuario del autor, en \"editar\" "
-"para modificar el texto y en \"eliminar\" para eliminar el envío."
+msgstr "Abajo hay una lista con los últimos comentarios publicados en el sitio. Haga clic en el asunto para ver el comentario, en el nombre del autor para editar la información de usuario del autor, en \"editar\" para modificar el texto y en \"eliminar\" para eliminar el envío."
 
 #: comment.module:137
 msgid "Below is a list of the comments posted to your site that need approval. To approve a comment, click on 'edit' and then change its 'moderation status' to Approved. Click on a subject to see the comment, the author's name to edit the author's user information, 'edit' to modify the text, and 'delete' to remove their submission."
 msgstr ""
-"Abajo hay una lista con los comentarios enviados al sitio que "
-"necesitan aprobación. Para aprobar un comentario, haga clic en "
-"\"editar\" y luego cambie su \"estado de moderación\" a \"Aprobado\". "
-"Haga clic el un asunto para ver el comentario, en el nombre del autor "
-"para editar la información de usuario del autor, en \"editar\" para "
-"modificar el texto y en \"eliminar\" para eliminar el envío."
+"Abajo hay una lista con los comentarios enviados al sitio que necesitan aprobación. Para aprobar un comentario, haga clic en "
+"\"editar\" y luego cambie su \"estado de moderación\" a \"Aprobado\". Haga clic el un asunto para ver el comentario, en el nombre del autor para editar la información de usuario del autor, en \"editar\" para modificar el texto y en \"eliminar\" para eliminar el envío."
 
 #: comment.module:139
 msgid "Comments can be attached to any node, and their settings are below. The display comes in two types: a 'flat list' where everything is flush to the left side, and comments come in chronological order, and a 'threaded list' where replies to other comments are placed immediately below and slightly indented, forming an outline. They also come in two styles: 'expanded', where you see both the title and the contents, and 'collapsed' where you only see the title. Preview comment forces a user to look at their comment by clicking on a 'Preview' button before they can actually add the comment."
-msgstr ""
-"Los comentarios se pueden adjuntar a cualquier nodo, y sus opciones se "
-"muestran abajo. Se puede ver de dos formas: una \"lista plana\" en la "
-"que todo el contenido se muestra a la misma altura en el lado "
-"izquierdo, y los comentarios vienen en orden cronológico, y \"lista "
-"de hilos\", en el que las respuestas a los comentarios se ubican "
-"inmediatamente debajo de los comentarios y con un ligero sangrado. "
-"También hay dos estilos: \"expandido\", en el que puede ver tanto el "
-"título como el contenido, y \"colapsado\"», en el que sólo se ve el "
-"título. Se obliga a los usuarios a hacer una vista preliminar de su "
-"comentario, haciendo clic en el botón \"Vista preliminar\" antes de "
-"que puedan añadir efectivamente el comentario."
+msgstr "Los comentarios se pueden adjuntar a cualquier nodo, y sus opciones se muestran abajo. Se puede ver de dos formas: una \"lista plana\" en la que todo el contenido se muestra a la misma altura en el lado izquierdo, y los comentarios vienen en orden cronológico, y \"lista de hilos\", en el que las respuestas a los comentarios se ubican inmediatamente debajo de los comentarios y con un ligero sangrado. También hay dos estilos: \"expandido\", en el que puede ver tanto el título como el contenido, y \"colapsado\"», en el que sólo se ve el título. Se obliga a los usuarios a hacer una vista preliminar de su comentario, haciendo clic en el botón \"Vista preliminar\" antes de que puedan añadir efectivamente el comentario."
 
 #: comment.module:153
 msgid "Comments"
@@ -90,9 +54,7 @@ msgstr "Comentarios"
 
 #: comment.module:154
 msgid "List and edit site comments and the comment moderation queue."
-msgstr ""
-"Lista y edita los comentarios del sitio y la cola de moderación de "
-"comentarios."
+msgstr "Lista y edita los comentarios del sitio y la cola de moderación de comentarios."
 
 #: comment.module:160
 msgid "List"
@@ -172,9 +134,7 @@ msgstr "Lectura y escritura"
 
 #: comment.module:377
 msgid "Users with the <em>administer comments</em> permission will be able to override this setting."
-msgstr ""
-"Los usuarios con permiso para <em>administrar comentarios</em> pueden "
-"eludir esta opción."
+msgstr "Los usuarios con permiso para <em>administrar comentarios</em> pueden eludir esta opción."
 
 #: comment.module:386;458
 msgid "Comment settings"
@@ -198,10 +158,7 @@ msgstr "Modo predefinido de visualización"
 
 #: comment.module:490
 msgid "The default view for comments. Expanded views display the body of the comment. Threaded views keep replies together."
-msgstr ""
-"La vista predefinida para los comentarios. Las vistas expandidas "
-"muestran el cuerpo del comentario. Las vistas por hilos mantienen "
-"juntas las respuestas."
+msgstr "La vista predefinida para los comentarios. Las vistas expandidas muestran el cuerpo del comentario. Las vistas por hilos mantienen juntas las respuestas."
 
 #: comment.module:495
 msgid "Default display order"
@@ -209,12 +166,7 @@ msgstr "Ordenación predefinida de visualización"
 
 #: comment.module:498
 msgid "The default sorting for new users and anonymous users while viewing comments. These users may change their view using the comment control panel. For registered users, this change is remembered as a persistent user preference."
-msgstr ""
-"La ordenación predefinida de visualización de los comentarios para "
-"los usuarios nuevos y anónimos. Estos usuarios pueden cambiar su "
-"forma de ver los comentarios usando el panel de control de los "
-"comentarios. Para los usuarios registrados, el cambio se almacena en "
-"las preferencias del usuario."
+msgstr "La ordenación predefinida de visualización de los comentarios para los usuarios nuevos y anónimos. Estos usuarios pueden cambiar su forma de ver los comentarios usando el panel de control de los comentarios. Para los usuarios registrados, el cambio se almacena en las preferencias del usuario."
 
 #: comment.module:503
 msgid "Default comments per page"
@@ -222,9 +174,7 @@ msgstr "Comentarios predefinidos por página"
 
 #: comment.module:506
 msgid "Default number of comments for each page: more comments are distributed in several pages."
-msgstr ""
-"Número predefinido de comentarios en cada página. Los demás "
-"comentarios se distribuyen en las páginas siguientes."
+msgstr "Número predefinido de comentarios en cada página. Los demás comentarios se distribuyen en las páginas siguientes."
 
 #: comment.module:511
 msgid "Comment controls"
@@ -248,10 +198,7 @@ msgstr "No mostrar"
 
 #: comment.module:518
 msgid "Position of the comment controls box. The comment controls let the user change the default display mode and display order of comments."
-msgstr ""
-"Posición de la caja de controles de comentarios. Los controles de "
-"comentarios permiten al usuario cambiar el modo y el orden de "
-"visualización predefinidos."
+msgstr "Posición de la caja de controles de comentarios. Los controles de comentarios permiten al usuario cambiar el modo y el orden de visualización predefinidos."
 
 #: comment.module:523
 msgid "Posting settings"
@@ -275,10 +222,7 @@ msgstr "Los remitentes anónimos deben dejar su información de contacto"
 
 #: comment.module:535
 msgid "This option is enabled when anonymous users have permission to post comments on the <a href=\"@url\">permissions page</a>."
-msgstr ""
-"Esta opción está activada cuando los usuarios anónimos tienen "
-"permiso para enviar comentarios en la <a href=\"@url\">página de "
-"permisos</a>."
+msgstr "Esta opción está activada cuando los usuarios anónimos tienen permiso para enviar comentarios en la <a href=\"@url\">página de permisos</a>."
 
 #: comment.module:543
 msgid "Comment subject field"
@@ -290,9 +234,7 @@ msgstr "Activado"
 
 #: comment.module:546
 msgid "Can users provide a unique subject for their comments?"
-msgstr ""
-"¿Tienen que suministrar los usuarios un asunto único para sus "
-"comentarios?"
+msgstr "¿Tienen que suministrar los usuarios un asunto único para sus comentarios?"
 
 #: comment.module:551;633;1563;1569;1573;1593
 msgid "Preview comment"
@@ -356,15 +298,11 @@ msgstr "Comentario: añadido %subject."
 
 #: comment.module:812
 msgid "Your comment has been queued for moderation by site administrators and will be published after approval."
-msgstr ""
-"Su comentario está en la cola de moderación y se publicará en "
-"cuanto lo aprueben los administradores del sitio."
+msgstr "Su comentario está en la cola de moderación y se publicará en cuanto lo aprueben los administradores del sitio."
 
 #: comment.module:821
 msgid "Comment: unauthorized comment submitted or comment submitted to a closed node %subject."
-msgstr ""
-"Comentario: enviado un comentario no autorizado o enviado un "
-"comentario a un nodo cerrado %subject."
+msgstr "Comentario: enviado un comentario no autorizado o enviado un comentario a un nodo cerrado %subject."
 
 #: comment.module:836
 msgid "parent"
@@ -396,9 +334,7 @@ msgstr "¿Está seguro de que quiere eliminar el comentario %title?"
 
 #: comment.module:1109
 msgid "Any replies to this comment will be lost. This action cannot be undone."
-msgstr ""
-"Se perderán todas las respuestas a este comentario. Esta acción no "
-"se puede deshacer."
+msgstr "Se perderán todas las respuestas a este comentario. Esta acción no se puede deshacer."
 
 #: comment.module:1110
 msgid "Delete"
@@ -450,9 +386,7 @@ msgstr "Operaciones"
 
 #: comment.module:1215
 msgid "Please select one or more comments to perform the update on."
-msgstr ""
-"Seleccione uno o más comentarios para realizar sobre ellos la "
-"actualización."
+msgstr "Seleccione uno o más comentarios para realizar sobre ellos la actualización."
 
 #: comment.module:1242
 msgid "The update has been performed."
@@ -464,15 +398,11 @@ msgstr "No hay comentarios disponibles."
 
 #: comment.module:1295
 msgid "There do not appear to be any comments to delete or your selected comment was deleted by another administrator."
-msgstr ""
-"No parece haber ningún comentario que eliminar, o bien ha "
-"seleccionado un comentario que ya ha eliminado otro administrador."
+msgstr "No parece haber ningún comentario que eliminar, o bien ha seleccionado un comentario que ya ha eliminado otro administrador."
 
 #: comment.module:1300
 msgid "Are you sure you want to delete these comments and all their children?"
-msgstr ""
-"¿Está seguro de que quiere eliminar estos comentarios y todos sus "
-"hijos?"
+msgstr "¿Está seguro de que quiere eliminar estos comentarios y todos sus hijos?"
 
 #: comment.module:1301
 msgid "This action cannot be undone."
@@ -512,10 +442,7 @@ msgstr "Tiene que dejar una dirección de correo-e."
 
 #: comment.module:1423
 msgid "The URL of your homepage is not valid. Remember that it must be fully qualified, i.e. of the form <code>http://example.com/directory</code>."
-msgstr ""
-"El URL de su página web no es válido. Recuerde que tiene que ser una "
-"dirección web completa, por ejemplo "
-"<code>http://ejemplo.com/directorio</code>."
+msgstr "El URL de su página web no es válido. Recuerde que tiene que ser una dirección web completa, por ejemplo <code>http://www.example.com/directorio</code>."
 
 #: comment.module:1470
 msgid "Administration"
@@ -531,9 +458,7 @@ msgstr "Correo-e"
 
 #: comment.module:1508;1535;1543
 msgid "The content of this field is kept private and will not be shown publicly."
-msgstr ""
-"El contenido de este campo se mantiene como privado y no se muestra "
-"públicamente."
+msgstr "El contenido de este campo se mantiene como privado y no se muestra públicamente."
 
 #: comment.module:1513;1538;1545
 msgid "Homepage"
@@ -585,9 +510,7 @@ msgstr "Guardar las opciones"
 
 #: comment.module:1760
 msgid "Select your preferred way to display the comments and click \"Save settings\" to activate your changes."
-msgstr ""
-"Seleccione la forma que prefiera para mostrar los comentarios y haga "
-"clic en «Guardar las opciones» para activar los cambios."
+msgstr "Seleccione la forma que prefiera para mostrar los comentarios y haga clic en «Guardar las opciones» para activar los cambios."
 
 #: comment.module:1761
 msgid "Comment viewing options"
@@ -607,9 +530,7 @@ msgstr "No puede enviar comentarios"
 
 #: comment.module:1833
 msgid "<a href=\"@login\">Login</a> or <a href=\"@register\">register</a> to post comments"
-msgstr ""
-"<a href=\"@login\">Inicie sesión</a> o <a "
-"href=\"@register\">regístrese</a> para enviar comentarios"
+msgstr "<a href=\"@login\">Inicie sesión</a> o <a href=\"@register\">regístrese</a> para enviar comentarios"
 
 #: comment.module:1836
 msgid "<a href=\"@login\">Login</a> to post comments"
@@ -654,14 +575,14 @@ msgstr "contenido"
 #: comment.module:304;436
 msgid "1 comment"
 msgid_plural "@count comments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 comentario"
+msgstr[1] "@count comentarios"
 
 #: comment.module:314
 msgid "1 new comment"
 msgid_plural "@count new comments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 <em>nuevo</em> comentario"
+msgstr[1] "@count <em>nuevos</em> comentarios"
 
 #: comment.info:0
 msgid "Allows users to comment on and discuss published content."

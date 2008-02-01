@@ -1,23 +1,24 @@
+# translation of upload.po to es_ES
 # $Id$
-#
 # Spanish translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
 #  upload.module,v 1.148.2.3 2008/01/07 01:00:23 drumm
 #  upload.info,v 1.3 2006/11/21 20:55:35 dries
 #
-#, fuzzy
+# Luis Cabrera Sauco <lcabrera@sauco.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
+"Project-Id-Version: upload\n"
 "POT-Creation-Date: 2008-01-23 00:06+0000\n"
-"PO-Revision-Date: 2008-01-23 00:06+0000\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2008-01-23 23:56+0000\n"
+"Last-Translator: Luis Cabrera Sauco <lcabrera@sauco.org>\n"
+"Language-Team: es_ES <es@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: upload.module:16
 msgid "The upload module allows users to upload files to the site. The ability to upload files to a site is important for members of a community who want to share work. It is also useful to administrators who want to keep uploaded files connected to a node or page."
@@ -321,8 +322,8 @@ msgstr ""
 #: upload.module:48;549
 msgid "1 attachment"
 msgid_plural "@count attachments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 adjunto"
+msgstr[1] "@count adjuntos"
 
 #: upload.info:0
 msgid "Upload"

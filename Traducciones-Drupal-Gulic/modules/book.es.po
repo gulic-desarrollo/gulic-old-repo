@@ -1,23 +1,24 @@
+# translation of book.po to es_ES
 # $Id$
-#
 # Spanish translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
 #  book.module,v 1.406.2.1 2007/02/14 04:30:33 drumm
 #  book.info,v 1.3 2006/11/21 20:55:33 dries
 #
-#, fuzzy
+# Luis Cabrera Sauco <lcabrera@sauco.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
+"Project-Id-Version: book\n"
 "POT-Creation-Date: 2008-01-22 23:22+0000\n"
-"PO-Revision-Date: 2008-01-22 23:22+0000\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2008-01-23 20:45+0000\n"
+"Last-Translator: Luis Cabrera Sauco <lcabrera@sauco.org>\n"
+"Language-Team: es_ES <es@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: book.module:15
 msgid "Book page"
@@ -25,14 +26,7 @@ msgstr "Página del libro"
 
 #: book.module:17
 msgid "A book is a collaborative writing effort: users can collaborate writing the pages of the book, positioning the pages in the right order, and reviewing or modifying pages previously written. So when you have some information to share or when you read a page of the book and you didn't like it, or if you think a certain page could have been written better, you can do something about it."
-msgstr ""
-"Un libro es un esfuerzo colaborativo de escritura: los usuarios pueden "
-"colaborar escribiendo las páginas del libro, ubicando las páginas en "
-"el sitio correcto, y revisando o modificando las páginas escritas "
-"anteriormente. Por tanto, cuando tenga que compartir una información "
-"en concreto o cuando esté leyendo una página del libro que no le "
-"guste, o piense que alguna página pueda estar mejor escrita, puede "
-"hacer algo para remediarlo."
+msgstr "Un libro es un esfuerzo colaborativo de escritura: los usuarios pueden colaborar escribiendo las páginas del libro, ubicando las páginas en el sitio correcto, y revisando o modificando las páginas escritas anteriormente. Por tanto, cuando tenga que compartir una información en concreto o cuando esté leyendo una página del libro que no le guste, o piense que alguna página pueda estar mejor escrita, puede hacer algo para remediarlo."
 
 #: book.module:68
 msgid "Add child page"
@@ -44,9 +38,7 @@ msgstr "Versión para impresión"
 
 #: book.module:76
 msgid "Show a printer-friendly version of this book page and its sub-pages."
-msgstr ""
-"Muestra una versión para impresión de esta página del libro y de "
-"sus sub páginas."
+msgstr "Muestra una versión para impresión de esta página del libro y de sus subpáginas."
 
 #: book.module:94;111
 msgid "Books"
@@ -78,10 +70,7 @@ msgstr "Padre"
 
 #: book.module:216
 msgid "The parent section in which to place this page. Note that each page whose parent is &lt;top-level&gt; is an independent, top-level book."
-msgstr ""
-"La sección padre en la que ubicar esta página. Tenga en cuenta que "
-"cada página cuyo padre sea el &lt;top-level&gt; es un libro de nivel "
-"superior independiente."
+msgstr "La sección padre en la que ubicar esta página. Tenga en cuenta que cada página cuyo padre sea el &lt;top-level&gt; es un libro de nivel superior independiente."
 
 #: book.module:216
 msgid "The parent that this page belongs in."
@@ -93,9 +82,7 @@ msgstr "Peso"
 
 #: book.module:240;272
 msgid "Pages at a given level are ordered first by weight and then by title."
-msgstr ""
-"Las páginas en el nivel dado están ordenadas en primer lugar por "
-"peso y en segundo lugar por título."
+msgstr "Las páginas en el nivel dado están ordenadas en primer lugar por peso y en segundo lugar por título."
 
 #: book.module:266
 msgid "The parent page in the book."
@@ -107,9 +94,7 @@ msgstr "Mensaje de registro"
 
 #: book.module:276
 msgid "An explanation to help other authors understand your motivations to put this post into the book."
-msgstr ""
-"Una explicación para que otros autores comprendan sus motivaciones "
-"para incluir este envío en el libro."
+msgstr "Una explicación para que otros autores comprendan sus motivaciones para incluir este envío en el libro."
 
 #: book.module:282;309
 msgid "Update book outline"
@@ -221,82 +206,42 @@ msgstr "Libro"
 
 #: book.module:984
 msgid "The <em>book</em> module is suited for creating structured, multi-page hypertexts such as site resource guides, manuals, and Frequently Asked Questions (FAQs). It permits a document to have chapters, sections, subsections, etc. Authors with suitable permissions can add pages to a collaborative book,  placing them into the existing document by adding them to a table of contents menu."
-msgstr ""
-"El tipo de contenido <em>libro</em> se amolda bien a la creación de "
-"hipertexto estructurado de varias páginas, como guías de recursos "
-"del sitio, manuales y preguntas frecuentes (FAQs). Permite que un "
-"documento tenga capítulos, secciones, subsecciones, etc. Los autores "
-"que tengan permiso pueden añadir páginas a un libro colaborativo, "
-"ubicándolas en el documento existente añadiéndolas a un menú de "
-"tabla de contenido."
+msgstr "El tipo de contenido <em>libro</em> se amolda bien a la creación de hipertexto estructurado de varias páginas, como guías de recursos del sitio, manuales y preguntas frecuentes (FAQs). Permite que un documento tenga capítulos, secciones, subsecciones, etc. Los autores que tengan permiso pueden añadir páginas a un libro colaborativo, ubicándolas en el documento existente añadiéndolas a un menú de tabla de contenido."
 
 #: book.module:985
 msgid "Book pages have navigation elements at the bottom of the page for moving through the text.  These link to the previous and next pages in the book, as well as a link labeled <em>up</em>, leading to the level above in the structure.  More comprehensive navigation may be provided by enabling the <em>book navigation block</em> on the <a href=\"@admin-block\">block administration page</a>."
 msgstr ""
-"Las páginas del libro tienen elementos de navegación al final de "
-"cada página para desplazarse por el texto. Estos enlaces a las "
-"páginas anterior y siguiente del libro, así como el enlace "
-"<em>arriba</em>, llevan al nivel superior de la estructura. Se puede "
-"proporcionar una navegación más intuitiva activando el <em>bloque de "
-"navegación del libro</em> en la <a href=\"@admin-block\">página de "
-"administración de block</a>."
+"Las páginas del libro tienen elementos de navegación al final de cada página para desplazarse por el texto. Estos enlaces a las "
+"páginas anterior y siguiente del libro, así como el enlace <em>arriba</em>, llevan al nivel superior de la estructura. Se puede "
+"proporcionar una navegación más intuitiva activando el <em>bloque de navegación del libro</em> en la <a href=\"@admin-block\">página de administración de block</a>."
 
 #: book.module:986
 msgid "Users can select the <em>printer-friendly version</em> link visible at the bottom of a book page to generate a printer-friendly display of the page and all of its subsections. "
-msgstr ""
-"Los usuarios pueden seleccionar el enlace <em>versión para "
-"imprimir</em> que hay al final de cada página del libro para generar "
-"un formato adecuado para imprimir la página y todas sus subsecciones."
+msgstr "Los usuarios pueden seleccionar el enlace <em>versión para imprimir</em> que hay al final de cada página del libro para generar un formato adecuado para imprimir la página y todas sus subsecciones."
 
 #: book.module:987
 msgid "Posts of type %book are automatically added to the book hierarchy. Users with the <em>outline posts in books</em> permission can also add content of any other type to a book, placing it into the existing book structure through the interface that's available by clicking on the <em>outline</em> tab while viewing that post."
-msgstr ""
-"Los envíos del tipo %book se añaden automáticamente a la jerarquía "
-"del libro. Los usuarios con permiso <em>envíos de índices en "
-"libros</em> también pueden añadir contenido de cualquier tipo que no "
-"sea un libro, ubicándolo en la estructura del libro mediante el "
-"interfaz que hay disponible al hacer clic en la solapa "
-"<em>índice</em> mientras está viendo el envío."
+msgstr "Los envíos del tipo %book se añaden automáticamente a la jerarquía del libro. Los usuarios con permiso <em>envíos de índices en libros</em> también pueden añadir contenido de cualquier tipo que no sea un libro, ubicándolo en la estructura del libro mediante el interfaz que hay disponible al hacer clic en la solapa <em>índice</em> mientras está viendo el envío."
 
 #: book.module:988
 msgid "Administrators can view a list of all books on the <a href=\"@admin-node-book\">book administration page</a>.  In this list there is a link to an outline page for each book, from which is it possible to change the titles of sections, or to change their weight, thus reordering sections. From this administrative interface, it is also possible to determine whether there are any orphan pages - pages that have become disconnected from the rest of the book structure."
-msgstr ""
-"Los administradores pueden ver una lista con todos los libros en la <a "
-"href=\"@admin-node-book\">página de administración de book</a>. En "
-"esta lista hay un enlace a una página de índice para cada libro, por "
-"lo que es posible cambiar los títulos de las secciones o para cambiar "
-"su peso, esto es, para reordenar las secciones. Desde esta interfaz de "
-"administración también se puede determinar si hay páginas "
-"huérfanas (páginas que se han desconectado de la estructura del "
-"libro)."
+msgstr "Los administradores pueden ver una lista con todos los libros en la <a href=\"@admin-node-book\">página de administración de book</a>. En esta lista hay un enlace a una página de índice para cada libro, por lo que es posible cambiar los títulos de las secciones o para cambiar su peso, esto es, para reordenar las secciones. Desde esta interfaz de administración también se puede determinar si hay páginas huérfanas (páginas que se han desconectado de la estructura del libro)."
 
 #: book.module:989
 msgid "For more information please read the configuration and customization handbook <a href=\"@book\">Book page</a>."
-msgstr ""
-"Tiene más información en el manual de configuración y de "
-"personalización en la <a href=\"@book\">página de book</a>."
+msgstr "Tiene más información en el manual de configuración y de personalización en la <a href=\"@book\">página de book</a>."
 
 #: book.module:992
 msgid "The book module offers a means to organize content, authored by many users, in an online manual, outline or FAQ."
-msgstr ""
-"El módulo book ofrece una forma de organizar contenido, creado por "
-"varios usuarios autores, en un manual en línea, índice o FAQ."
+msgstr "El módulo book ofrece una forma de organizar contenido, creado por varios usuarios autores, en un manual en línea, índice o FAQ."
 
 #: book.module:994
 msgid "Pages in a book are like a tree. As pages are edited, reorganized and removed, child pages might be left with no link to the rest of the book. Such pages are referred to as \"orphan pages\". On this page, administrators can review their books for orphans and reattach those pages as desired."
-msgstr ""
-"Las páginas de un libro son como un árbol. A medida que edita, "
-"reorganiza y elimina, puede haber páginas que se queden sin enlazar "
-"con el resto del libro.  A esas páginas se las suele denominar "
-"«páginas huérfanas».  Los administradores pueden revisar si hay "
-"páginas huérfanas en los libros y hacer que las adopten otras "
-"páginas."
+msgstr "Las páginas de un libro son como un árbol. A medida que edita, reorganiza y elimina, puede haber páginas que se queden sin enlazar con el resto del libro.  A esas páginas se las suele denominar «páginas huérfanas».  Los administradores pueden revisar si hay páginas huérfanas en los libros y hacer que las adopten otras páginas."
 
 #: book.module:998
 msgid "The outline feature allows you to include posts in the <a href=\"@book\">book hierarchy</a>."
-msgstr ""
-"La característica de índice le permite incluir los envíos en la <a "
-"href=\"@book\">jerarquía del libro</a>."
+msgstr "La característica de índice le permite incluir los envíos en la <a href=\"@book\">jerarquía del libro</a>."
 
 #: book.module:938
 msgid "content"

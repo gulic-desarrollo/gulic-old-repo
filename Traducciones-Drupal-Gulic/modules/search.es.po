@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: search\n"
 "POT-Creation-Date: 2008-01-23 00:04+0000\n"
-"PO-Revision-Date: 2008-01-23 01:32+0000\n"
+"PO-Revision-Date: 2008-01-23 23:34+0000\n"
 "Last-Translator: Luis Cabrera Sauco <lcabrera@sauco.org>\n"
 "Language-Team: es_ES <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,27 +22,49 @@ msgstr ""
 
 #: search.module:99
 msgid "The search module adds the ability to search for content by keywords. Search is often the only practical way to find content on a large site. Search is useful for finding users and posts by searching on keywords."
-msgstr "El módulo search añade capacidad para buscar contenido por palabras. La búsqueda suele ser la única forma práctica de encontrar contenido en un sitio grande. La búsqueda es útil para encontrar usuarios y envíos, buscando palabras."
+msgstr ""
+"El módulo search añade capacidad para buscar contenido por palabras. "
+"La búsqueda suele ser la única forma práctica de encontrar "
+"contenido en un sitio grande. La búsqueda es útil para encontrar "
+"usuarios y envíos, buscando palabras."
 
 #: search.module:100
 msgid "The search engine works by maintaining an index of the words in your site's content. It indexes the posts and users. You can adjust the settings to tweak the indexing behaviour. Note that the search requires cron to be set up correctly. The index percentage sets the maximum amount of items that will be indexed in one cron run. Set this number lower if your cron is timing out or if PHP is running out of memory."
-msgstr "El motor de búsqueda funciona manteniendo un índice con las palabras del contenido de su sitio. Indexa los envíos y los usuarios. Puede ajustar las opciones abajo para mejorar el comportamiento de la indexación. Tenga en cuenta que la búsqueda necesita que cron esté bien configurado. El porcentaje del índice define la cantidad máxima de elementos que se van a indexar cada vez funciona cron. Defina un número bajo si cron consume demasiado tiempo o si PHP consume demasiada memoria."
+msgstr ""
+"El motor de búsqueda funciona manteniendo un índice con las palabras "
+"del contenido de su sitio. Indexa los envíos y los usuarios. Puede "
+"ajustar las opciones abajo para mejorar el comportamiento de la "
+"indexación. Tenga en cuenta que la búsqueda necesita que cron esté "
+"bien configurado. El porcentaje del índice define la cantidad máxima "
+"de elementos que se van a indexar cada vez funciona cron. Defina un "
+"número bajo si cron consume demasiado tiempo o si PHP consume "
+"demasiada memoria."
 
 #: search.module:101
 msgid "For more information please read the configuration and customization handbook <a href=\"@search\">Search page</a>."
-msgstr "Si quiere más información, puede leer el manual de configuración y de personalización de la <a href=\"@search\">página de search</a>."
+msgstr ""
+"Si quiere más información, puede leer el manual de configuración y "
+"de personalización de la <a href=\"@search\">página de search</a>."
 
 #: search.module:104
 msgid "The search engine works by maintaining an index of the words in your site's content. You can adjust the settings below to tweak the indexing behaviour. Note that the search requires cron to be set up correctly."
-msgstr "El motor de búsqueda funciona manteniendo un índice con las palabras del contenido de su sitio. Puede ajustar las opciones abajo para mejorar el comportamiento de la indexación. Tenga en cuenta que la búsqueda necesita que cron esté bien configurado."
+msgstr ""
+"El motor de búsqueda funciona manteniendo un índice con las palabras "
+"del contenido de su sitio. Puede ajustar las opciones abajo para "
+"mejorar el comportamiento de la indexación. Tenga en cuenta que la "
+"búsqueda necesita que cron esté bien configurado."
 
 #: search.module:106
 msgid "<ul>\n<li>Check if your spelling is correct.</li>\n<li>Remove quotes around phrases to match each word individually: <em>\"blue smurf\"</em> will match less than <em>blue smurf</em>.</li>\n<li>Consider loosening your query with <em>OR</em>: <em>blue smurf</em> will match less than <em>blue OR smurf</em>.</li>\n</ul>"
 msgstr ""
 "<ul>\n"
 "<li>Compruebe si la ortografía es la correcta.</li>\n"
-"<li>Elimine las comillas que definen frases para buscar cada una de las palabras por separado: <em>\"escarabajo azul\"</em> encuentra menos resultados que <em>escarabajo azul</em>.</li>\n"
-"<li>También puede relajar la consulta con <em>OR</em>: <em>escarabajo azul</em> encuentra menos resultados que <em>escarabajo OR azul</em>.</li>\n"
+"<li>Elimine las comillas que definen frases para buscar cada una de "
+"las palabras por separado: <em>\"escarabajo azul\"</em> encuentra "
+"menos resultados que <em>escarabajo azul</em>.</li>\n"
+"<li>También puede relajar la consulta con <em>OR</em>: <em>escarabajo "
+"azul</em> encuentra menos resultados que <em>escarabajo OR "
+"azul</em>.</li>\n"
 "</ul>"
 
 #: search.module:126
@@ -202,8 +224,8 @@ msgstr "buscar"
 #: search.module:213
 msgid "There is 1 item left to index."
 msgid_plural "There are @count items left to index."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "There is 1 item left to index."
+msgstr[1] "There are @count items left to index."
 
 #: search.info:0
 msgid "Enables site-wide keyword searching."
