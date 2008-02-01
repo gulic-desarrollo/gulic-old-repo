@@ -1,47 +1,48 @@
+# translation of countdown.po to es_ES
 # $Id$
-#
 # Spanish translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
 #  countdown.module,v 1.4 2007/01/15 23:34:37 deekayen
 #  countdown.info,v 1.1 2006/11/06 21:23:59 deekayen
 #
-#, fuzzy
+# Luis Cabrera Sauco <lcabrera@sauco.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
+"Project-Id-Version: countdown\n"
 "POT-Creation-Date: 2008-01-23 00:10+0000\n"
-"PO-Revision-Date: 2008-01-23 00:10+0000\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2008-01-26 20:22+0000\n"
+"Last-Translator: Luis Cabrera Sauco <lcabrera@sauco.org>\n"
+"Language-Team: es_ES <es@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: countdown.module:18
 msgid "Don't forget to configure the event name and date in Administer/blocks/Countdown configure"
-msgstr ""
+msgstr "No olvide configurar el nombre del evento y la fecha en la configuración de Administrar/Bloques/CountDown"
 
 #: countdown.module:41
 msgid "Event Name"
-msgstr ""
+msgstr "Nombre del Evento"
 
 #: countdown.module:45
 msgid "Event name you're counting to or from."
-msgstr ""
+msgstr "Nombre del evento."
 
 #: countdown.module:51
 msgid "Accuracy"
-msgstr ""
+msgstr "Precisión"
 
 #: countdown.module:53
 msgid "days"
-msgstr ""
+msgstr "Días"
 
 #: countdown.module:53
 msgid "hours"
-msgstr ""
+msgstr "horas"
 
 #: countdown.module:53
 msgid "minutes"
@@ -49,15 +50,15 @@ msgstr "minutos"
 
 #: countdown.module:54
 msgid "Select the smallest amount of detail to display. For example, selecting \"days\" will display only days, selecting \"hours\" will display the number of days and hours."
-msgstr ""
+msgstr "Seleccione la cantidad mínima de datos a mostrar. Por ejemplo, seleccionando \"días\", se muestran solo los días que faltan para el evento, mientras que seleccionando \"horas\", se mostraran los días y las horas que faltan para un evento."
 
 #: countdown.module:62
 msgid "Target date/time"
-msgstr ""
+msgstr "Fecha / Hora"
 
 #: countdown.module:65
 msgid "Select a date relative to the server time: %s"
-msgstr ""
+msgstr "Seleccione un fecha relativa a  la hora del servidor: %s"
 
 #: countdown.module:71
 msgid "Year"
@@ -121,19 +122,19 @@ msgstr "Día"
 
 #: countdown.module:98
 msgid "Hour"
-msgstr ""
+msgstr "Hora"
 
 #: countdown.module:107
 msgid "Minute"
-msgstr ""
+msgstr "Minuto"
 
 #: countdown.module:113
 msgid "Seconds"
-msgstr ""
+msgstr "Segundos"
 
 #: countdown.module:128 countdown.info:0
 msgid "Countdown"
-msgstr ""
+msgstr "Cuenta atrás"
 
 #: countdown.module:144
 msgid "%i days"
@@ -141,21 +142,21 @@ msgstr "%i días"
 
 #: countdown.module:146
 msgid ", %i hours"
-msgstr ""
+msgstr ", %i horas"
 
 #: countdown.module:149
 msgid ", %i minutes"
-msgstr ""
+msgstr ", %i minutos"
 
 #: countdown.module:152
 msgid ", %i seconds"
-msgstr ""
+msgstr ", %i segundos"
 
 #: countdown.info:0
 msgid "Adds a block to count the days, hours, minutes, and seconds since or until a specified event."
-msgstr ""
+msgstr "Añadir un bloque para contar los días, horas, minutos y segundos desde o hasta un determinado evento."
 
 #: countdown.info:0
 msgid "Event"
-msgstr ""
+msgstr "Evento"
 

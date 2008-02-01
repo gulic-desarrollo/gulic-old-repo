@@ -1,23 +1,24 @@
+# translation of comment_upload.po to es_ES
 # $Id$
-#
 # Spanish translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
 #  comment_upload.module,v 1.6.2.11 2007/05/13 19:54:01 heine
 #  n/a
 #
-#, fuzzy
+# Luis Cabrera Sauco <lcabrera@sauco.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
+"Project-Id-Version: comment_upload\n"
 "POT-Creation-Date: 2008-01-23 00:10+0000\n"
-"PO-Revision-Date: 2008-01-23 00:10+0000\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2008-01-26 20:15+0000\n"
+"Last-Translator: Luis Cabrera Sauco <lcabrera@sauco.org>\n"
+"Language-Team: es_ES <es@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: comment_upload.module:24
 msgid "Attachment"
@@ -25,7 +26,7 @@ msgstr "Adjunto"
 
 #: comment_upload.module:26
 msgid "You already have a file uploaded, if you upload another it will overwrite the current one."
-msgstr ""
+msgstr "Acaba de subir un fichero, si vuelve a subir otro fichero, sobreescribirá el primero."
 
 #: comment_upload.module:36
 msgid "File attachments"
@@ -33,11 +34,11 @@ msgstr "Archivos adjuntos"
 
 #: comment_upload.module:39
 msgid "Changes made to the attachments are not permanent until you save this post."
-msgstr ""
+msgstr "Los cambios realizados a los adjuntos no serán permanentes hasta que salve este envio."
 
 #: comment_upload.module:109;117
 msgid "Attachments on comments"
-msgstr ""
+msgstr "Adjuntos en los comentarios"
 
 #: comment_upload.module:111
 msgid "Disabled"
@@ -57,29 +58,29 @@ msgstr "Simple"
 
 #: comment_upload.module:120
 msgid "Set whether to allow only one attachment per comment"
-msgstr ""
+msgstr "Establecer si permite o no un solo adjunto por comentario"
 
 #: comment_upload.module:124
 msgid "Images on comments"
-msgstr ""
+msgstr "Imágenes en comentarios"
 
 #: comment_upload.module:126
 msgid "Normal attachment"
-msgstr ""
+msgstr "Adjunto normal"
 
 #: comment_upload.module:126
 msgid "Inline display"
-msgstr ""
+msgstr "Mostrado Inline"
 
 #: comment_upload.module:127
 msgid "Show uploaded image with comment or use a normal attachment link (single attachment mode only)"
-msgstr ""
+msgstr "Mostrar la imagen que ha subido con comentarios o usar un enlace normal (únicamente en modo adjunto único)"
 
 #: comment_upload.info:0
 msgid "Comment upload"
-msgstr ""
+msgstr "Comentario actualizado"
 
 #: comment_upload.info:0
 msgid "Allows users to attach files to comments."
-msgstr ""
+msgstr "Permitir a los usuarios añadir comentarios a los ficheros."
 

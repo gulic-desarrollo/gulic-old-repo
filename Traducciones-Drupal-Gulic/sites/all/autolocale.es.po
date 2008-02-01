@@ -1,5 +1,5 @@
+# translation of autolocale.po to Español
 # $Id$
-#
 # Spanish translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
@@ -7,30 +7,31 @@
 #  autolocale.install,v 1.7.2.1 2007/10/11 20:53:43 goba
 #  autolocale.info,v 1.2.2.1 2007/06/18 23:06:31 dww
 #
-#, fuzzy
+# Luis Cabrera Sauco <lcabrera@sauco.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
+"Project-Id-Version: autolocale\n"
 "POT-Creation-Date: 2008-01-23 00:10+0000\n"
-"PO-Revision-Date: 2008-01-23 00:10+0000\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2008-01-25 21:02+0000\n"
+"Last-Translator: Luis Cabrera Sauco <lcabrera@sauco.org>\n"
+"Language-Team: Español <es@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: autolocale.module:12
 msgid "Automatic import scans all enabled modules and themes for interface translation files under their directories and imports all files found for the selected language. This operation could be resource intensive, and is irreversible."
-msgstr ""
+msgstr "La importación automática rastrea en todos los módulos y temas activos en busca de ficheros de traducción de la interfaz. Si los encuentra, son importados en el módulo para el lenguaje seleccionados. Esta operación consume muchos recursos del sistema y es irreversible."
 
 #: autolocale.module:31
 msgid "Automatic import"
-msgstr ""
+msgstr "Importación Automática"
 
 #: autolocale.module:54
 msgid "No foreign language enabled on your site. You need to <a href=\"@urladd\">add</a> and <a href=\"@urlenable\">enable</a> at least one foreign language to import strings for."
-msgstr ""
+msgstr "No hay ningún idioma extranjero activado en tu sitio. Necesitas <a href=\"@urladd\">añadir</a> y <a href=\"@urlenable\">activar</a> al menos un idioma más para poder importar sus cadenas."
 
 #: autolocale.module:62
 msgid "Language"
@@ -38,53 +39,53 @@ msgstr "Idioma"
 
 #: autolocale.module:65
 msgid "Select the language to autoimport translation files into."
-msgstr ""
+msgstr "Selecciona el idioma para autoimportar sus ficheros de traducción dentro."
 
 #: autolocale.module:70
 msgid "Remove existing translations first"
-msgstr ""
+msgstr "Elimine la traducción existente primero"
 
 #: autolocale.module:72
 msgid "It is advised to remove the existing translations in the given language for performance reasons, if you have no custom strings added, which are not available in the PO files to import. This removes strings left from upgrades or previously tried and removed modules."
-msgstr ""
+msgstr "Se recomienda retirar las traducciones en el idioma determinado por razones de rendimiento, si no tiene añadidas cadenas personalizadas,, que no estén disponibles en los archivos PO a importar. Esto elimina cadenas  de las actualizaciones o de módulos previamente tratados y eliminados."
 
 #: autolocale.module:77
 msgid "Perform automatic import"
-msgstr ""
+msgstr "Realizar la importación automática"
 
 #: autolocale.module:89
 msgid "Invalid language code (@langcode) choosen for automatic import."
-msgstr ""
+msgstr "Ha elegido un código de idioma no válido (@langcode) para la importación automática."
 
 #: autolocale.module:102;103
 msgid "Existing translations removed from @language."
-msgstr ""
+msgstr "Eliminada la traducción para @language."
 
 #: autolocale.module:110;111
 msgid "New @language strings imported."
-msgstr ""
+msgstr "Importadas las nuevas cadenas para @language."
 
 #: autolocale.module:103;111 autolocale.install:70
 msgid "locale"
-msgstr "locale"
+msgstr "idioma"
 
 #: autolocale.install:10
 msgid "Now you can <a href=\"@url\">import interface translations</a> automatically"
-msgstr ""
+msgstr "Ahora usted puede <a href=\"@url\">importar la traducción</a> automáticamente"
 
 #: autolocale.install:69
 msgid "Imported translation file @filename"
-msgstr ""
+msgstr "Importado el fichero de traducción @filename"
 
 #: autolocale.install:70
 msgid "Imported %filepath into %langcode."
-msgstr ""
+msgstr "Importando %filepath en %langcode."
 
 #: autolocale.info:0
 msgid "Autolocale"
-msgstr ""
+msgstr "AutoLocale"
 
 #: autolocale.info:0
 msgid "Automatically imports interface translations."
-msgstr ""
+msgstr "Importación automática de las traducciones de la interfaz."
 

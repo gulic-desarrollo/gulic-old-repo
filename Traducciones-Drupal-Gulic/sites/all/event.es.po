@@ -1,5 +1,5 @@
+# translation of event.po to es_ES
 # $Id$
-#
 # Spanish translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
@@ -16,18 +16,19 @@
 #  event_views.info,v 1.1 2007/01/07 12:58:42 karens
 #  n/a
 #
-#, fuzzy
+# Luis Cabrera Sauco <lcabrera@sauco.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
+"Project-Id-Version: event\n"
 "POT-Creation-Date: 2008-01-23 00:11+0000\n"
-"PO-Revision-Date: 2008-01-23 00:11+0000\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Spanish <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2008-01-27 01:39+0000\n"
+"Last-Translator: Luis Cabrera Sauco <lcabrera@sauco.org>\n"
+"Language-Team: es_ES <es@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: event_timezones.inc:193
 msgid "None"
@@ -1251,7 +1252,7 @@ msgstr "Canadá/Central"
 
 #: event_timezones.inc:580
 msgid "Canada/Central-Saskatchewan"
-msgstr ""
+msgstr "Canada/Central-Saskatchewan"
 
 #: event_timezones.inc:581
 msgid "Canada/Eastern"
@@ -1995,27 +1996,27 @@ msgstr "Eventos"
 
 #: event.module:94
 msgid "Filter by content type"
-msgstr ""
+msgstr "Filtro por tipo de contenido"
 
 #: event.module:99
 msgid "Filter by taxonomy"
-msgstr ""
+msgstr "Filtro por Taxonomía"
 
 #: event.module:104
 msgid "Event rss feed"
-msgstr ""
+msgstr "Feed RSS para eventos"
 
 #: event.module:109
 msgid "Event dst view"
-msgstr ""
+msgstr "Vista dst de eventos"
 
 #: event.module:114
 msgid "Event ical feed"
-msgstr ""
+msgstr "Feed Ical de eventos"
 
 #: event.module:121
 msgid "Set up how your site handles events."
-msgstr ""
+msgstr "Configura como tu sitio gestiona los eventos."
 
 #: event.module:124
 msgid "Timezone handling"
@@ -2023,19 +2024,19 @@ msgstr "Gestión de Zona horaria"
 
 #: event.module:127
 msgid "Change how timezone information is saved and displayed."
-msgstr ""
+msgstr "Cambia cuanta información de la zona horaria es salvada y mostrada."
 
 #: event.module:130
 msgid "Event overview"
-msgstr ""
+msgstr "Listado de eventos"
 
 #: event.module:133
 msgid "Change how event summary information is displayed."
-msgstr ""
+msgstr "Cambia cuanta información sobre los eventos se muestra en el sumario."
 
 #: event.module:143
 msgid "Event ical"
-msgstr ""
+msgstr "Evento Ical"
 
 #: event.module:164;186
 msgid "Event time zone input"
@@ -2083,14 +2084,17 @@ msgstr ""
 #: event.module:189
 msgid "Events are saved with a time zone value. This setting allows you to determine how the time zone is determined when creating or editing an event. You must have 'Configurable time zones' enabled in the !url before you can enable user's time zones for this feature."
 msgstr ""
+"Los eventos son salvados incluyendo un valor de zona horaria."
+"Esta configuración permite determinar cómo la zona horaria es calculada cuando se crea o se edita un evento."
+"Debe tener activada 'Zonas Horarias configurables' en !url antes de que pueda activar esta característica."
 
 #: event.module:189;197
 msgid "date/time settings"
-msgstr ""
+msgstr "opciones de fecha/hora"
 
 #: event.module:197
 msgid "Events are saved with a time zone value. This setting allows you to determine if the event's time zone, the sitewide time zone, or the user's personal time zone setting is used to display the time for an event. You must have 'Configurable time zones' enabled in the !url before you can enable user's time zones for this feature."
-msgstr ""
+msgstr "Los eventos se guardan con un valor de zona horaria."
 
 #: event.module:202
 msgid "Time notation preference"
@@ -2137,7 +2141,7 @@ msgstr "Periodo por defecto de la vista tabla"
 
 #: event.module:239
 msgid "The default number of days to display in the table view. You can specify a different number of days in the url. More info on the event url format !link"
-msgstr ""
+msgstr "El número de días por defecto a mostrar en la vista de tabla. se puede especificar un número de días diferente en la url. Más información sobre el formato de la url de eventos en !link"
 
 #: event.module:239
 msgid "here"
@@ -2189,7 +2193,7 @@ msgstr "Inicio"
 
 #: event.module:317;328
 msgid "View all"
-msgstr ""
+msgstr "Ver todo"
 
 #: event.module:318
 msgid "Filter"
@@ -2197,23 +2201,23 @@ msgstr "Filtrar"
 
 #: event.module:350
 msgid "!weekday !month !day, !year"
-msgstr ""
+msgstr "!weekday !day, !month,  !year"
 
 #: event.module:357
 msgid "Week of !month !day, !year"
-msgstr ""
+msgstr "Semana de !month !day, !year"
 
 #: event.module:363
 msgid "!month !year"
-msgstr ""
+msgstr "!month !year"
 
 #: event.module:373;382;708;756
 msgid "!startmonth !startdate, !startyear - !endmonth !enddate, !endyear"
-msgstr ""
+msgstr "!startdate !startmonth, !startyear - !enddate !endmonth, !endyear"
 
 #: event.module:434
 msgid "Events at %site"
-msgstr ""
+msgstr "Eventos en %site"
 
 #: event.module:482
 msgid "iCal support not enabled"
@@ -2349,11 +2353,11 @@ msgstr "Eventos próximos"
 
 #: event.module:1849
 msgid "Now"
-msgstr ""
+msgstr "Ahora"
 
 #: event.module:1858
 msgid "No upcoming events available"
-msgstr ""
+msgstr "No hay próximos eventos"
 
 #: event.module:1883
 msgid "Show in event calendar"
@@ -2395,11 +2399,11 @@ msgstr "Fecha de fin."
 
 #: event.module:1929
 msgid "Start date"
-msgstr ""
+msgstr "Fecha de inicio"
 
 #: event.module:1936
 msgid "End date"
-msgstr ""
+msgstr "Fecha de finalización"
 
 #: event.module:1946
 msgid "Time zone"
@@ -2411,7 +2415,7 @@ msgstr "Seleccionar la zona horaria en la que ocurrirá este evento."
 
 #: event.module:2172
 msgid "Daylight Savings Regions | Current GMT: !date"
-msgstr ""
+msgstr "Daylight Savings Regions | Current GMT: !date"
 
 #: event.module:2187
 msgid "The event module allows for any type of content to be event enabled,  meaning content can have a start and end time, and appear in calendars.  The ability to event enable any content type combined with the ability to create new types of content make it possible to create unlimited types of calendars.  The ability to broadly event enable content will allow for creative applications combining information and real world events."
@@ -2447,15 +2451,21 @@ msgstr ""
 "notación temporal, y bloquear las configuraciones. Las opciones para "
 "una visión general de los eventos permite vistas por defectos del "
 "calendario y de tablas. Los administradores también pueden establecer "
-""
 
 #: event.module:2190
+#, fuzzy
 msgid "<p>You can</p>\n<ul>\n<li>enable content types to be event enabled at <a href=\"!admin-node-configure-types\" title=\"content type configuration\">administer &gt;&gt; content &gt;&gt; content types </a> then click configure for a content type.</li>\n<li>administer general event options <a href=\"!admin-settings-event\" title=\"administer events\">administer &gt;&gt; settings &gt;&gt; events</a>.</li>\n<li><a href=\"!node-add\" title=\"list of content types that can be created\">create content</a> and set a start and end time, if the administrator has set that content type to be event enabled.</li>\n<li>use <a href=\"!external-http-drupal-org-handbook-modules-rsvp\">RSVP</a> or <a href=\"!external-http-drupal-org-handbook-modules-signup\">signup</a> module to invite users to events.</li>\n"
 msgstr ""
+"<p>Puede</p>\n"
+"<ul>\n"
+"<li>convertir tipos de contenidos en eventos activandolo en<a href=\"!admin-node-configure-types\" title=\"content type configuration\">Administrar &gt;&gt; Gestión de contenidos &gt;&gt; Tipos de contenidos </a> entonces haces click en configurar para cualquier tipo de contenido.</li>\n"
+"<li>administer general event options <a href=\"!admin-settings-event\" title=\"administer events\">administer &gt;&gt; settings &gt;&gt; events</a>.</li>\n"
+"<li><a href=\"!node-add\" title=\"list of content types that can be created\">create content</a> and set a start and end time, if the administrator has set that content type to be event enabled.</li>\n"
+"<li>use <a href=\"!external-http-drupal-org-handbook-modules-rsvp\">RSVP</a> or <a href=\"!external-http-drupal-org-handbook-modules-signup\">signup</a> module to invite users to events.</li>\n"
 
 #: event.module:2197
 msgid "For more information please read the configuration and customization handbook <a href=\"!event\">Event page</a>."
-msgstr ""
+msgstr "Para más información por favor lea el manual de Configuración y Personalización en la <a href=\"!event\">Página de Eventos</a>."
 
 #: event.module:2200
 msgid "This is a listing of all the event system's time zones, sorted by daylight savings time regions, and their respective offsets from GMT in seconds. Time zones in the 'None' region do not observe daylight savings time. If you believe there is an error, please first search for the locale on !timeanddate and confirm it. If there is indeed an error please submit a !bugreport on drupal.org so we can fix it."
@@ -2465,19 +2475,19 @@ msgstr ""
 msgid "1 minute"
 msgid_plural "@count minutes"
 msgstr[0] ""
-msgstr[1] ""
+msgstr[1] "@count minutos"
 
 #: event.module:1833
 msgid "1 hour"
 msgid_plural "@count hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 hora"
+msgstr[1] "@count horas"
 
 #: event.module:1845
 msgid "1 day"
 msgid_plural "@count days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 día"
+msgstr[1] "@count días"
 
 #: event.theme:76;134;185;222;284
 msgid "limit view to events of this type"
@@ -2541,15 +2551,15 @@ msgstr ""
 
 #: event.install:71
 msgid "Event module successfully uninstalled"
-msgstr ""
+msgstr "El módulo de eventos ha sido desinstalado correctamente"
 
 #: event.info:0;0 contrib/basicevent.module:15;54 contrib/basicevent.info:0 contrib/event_all_day/event_all_day.info:0 contrib/event_views/event_views.info:0
 msgid "Event"
-msgstr ""
+msgstr "Evento"
 
 #: event.info:0
 msgid "Calendaring API, calendar display and export"
-msgstr ""
+msgstr "API de Calendario, visor de calendario y exportación"
 
 #: contrib/basicevent.module:17
 msgid "An event is a story which can be given a start and end date, thus appearing in the events calendar."
@@ -2575,7 +2585,7 @@ msgstr "Cuerpo"
 
 #: contrib/basicevent.info:0
 msgid "Basic event"
-msgstr ""
+msgstr "Evento básico"
 
 #: contrib/basicevent.info:0
 msgid "A story-like node that implements the event API automatically."
