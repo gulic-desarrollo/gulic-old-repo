@@ -429,16 +429,16 @@ msgid "Last Name"
 msgstr "Apellido"
 
 #: ldapprov.module:1049
-msgid "Username cannot begin with a space."
-msgstr "El nombre de usuario no puede empezar con espacio."
+msgid "Username must begin with a letter."
+msgstr "El nombre de usuario debe empezar con una letra."
 
 #: ldapprov.module:1052
-msgid "Username cannot end with a space."
-msgstr "El nombre de usuario no puede terminar con espacio."
+msgid "Username must end with a letter or number."
+msgstr "El nombre de usuario debe terminar con una letra o número."
 
 #: ldapprov.module:1055
-msgid "Username should contain only letters, numbers and spaces."
-msgstr "El nombre de usuario sólo debería contener letras, números y espacios."
+msgid "Username should contain only letters, numbers, dashes, underscores and dots."
+msgstr "El nombre de usuario sólo debería contener letras, números, guiones, subrayados y puntos."
 
 #: ldapprov.module:1059;1069
 msgid "The username %s is already taken. Please choose different one."

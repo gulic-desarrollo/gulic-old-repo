@@ -957,7 +957,7 @@ function _ldapprov_register_form($edit) {
     $form['account']['username'] = array(
       '#type' => 'textfield',
       '#title' => t('Username'),
-      '#description' => t('Your full name or your preferred username; only letters, numbers and spaces are allowed.'),
+      '#description' => t('Your full name or your preferred username; only letters, numbers, dashes, underscores and dots are allowed.'),
       '#size' => 30,
       '#maxlength' => 60,
       '#default_value' => $edit['username'],
@@ -1083,14 +1083,14 @@ function _ldapprov_register_validate($edit, $messages = TRUE) {
   
   // When user is allowed to select a username
   if (variable_get('ldapprov_allow_username', 1)) {
-    if (preg_match('/^\s+/', $edit['username'])) {
-      $errors = ($messages) ? form_set_error('username', t('Username cannot begin with a space.')) : $errors + 1;
+    if (!preg_match('/^[a-zA-Z]+/', $edit['username'])) {
+      $errors = ($messages) ? form_set_error('username', t('Username must begin with a letter.')) : $errors + 1;
     }
-    if (preg_match('/\s+$/', $edit['username'])) {
-      $errors = ($messages) ? form_set_error('username', t('Username cannot end with a space.')) : $errors + 1;
+    if (!preg_match('/\w+$/', $edit['username'])) {
+      $errors = ($messages) ? form_set_error('username', t('Username must end with a letter or number.')) : $errors + 1;
     }
-    if (preg_match('/[^\w\s]+/', $edit['username'])) {
-      $errors = ($messages) ? form_set_error('username', t('Username should contain only letters, numbers and spaces.')) : $errors + 1;
+    if (preg_match('/[^\w\.\-_]+/', $edit['username'])) {
+      $errors = ($messages) ? form_set_error('username', t('Username should contain only letters, numbers, dashes, underscores and dots.')) : $errors + 1;
     }
     $result = db_query("SELECT uid FROM {users} WHERE name = '%s'", $edit['username']);
     if ($user = db_fetch_object($result)) {
