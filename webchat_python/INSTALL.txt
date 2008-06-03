@@ -1,0 +1,21 @@
+Iniciar el bot
+--------------
+
+1. screen            # abrir shell
+2. python maxibot.py # ejecutar ot
+3. Control + A + D   # salir y dejar shell en segundo plano
+
+Reiniciar el bot
+----------------
+
+1. screen -r         # recuperar shell
+2. Control + C       # matar bot
+3. python maxibot.py # ejecutar bot
+4. Control + A + D   # salir y dejar shell en segundo plano
+
+Parar el bot
+------------
+
+1. screen -r    # recuperar shell
+2. Control + C  # matar bot
+3. Control + D  # cerrar shell
