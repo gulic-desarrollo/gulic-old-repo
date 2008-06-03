@@ -32,6 +32,22 @@ import os, time, urllib, xmpp, thread, sys, msnp, sqlobject, datetime, SOAPpy, s
 #sys.stdout = open("maxibot.log", "w", 0)
 #sys.stdout = codecs.open('maxibot.log', 'wb', 'utf-8', 'ignore', 0)
 
+def arreglatextoparche(text):
+	text = text.replace(u"á", "a")
+	text = text.replace(u"é", "e")
+	text = text.replace(u"í", "i")
+	text = text.replace(u"ó", "o")
+	text = text.replace(u"ú", "u")
+	text = text.replace(u"Á", "A")
+	text = text.replace(u"É", "E")
+	text = text.replace(u"Í", "I")
+	text = text.replace(u"Ó", "O")
+	text = text.replace(u"Ú", "U")
+	text = text.replace(u"Ñ", "~N")
+	text = text.replace(u"¿", "~?")
+	return text
+
+
 class MsnTransport:
 	name = "msn"
 	class MsnChatListener(msnp.ChatCallbacks):
@@ -241,15 +257,23 @@ class JabberBase:
 		nick=mess.getFrom()
 		text=mess.getBody()
 		tipo=mess.getType()
-		ts = ts2secs(mess.getTimestamp())
+ 		#print "nick: %s, text: %s, tipo: %s" % (nick, text, tipo)
+		try:
+			ts = ts2secs(mess.getTimestamp())
+		except ValueError:
+			print "fecha mala: %s" % (mess.getTimestamp())
+			return # fecha mala
 		if time.time() - 3600*time.daylight - ts > 30:
+			print "antiguos"
 			return # tampoco a los antiguos
 		if nick.getResource()=='' or text is None:
 			print "ignorando msg de sistema de nick %s" % (nick)
 			return # no a los de sistema
 		if nick.getResource()==self.master.name:
+			print "mios?"
 			return # no a los mios
 		if tipo=="error":
+			print "error"
 			return # no a los errores
 		if tipo=="chat":
 			if self.room != '' and self.room in unicode(nick):
@@ -439,6 +463,7 @@ class WebTransport:
 		text = text.replace("---", "===")
 		try:
 			nick= str(nick)
+			text = arreglatextoparche(text)
 			text = unicode(text.encode('ascii', 'xmlcharrefreplace'))
 			c = self.chatlog(name=nick, text=text)
 		except: 
@@ -469,6 +494,7 @@ class WebTransport:
 		"esta funcion es la que se llama por soap"
 		nick = param0
 		text = param1
+		text = arreglatextoparche(text)
 		text = unicode(text.encode('ascii', 'xmlcharrefreplace'))
 		self.master.message_from(self, text, nick)
 
@@ -501,7 +527,11 @@ class DrupalTransport:
 
 	def thread_main(self, funcs):
 		"lanza un thread para formar un servidor soap"
-		server = SOAPpy.SOAPServer(("localhost", self.soap_port), namespace="gulic.org")
+		try:
+			server = SOAPpy.SOAPServer(("localhost", self.soap_port), namespace="gulic.org")
+		except:
+			sys.exit('Problemas al crear el servidor SOAP')
+
 		for func in funcs:
 			server.registerFunction(func)
 		server.serve_forever()
@@ -510,6 +540,7 @@ class DrupalTransport:
 		"esta funcion es la que se llama por soap"
 		nick = param0
 		text = param1
+		text = arreglatextoparche(text)
 		text = unicode(text.encode('ascii', 'xmlcharrefreplace'))
 		self.master.message_from(self, text, nick)
 
@@ -630,7 +661,7 @@ class bot:
 			print "CASO 0: Desde la web, para todo el mundo incluso la web (eco)"
 			self.broadcastMessage(transport, ["all"], text, user)
 
-		elif (text[0] == '\\' or text[0] == '/'):
+		elif (text[0] == '!'):
 			print "CASO 1: Es un comando, respuesta directa"
 			text = self.command (text, transport.name, user)
 			if (text):
@@ -674,8 +705,8 @@ class bot:
 		else:
 			# Muestra la ayuda del bot
 			return 'Ayuda:\n' + \
-				'\\nick [nuevo_nick]: Configura tu nick (solo lo puedes configurar una vez).\n' + \
-				'\\contactos o \\names:  Te dice que amigos tiene conectado.'
+				'!nick [nuevo_nick]: Configura tu nick (solo lo puedes configurar una vez).\n' + \
+				'!contactos o !names:  Te dice que amigos tiene conectado.'
 
 
 def loop():
