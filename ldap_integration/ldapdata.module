@@ -547,7 +547,7 @@ function ldapdata_user_login(&$user) {
   // _ldapauth_ldap_login at the ldapauth module
  
   $mapping_type = _ldapdata_ldap_info($user, 'mapping_type');   
-  if ((!$user->ldap_authentified) || ($mapping_type = LDAP_MAP_NOTHING)) { 
+  if ((!$user->ldap_authentified) || ($mapping_type == LDAP_MAP_NOTHING)) { 
     return;
   } 
 
