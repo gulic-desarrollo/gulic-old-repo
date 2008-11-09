@@ -1,5 +1,5 @@
 <?php
-// $Id: ldapgroups.conf.php,v 1.9 2007/07/22 20:04:25 kreaper Exp $
+// $Id: ldapgroups.conf.php,v 1.1.4.2.2.4 2008/04/17 04:32:13 scafmac Exp $
 
 // Interesting constants that admins would want to mess with
 

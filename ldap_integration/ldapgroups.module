@@ -1,5 +1,5 @@
 <?php
-// $Id: ldapgroups.module,v 1.24 2007/07/22 20:04:25 kreaper Exp $
+// $Id: ldapgroups.module,v 1.1.4.6.2.6 2008/05/10 02:19:53 scafmac Exp $
 
 include_once('ldap_integration/ldapgroups.conf.php');
 include_once('ldap_integration/libdebug.php');
@@ -82,6 +82,8 @@ function ldapgroups_menu($may_cache) {
   }
   return $items;
 }
+
+// ldapgroups admin pages 
 
 function ldapgroups_admin_list() {
   $result = db_query("SELECT sid, name FROM {ldapauth} WHERE status = '%s' ORDER BY sid", 1);
@@ -211,6 +213,9 @@ function ldapgroups_admin_edit_submit($form_id, $form_values) {
 
 }
 
+/** 
+ * Implementation of hook_user()
+ */
 function ldapgroups_user($op, &$edit, &$user, $category = NULL) {
   switch($op) {
     case 'login':
@@ -220,14 +225,11 @@ function ldapgroups_user($op, &$edit, &$user, $category = NULL) {
 }
 
 
-
 /*********************************
  *     2. Delegate functions     *
  *********************************/
 
 function ldapgroups_user_login(&$user) {
-  global $ldap_group_role_mappings;
-
   if (!$user->ldap_authentified) {
     return true;
   }
@@ -240,11 +242,13 @@ function ldapgroups_user_login(&$user) {
   // First, we take every mapped role from the user, later below
   // we'll grant back those deserved.
 
+  //dsm($user);
   $user->ldap_drupal_roles = isset($user->ldap_drupal_roles) ? $user->ldap_drupal_roles : array();
   foreach ($user->ldap_drupal_roles as $role) {
     if (preg_match('/^[^=]*=([^,]*),.*$/', $role, $matches)) {
       $role = $matches[1];
     }
+    //dsm($role);
     _ldapgroups_deny_role($user, $role);
   }
 
@@ -271,15 +275,7 @@ function ldapgroups_user_login(&$user) {
   //need to check for empty roles
   if ($roles) {
     foreach ($roles as $role) {
-      if ($friendly_role = $ldap_group_role_mappings[$role]) {
-        // Just that
-      }
-      else if (preg_match('/^[^=]*=([^,]*),.*$/', $role, $matches)) {
-        $friendly_role = $matches[1];
-      }
-      else {
-        $friendly_role = $role;
-      }
+      $friendly_role = _ldapgroups_translate_role($role);
       _ldapgroups_create_role($friendly_role);
       _ldapgroups_grant_role($user, $friendly_role);
     }
@@ -294,6 +290,25 @@ function ldapgroups_user_login(&$user) {
 /*********************************
  *    3. Auxiliary functions     *
  *********************************/
+
+/**
+ * Depending on ldap schema, converts ldap group to drupal role
+ */
+function _ldapgroups_translate_role($ldap_role) {
+  global $ldap_group_role_mappings;
+
+  if ($friendly_role = $ldap_group_role_mappings[$ldap_role]) {
+      // Just that
+  }
+  else if (preg_match('/^[^=]*=([^,]*),.*$/', $ldap_role, $matches)) {
+    $friendly_role = $matches[1];
+  }
+  else {
+    $friendly_role = $ldap_role;
+  }
+
+  return $friendly_role;
+}
 
 function _ldapgroups_detect_groups($user) {
   global $ldapgroups_ldap;
@@ -337,7 +352,7 @@ function _ldapgroups_detect_groups($user) {
 
     foreach ($pairs as $p) {
       $pair = explode('=', $p);
-      if (trim($pair[0]) == $dn_group_attr) {
+      if (strtoupper(trim($pair[0])) == strtoupper($dn_group_attr)) {
         $dn_groups[] = trim($pair[1]);
       }
     }
@@ -391,10 +406,11 @@ function _ldapgroups_grant_role($user, $rolename) {
 }
 
 function _ldapgroups_deny_role($user, $rolename) {
-  $result = db_query("SELECT * FROM {role} WHERE name = '$rolename'");
+  $drupal_role = _ldapgroups_translate_role($rolename);
+  $result = db_query("SELECT * FROM {role} WHERE name = '$drupal_role'");
   $role_exists = db_num_rows($result);
 
-if ($role_exists) {
+  if ($role_exists) {
     $role = db_fetch_object($result);
     $result = db_query("SELECT * FROM {users_roles} WHERE uid = $user->uid AND rid = $role->rid");
     $role_present = db_num_rows($result);
@@ -430,7 +446,5 @@ function _ldapgroups_ldap_init(&$user) {
     return;
   }  
 }
-
-
 
 ?>

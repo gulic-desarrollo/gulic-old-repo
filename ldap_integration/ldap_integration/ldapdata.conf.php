@@ -1,5 +1,5 @@
 <?php
-// $Id: ldapdata.conf.php,v 1.5 2007/03/20 00:20:52 scafmac Exp $
+// $Id: ldapdata.conf.php,v 1.1.4.3.2.3 2008/04/17 04:32:13 scafmac Exp $
 
 // WARNING: if you change this, then you WANT to set attribute mapping
 // to read-only. Otherwise, odd stuff WILL happen. Seriously!!!!!!

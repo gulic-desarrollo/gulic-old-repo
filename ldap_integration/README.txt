@@ -1,4 +1,4 @@
-$Id: README.txt,v 1.6 2007/07/22 20:04:25 kreaper Exp $
+$Id: README.txt,v 1.3.2.2.2.2 2008/04/17 04:32:12 scafmac Exp $
 
 Basic Info
 ==========

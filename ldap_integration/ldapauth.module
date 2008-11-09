@@ -1,5 +1,5 @@
 <?php
-// $Id: ldapauth.module,v 1.28 2007/08/22 23:55:21 kreaper Exp $
+// $Id: ldapauth.module,v 1.1.4.14.2.5 2008/04/17 04:32:12 scafmac Exp $
 
 include_once('ldap_integration/ldapauth.conf.php');
 include_once('ldap_integration/libdebug.php');
@@ -221,7 +221,7 @@ function ldapauth_admin_options() {
   $form['system-options'] = array( 
     '#type' => 'fieldset', 
     '#title' => t('Authentication mode'),
-    '#description' => t('<p><strong>NOTE:</strong> These settings have no effect on Drupal user with uid 1. The admin account never uses LDAP.<strong></p>'), 
+    '#description' => t('<p><strong>NOTE:</strong> These settings have no effect on Drupal user with uid 1. The admin account never uses LDAP.</p>'), 
     '#collapsible' => TRUE, 
     '#collapsed' => TRUE,
   );
@@ -959,7 +959,7 @@ function _ldapauth_save_user($login_string, $pass) {
   
   $config_name = $ldapauth_ldap->getOption('name');
   $userinfo = array('mail' => $mail, 'ldap_dn' => $dn, 'ldap_config' => $config_name);
-  user_save($user, $userinfo);
+  $user = user_save($user, $userinfo);
   menu_rebuild();
     
   // obtain the DN for this user in this specific LDAP repository  

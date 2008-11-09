@@ -1,5 +1,5 @@
 <?php
-// $Id: ldapauth.conf.php,v 1.2 2007/01/28 20:38:03 kreaper Exp $
+// $Id: ldapauth.conf.php,v 1.1.4.3.2.3 2008/04/17 04:32:13 scafmac Exp $
 
 
 // Transform the login name to something understood by the server

@@ -1,5 +1,5 @@
 <?php
-// $Id: LDAPInterface.php,v 1.10 2007/08/23 00:05:42 kreaper Exp $
+// $Id: LDAPInterface.php,v 1.2.2.6.2.3 2008/04/17 04:32:13 scafmac Exp $
 
 class LDAPInterface {
 
