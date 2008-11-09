@@ -1,0 +1,12 @@
+; $Id: ldapprov_sip.info,v 1.1 2007/12/26 11:49:49 miglius Exp $
+name = LDAP provisioning SIP
+description = "Adds LDAP SIP extensions upon creation of a new usere via LDAP provisioning."
+package = Administration
+dependencies = ldapprov
+
+
+; Information added by drupal.org packaging script on 2008-07-19
+version = "5.x-1.0-alpha1"
+project = "ldap_provisioning"
+datestamp = "1216510810"
+

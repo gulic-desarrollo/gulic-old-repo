@@ -4,3 +4,9 @@ description = "Implements LDAP users provisioning."
 package = Administration
 dependencies = ldapauth
 
+
+; Information added by drupal.org packaging script on 2008-07-19
+version = "5.x-1.0-alpha1"
+project = "ldap_provisioning"
+datestamp = "1216510810"
+
