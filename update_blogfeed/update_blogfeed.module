@@ -1,0 +1,48 @@
+<?php
+// $Id $
+
+// Private constants. 
+define('UPDATE_BLOGFEED_FIELDNAME', 'profile_blogfeed');
+define('UPDATE_BLOGFEED_REFRESH', 3600);
+define('UPDATE_BLOGFEED_CHECKED', 1200000000);
+
+/**
+ * Implementation of hook_help().
+ */
+function update_blogfeed_help($section) {
+  $output = '';
+
+  switch ($section) {
+    case 'admin/modules#update_blogfeed':
+      $output = 'update_blogfeed';
+      break;
+    case 'admin/help#update_blogfeed':
+      $output = t("<p>The Update Personal Blog Feed provides a mechanism to
+                   add the user's personal blogs to the aggregator as feeds.
+                   The module also can update the feed when an user change
+                   the URL in its profile.</p>");
+      break;
+  }
+  return $output;
+}
+
+/**
+ * Implementation of hook_user().
+ */
+function update_blogfeed_user($type, &$edit, &$user, $category = NULL) {
+  switch ($type) {
+    case 'insert':
+    case 'update':
+      $fieldname = UPDATE_BLOGFEED_FIELDNAME;
+      if (!empty($edit[$fieldname])){
+        db_query("DELETE FROM {aggregator_feed} WHERE title = '%s'", $user->name);
+        db_query("INSERT INTO {aggregator_feed} (title, url, refresh, checked) " .
+	  "VALUES ('%s', '%s', %d, %d)", $user->name, $edit[$fieldname],
+	  UPDATE_BLOGFEED_REFRESH, UPDATE_BLOGFEED_CHECKED);
+      }
+      else
+        db_query("DELETE FROM {aggregator_feed} WHERE title = '%s'", $user->name);
+  }
+}
+
+?>

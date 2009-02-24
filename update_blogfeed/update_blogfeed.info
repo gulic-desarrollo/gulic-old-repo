@@ -1,0 +1,6 @@
+; $Id $
+name = Update Personal Blog Feeds
+description = "Adds the user's personal blogs to the aggregator as feeds."
+dependencies = profile aggregator
+package = Administration
+
