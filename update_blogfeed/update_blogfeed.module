@@ -45,4 +45,33 @@ function update_blogfeed_user($type, &$edit, &$user, $category = NULL) {
   }
 }
 
+/**
+ * Generate HTML for the onthisdate block
+ * @param op the operation from the URL
+ * @param delta offset
+ * @returns block HTML 
+ */
+function update_blogfeed_block($op='list', $delta=0) {
+  // listing of blocks, such as on the admin/block page
+  if ($op == "list") {
+     $block[0]["info"] = t('Planet Subscriptors');
+     return $block;
+  }
+  else if ($op == 'view') {
+	$block_content = t('Esta página muestra todos los mensajes relacionados con GULiC hechos por los miembros de la asociación:');
+	$block_content .= "<p><ul>"
+    // get the feeds
+    $queryResult =  db_query('SELECT link, title, url FROM {aggregator_feed} ORDER BY title');
+    while ($feed = db_fetch_object($queryResult)) {
+      $block_content .= '<li>' . l($feed->title, 'node/'.$feed->link) . ' (' . l('feed', $feed->url) . ')</li>';
+    }
+	$block_content .= "</ul></p>"
+	$block_content .= l('<img src="/misc/xml.png">', '/aggregator/rss')
+    // set up the block
+    $block['subject'] = 'Subscriptors';
+    $block['content'] = $block_content;
+    return $block;
+  }
+}
+
 ?>
