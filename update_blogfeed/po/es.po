@@ -1,27 +1,44 @@
 # $Id$
-# LANGUAGE translation of Update Personal Blog Feeds module
-# Copyright (C) 2007 Jesús Torres <aplatanado@gulic.org>
-# This file is distributed under the same license as the Register Validation module.
+#
+# ES translation of Update Personal Blog Feeds module
+# Copyright 2009 Jesús Torres <aplatanado@gulic.org>
+# Generated from files:
+#  update_blogfeed.module: n/a
+#  update_blogfeed.info: n/a
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: update_blogfeed 0.1\n"
-"POT-Creation-Date: 2009-02-23 23:45+0100\n"
-"PO-Revision-Date: 2009-02-23 23:45+0100\n"
+"POT-Creation-Date: 2009-02-24 15:43+0000\n"
+"PO-Revision-Date: 2009-02-24 15:48+0000\n"
 "Last-Translator: Jesús Torres <aplatanado@gulic.org>\n"
+"Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\\n\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../update_blogfeed.module:20
+#: update_blogfeed.module:20
 msgid ""
-"<p>The Update Personal Blog Feed provides a mechanism to"
-"                   add the user's personal blogs to the aggregator as feeds."
-"                   The module also can update the feed when an user change"
+"<p>The Update Personal Blog Feed provides a mechanism to\n"
+"                   add the user's personal blogs to the aggregator as "
+"feeds.\n"
+"                   The module also can update the feed when an user change\n"
 "                   the URL in its profile.</p>"
 msgstr ""
 "<p>El módulo Update Personal Blog Feed proporciona un mecanismo para"
-"                   añadir el blog personal de los usuarios como una fuente al agregador."
-"                   Además el módulo puede actualizar la fuente cuando un usuario cambia"
-"                   la URL en su perfil.</p>"
+"añadir el blog personal de los usuarios como una fuente al agregador."
+"Además el módulo puede actualizar la fuente cuando un usuario cambia"
+"la URL en su perfil.</p>"
+
+#: update_blogfeed.module:57
+msgid "Planet Subscriptors"
+msgstr "Suscriptores del planeta"
+
+#: update_blogfeed.module:61
+msgid "This page shows all messages related with GULiC and post by members:"
+msgstr "Esta página muestra todos los mensajes relacionados con GULiC hechos por los miembros de la asociación:"
+
+#: update_blogfeed.info:0
+msgid "Adds the user's personal blogs to the aggregator as feeds."
+msgstr "Añade los blogs personales de los usuarios como fuentes al agregador."

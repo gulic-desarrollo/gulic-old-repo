@@ -58,7 +58,7 @@ function update_blogfeed_block($op='list', $delta=0) {
      return $block;
   }
   else if ($op == 'view') {
-	$block_content = t('Esta página muestra todos los mensajes relacionados con GULiC hechos por los miembros de la asociación:');
+    $block_content = t('This page shows all messages related with GULiC and post by members:');
     $block_content .= "<p><ul>";
     // get the feeds
     $queryResult =  db_query('SELECT link, title, url FROM {aggregator_feed} ORDER BY title');
@@ -68,7 +68,7 @@ function update_blogfeed_block($op='list', $delta=0) {
     $block_content .= "</ul></p>";
     $block_content .= "<a href='/aggregator/rss'><img src='/misc/xml.png'></a>";
     // set up the block
-    $block['subject'] = 'Subscriptors';
+    $block['subject'] = t('Subscriptors');
     $block['content'] = $block_content;
     return $block;
   }

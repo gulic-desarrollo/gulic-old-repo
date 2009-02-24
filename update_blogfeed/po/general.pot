@@ -1,0 +1,37 @@
+# $Id$
+#
+# LANGUAGE translation of Update Personal Blog Feeds module
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  update_blogfeed.module: n/a
+#  update_blogfeed.info: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2009-02-24 15:43+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: update_blogfeed.module:20
+msgid "<p>The Update Personal Blog Feed provides a mechanism to\n                   add the user's personal blogs to the aggregator as feeds.\n                   The module also can update the feed when an user change\n                   the URL in its profile.</p>"
+msgstr ""
+
+#: update_blogfeed.module:57
+msgid "Planet Subscriptors"
+msgstr ""
+
+#: update_blogfeed.module:61
+msgid "This page shows all messages related with GULiC and post by members:"
+msgstr ""
+
+#: update_blogfeed.info:0
+msgid "Adds the user's personal blogs to the aggregator as feeds."
+msgstr ""
+
