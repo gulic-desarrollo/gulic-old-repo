@@ -2,7 +2,8 @@
 // $Id$
 
 // Private constants. 
-define('UPDATE_BLOGFEED_FIELDNAME', 'profile_blogfeed');
+define('UPDATE_BLOGFEED_FEEDURL', 'profile_blogfeed');
+define('UPDATE_BLOGFEED_HOMEPAGE', 'profile_homepage');
 define('UPDATE_BLOGFEED_REFRESH', 3600);
 define('UPDATE_BLOGFEED_CHECKED', 1200000000);
 
@@ -33,11 +34,11 @@ function update_blogfeed_user($type, &$edit, &$user, $category = NULL) {
   switch ($type) {
     case 'insert':
     case 'update':
-      $fieldname = UPDATE_BLOGFEED_FIELDNAME;
-      if (!empty($edit[$fieldname])){
+      if (!empty($edit[UPDATE_BLOGFEED_FEEDURL])){
         db_query("DELETE FROM {aggregator_feed} WHERE title = '%s'", $user->name);
-        db_query("INSERT INTO {aggregator_feed} (title, url, refresh, checked) " .
-	  "VALUES ('%s', '%s', %d, %d)", $user->name, $edit[$fieldname],
+        db_query("INSERT INTO {aggregator_feed} (title, url, link, refresh, checked) " .
+	  "VALUES ('%s', '%s', '%s', %d, %d)", $user->name,
+	  $edit[UPDATE_BLOGFEED_FEEDURL], $edit[UPDATE_BLOGFEED_HOMEPAGE],
 	  UPDATE_BLOGFEED_REFRESH, UPDATE_BLOGFEED_CHECKED);
       }
       else
