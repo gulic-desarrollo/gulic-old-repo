@@ -1,5 +1,5 @@
 <?php
-/* $Id: ldapprov.module,v 1.17 2008/07/11 16:35:21 miglius Exp $ */
+/* $Id: ldapprov.module,v 1.17.2.1 2008/08/07 14:57:23 miglius Exp $ */
 
 /**
  * @ldapprov
@@ -2824,7 +2824,7 @@ function ldapprov_attach() {
     '#title' => t('Upload accounts'),
     '#collapsible' => TRUE,
     '#collapsed' => TRUE,
-    '#description' => t('Users data in xml or csv format.'),
+    '#description' => t('Users data in xml or csv format. Click ') . l('template.xml', '/ldapprov/template/xml') . t(' or ') . l('template.csv', '/ldapprov/template/csv') . t(' to download the templates.'),
     '#prefix' => '<div class="attachments">',
     '#suffix' => '</div>',
   );

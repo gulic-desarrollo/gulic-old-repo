@@ -5,8 +5,8 @@ package = Administration
 dependencies = ldapprov
 
 
-; Information added by drupal.org packaging script on 2008-07-19
-version = "5.x-1.0-alpha1"
+; Information added by drupal.org packaging script on 2009-04-08
+version = "5.x-1.0"
 project = "ldap_provisioning"
-datestamp = "1216510810"
+datestamp = "1239209739"
 
