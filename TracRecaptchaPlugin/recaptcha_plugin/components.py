@@ -25,7 +25,7 @@ class RecaptchaTicketModule(Component):
     def validate_ticket(self, req, ticket):
         if req.args.has_key('preview'):
             return []
-        if not req.args.has_key('recaptcha_challenge_field') or
+        if not req.args.has_key('recaptcha_challenge_field') or \
            not req.args.has_key('recaptcha_response_field'):
             return []
         self.check_config()
