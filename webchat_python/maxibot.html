@@ -1,0 +1,704 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1 September 2005), see www.w3.org" />
+
+  <title>Python: module maxibot</title>
+</head>
+
+<body bgcolor="#F0F0F8">
+  <table width="100%" cellspacing="0" cellpadding="2" border="0"
+  summary="heading">
+    <tr bgcolor="#7799EE">
+      <td valign="bottom">&nbsp;<br />
+      <font color="#FFFFFF" face="helvetica, arial">&nbsp;<br />
+      <big><big><strong>maxibot</strong></big></big></font></td>
+
+      <td align="right" valign="bottom"><font color="#FFFFFF" face=
+      "helvetica, arial"><a href=".">index</a><br />
+      <a href=
+      "file:/root/webchat_python/maxibot.py">/root/webchat_python/maxibot.py</a></font></td>
+    </tr>
+  </table>
+
+  <p><tt>#&nbsp;-*-&nbsp;coding:&nbsp;utf-8&nbsp;-*-</tt></p>
+
+  <table width="100%" cellspacing="0" cellpadding="2" border="0"
+  summary="section">
+    <tr bgcolor="#AA55CC">
+      <td colspan="3" valign="bottom">&nbsp;<br />
+      <font color="#fffff" face=
+      "helvetica, arial"><big><strong>Modules</strong></big></font></td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#AA55CC">
+      <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+
+      <td>&nbsp;</td>
+
+      <td width="100%">
+        <table width="100%" summary="list">
+          <tr>
+            <td width="25%" valign="top"><a href=
+            "SOAPpy.html">SOAPpy</a><br />
+            <a href="codecs.html">codecs</a><br />
+            <a href="datetime.html">datetime</a><br />
+            <a href="msnp.html">msnp</a><br /></td>
+
+            <td width="25%" valign="top"><a href=
+            "os.html">os</a><br />
+            <a href="socket.html">socket</a><br />
+            <a href="sqlobject.html">sqlobject</a><br />
+            <a href="sys.html">sys</a><br /></td>
+
+            <td width="25%" valign="top"><a href=
+            "thread.html">thread</a><br />
+            <a href="time.html">time</a><br />
+            <a href="traceback.html">traceback</a><br />
+            <a href="urllib.html">urllib</a><br /></td>
+
+            <td width="25%" valign="top"><a href=
+            "xmpp.html">xmpp</a><br /></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%" cellspacing="0" cellpadding="2" border="0"
+  summary="section">
+    <tr bgcolor="#EE77AA">
+      <td colspan="3" valign="bottom">&nbsp;<br />
+      <font color="#FFFFFF" face=
+      "helvetica, arial"><big><strong>Classes</strong></big></font></td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#EE77AA">
+      <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+
+      <td>&nbsp;</td>
+
+      <td width="100%">
+        <dl>
+          <dt><font face="helvetica, arial"><a href=
+          "maxibot.html#DrupalTransport">DrupalTransport</a></font></dt>
+
+          <dt><font face="helvetica, arial"><a href=
+          "maxibot.html#JabberBase">JabberBase</a></font></dt>
+
+          <dt><font face="helvetica, arial"><a href=
+          "maxibot.html#JabberTransport">JabberTransport</a></font></dt>
+
+          <dt><font face="helvetica, arial"><a href=
+          "maxibot.html#ListaDeContactos">ListaDeContactos</a></font></dt>
+
+          <dt><font face="helvetica, arial"><a href=
+          "maxibot.html#MsnTransport">MsnTransport</a></font></dt>
+
+          <dt><font face="helvetica, arial"><a href=
+          "maxibot.html#MucTransport">MucTransport</a></font></dt>
+
+          <dt><font face="helvetica, arial"><a href=
+          "maxibot.html#NullTransport">NullTransport</a></font></dt>
+
+          <dt><font face="helvetica, arial"><a href=
+          "maxibot.html#WebTransport">WebTransport</a></font></dt>
+
+          <dt><font face="helvetica, arial"><a href=
+          "maxibot.html#bot">bot</a></font></dt>
+        </dl>
+
+        <table width="100%" cellspacing="0" cellpadding="2" border=
+        "0" summary="section">
+          <tr bgcolor="#FFC8D8">
+            <td colspan="3" valign="bottom">&nbsp;<br />
+            <a name="DrupalTransport" id=
+            "DrupalTransport"><font color="#000000" face=
+            "helvetica, arial">class
+            <strong>DrupalTransport</strong></font></a></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#FFC8D8"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+
+            <td>&nbsp;</td>
+
+            <td width="100%">
+              Methods defined here:<br />
+
+              <dl>
+                <dt><a name="DrupalTransport-__init__" id=
+                "DrupalTransport-__init__"><strong>__init__</strong></a>(self,
+                master, soap_port)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="DrupalTransport-broadcastMessage" id=
+                "DrupalTransport-broadcastMessage"><strong>broadcastMessage</strong></a>(self,
+                transportname, nick, fullname, text)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="DrupalTransport-end" id=
+                "DrupalTransport-end"><strong>end</strong></a>(self)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="DrupalTransport-mensaje_usuario" id=
+                "DrupalTransport-mensaje_usuario"><strong>mensaje_usuario</strong></a>(self,
+                name, text)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="DrupalTransport-procesa" id=
+                "DrupalTransport-procesa"><strong>procesa</strong></a>(self)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="DrupalTransport-sendmessage" id=
+                "DrupalTransport-sendmessage"><strong>sendmessage</strong></a>(self,
+                param0, param1)</dt>
+
+                <dd>
+                <tt>esta&nbsp;funcion&nbsp;es&nbsp;la&nbsp;que&nbsp;se&nbsp;llama&nbsp;por&nbsp;soap</tt></dd>
+              </dl>
+
+              <dl>
+                <dt><a name="DrupalTransport-thread_main" id=
+                "DrupalTransport-thread_main"><strong>thread_main</strong></a>(self,
+                funcs)</dt>
+
+                <dd>
+                <tt>lanza&nbsp;un&nbsp;thread&nbsp;para&nbsp;formar&nbsp;un&nbsp;servidor&nbsp;soap</tt></dd>
+              </dl>
+              <hr />
+              Data and other attributes defined here:<br />
+
+              <dl>
+                <dt><strong>name</strong> = 'drupal'</dt>
+              </dl>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="2" border=
+        "0" summary="section">
+          <tr bgcolor="#FFC8D8">
+            <td colspan="3" valign="bottom">&nbsp;<br />
+            <a name="JabberBase" id="JabberBase"><font color=
+            "#000000" face="helvetica, arial">class
+            <strong>JabberBase</strong></font></a></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#FFC8D8"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+
+            <td>&nbsp;</td>
+
+            <td width="100%">
+              Methods defined here:<br />
+
+              <dl>
+                <dt><a name="JabberBase-__init__" id=
+                "JabberBase-__init__"><strong>__init__</strong></a>(self,
+                master, jid, password)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="JabberBase-end" id=
+                "JabberBase-end"><strong>end</strong></a>(self)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="JabberBase-procesa" id=
+                "JabberBase-procesa"><strong>procesa</strong></a>(self)</dt>
+              </dl>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="2" border=
+        "0" summary="section">
+          <tr bgcolor="#FFC8D8">
+            <td colspan="3" valign="bottom">&nbsp;<br />
+            <a name="JabberTransport" id=
+            "JabberTransport"><font color="#000000" face=
+            "helvetica, arial">class
+            <strong>JabberTransport</strong></font></a></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#FFC8D8"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+
+            <td>&nbsp;</td>
+
+            <td width="100%">
+              Methods defined here:<br />
+
+              <dl>
+                <dt><a name="JabberTransport-__init__" id=
+                "JabberTransport-__init__"><strong>__init__</strong></a>(self,
+                master, base)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="JabberTransport-broadcastMessage" id=
+                "JabberTransport-broadcastMessage"><strong>broadcastMessage</strong></a>(self,
+                transportname, nick, fullname, text)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="JabberTransport-end" id=
+                "JabberTransport-end"><strong>end</strong></a>(self)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="JabberTransport-mensaje_usuario" id=
+                "JabberTransport-mensaje_usuario"><strong>mensaje_usuario</strong></a>(self,
+                jid, text)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="JabberTransport-procesa" id=
+                "JabberTransport-procesa"><strong>procesa</strong></a>(self)</dt>
+              </dl>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="2" border=
+        "0" summary="section">
+          <tr bgcolor="#FFC8D8">
+            <td colspan="3" valign="bottom">&nbsp;<br />
+            <a name="ListaDeContactos" id=
+            "ListaDeContactos"><font color="#000000" face=
+            "helvetica, arial">class
+            <strong>ListaDeContactos</strong></font></a></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#FFC8D8"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+
+            <td>&nbsp;</td>
+
+            <td width="100%">
+              Methods defined here:<br />
+
+              <dl>
+                <dt><a name="ListaDeContactos-__init__" id=
+                "ListaDeContactos-__init__"><strong>__init__</strong></a>(self)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="ListaDeContactos-getNick" id=
+                "ListaDeContactos-getNick"><strong>getNick</strong></a>(self,
+                transportname, longname)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="ListaDeContactos-setNick" id=
+                "ListaDeContactos-setNick"><strong>setNick</strong></a>(self,
+                transportname, longname, nick)</dt>
+              </dl>
+              <hr />
+              Data and other attributes defined here:<br />
+
+              <dl>
+                <dt><strong>contact</strong> = &lt;class
+                'maxibot.contact'&gt;</dt>
+              </dl>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="2" border=
+        "0" summary="section">
+          <tr bgcolor="#FFC8D8">
+            <td colspan="3" valign="bottom">&nbsp;<br />
+            <a name="MsnTransport" id="MsnTransport"><font color=
+            "#000000" face="helvetica, arial">class
+            <strong>MsnTransport</strong></font></a></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#FFC8D8"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+
+            <td>&nbsp;</td>
+
+            <td width="100%">
+              Methods defined here:<br />
+
+              <dl>
+                <dt><a name="MsnTransport-__init__" id=
+                "MsnTransport-__init__"><strong>__init__</strong></a>(self,
+                master, passport_id, password)</dt>
+
+                <dd>
+                <tt>#&nbsp;El&nbsp;transport&nbsp;en&nbsp;si</tt></dd>
+              </dl>
+
+              <dl>
+                <dt><a name="MsnTransport-broadcastMessage" id=
+                "MsnTransport-broadcastMessage"><strong>broadcastMessage</strong></a>(self,
+                transportname, nick, fullname, text)</dt>
+
+                <dd>
+                <tt>Env&Atilde;&shy;a&nbsp;un&nbsp;mensaje&nbsp;a&nbsp;todo&nbsp;el&nbsp;mundo&nbsp;menos&nbsp;al&nbsp;que&nbsp;tenga&nbsp;passport_id&nbsp;==&nbsp;fullname</tt></dd>
+              </dl>
+
+              <dl>
+                <dt><a name=
+                "MsnTransport-broadcastMessage__erroneo" id=
+                "MsnTransport-broadcastMessage__erroneo"><strong>broadcastMessage__erroneo</strong></a>(self,
+                text, fullname<font color=
+                "#909090">=''</font>)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="MsnTransport-end" id=
+                "MsnTransport-end"><strong>end</strong></a>(self)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="MsnTransport-mensaje_usuario" id=
+                "MsnTransport-mensaje_usuario"><strong>mensaje_usuario</strong></a>(self,
+                fullname, text)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="MsnTransport-procesa" id=
+                "MsnTransport-procesa"><strong>procesa</strong></a>(self)</dt>
+              </dl>
+              <hr />
+              Data and other attributes defined here:<br />
+
+              <dl>
+                <dt><strong>MsnChatListener</strong> = &lt;class
+                maxibot.MsnChatListener&gt;</dt>
+              </dl>
+
+              <dl>
+                <dt><strong>MsnListener</strong> = &lt;class
+                maxibot.MsnListener&gt;</dt>
+              </dl>
+
+              <dl>
+                <dt><strong>name</strong> = 'msn'</dt>
+              </dl>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="2" border=
+        "0" summary="section">
+          <tr bgcolor="#FFC8D8">
+            <td colspan="3" valign="bottom">&nbsp;<br />
+            <a name="MucTransport" id="MucTransport"><font color=
+            "#000000" face="helvetica, arial">class
+            <strong>MucTransport</strong></font></a></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#FFC8D8"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+
+            <td>&nbsp;</td>
+
+            <td width="100%">
+              Methods defined here:<br />
+
+              <dl>
+                <dt><a name="MucTransport-__init__" id=
+                "MucTransport-__init__"><strong>__init__</strong></a>(self,
+                master, base, room<font color=
+                "#909090">=None</font>)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="MucTransport-broadcastMessage" id=
+                "MucTransport-broadcastMessage"><strong>broadcastMessage</strong></a>(self,
+                transportname, nick, fullname, text)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="MucTransport-end" id=
+                "MucTransport-end"><strong>end</strong></a>(self)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="MucTransport-mensaje_usuario" id=
+                "MucTransport-mensaje_usuario"><strong>mensaje_usuario</strong></a>(self,
+                jid, text)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="MucTransport-procesa" id=
+                "MucTransport-procesa"><strong>procesa</strong></a>(self)</dt>
+              </dl>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="2" border=
+        "0" summary="section">
+          <tr bgcolor="#FFC8D8">
+            <td colspan="3" valign="bottom">&nbsp;<br />
+            <a name="NullTransport" id="NullTransport"><font color=
+            "#000000" face="helvetica, arial">class
+            <strong>NullTransport</strong></font></a></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#FFC8D8"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+
+            <td>&nbsp;</td>
+
+            <td width="100%">
+              Methods defined here:<br />
+
+              <dl>
+                <dt><a name="NullTransport-__init__" id=
+                "NullTransport-__init__"><strong>__init__</strong></a>(self,
+                master)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="NullTransport-broadcastMessage" id=
+                "NullTransport-broadcastMessage"><strong>broadcastMessage</strong></a>(self,
+                transportname, nick, fullname, texto)</dt>
+
+                <dd><tt>#def&nbsp;<a href=
+                "#NullTransport-broadcastMessage">broadcastMessage</a>(self,&nbsp;texto,&nbsp;usuario='?'):&nbsp;pass</tt></dd>
+              </dl>
+
+              <dl>
+                <dt><a name="NullTransport-end" id=
+                "NullTransport-end"><strong>end</strong></a>(self)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="NullTransport-mensaje_usuario" id=
+                "NullTransport-mensaje_usuario"><strong>mensaje_usuario</strong></a>(self,
+                name, text)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="NullTransport-procesa" id=
+                "NullTransport-procesa"><strong>procesa</strong></a>(self)</dt>
+              </dl>
+              <hr />
+              Data and other attributes defined here:<br />
+
+              <dl>
+                <dt><strong>name</strong> = 'null'</dt>
+              </dl>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="2" border=
+        "0" summary="section">
+          <tr bgcolor="#FFC8D8">
+            <td colspan="3" valign="bottom">&nbsp;<br />
+            <a name="WebTransport" id="WebTransport"><font color=
+            "#000000" face="helvetica, arial">class
+            <strong>WebTransport</strong></font></a></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#FFC8D8"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+
+            <td>&nbsp;</td>
+
+            <td width="100%">
+              Methods defined here:<br />
+
+              <dl>
+                <dt><a name="WebTransport-__init__" id=
+                "WebTransport-__init__"><strong>__init__</strong></a>(self,
+                master, soap_port)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="WebTransport-broadcastMessage" id=
+                "WebTransport-broadcastMessage"><strong>broadcastMessage</strong></a>(self,
+                transportname, nick, fullname, text)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="WebTransport-end" id=
+                "WebTransport-end"><strong>end</strong></a>(self)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="WebTransport-mensaje_usuario" id=
+                "WebTransport-mensaje_usuario"><strong>mensaje_usuario</strong></a>(self,
+                name, text)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="WebTransport-procesa" id=
+                "WebTransport-procesa"><strong>procesa</strong></a>(self)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="WebTransport-sendmessage" id=
+                "WebTransport-sendmessage"><strong>sendmessage</strong></a>(self,
+                param0, param1)</dt>
+
+                <dd>
+                <tt>esta&nbsp;funcion&nbsp;es&nbsp;la&nbsp;que&nbsp;se&nbsp;llama&nbsp;por&nbsp;soap</tt></dd>
+              </dl>
+
+              <dl>
+                <dt><a name="WebTransport-thread_main" id=
+                "WebTransport-thread_main"><strong>thread_main</strong></a>(self,
+                funcs)</dt>
+
+                <dd>
+                <tt>lanza&nbsp;un&nbsp;thread&nbsp;para&nbsp;formar&nbsp;un&nbsp;servidor&nbsp;soap</tt></dd>
+              </dl>
+              <hr />
+              Data and other attributes defined here:<br />
+
+              <dl>
+                <dt><strong>chatlog</strong> = &lt;class
+                'maxibot.chatlog'&gt;</dt>
+              </dl>
+
+              <dl>
+                <dt><strong>name</strong> = 'web'</dt>
+              </dl>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="2" border=
+        "0" summary="section">
+          <tr bgcolor="#FFC8D8">
+            <td colspan="3" valign="bottom">&nbsp;<br />
+            <a name="bot" id="bot"><font color="#000000" face=
+            "helvetica, arial">class
+            <strong>bot</strong></font></a></td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#FFC8D8"><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+
+            <td>&nbsp;</td>
+
+            <td width="100%">
+              Methods defined here:<br />
+
+              <dl>
+                <dt><a name="bot-__init__" id=
+                "bot-__init__"><strong>__init__</strong></a>(self,
+                name)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="bot-broadcastMessage" id=
+                "bot-broadcastMessage"><strong>broadcastMessage</strong></a>(self,
+                transport, destino, text, fullname)</dt>
+
+                <dd>
+                <tt>Esto&nbsp;envia&nbsp;un&nbsp;mensaje&nbsp;de&nbsp;broadcast&nbsp;a&nbsp;todos&nbsp;los&nbsp;transports</tt></dd>
+              </dl>
+
+              <dl>
+                <dt><a name="bot-command" id=
+                "bot-command"><strong>command</strong></a>(self,
+                text, transport, userid)</dt>
+
+                <dd>
+                <tt>Procesa&nbsp;los&nbsp;comandos&nbsp;que&nbsp;le&nbsp;llegan&nbsp;al&nbsp;<a href="#bot">bot</a>.</tt></dd>
+              </dl>
+
+              <dl>
+                <dt><a name="bot-end" id=
+                "bot-end"><strong>end</strong></a>(self)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="bot-message_from" id=
+                "bot-message_from"><strong>message_from</strong></a>(self,
+                transport, text, user)</dt>
+              </dl>
+
+              <dl>
+                <dt><a name="bot-procesa" id=
+                "bot-procesa"><strong>procesa</strong></a>(self)</dt>
+              </dl>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%" cellspacing="0" cellpadding="2" border="0"
+  summary="section">
+    <tr bgcolor="#EEAA77">
+      <td colspan="3" valign="bottom">&nbsp;<br />
+      <font color="#FFFFFF" face=
+      "helvetica, arial"><big><strong>Functions</strong></big></font></td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#EEAA77">
+      <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+
+      <td>&nbsp;</td>
+
+      <td width="100%">
+        <dl>
+          <dt><a name=
+          "-arreglatextoparche"><strong>arreglatextoparche</strong></a>(text)</dt>
+        </dl>
+
+        <dl>
+          <dt><a name="-loop"><strong>loop</strong></a>()</dt>
+        </dl>
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%" cellspacing="0" cellpadding="2" border="0"
+  summary="section">
+    <tr bgcolor="#55AA55">
+      <td colspan="3" valign="bottom">&nbsp;<br />
+      <font color="#FFFFFF" face=
+      "helvetica, arial"><big><strong>Data</strong></big></font></td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#55AA55">
+      <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+
+      <td>&nbsp;</td>
+
+      <td width="100%"><strong>CONFIGS</strong> = [{'DRUPAL_PORT':
+      1214, 'JABBER_ID': 'ulysses@gulic.org/webchat',
+      'JABBER_PASS': 'xxxxxxxx', 'JABBER_ROOM':
+      'gulic@conference.gulic.org', 'NAME': 'web', 'WEBCHAT_PORT':
+      1215, 'WELCOME_MSG': 'Sala del Grupo de Usuarios de Linux de
+      Canarias'}, {'DRUPAL_PORT': 1213, 'JABBER_ID':
+      'bardinux@gulic.org/soporte', 'JABBER_PASS': 'xxxxxxxx',
+      'NAME': 'b', 'WELCOME_MSG': 'Soporte distribucion Bardinux -
+      GULIC/OSL-ULL'}]<br />
+      <strong>DBURI</strong> =
+      'mysql://chat:xxxyyyzzz@localhost/chat'<br />
+      <strong>GOODBYE_MSG</strong> = "Has dejado de ser mi amigo,
+      %s. Para completar e...ibe'. Gracias por la amistad de todo
+      este tiempo."<br />
+      <strong>WELCOME_MSG</strong> = 'Hola %s, soy tu bot. Puedes
+      saber las cosas que ... a anadir. Espero que tengamos una
+      larga amistad.'</td>
+    </tr>
+  </table>
+</body>
+</html>
