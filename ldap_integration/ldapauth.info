@@ -3,8 +3,8 @@ name = ldapauth
 description = "Implements LDAP Authentication"
 package = Administration
 
-; Information added by drupal.org packaging script on 2008-05-10
-version = "5.x-1.x-dev"
+; Information added by drupal.org packaging script on 2009-10-27
+version = "5.x-1.5"
 project = "ldap_integration"
-datestamp = "1210421077"
+datestamp = "1256654469"
 

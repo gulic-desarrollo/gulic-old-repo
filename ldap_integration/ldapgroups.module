@@ -1,5 +1,5 @@
 <?php
-// $Id: ldapgroups.module,v 1.1.4.6.2.6 2008/05/10 02:19:53 scafmac Exp $
+// $Id: ldapgroups.module,v 1.1.4.6.2.7 2009/10/27 14:31:06 miglius Exp $
 
 include_once('ldap_integration/ldapgroups.conf.php');
 include_once('ldap_integration/libdebug.php');
@@ -89,7 +89,7 @@ function ldapgroups_admin_list() {
   $result = db_query("SELECT sid, name FROM {ldapauth} WHERE status = '%s' ORDER BY sid", 1);
   $rows = array();
   while ($row = db_fetch_object($result)) {
-    $rows[] = array($row->name, l(t('edit'), 'admin/settings/ldapgroups/edit/'.$row->name), l(t('reset'), 'admin/settings/ldapgroups/reset/'.$row->name));
+    $rows[] = array(check_plain($row->name), l(t('edit'), 'admin/settings/ldapgroups/edit/'.$row->sid), l(t('reset'), 'admin/settings/ldapgroups/reset/'.$row->sid));
   }
 
   $header = array(
@@ -102,11 +102,12 @@ function ldapgroups_admin_list() {
   return theme('table', $header, $rows);
 }
 
-function ldapgroups_admin_edit($ldap_name) {
-  if ((arg(3) == 'reset') && ($ldap_name != NULL)) {
-    $form['reset_ldap'] = array(
+function ldapgroups_admin_edit() {
+  $sid = arg(4);
+  if ((arg(3) == 'reset') && is_numeric($sid)) {
+    $form['sid'] = array(
       '#type' => 'value',
-      '#value' => $ldap_name,
+      '#value' => $sid,
       );
     return confirm_form(
       $form,
@@ -117,8 +118,8 @@ function ldapgroups_admin_edit($ldap_name) {
       t('Cancel')
     );
   }
-  elseif ((arg(3) == 'edit') && ($ldap_name != NULL)) {
-    $edit = db_fetch_array(db_query("SELECT ldap_groups_in_dn, ldap_groups_in_dn_desc, ldap_group_dn_attribute, ldap_groups_in_attr, ldap_group_attr, ldap_groups_as_entries, ldap_group_entries, ldap_group_entries_attribute FROM {ldapauth} WHERE name = '%s'", $ldap_name));
+  elseif ((arg(3) == 'edit') && ($sid)) {
+    $edit = db_fetch_array(db_query("SELECT ldap_groups_in_dn, ldap_groups_in_dn_desc, ldap_group_dn_attribute, ldap_groups_in_attr, ldap_group_attr, ldap_groups_as_entries, ldap_group_entries, ldap_group_entries_attribute FROM {ldapauth} WHERE sid = %d", $sid));
     $form['server-settings']['ldap_groups_in_dn'] = array( 
       '#type' => 'checkbox', 
       '#title' => t('Group is specified in user\'s DN'), 
@@ -185,9 +186,9 @@ function ldapgroups_admin_edit($ldap_name) {
       '#description' => t('Name of the multivalued attribute which holds the CNs of group members, for example: !attr', array('!attr' => theme('placeholder', LDAP_DEFAULT_GROUP_ENTRIES_ATTRIBUTE))),
       );
             
-    $form['config_name'] = array(
+    $form['sid'] = array(
       '#type' => 'hidden',
-      '#value' => $ldap_name,
+      '#value' => $sid,
       );
 
     $form['submit'] = array(
@@ -199,15 +200,16 @@ function ldapgroups_admin_edit($ldap_name) {
 }
 
 function ldapgroups_admin_edit_submit($form_id, $form_values) {
+  $sid = $form_values['sid'];
   if ($form_values['confirm']) {
     // reset the ldapgroups config to default values - in effect, deactivate this config
-    db_query("UPDATE {ldapauth} SET ldap_groups_in_dn = '%d', ldap_groups_in_dn_desc = '%d', ldap_group_dn_attribute = '%s', ldap_groups_in_attr = '%d', ldap_group_attr = '%s', ldap_groups_as_entries = '%d', ldap_group_entries = '%s', ldap_group_entries_attribute = '%s'  WHERE name = '%s'", '0', '0', '', '0', '', '0', '', '', $form_values['reset_ldap']);
-    watchdog('ldap', t('ldapgroups: ldap config %config updated.' ,array('%config' => $form_values['reset_ldap'])));
+    db_query("UPDATE {ldapauth} SET ldap_groups_in_dn = '%d', ldap_groups_in_dn_desc = '%d', ldap_group_dn_attribute = '%s', ldap_groups_in_attr = '%d', ldap_group_attr = '%s', ldap_groups_as_entries = '%d', ldap_group_entries = '%s', ldap_group_entries_attribute = '%s'  WHERE sid = %d", '0', '0', '', '0', '', '0', '', '', $sid);
+    watchdog('ldap', t('ldapgroups: ldap config %config updated.' ,array('%config' => $sid)));
   }
   else {
     // update the ldapgroups configuration
-    db_query("UPDATE {ldapauth} SET ldap_groups_in_dn = '%d', ldap_groups_in_dn_desc = '%d', ldap_group_dn_attribute = '%s', ldap_groups_in_attr = '%d', ldap_group_attr = '%s', ldap_groups_as_entries = '%d', ldap_group_entries = '%s', ldap_group_entries_attribute = '%s'  WHERE name = '%s'", $form_values['ldap_groups_in_dn'], $form_values['ldap_groups_in_dn_desc'], $form_values['ldap_group_dn_attribute'], $form_values['ldap_groups_in_attr'], $form_values['ldap_group_attr'], $form_values['ldap_groups_as_entries'], $form_values['ldap_group_entries'], $form_values['ldap_group_entries_attribute'], $form_values['config_name']);
-    watchdog('ldap', t('ldapgroups: ldap config %config updated.' ,array('%config' => $form_values['config_name'])));
+    db_query("UPDATE {ldapauth} SET ldap_groups_in_dn = '%d', ldap_groups_in_dn_desc = '%d', ldap_group_dn_attribute = '%s', ldap_groups_in_attr = '%d', ldap_group_attr = '%s', ldap_groups_as_entries = '%d', ldap_group_entries = '%s', ldap_group_entries_attribute = '%s'  WHERE sid = %d", $form_values['ldap_groups_in_dn'], $form_values['ldap_groups_in_dn_desc'], $form_values['ldap_group_dn_attribute'], $form_values['ldap_groups_in_attr'], $form_values['ldap_group_attr'], $form_values['ldap_groups_as_entries'], $form_values['ldap_group_entries'], $form_values['ldap_group_entries_attribute'], $sid);
+    watchdog('ldap', t('ldapgroups: ldap config %config updated.' ,array('%config' => $sid)));
   }
   return 'admin/settings/ldapgroups';
 
@@ -245,9 +247,6 @@ function ldapgroups_user_login(&$user) {
   //dsm($user);
   $user->ldap_drupal_roles = isset($user->ldap_drupal_roles) ? $user->ldap_drupal_roles : array();
   foreach ($user->ldap_drupal_roles as $role) {
-    if (preg_match('/^[^=]*=([^,]*),.*$/', $role, $matches)) {
-      $role = $matches[1];
-    }
     //dsm($role);
     _ldapgroups_deny_role($user, $role);
   }
@@ -273,19 +272,17 @@ function ldapgroups_user_login(&$user) {
 
   // Finally, we grant the roles
   //need to check for empty roles
-	$friendly_roles = array();
   if ($roles) {
     foreach ($roles as $role) {
       $friendly_role = _ldapgroups_translate_role($role);
       _ldapgroups_create_role($friendly_role);
       _ldapgroups_grant_role($user, $friendly_role);
-			$friendly_roles[] = $friendly_role;
     }
   }
 
   // Store roles in the user object so we know which ones
   // were granted here
-  $user = user_save($user, array('ldap_drupal_roles' => $friendly_roles));
+  user_save($user, array('ldap_drupal_roles' => $roles));
 }
 
 

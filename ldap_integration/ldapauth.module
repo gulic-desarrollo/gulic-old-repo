@@ -1,5 +1,5 @@
 <?php
-// $Id: ldapauth.module,v 1.1.4.14.2.5 2008/04/17 04:32:12 scafmac Exp $
+// $Id: ldapauth.module,v 1.1.4.14.2.6 2009/10/27 14:31:06 miglius Exp $
 
 include_once('ldap_integration/ldapauth.conf.php');
 include_once('ldap_integration/libdebug.php');
@@ -177,9 +177,9 @@ function ldapauth_admin_list() {
     }
     $rows[] = array(
       $row->name, 
-      l(t('edit'), 'admin/settings/ldapauth/edit/'.$row->name), 
-      l(t('!link_text', array('!link_text' => $link_text)), 'admin/settings/ldapauth/'.$link_comp.'/'.$row->name),
-      l(t('delete'), 'admin/settings/ldapauth/delete/'.$row->name)
+      l(t('edit'), 'admin/settings/ldapauth/edit/'.$row->sid), 
+      l(t('!link_text', array('!link_text' => $link_text)), 'admin/settings/ldapauth/'.$link_comp.'/'.$row->sid),
+      l(t('delete'), 'admin/settings/ldapauth/delete/'.$row->sid)
       ); 
   }
   $header = array(
@@ -192,22 +192,65 @@ function ldapauth_admin_list() {
   return theme('table', $header, $rows);
 }
 
-function ldapauth_admin_deactivate($ldap_name) {
-  $ldap_name = arg(4);
-  // de-activate the config
-  db_query("UPDATE {ldapauth} SET status = '%s'WHERE name = '%s'", "", $ldap_name);
-  drupal_set_message(t('LDAP Configuration %config has been de-activated.', array('%config' => $ldap_name)));
-  watchdog('ldap', t('ldapauth: ldap config %config de-activated.', array('%config' => $ldap_name)));
+function ldapauth_admin_deactivate() {
+  if (!($sid = arg(4))) { 
+    drupal_goto('admin/settings/ldapauth'); 
+  }
+  if ($row = db_fetch_object(db_query("SELECT name FROM {ldapauth} WHERE sid = %d", $sid))) {
+    $form['sid'] = array('#type' => 'hidden', '#value' => $sid);
+    return confirm_form(
+    $form,
+    t('Are you sure you want to de-activate the ldap configration named <em><strong>%server</strong></em>?', array('%server'=>$row->name)), 
+    'admin/settings/ldapauth',
+    '',
+    t('De-activate'), 
+    t('Cancel')
+    );
+  }
+  else {
+    drupal_set_message(t('No such LDAP configuration.'));
+    drupal_goto('admin/settings/ldapauth');
+  }
+}
+
+function ldapauth_admin_deactivate_submit($form_id, $form_values) {
+  if ($sid = $form_values['sid']) {
+    // de-activate the config
+    db_query("UPDATE {ldapauth} SET status = %d WHERE sid = %d", 0, $sid);
+    drupal_set_message(t('LDAP Configuration has been de-activated.'));
+    watchdog('ldap', t('ldapauth: ldap config %config de-activated.', array('%config' => $sid)));
+  }
   drupal_goto('admin/settings/ldapauth');
 }
 
-
 function ldapauth_admin_activate() {
-  $ldap_name = arg(4);
-  // activate the config
-  db_query("UPDATE {ldapauth} SET status = '%d'WHERE name = '%s'", "1", $ldap_name);
-  drupal_set_message(t('LDAP Configuration %config has been activated.', array('%config' => $ldap_name)));
-  watchdog('ldap', t('ldapauth: ldap config %config activated.', array('%config' => $ldap_name)));
+  if (!($sid = arg(4))) { 
+    drupal_goto('admin/settings/ldapauth'); 
+  }
+  if ($row = db_fetch_object(db_query("SELECT name FROM {ldapauth} WHERE sid = %d", $sid))) {
+    $form['sid'] = array('#type' => 'hidden', '#value' => $sid);
+    return confirm_form(
+    $form,
+    t('Are you sure you want to activate the ldap configration named <em><strong>%server</strong></em>?', array('%server'=>$row->name)), 
+    'admin/settings/ldapauth',
+    '',
+    t('Activate'), 
+    t('Cancel')
+    );
+  }
+  else {
+    drupal_set_message(t('No such LDAP configuration.'));
+    drupal_goto('admin/settings/ldapauth');
+  }
+}
+
+function ldapauth_admin_activate_submit($form_id, $form_values) {
+  if ($sid = $form_values['sid']) {
+    // activate the config
+    db_query("UPDATE {ldapauth} SET status = %d WHERE sid = %d", 1, $sid);
+    drupal_set_message(t('LDAP Configuration %config has been activated.'));
+    watchdog('ldap', t('ldapauth: ldap config %config activated.', array('%config' => $sid)));
+  }
   drupal_goto('admin/settings/ldapauth'); 
 }
 
@@ -361,12 +404,12 @@ function ldapauth_admin_options_submit($form_id, $form_values) {
 
 function ldapauth_admin_form() {
 
-  $ldap_name = arg(4);
-  if ((arg(3) == "edit") && ($ldap_name != NULL)) {
-    $edit = db_fetch_array(db_query("SELECT * FROM {ldapauth} WHERE name = '%s'", $ldap_name));
-    $form['old-name'] = array(
+  $sid = arg(4);
+  if ((arg(3) == "edit") && is_numeric($sid)) {
+    $edit = db_fetch_array(db_query("SELECT * FROM {ldapauth} WHERE sid = %d", $sid));
+    $form['sid'] = array(
       '#type' => 'hidden',
-      '#value' => $ldap_name,
+      '#value' => $sid,
       );
   }
 
@@ -521,11 +564,11 @@ function ldapauth_admin_form_submit($form_id, $form_values) {
   }
   else {
     if ( !$form_values['bindpw_clear'] && $form_values['bindpw']) {
-      db_query("UPDATE {ldapauth} SET name = '%s', server = '%s', port = '%d', tls = '%d', encrypted = '%d', basedn = '%s', user_attr = '%s', mail_attr = '%s', binddn = '%s', bindpw = '%s', bindpw_clear = '%d' WHERE name = '%s'", $form_values['name'], $form_values['server'], $form_values['port'], $form_values['tls'], $form_values['encrypted'], $form_values['basedn'], trim($form_values['user_attr']), trim($form_values['mail_attr']), $form_values['binddn'], $form_values['bindpw'], $form_values['bindpw_clear'], $form_values['old-name']);
+      db_query("UPDATE {ldapauth} SET name = '%s', server = '%s', port = '%d', tls = '%d', encrypted = '%d', basedn = '%s', user_attr = '%s', mail_attr = '%s', binddn = '%s', bindpw = '%s', bindpw_clear = '%d' WHERE sid = %d", $form_values['name'], $form_values['server'], $form_values['port'], $form_values['tls'], $form_values['encrypted'], $form_values['basedn'], trim($form_values['user_attr']), trim($form_values['mail_attr']), $form_values['binddn'], $form_values['bindpw'], $form_values['bindpw_clear'], $form_values['sid']);
     }
     else {
       // set the clear password switch
-      db_query("UPDATE {ldapauth} SET name = '%s', server = '%s', port = '%d', tls = '%d', encrypted = '%d', basedn = '%s', user_attr = '%s', mail_attr = '%s', binddn = '%s', bindpw_clear = '%d' WHERE name = '%s'", $form_values['name'], $form_values['server'], $form_values['port'], $form_values['tls'], $form_values['encrypted'], $form_values['basedn'], trim($form_values['user_attr']), trim($form_values['mail_attr']), $form_values['binddn'], $form_values['bindpw_clear'], $form_values['old-name']);
+      db_query("UPDATE {ldapauth} SET name = '%s', server = '%s', port = '%d', tls = '%d', encrypted = '%d', basedn = '%s', user_attr = '%s', mail_attr = '%s', binddn = '%s', bindpw_clear = '%d' WHERE sid = %d", $form_values['name'], $form_values['server'], $form_values['port'], $form_values['tls'], $form_values['encrypted'], $form_values['basedn'], trim($form_values['user_attr']), trim($form_values['mail_attr']), $form_values['binddn'], $form_values['bindpw_clear'], $form_values['sid']);
     }
     drupal_set_message(t('LDAP Configuration %config has been updated.', array('%config' => $form_values['name'])));
     watchdog('ldap', t('ldapauth: ldap config %config updated.', array('%config' => $form_values['name'])));
@@ -535,16 +578,14 @@ function ldapauth_admin_form_submit($form_id, $form_values) {
 }
 
 function ldapauth_admin_delete() {
-
-  $ldap_name = arg(4);
-
-  if (!$ldap_name) { 
+  if (!($sid = arg(4))) { 
     drupal_goto('admin/settings/ldapauth'); 
   }
-  if ($result = db_fetch_object(db_query("SELECT name FROM {ldapauth} WHERE name = '%s'", $ldap_name))) {
+  if ($result = db_fetch_object(db_query("SELECT name FROM {ldapauth} WHERE sid = %d", $sid))) {
+    $form['sid'] = array('#type' => 'hidden', '#value' => $sid);
     return confirm_form(
-    array(),
-    t('Are you sure you want to delete the ldap configration named <em><strong>%server</strong></em>?', array('%server'=>$ldap_name)), 
+    $form,
+    t('Are you sure you want to delete the ldap configration named <em><strong>%server</strong></em>?', array('%server'=>$result->name)), 
     'admin/settings/ldapauth',
     t('<p>This action cannot be undone.</p>'),
     t('Delete'), 
@@ -552,16 +593,16 @@ function ldapauth_admin_delete() {
     );
   }
   else {
-    drupal_set_message(t('No such LDAP config: %config', array('%config' => $ldap_name)));
+    drupal_set_message(t('No such LDAP configuration.'));
     drupal_goto('admin/settings/ldapauth');
   }
 }
 
 function ldapauth_admin_delete_submit($form_id, $form_values) {
-  if ($form_values['confirm']) {
-    db_query("DELETE FROM {ldapauth} WHERE name = '%s'", arg(4));
-  drupal_set_message(t('LDAP Configuration %config has been deleted.', array('%config' => $form_values['name'])));
-  watchdog('ldap', t('ldapauth: ldap config %config deleted.', array('%config' => $form_values['name'])));
+  if ($sid = $form_values['sid']) {
+    db_query("DELETE FROM {ldapauth} WHERE sid = %d", $sid);
+  drupal_set_message(t('LDAP Configuration has been deleted.'));
+  watchdog('ldap', t('ldapauth: ldap config %config deleted.', array('%config' => $form_values['sid'])));
   }
   return 'admin/settings/ldapauth';
 }
@@ -859,6 +900,14 @@ function ldapauth_login_validate($form_id, $form_values) {
 
 function _ldapauth_user_authenticate($name, $pass) {  
   global $user, $ldapauth_ldap;
+
+  if ($account = user_load(array('name' => $name, 'pass' => $pass, 'status' => 1))) {
+    if (drupal_is_denied('mail', $account->mail)) {
+       form_set_error('name', t('The name %name is registered using a reserved e-mail address and therefore could not be logged in.', array('%name' => $account->name)));
+       return;
+    }
+  }
+
   // (Design decision) uid=1 (admin user) must always authenticate to local database
   // this user is critical for all drupal admin and upgrade operations so it is best
   // left with drupal's native authentication
@@ -953,14 +1002,13 @@ function _ldapauth_save_user($login_string, $pass) {
   // We save the config that was used to authenticate the user in the user object.
   // This will be used by ldapdata and other ldapXXX modules.
   
-  if (key_exists(($ldapauth_ldap->getOption('mail_attr') ? strtolower($ldapauth_ldap->getOption('mail_attr')) : LDAP_DEFAULT_MAIL_ATTRIBUTE), $ldap_user)) {
-    $mail = $ldap_user[strtolower($ldapauth_ldap->getOption('mail_attr'))][0];
+  if (key_exists(($ldapauth_ldap->getOption('mail_attr') ? $ldapauth_ldap->getOption('mail_attr') : LDAP_DEFAULT_MAIL_ATTRIBUTE), $ldap_user)) {
+    $mail = $ldap_user[$ldapauth_ldap->getOption('mail_attr')][0];
   }
   
   $config_name = $ldapauth_ldap->getOption('name');
   $userinfo = array('mail' => $mail, 'ldap_dn' => $dn, 'ldap_config' => $config_name);
   $user = user_save($user, $userinfo);
-  menu_rebuild();
     
   // obtain the DN for this user in this specific LDAP repository  
   $_SESSION['ldap_login']['dn'] = $dn;

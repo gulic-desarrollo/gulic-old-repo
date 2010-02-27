@@ -1,6 +1,6 @@
 <?php
 
-// $Id: ldapdata.module,v 1.1.4.10.2.2 2008/04/17 04:32:12 scafmac Exp $
+// $Id: ldapdata.module,v 1.1.4.10.2.3 2009/10/27 14:31:06 miglius Exp $
 include_once('ldap_integration/ldapdata.conf.php');
 include_once('ldap_integration/libdebug.php');
 include_once('ldap_integration/LDAPInterface.php');
@@ -118,7 +118,7 @@ function ldapdata_admin_list() {
   $result = db_query("SELECT sid, name FROM {ldapauth} WHERE status = '%s' ORDER BY sid", 1);
   $rows = array();
   while ($row = db_fetch_object($result)) {
-    $rows[] = array($row->name, l(t('edit'), 'admin/settings/ldapdata/edit/'.$row->name), l(t('reset'), 'admin/settings/ldapdata/reset/'.$row->name));
+    $rows[] = array(check_plain($row->name), l(t('edit'), 'admin/settings/ldapdata/edit/'.$row->sid), l(t('reset'), 'admin/settings/ldapdata/reset/'.$row->sid));
   }
 
   $header = array(
@@ -131,13 +131,13 @@ function ldapdata_admin_list() {
   return theme('table', $header, $rows);
 }
 
-function ldapdata_admin_edit($ldap_name) {
+function ldapdata_admin_edit() {
   global $ldap_attributes;
-  
-  if ((arg(3) == "reset") && ($ldap_name)) {
-    $form['reset_ldap'] = array(
+  $sid = arg(4);
+  if ((arg(3) == "reset") && is_numeric($sid)) {
+    $form['sid'] = array(
       '#type' => 'value',
-      '#value' => $ldap_name,
+      '#value' => $sid,
       );
     return confirm_form(
       $form,
@@ -148,9 +148,9 @@ function ldapdata_admin_edit($ldap_name) {
       t('Cancel')
     );
   }
-  elseif ((arg(3) == "edit") && ($ldap_name)) {
+  elseif ((arg(3) == "edit") && ($sid)) {
 
-    $result = db_fetch_array(db_query("SELECT ldapdata_mappings, ldapdata_roattrs, ldapdata_rwattrs, ldapdata_binddn, ldapdata_bindpw, ldapdata_bindpw_clear FROM {ldapauth} WHERE name = '%s'", $ldap_name));
+    $result = db_fetch_array(db_query("SELECT sid, name, ldapdata_mappings, ldapdata_roattrs, ldapdata_rwattrs, ldapdata_binddn, ldapdata_bindpw, ldapdata_bindpw_clear FROM {ldapauth} WHERE sid = %d", $sid));
 
     $mappings = unserialize($result['ldapdata_mappings']);
     $roattrs = unserialize($result['ldapdata_roattrs']);
@@ -190,7 +190,7 @@ function ldapdata_admin_edit($ldap_name) {
       '#value' => t('<div class="form-item"><label>If you selected the first or the second option above, please specify here: </label><table><thead><tr><th> Drupal field</th><th>LDAP attribute</th></tr></thead><tbody>'),
       );
 
-    $ldap_drupal_reverse_mappings = _ldapdata_reverse_mappings($ldap_name);
+    $ldap_drupal_reverse_mappings = _ldapdata_reverse_mappings($result['name']);
     foreach ($drupal_fields as $key => $field) {
       $field_tmp = "ldap_amap-".$key;
       $_prefix = "<tr><td><label for=\"edit[$field_tmp]\">$field</label></td><td>";
@@ -304,9 +304,9 @@ function ldapdata_admin_edit($ldap_name) {
       }
 
     // SUBMIT
-    $form['config_name'] = array(
+    $form['sid'] = array(
       '#type' => 'hidden',
-      '#value' => $ldap_name,
+      '#value' => $sid,
       );   
       
     $form['buttons']['submit'] = array(
@@ -350,8 +350,7 @@ function theme_ldapdata_admin_edit($form) {
 }
 
 function ldapdata_admin_edit_submit($form_id, $form_values) {
-
-  $config_name = $form_values['config_name'];    
+  $sid = $form_values['sid'];    
   // Attribute Mapping
   $attr_mapping_access = $form_values['ldap_attr_mapping'];
   
@@ -385,11 +384,11 @@ function ldapdata_admin_edit_submit($form_id, $form_values) {
   }
   
   if ( !$form_values['ldapdata_bindpw_clear'] && $form_values['ldapdata_bindpw']) {
-    db_query("UPDATE {ldapauth} SET ldapdata_mappings = '%s', ldapdata_roattrs = '%s', ldapdata_rwattrs = '%s', ldapdata_binddn = '%s', ldapdata_bindpw = '%s', ldapdata_bindpw_clear = '%d' WHERE name = '%s'", $serialized_data, $serialized_ro_attrs, $serialized_rw_attrs, $form_values['ldapdata_binddn'], $form_values['ldapdata_bindpw'], $form_values['ldapdata_bindpw_clear'], $config_name);   
+    db_query("UPDATE {ldapauth} SET ldapdata_mappings = '%s', ldapdata_roattrs = '%s', ldapdata_rwattrs = '%s', ldapdata_binddn = '%s', ldapdata_bindpw = '%s', ldapdata_bindpw_clear = '%d' WHERE sid = %d", $serialized_data, $serialized_ro_attrs, $serialized_rw_attrs, $form_values['ldapdata_binddn'], $form_values['ldapdata_bindpw'], $form_values['ldapdata_bindpw_clear'], $sid);   
   }
   else {
     // set the clear password switch
-    db_query("UPDATE {ldapauth} SET ldapdata_mappings = '%s', ldapdata_roattrs = '%s', ldapdata_rwattrs = '%s', ldapdata_binddn = '%s', ldapdata_bindpw_clear = '%d' WHERE name = '%s'", $serialized_data, $serialized_ro_attrs, $serialized_rw_attrs, $form_values['ldapdata_binddn'], $form_values['ldapdata_bindpw_clear'], $config_name);   
+    db_query("UPDATE {ldapauth} SET ldapdata_mappings = '%s', ldapdata_roattrs = '%s', ldapdata_rwattrs = '%s', ldapdata_binddn = '%s', ldapdata_bindpw_clear = '%d' WHERE sid = %d", $serialized_data, $serialized_ro_attrs, $serialized_rw_attrs, $form_values['ldapdata_binddn'], $form_values['ldapdata_bindpw_clear'], $sid);   
   }
     
   return 'admin/settings/ldapdata/edit/'.$config_name;
@@ -547,7 +546,7 @@ function ldapdata_user_login(&$user) {
   // _ldapauth_ldap_login at the ldapauth module
  
   $mapping_type = _ldapdata_ldap_info($user, 'mapping_type');   
-  if ((!$user->ldap_authentified) || ($mapping_type == LDAP_MAP_NOTHING)) { 
+  if ((!$user->ldap_authentified) || ($mapping_type = LDAP_MAP_NOTHING)) { 
     return;
   } 
 

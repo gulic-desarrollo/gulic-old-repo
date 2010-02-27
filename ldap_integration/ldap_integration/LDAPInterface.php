@@ -1,5 +1,5 @@
 <?php
-// $Id: LDAPInterface.php,v 1.2.2.6.2.3 2008/04/17 04:32:13 scafmac Exp $
+// $Id: LDAPInterface.php,v 1.2.2.6.2.4 2009/10/27 14:31:06 miglius Exp $
 
 class LDAPInterface {
 
@@ -106,7 +106,7 @@ class LDAPInterface {
 
   function initConnection() {
     if (!$con = ldap_connect($this->server, $this->port)) {
-      watchdog('user', 'LDAP Connect failure to ' . $this->server . ':' . $this->port);
+      watchdog('user', t('LDAP Connect failure to @server:@port.', array('@server' => $this->server, '@port' => $this->port)));
       return NULL;
     }
 
@@ -117,14 +117,13 @@ class LDAPInterface {
     if ($this->tls) {
       $vers = $this->getOption('version');
       if ($vers == -1) {
-        watchdog('user', 'Could not get LDAP protocol version.');
+        watchdog('user', t('Could not get LDAP protocol version.'));
       }
-
       if ($vers != 3) {
-        watchdog('user', 'Could not start TLS, only supported by LDAP v3.');
+        watchdog('user', t('Could not start TLS, only supported by LDAP v3.'));
       }
       else if (!function_exists('ldap_start_tls')) {
-        watchdog('user', 'Could not start TLS. It does not seem to be supported by this PHP setup.');
+        watchdog('user', t('Could not start TLS. It does not seem to be supported by this PHP setup.'));
       }
       else if (!ldap_start_tls($con)) {
         watchdog('user', t("Could not start TLS. (Error %errno: %error).", array('%errno' => ldap_errno($con), '%error' => ldap_error($con))));
