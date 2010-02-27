@@ -248,6 +248,9 @@ function ldapgroups_user_login(&$user) {
   $user->ldap_drupal_roles = isset($user->ldap_drupal_roles) ? $user->ldap_drupal_roles : array();
   foreach ($user->ldap_drupal_roles as $role) {
     //dsm($role);
+    if (preg_match('/^[^=]*=([^,]*),.*$/', $role, $matches)) {
+      $role = $matches[1];
+    }
     _ldapgroups_deny_role($user, $role);
   }
 
@@ -272,17 +275,19 @@ function ldapgroups_user_login(&$user) {
 
   // Finally, we grant the roles
   //need to check for empty roles
+	$friendly_roles = array();
   if ($roles) {
     foreach ($roles as $role) {
       $friendly_role = _ldapgroups_translate_role($role);
       _ldapgroups_create_role($friendly_role);
       _ldapgroups_grant_role($user, $friendly_role);
+			$friendly_roles[] = $friendly_role;
     }
   }
 
   // Store roles in the user object so we know which ones
   // were granted here
-  user_save($user, array('ldap_drupal_roles' => $roles));
+  $user = user_save($user, array('ldap_drupal_roles' => $friendly_roles));
 }
 
 
