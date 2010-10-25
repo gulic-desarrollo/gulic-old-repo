@@ -127,12 +127,6 @@ def arreglatextoparche(text):
     return text
 
 
-def volcar_error():
-    '''Muestra el volcado de excepciones.'''
-
-    print 'Mensaje desde "volcar_error".'
-
-
 class MsnTransport:
     '''Transporte para MSN.'''
 
@@ -955,7 +949,6 @@ Error al enviar la información a la web.\n \
         #    LOG.error('WebTransport().broadcast_message: PROBLEMAS CON MySQL')
         #    sys.stderr.write("\nPROBLEMAS CON MySQL\n\n")
         #    sys.exit(1)
-        pass
 
     def mensaje_usuario(self, name, text):
         '''Todavía no está implementado enviar un msg a una persona de
@@ -1043,7 +1036,6 @@ Error al enviar la información a la web.\n \
                 None,
                 sys.stdout)
 
-
 class DrupalTransport:
     '''De momento es el que tiene la entrada por soap y salida por
     bbdd.'''
@@ -1087,7 +1079,6 @@ No hay conexión con el módulo de Drupal. No hay salida web.\n \
         LOG.debug('DrupalTransport().broadcast_message: Entrando.')
 
         # text = text.encode('utf-8')
-        pass
 
     def mensaje_usuario(self, name, text):
         '''De momento no enviamos privados a personas de drupal.'''
@@ -1095,7 +1086,6 @@ No hay conexión con el módulo de Drupal. No hay salida web.\n \
         LOG.debug('DrupalTransport().mensaje_usuario: Entrando.')
 
         # text = text.encode('utf-8')
-        pass
 
     def procesa(self):
         '''Es una thread aparte, no necesita labores periódicas.'''
@@ -1404,8 +1394,7 @@ Enviamos el mensaje a todos los transports de destino:\n'
                     None,
                     sys.stdout)
 
-    # def message_from(self, transport, text, user, ):
-    def message_from(self, transport, user, text):
+    def message_from(self, transport, text, user, ):
         '''Añadir comentario.'''
 
         LOG.debug('BOT().message_from: Entrando.')
@@ -1436,15 +1425,12 @@ Enviamos el mensaje a todos los transports de destino:\n'
 
         # Entradas desde la web:
         if transport.name == 'web':
-            LOG.info('BOT().message_from: CASO 0: Desde la web, \
-para todo el mundo incluso la web (eco)')
+            LOG.info('BOT().message_from: CASO 0: Desde la web, para todo el mundo incluso la web (eco)')
             self.broadcast_message(transport, ['all'], text, user)
-            #self.broadcast_message(transport, ['all'], user, text)
 
         # Comandos personalizados:
         elif text[0] == '!':
-            LOG.info('BOT().message_from: CASO 1: Es un comando, \
-respuesta directa')
+            LOG.info('BOT().message_from: CASO 1: Es un comando, respuesta directa')
             text = self.command(text, transport.name, user)
             if text:
                 # Si hay respuesta, se le envia al usuario
@@ -1452,8 +1438,7 @@ respuesta directa')
 
         # Respuestas al usuario web
         elif text.find(self.name + ':') == 0:
-            LOG.info('BOT().message_from: CASO 2: para todos y para la \
-web tambien aparte')
+            LOG.info('BOT().message_from: CASO 2: para todos y para la web tambien aparte')
 
             # Extraemos el texto a enviar:
             longitud = len(self.name + ':')
@@ -1465,9 +1450,7 @@ web tambien aparte')
             except:
                 # TODO: Tipo de excepción no controlado
                 (tipo, valor, huella) = sys.exc_info()
-                LOG.error('BOT().message_from: \nHa fallado el envio \
-del mensaje a la web.\n\tTipo de error: %s\n\tValor: %s\n\t\
-Traceback: %s' % (tipo, valor, huella))
+                LOG.error('BOT().message_from: \nHa fallado el envio del mensaje a la web.\n\tTipo de error: %s\n\tValor: %s\n\tTraceback: %s' % (tipo, valor, huella))
                 traceback.print_exception(tipo,
                     valor,
                     huella,
@@ -1476,14 +1459,11 @@ Traceback: %s' % (tipo, valor, huella))
 
             try:
                 self.broadcast_message(transport, ['all', 'web'], text, user)
-                LOG.info('BOT().message_from: \n\\tEnviando mensaje a \
-todos menos a la web.\n\\ttext: %s\n\tuser: %s' % (text, user))
+                LOG.info('BOT().message_from: \n\\tEnviando mensaje a todos menos a la web.\n\\ttext: %s\n\tuser: %s' % (text, user))
             except:
                 # TODO: Tipo de excepción no controlado
                 (tipo, valor, huella) = sys.exc_info()
-                LOG.error('BOT().message_from: \nHa fallado el envio \
-del mensaje a todos menos a la web.\n\tTipo de error: \
-%s\n\tValor: %s\n\tTraceback: %s' % (tipo, valor, huella))
+                LOG.error('BOT().message_from: \nHa fallado el envio del mensaje a todos menos a la web.\n\tTipo de error: %s\n\tValor: %s\n\tTraceback: %s' % (tipo, valor, huella))
                 traceback.print_exception(tipo,
                     valor,
                     huella,
